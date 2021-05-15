@@ -1,0 +1,713 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Travel Locations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BedAndBreakfast"
+                    }
+                },
+                "Bed And Breakfast": {
+                    "$ref": "#/definitions/BedAndBreakfast"
+                },
+                "Visits": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Visit"
+                    }
+                },
+                "Conversations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Conversation"
+                    }
+                },
+                "Classic Platform Search Settings": {
+                    "$ref": "#/definitions/ClassicPlatformSearchSettings"
+                },
+                "Payment Data": {
+                    "$ref": "#/definitions/PaymentData"
+                },
+                "Feature Last Access": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/FeatureLastAccess"
+                    }
+                },
+                "Profile Data": {
+                    "$ref": "#/definitions/ProfileData"
+                },
+                "Account Data": {
+                    "$ref": "#/definitions/AccountData"
+                },
+                "Zendesk": {
+                    "$ref": "#/definitions/Zendesk"
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "AccountData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Account Email": {
+                    "type": "string"
+                },
+                "Confirmed By": {
+                    "type": "string"
+                },
+                "Confirmed At": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Registration Date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Registration Platform": {
+                    "type": "string"
+                },
+                "Registration Region": {
+                    "$ref": "#/definitions/RegistrationRegion"
+                },
+                "First Login Date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Last Logout Date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Last Login": {
+                    "$ref": "#/definitions/LastLogin"
+                },
+                "Accept Terms And Conditions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AcceptTermsAndCondition"
+                    }
+                },
+                "Log Entries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AcceptTermsAndCondition"
+                    }
+                }
+            },
+            "required": [],
+            "title": "AccountData"
+        },
+        "AcceptTermsAndCondition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "event": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "accountType": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "AcceptTermsAndCondition"
+        },
+        "LastLogin": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Ip": {
+                    "type": "string"
+                },
+                "User Agent": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "LastLogin"
+        },
+        "RegistrationRegion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Country": {
+                    "type": "string"
+                },
+                "Region": {
+                    "type": "string"
+                },
+                "City": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "RegistrationRegion"
+        },
+        "ClassicPlatformSearchSettings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Settings": {
+                    "$ref": "#/definitions/ClassicPlatformSearchSettingsSettings"
+                }
+            },
+            "required": [],
+            "title": "ClassicPlatformSearchSettings"
+        },
+        "ClassicPlatformSearchSettingsSettings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Result Fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "Highlighted Fields": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [],
+            "title": "ClassicPlatformSearchSettingsSettings"
+        },
+        "Conversation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Partner": {
+                    "$ref": "#/definitions/Partner"
+                },
+                "Messages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Message"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Conversation"
+        },
+        "Message": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Direction": {
+                    "$ref": "#/definitions/Direction"
+                },
+                "Date Sent": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Text": {
+                    "type": "string"
+                },
+                "Attachments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Message"
+        },
+        "Attachment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Index": {
+                    "$ref": "#/definitions/Index"
+                },
+                "Action": {
+                    "$ref": "#/definitions/Action"
+                },
+                "Text": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Attachment"
+        },
+        "Partner": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ID": {
+                    "type": "integer"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Type": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Partner"
+        },
+        "FeatureLastAccess": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Feature": {
+                    "type": "string"
+                },
+                "Last Access": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "FeatureLastAccess"
+        },
+        "PaymentData": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "PaymentData"
+        },
+        "ProfileData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Type": {
+                    "type": "string"
+                },
+                "ID": {
+                    "type": "integer"
+                },
+                "Name": {
+                    "type": "string"
+                },
+                "Birthday": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "Age": {
+                    "type": "integer"
+                },
+                "Last Location": {
+                    "$ref": "#/definitions/LastLocation"
+                },
+                "Body Stats": {
+                    "$ref": "#/definitions/BodyStats"
+                },
+                "Texts": {
+                    "$ref": "#/definitions/Texts"
+                },
+                "Sexual": {
+                    "$ref": "#/definitions/Sexual"
+                },
+                "Character": {
+                    "$ref": "#/definitions/Character"
+                },
+                "Interests": {
+                    "$ref": "#/definitions/PaymentData"
+                },
+                "Personal": {
+                    "$ref": "#/definitions/Personal"
+                },
+                "Looking For": {
+                    "$ref": "#/definitions/LookingFor"
+                },
+                "Settings": {
+                    "$ref": "#/definitions/ProfileDataSettings"
+                },
+                "Log Entries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LogEntry"
+                    }
+                }
+            },
+            "required": [],
+            "title": "ProfileData"
+        },
+        "BodyStats": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Height": {
+                    "type": "string"
+                },
+                "Weight": {
+                    "type": "string"
+                },
+                "Ethnicity": {
+                    "type": "string"
+                },
+                "Body Type": {
+                    "type": "string"
+                },
+                "Eye Color": {
+                    "type": "string"
+                },
+                "Hair Type": {
+                    "type": "string"
+                },
+                "Hair Color": {
+                    "type": "string"
+                },
+                "Beard": {
+                    "type": "string"
+                },
+                "Body Hair": {
+                    "type": "string"
+                },
+                "Smoker": {
+                    "type": "string"
+                },
+                "Piercings": {
+                    "type": "string"
+                },
+                "Tattoos": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "BodyStats"
+        },
+        "Character": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Night Life": {
+                    "type": "string"
+                },
+                "Communication": {
+                    "type": "string"
+                },
+                "Tidiness": {
+                    "type": "string"
+                },
+                "Planning": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Character"
+        },
+        "LastLocation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "City": {
+                    "type": "string"
+                },
+                "Country": {
+                    "type": "string"
+                },
+                "Latitude": {
+                    "type": "number"
+                },
+                "Longitude": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "LastLocation"
+        },
+        "LogEntry": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "event": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "LogEntry"
+        },
+        "LookingFor": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Search Radius": {
+                    "type": "string"
+                },
+                "Min Age": {
+                    "type": "string"
+                },
+                "Max Age": {
+                    "type": "integer"
+                },
+                "Dates": {
+                    "type": "string"
+                },
+                "Friends": {
+                    "type": "string"
+                },
+                "Relationship": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "LookingFor"
+        },
+        "Personal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Relationship Status": {
+                    "type": "string"
+                },
+                "Profession": {
+                    "type": "string"
+                },
+                "Religion": {
+                    "type": "string"
+                },
+                "Spoken Languages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "Offer Bed And Breakfast": {
+                    "type": "string"
+                },
+                "Messenger 1": {
+                    "type": "string"
+                },
+                "Messenger 2": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Personal"
+        },
+        "ProfileDataSettings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Send Email On New Message": {
+                    "type": "string"
+                },
+                "Big Brother Active": {
+                    "type": "string"
+                },
+                "Show Friends List": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "ProfileDataSettings"
+        },
+        "Sexual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Orientation": {
+                    "type": "string"
+                },
+                "Position": {
+                    "type": "string"
+                },
+                "Dick Size": {
+                    "type": "string"
+                },
+                "Circumcision Status": {
+                    "type": "string"
+                },
+                "Anal Position": {
+                    "type": "string"
+                },
+                "Fisting": {
+                    "type": "string"
+                },
+                "Safer Sex": {
+                    "type": "string"
+                },
+                "Sm": {
+                    "type": "string"
+                },
+                "Dirty": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Sexual"
+        },
+        "Texts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Headline": {
+                    "type": "string"
+                },
+                "Profile Text": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Texts"
+        },
+        "BedAndBreakfast": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "Latitude": {
+                    "type": "number"
+                },
+                "Longitude": {
+                    "type": "number"
+                },
+                "Is Enabled": {
+                    "type": "string"
+                },
+                "Date Created": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "BedAndBreakfast"
+        },
+        "Visit": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Profile": {
+                    "$ref": "#/definitions/Partner"
+                },
+                "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "Visit"
+        },
+        "Zendesk": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "User": {
+                    "$ref": "#/definitions/User"
+                },
+                "Tickets": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Ticket"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Zendesk"
+        },
+        "Ticket": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Ticket No": {
+                    "type": "integer"
+                },
+                "Date Created": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Comments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Comment"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Ticket"
+        },
+        "Comment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Direction": {
+                    "type": "string"
+                },
+                "Body": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Comment"
+        },
+        "User": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "Created At": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Updated At": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "User"
+        },
+        "Action": {
+            "type": "string",
+            "enum": [
+                "payment_show_product_selection",
+                "format",
+                "open_weblink"
+            ],
+            "title": "Action"
+        },
+        "Index": {
+            "type": "string",
+            "enum": [
+                "[[0]]",
+                "[[1]]",
+                "[[2]]",
+                "[[3]]",
+                "[[4]]",
+                "[[5]]"
+            ],
+            "title": "Index"
+        },
+        "Direction": {
+            "type": "string",
+            "enum": [
+                "received"
+            ],
+            "title": "Direction"
+        }
+    }
+}
