@@ -1,0 +1,8 @@
+column_name,comment,format
+ptime,,
+user_id,,
+last_activity_ts,,
+last_device_id,,
+last_os,,
+last_app_version,,
+last_connection_country_id,,
