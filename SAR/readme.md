@@ -4,3 +4,5 @@ For instance, the files [Happn/data/all-data/users/uuid.json](https://github.com
 
 Those files are generated through a semi-automated process, which is constantly improving. 
 
+Initial contributors are the [DatingPrivacy](https://dating-privacy.hestialabs.org/en/) and [other projects](https://hestialabs.org/en/projects/) supported by [HestiaLabs](https://hestialabs.org). 
+
