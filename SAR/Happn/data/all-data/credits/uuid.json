@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "permanent_credits": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PermanentCredit"
+                    }
+                },
+                "permanent_videos": {
+                    "type": "array",
+                    "items": {}
+                },
+                "renewable_credits": {
+                    "type": "array",
+                    "items": {}
+                },
+                "renewable_videos": {
+                    "type": "array",
+                    "items": {}
+                },
+                "renewable_likes": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "PermanentCredit": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "amount": {
+                    "type": "integer"
+                },
+                "creation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "ref_id": {
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "total": {
+                    "type": "integer"
+                },
+                "credit_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [],
+            "title": "PermanentCredit"
+        }
+    }
+}
+

@@ -1,0 +1,507 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Empty",
+    "definitions": {
+        "Empty": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "profile": {
+                    "$ref": "#/definitions/Profile"
+                },
+                "consents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Consent"
+                    }
+                },
+                "achievements": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Achievement"
+                    }
+                },
+                "traits_answer": {
+                    "$ref": "#/definitions/TraitsAnswer"
+                },
+                "referrals": {
+                    "$ref": "#/definitions/Referrals"
+                }
+            },
+            "required": [],
+            "title": "Empty"
+        },
+        "Achievement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "achievement_type": {
+                    "$ref": "#/definitions/AchievementType"
+                },
+                "creation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "Achievement"
+        },
+        "AchievementType": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "conditions": {
+                    "$ref": "#/definitions/Conditions"
+                },
+                "gain": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [],
+            "title": "AchievementType"
+        },
+        "Conditions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "max_times": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [],
+            "title": "Conditions"
+        },
+        "Consent": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "terms_type": {
+                    "type": "string"
+                },
+                "terms_version": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "validation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "Consent"
+        },
+        "Profile": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "status": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "preferences": {
+                    "$ref": "#/definitions/Preferences"
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "user_identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/UserIdentifier"
+                    }
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "time_zone": {
+                    "type": "string"
+                },
+                "about_me": {
+                    "type": "string"
+                },
+                "user_tos": {
+                    "$ref": "#/definitions/Consent"
+                },
+                "user_cookie": {
+                    "$ref": "#/definitions/Consent"
+                },
+                "registration_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_activity_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_crush_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "first_position": {
+                    "$ref": "#/definitions/FirstPosition"
+                },
+                "last_position": {
+                    "$ref": "#/definitions/LastPosition"
+                },
+                "recovery_info": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RecoveryInfo"
+                    }
+                },
+                "first_ip": {
+                    "$ref": "#/definitions/FirstIP"
+                },
+                "last_ip": {
+                    "$ref": "#/definitions/LastIP"
+                },
+                "proximity_id": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Profile"
+        },
+        "FirstIP": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "integer"
+                },
+                "longitude": {
+                    "type": "integer"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "net_blocks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/NetBlock"
+                    }
+                }
+            },
+            "required": [],
+            "title": "FirstIP"
+        },
+        "NetBlock": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cidr": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "net_name": {
+                    "type": "string"
+                },
+                "maintained_by": {
+                    "type": "string"
+                },
+                "created_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_modified_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "NetBlock"
+        },
+        "FirstPosition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "FirstPosition"
+        },
+        "LastIP": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "integer"
+                },
+                "longitude": {
+                    "type": "integer"
+                },
+                "country": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "LastIP"
+        },
+        "LastPosition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "update_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "LastPosition"
+        },
+        "Preferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "is_matching_female": {
+                    "type": "boolean"
+                },
+                "is_matching_male": {
+                    "type": "boolean"
+                },
+                "matching_age_min": {
+                    "type": "integer"
+                },
+                "matching_age_max": {
+                    "type": "integer"
+                },
+                "matching_traits": {
+                    "$ref": "#/definitions/MatchingTraits"
+                },
+                "like_notification_settings": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "mysterious_mode_preferences": {
+                    "$ref": "#/definitions/MysteriousModePreferences"
+                },
+                "marketing_preferences": {
+                    "$ref": "#/definitions/MarketingPreferences"
+                },
+                "location_preferences": {
+                    "$ref": "#/definitions/LocationPreferences"
+                }
+            },
+            "required": [],
+            "title": "Preferences"
+        },
+        "LocationPreferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hide_location": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "LocationPreferences"
+        },
+        "MarketingPreferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "audience_measurement": {
+                    "type": "boolean"
+                },
+                "targeted_ads": {
+                    "type": "boolean"
+                },
+                "marketing_operations": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "MarketingPreferences"
+        },
+        "MatchingTraits": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "traits": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [],
+            "title": "MatchingTraits"
+        },
+        "MysteriousModePreferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hide_age": {
+                    "type": "boolean"
+                },
+                "hide_distance": {
+                    "type": "boolean"
+                },
+                "hide_last_activity_date": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "MysteriousModePreferences"
+        },
+        "RecoveryInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "RecoveryInfo"
+        },
+        "UserIdentifier": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "UserIdentifier"
+        },
+        "Referrals": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "by_sponsored": {
+                    "type": "array",
+                    "items": {}
+                },
+                "by_sponsor": {
+                    "type": "array",
+                    "items": {}
+                },
+                "registrations": {
+                    "$ref": "#/definitions/Registrations"
+                }
+            },
+            "required": [],
+            "title": "Referrals"
+        },
+        "Registrations": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tsAsDate": {
+                    "type": "integer"
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "ad_group": {
+                    "type": "string"
+                },
+                "campaign": {
+                    "type": "string"
+                },
+                "creative": {
+                    "type": "string"
+                },
+                "tracker": {
+                    "type": "string"
+                },
+                "ts": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "ad_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [],
+            "title": "Registrations"
+        },
+        "TraitsAnswer": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "TraitsAnswer"
+        }
+    }
+}
+

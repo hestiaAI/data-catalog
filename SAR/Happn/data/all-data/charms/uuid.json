@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "charms": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Charm"
+                    }
+                },
+                "availabilities": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Availability"
+                    }
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "Availability": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "creation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "availability_type": {
+                    "$ref": "#/definitions/AvailabilityType"
+                },
+                "availability_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [],
+            "title": "Availability"
+        },
+        "AvailabilityType": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "type": {
+                    "type": "string"
+                },
+                "picto_id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "color": {
+                    "type": "string"
+                },
+                "tagline": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "emoji": {
+                    "type": "string"
+                },
+                "duration": {
+                    "type": "integer"
+                },
+                "picto_url": {
+                    "type": "string"
+                },
+                "activated": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "AvailabilityType"
+        },
+        "Charm": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "charm_id": {
+                    "type": "string"
+                },
+                "target_user": {
+                    "type": "string"
+                },
+                "sender_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "charmed_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "scroll_id": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Charm"
+        }
+    }
+}
+

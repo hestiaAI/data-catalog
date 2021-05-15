@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Element"
+    },
+    "definitions": {
+        "Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "crossing_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Status"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Element"
+        },
+        "Status": {
+            "type": "string",
+            "enum": [
+                "ARCHIVED_NOTIFIER",
+                "REJECTED_BY_NOTIFIED",
+                "ACCEPTED_BY_NOTIFIED"
+            ],
+            "title": "Status"
+        }
+    }
+}
+

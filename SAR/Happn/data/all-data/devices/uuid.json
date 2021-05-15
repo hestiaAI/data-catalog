@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Element"
+    },
+    "definitions": {
+        "Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "user_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "alt": {
+                    "type": "number"
+                },
+                "android_id": {
+                    "type": "string"
+                },
+                "app_build": {
+                    "type": "string"
+                },
+                "country_id": {
+                    "type": "string"
+                },
+                "hacc": {
+                    "type": "number"
+                },
+                "idfa": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "language_id": {
+                    "type": "string"
+                },
+                "last_position_update": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "latitude": {
+                    "type": "number"
+                },
+                "longitude": {
+                    "type": "number"
+                },
+                "modification_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "os_build": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "push_token": {
+                    "type": "string"
+                },
+                "push_token_modification_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "vacc": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "Element"
+        }
+    }
+}
+

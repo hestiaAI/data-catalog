@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Empty",
+    "definitions": {
+        "Empty": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "events": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Event"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Empty"
+        },
+        "Event": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "creation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "modification_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "notifier": {
+                    "$ref": "#/definitions/Notifie"
+                },
+                "notified": {
+                    "$ref": "#/definitions/Notifie"
+                },
+                "status": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "notification_type": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "null"
+                }
+            },
+            "required": [],
+            "title": "Event"
+        },
+        "Notifie": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Notifie"
+        }
+    }
+}
+

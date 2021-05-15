@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Empty",
+    "definitions": {
+        "Empty": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "orders": {
+                    "type": "array",
+                    "items": {}
+                },
+                "subscriptions": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [],
+            "title": "Empty"
+        }
+    }
+}
+

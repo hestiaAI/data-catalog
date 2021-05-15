@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "identity": {
+                    "$ref": "#/definitions/Identity"
+                }
+            },
+            "required": [],
+            "title": "Welcome"
+        },
+        "Identity": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mobileTokens": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uuid"
+                    }
+                },
+                "mobileIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "phoneNumbers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "phoneNumbersHistory": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "identity_id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "birth_date": {
+                    "type": "integer"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "hashed_password": {
+                    "type": "null"
+                },
+                "password_alg": {
+                    "type": "null"
+                },
+                "salt": {
+                    "type": "null"
+                },
+                "creation_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "status": {
+                    "type": "null"
+                },
+                "admin": {
+                    "type": "boolean"
+                },
+                "logins": {
+                    "type": "null"
+                },
+                "social_network_ids": {
+                    "type": "null"
+                }
+            },
+            "required": [],
+            "title": "Identity"
+        }
+    }
+}
+

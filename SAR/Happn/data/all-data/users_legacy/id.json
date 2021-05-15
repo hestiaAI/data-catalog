@@ -1,0 +1,262 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Empty",
+    "definitions": {
+        "Empty": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "client": {
+                    "$ref": "#/definitions/Client"
+                }
+            },
+            "required": [],
+            "title": "Empty"
+        },
+        "Client": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "login": {
+                    "type": "null"
+                },
+                "status": {
+                    "type": "integer"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "null"
+                },
+                "about": {
+                    "type": "string"
+                },
+                "school": {
+                    "type": "null"
+                },
+                "workplace": {
+                    "type": "null"
+                },
+                "job": {
+                    "type": "null"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "locations": {
+                    "type": "array",
+                    "items": {}
+                },
+                "matching_preferences": {
+                    "$ref": "#/definitions/MatchingPreferences"
+                },
+                "city": {
+                    "type": "null"
+                },
+                "language": {
+                    "$ref": "#/definitions/Country"
+                },
+                "country": {
+                    "$ref": "#/definitions/Country"
+                },
+                "device_info": {
+                    "type": "integer"
+                },
+                "notification_settings": {
+                    "$ref": "#/definitions/NotificationSettings"
+                },
+                "credits": {
+                    "type": "integer"
+                },
+                "register_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "modification_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_position_update": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "is_admin": {
+                    "type": "boolean"
+                },
+                "is_moderator": {
+                    "type": "boolean"
+                },
+                "last_spent_credit": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "first_position": {
+                    "$ref": "#/definitions/StPosition"
+                },
+                "last_position": {
+                    "$ref": "#/definitions/StPosition"
+                },
+                "first_ip": {
+                    "$ref": "#/definitions/FirstIP"
+                },
+                "last_ip": {
+                    "$ref": "#/definitions/LastIP"
+                }
+            },
+            "required": [],
+            "title": "Client"
+        },
+        "Country": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Country"
+        },
+        "FirstIP": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ip": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "net_blocks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/NetBlock"
+                    }
+                }
+            },
+            "required": [],
+            "title": "FirstIP"
+        },
+        "NetBlock": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cidr": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "net_name": {
+                    "type": "string"
+                },
+                "maintained_by": {
+                    "type": "string"
+                },
+                "created_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_modified_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [],
+            "title": "NetBlock"
+        },
+        "StPosition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lon": {
+                    "type": "number"
+                },
+                "lat": {
+                    "type": "number"
+                }
+            },
+            "required": [],
+            "title": "StPosition"
+        },
+        "LastIP": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "country": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "LastIP"
+        },
+        "MatchingPreferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "female": {
+                    "type": "integer"
+                },
+                "male": {
+                    "type": "integer"
+                },
+                "distance": {
+                    "type": "integer"
+                },
+                "age_min": {
+                    "type": "integer"
+                },
+                "age_max": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "MatchingPreferences"
+        },
+        "NotificationSettings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "charms": {
+                    "type": "integer"
+                },
+                "messages": {
+                    "type": "integer"
+                },
+                "reminders": {
+                    "type": "integer"
+                },
+                "dates": {
+                    "type": "integer"
+                },
+                "near": {
+                    "type": "integer"
+                },
+                "visit": {
+                    "type": "integer"
+                },
+                "match": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "NotificationSettings"
+        }
+    }
+}
+
