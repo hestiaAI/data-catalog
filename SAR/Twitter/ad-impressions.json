@@ -1,0 +1,259 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ad": {
+                    "$ref": "#/definitions/Ad"
+                }
+            },
+            "required": [
+                "ad"
+            ],
+            "title": "Instruction"
+        },
+        "Ad": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "adsUserData": {
+                    "$ref": "#/definitions/AdsUserData"
+                }
+            },
+            "required": [
+                "adsUserData"
+            ],
+            "title": "Ad"
+        },
+        "AdsUserData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "adImpressions": {
+                    "$ref": "#/definitions/AdImpressions"
+                }
+            },
+            "required": [
+                "adImpressions"
+            ],
+            "title": "AdsUserData"
+        },
+        "AdImpressions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "impressions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Impression"
+                    }
+                }
+            },
+            "required": [
+                "impressions"
+            ],
+            "title": "AdImpressions"
+        },
+        "Impression": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "deviceInfo": {
+                    "$ref": "#/definitions/DeviceInfo"
+                },
+                "displayLocation": {
+                    "$ref": "#/definitions/DisplayLocation"
+                },
+                "promotedTweetInfo": {
+                    "$ref": "#/definitions/PromotedTweetInfo"
+                },
+                "promotedTrendInfo": {
+                    "$ref": "#/definitions/PromotedTrendInfo"
+                },
+                "advertiserInfo": {
+                    "$ref": "#/definitions/AdvertiserInfo"
+                },
+                "matchedTargetingCriteria": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MatchedTargetingCriterion"
+                    }
+                },
+                "impressionTime": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "advertiserInfo",
+                "deviceInfo",
+                "displayLocation",
+                "impressionTime",
+                "matchedTargetingCriteria"
+            ],
+            "title": "Impression"
+        },
+        "AdvertiserInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "advertiserName": {
+                    "type": "string"
+                },
+                "screenName": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "AdvertiserInfo"
+        },
+        "DeviceInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "osType": {
+                    "$ref": "#/definitions/OSType"
+                }
+            },
+            "required": [
+                "osType"
+            ],
+            "title": "DeviceInfo"
+        },
+        "MatchedTargetingCriterion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "targetingType": {
+                    "$ref": "#/definitions/TargetingType"
+                },
+                "targetingValue": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "targetingType"
+            ],
+            "title": "MatchedTargetingCriterion"
+        },
+        "PromotedTrendInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "trendId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "name",
+                "trendId"
+            ],
+            "title": "PromotedTrendInfo"
+        },
+        "PromotedTweetInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tweetId": {
+                    "type": "string"
+                },
+                "tweetText": {
+                    "type": "string"
+                },
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "qt-uri-protocols": [
+                            "https"
+                        ]
+                    }
+                },
+                "mediaUrls": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "qt-uri-protocols": [
+                            "https"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "mediaUrls",
+                "tweetId",
+                "tweetText",
+                "urls"
+            ],
+            "title": "PromotedTweetInfo"
+        },
+        "OSType": {
+            "type": "string",
+            "enum": [
+                "Desktop"
+            ],
+            "title": "OSType"
+        },
+        "DisplayLocation": {
+            "type": "string",
+            "enum": [
+                "TimelineHome",
+                "WtfSidebar",
+                "SearchTweets",
+                "ClusterFollow",
+                "ProfileAccountsSidebar",
+                "ProfileTweets"
+            ],
+            "title": "DisplayLocation"
+        },
+        "TargetingType": {
+            "type": "string",
+            "enum": [
+                "Locations",
+                "Age",
+                "Languages",
+                "Interests",
+                "Follower look-alikes",
+                "Conversation topics",
+                "Keywords",
+                "Platforms",
+                "List",
+                "Events"
+            ],
+            "title": "TargetingType"
+        }
+    }
+}
