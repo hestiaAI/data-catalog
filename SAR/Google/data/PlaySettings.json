@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Instruction"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "userSetting": {
+                    "$ref": "#/definitions/UserSetting"
+                }
+            },
+            "required": [
+                "userSetting"
+            ],
+            "title": "Instruction"
+        },
+        "UserSetting": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "testingProgramListItem": {
+                    "$ref": "#/definitions/TestingProgramListItem"
+                },
+                "userCountryCode": {
+                    "type": "string"
+                },
+                "receivePlayMarketingEmail": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "UserSetting"
+        },
+        "TestingProgramListItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "doc": {
+                    "$ref": "#/definitions/Doc"
+                }
+            },
+            "required": [
+                "doc"
+            ],
+            "title": "TestingProgramListItem"
+        },
+        "Doc": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "documentType": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "documentType",
+                "title"
+            ],
+            "title": "Doc"
+        }
+    }
+}
