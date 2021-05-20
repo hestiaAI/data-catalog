@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Instruction"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "libraryDoc": {
+                    "$ref": "#/definitions/LibraryDoc"
+                }
+            },
+            "required": [
+                "libraryDoc"
+            ],
+            "title": "Instruction"
+        },
+        "LibraryDoc": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "doc": {
+                    "$ref": "#/definitions/Doc"
+                },
+                "acquisitionTime": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "acquisitionTime",
+                "doc"
+            ],
+            "title": "LibraryDoc"
+        },
+        "Doc": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "documentType": {
+                    "$ref": "#/definitions/DocumentType"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "documentType",
+                "title"
+            ],
+            "title": "Doc"
+        },
+        "DocumentType": {
+            "type": "string",
+            "enum": [
+                "Android Apps"
+            ],
+            "title": "DocumentType"
+        }
+    }
+}
