@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "$ref": "#/definitions/Name"
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "emails": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Email"
+                    }
+                }
+            },
+            "required": [
+                "displayName",
+                "emails",
+                "name"
+            ],
+            "title": "Instruction"
+        },
+        "Email": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value"
+            ],
+            "title": "Email"
+        },
+        "Name": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "givenName": {
+                    "type": "string"
+                },
+                "familyName": {
+                    "type": "string"
+                },
+                "formattedName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "familyName",
+                "formattedName",
+                "givenName"
+            ],
+            "title": "Name"
+        }
+    }
+}
