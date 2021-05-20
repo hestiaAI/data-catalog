@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Instruction"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "device": {
+                    "$ref": "#/definitions/Device"
+                }
+            },
+            "required": [
+                "device"
+            ],
+            "title": "Instruction"
+        },
+        "Device": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "mostRecentData": {
+                    "$ref": "#/definitions/MostRecentData"
+                },
+                "deviceRegistrationTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "userAddedOnDeviceTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastTimeDeviceActive": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "deviceRegistrationTime",
+                "lastTimeDeviceActive",
+                "mostRecentData",
+                "userAddedOnDeviceTime"
+            ],
+            "title": "Device"
+        },
+        "MostRecentData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "carrierName": {
+                    "type": "string"
+                },
+                "playStoreClientVersion": {
+                    "type": "integer"
+                },
+                "manufacturer": {
+                    "type": "string"
+                },
+                "modelName": {
+                    "type": "string"
+                },
+                "deviceName": {
+                    "type": "string"
+                },
+                "productName": {
+                    "type": "string"
+                },
+                "retailBrand": {
+                    "type": "string"
+                },
+                "totalMemoryBytes": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "nativePlatform": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "deviceIpCountry": {
+                    "type": "string"
+                },
+                "userLocale": {
+                    "type": "string"
+                },
+                "buildFingerprint": {
+                    "type": "string"
+                },
+                "androidSdkVersion": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [
+                "androidSdkVersion",
+                "buildFingerprint",
+                "carrierName",
+                "deviceIpCountry",
+                "deviceName",
+                "manufacturer",
+                "modelName",
+                "nativePlatform",
+                "playStoreClientVersion",
+                "productName",
+                "retailBrand",
+                "totalMemoryBytes",
+                "userLocale"
+            ],
+            "title": "MostRecentData"
+        }
+    }
+}
