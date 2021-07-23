@@ -1,0 +1,261 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ad": {
+                    "$ref": "#/definitions/Ad"
+                }
+            },
+            "required": [
+                "ad"
+            ],
+            "title": "Instruction"
+        },
+        "Ad": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "adsUserData": {
+                    "$ref": "#/definitions/AdsUserData"
+                }
+            },
+            "required": [
+                "adsUserData"
+            ],
+            "title": "Ad"
+        },
+        "AdsUserData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "adEngagements": {
+                    "$ref": "#/definitions/AdEngagements"
+                }
+            },
+            "required": [
+                "adEngagements"
+            ],
+            "title": "AdsUserData"
+        },
+        "AdEngagements": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "engagements": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Engagement"
+                    }
+                }
+            },
+            "required": [
+                "engagements"
+            ],
+            "title": "AdEngagements"
+        },
+        "Engagement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "impressionAttributes": {
+                    "$ref": "#/definitions/ImpressionAttributes"
+                },
+                "engagementAttributes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EngagementAttribute"
+                    }
+                }
+            },
+            "required": [
+                "engagementAttributes",
+                "impressionAttributes"
+            ],
+            "title": "Engagement"
+        },
+        "EngagementAttribute": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "engagementTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "engagementType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "engagementTime",
+                "engagementType"
+            ],
+            "title": "EngagementAttribute"
+        },
+        "ImpressionAttributes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "deviceInfo": {
+                    "$ref": "#/definitions/DeviceInfo"
+                },
+                "displayLocation": {
+                    "type": "string"
+                },
+                "promotedTweetInfo": {
+                    "$ref": "#/definitions/PromotedTweetInfo"
+                },
+                "advertiserInfo": {
+                    "$ref": "#/definitions/AdvertiserInfo"
+                },
+                "matchedTargetingCriteria": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MatchedTargetingCriterion"
+                    }
+                },
+                "impressionTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "promotedTrendInfo": {
+                    "$ref": "#/definitions/PromotedTrendInfo"
+                }
+            },
+            "required": [
+                "advertiserInfo",
+                "deviceInfo",
+                "displayLocation",
+                "impressionTime",
+                "matchedTargetingCriteria",
+                "promotedTweetInfo"
+            ],
+            "title": "ImpressionAttributes"
+        },
+        "AdvertiserInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "advertiserName": {
+                    "type": "string"
+                },
+                "screenName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "advertiserName",
+                "screenName"
+            ],
+            "title": "AdvertiserInfo"
+        },
+        "DeviceInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "osType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "osType"
+            ],
+            "title": "DeviceInfo"
+        },
+        "MatchedTargetingCriterion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "targetingType": {
+                    "type": "string"
+                },
+                "targetingValue": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "targetingType",
+                "targetingValue"
+            ],
+            "title": "MatchedTargetingCriterion"
+        },
+        "PromotedTrendInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "trendId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "name",
+                "trendId"
+            ],
+            "title": "PromotedTrendInfo"
+        },
+        "PromotedTweetInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tweetId": {
+                    "type": "string"
+                },
+                "tweetText": {
+                    "type": "string"
+                },
+                "urls": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "qt-uri-protocols": [
+                            "https"
+                        ]
+                    }
+                },
+                "mediaUrls": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "mediaUrls",
+                "tweetId",
+                "tweetText",
+                "urls"
+            ],
+            "title": "PromotedTweetInfo"
+        }
+    }
+}
