@@ -1,0 +1,31 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:Repository {
+  :has_member @:Individual *;
+  :has_member @:Team *;              
+}
+
+:Individual {
+}
+
+:Team {
+  :has_member @:Individual*;
+}
+
+:Project {
+  :in @:Repository;
+}
+
+:Issue {
+  :in @:Project *;
+  :in @:Repository;
+  :is_deliverable xsd:boolean;
+  :has @:Milestone?;
+}
+
+:Milestone {
+  :of @:Repository;
+  :date xsd:date ? ;
+}
