@@ -1,0 +1,60 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserAccount {
+  :follows @:UserAccount *;
+}
+
+:UserPairing {
+  :member @:UserAccount {2};
+  :type @:UserPairingType;
+}
+
+:UserPairingType {
+}
+
+:Message {
+  :date .;
+  :author @:UserAccount;
+}
+
+:Advertiser {
+  :account @:UserAccount;
+}
+
+:Ad {
+  :content @:AdContent;
+  :advertiser @:Advertiser;
+  :format @:AdFormat;
+}
+
+:AdFormat {
+}
+
+:AdContent {
+}
+
+:TargetingType {
+}
+
+:TargetingValue {
+}
+
+:TargetingInformation { 
+  :type @:TargetingType;
+  :value @:TargetingValue;
+}
+
+:AdImpression {
+  :ad @:Ad;
+  :date .;
+  :targeting @:TargetingInformation*;
+  :to @:UserAccount;
+}
+
+:AdEngagement {
+  :with @:AdImpression;
+  :date . ;
+  :by @:UserAccount;
+}
