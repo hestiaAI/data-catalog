@@ -1,1 +1,442 @@
-
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Instruction"
+                    }
+                }
+            },
+            "required": [
+                "greeting",
+                "instructions"
+            ],
+            "title": "Welcome"
+        },
+        "Instruction": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "age": {
+                    "type": "integer"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "zip": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "tall": {
+                    "type": "integer"
+                },
+                "first_cnx": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "first_ip": {
+                    "type": "string"
+                },
+                "first_ip_banned": {
+                    "type": "boolean"
+                },
+                "last_cnx": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "last_ip": {
+                    "type": "string"
+                },
+                "last_ip_banned": {
+                    "type": "boolean"
+                },
+                "photos": {
+                    "$ref": "#/definitions/Photos"
+                },
+                "profile": {
+                    "$ref": "#/definitions/Profile"
+                },
+                "mails": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Mail"
+                        }
+                    }
+                },
+                "hashtags": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Hashtag"
+                    }
+                },
+                "geolocalisation": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Geolocalisation"
+                    }
+                },
+                "abo": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "abo",
+                "age",
+                "city",
+                "country",
+                "email",
+                "first_cnx",
+                "first_ip",
+                "first_ip_banned",
+                "geolocalisation",
+                "hashtags",
+                "id",
+                "last_cnx",
+                "last_ip",
+                "last_ip_banned",
+                "mails",
+                "photos",
+                "profile",
+                "pseudo",
+                "tall",
+                "zip"
+            ],
+            "title": "Instruction"
+        },
+        "Geolocalisation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "position": {
+                    "$ref": "#/definitions/Position"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "date",
+                "position"
+            ],
+            "title": "Geolocalisation"
+        },
+        "Position": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lng": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "lat",
+                "lng"
+            ],
+            "title": "Position"
+        },
+        "Hashtag": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "hashtag": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "hashtag",
+                "id",
+                "url"
+            ],
+            "title": "Hashtag"
+        },
+        "Mail": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "from": {
+                    "type": "integer"
+                },
+                "to": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "message": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "date",
+                "from",
+                "message",
+                "to"
+            ],
+            "title": "Mail"
+        },
+        "Photos": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pictures": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "pictures"
+            ],
+            "title": "Photos"
+        },
+        "Profile": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "is_fake": {
+                    "type": "boolean"
+                },
+                "dead": {
+                    "type": "boolean"
+                },
+                "instagram": {
+                    "$ref": "#/definitions/Instagram"
+                },
+                "badges": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/definitions/Badge"
+                        }
+                    }
+                },
+                "university": {
+                    "type": "string"
+                },
+                "popu": {
+                    "$ref": "#/definitions/Popu"
+                },
+                "description": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Description"
+                    }
+                }
+            },
+            "required": [
+                "badges",
+                "dead",
+                "description",
+                "instagram",
+                "is_fake",
+                "popu",
+                "university"
+            ],
+            "title": "Profile"
+        },
+        "Badge": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "sexe": {
+                    "$ref": "#/definitions/Sexe"
+                },
+                "number": {
+                    "type": "integer"
+                },
+                "pictures": {
+                    "type": "string"
+                },
+                "title": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "number",
+                "pictures",
+                "sexe",
+                "title"
+            ],
+            "title": "Badge"
+        },
+        "Description": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Yeux": {
+                    "type": "string"
+                },
+                "Couleur": {
+                    "type": "string"
+                },
+                "Signe Astrologique": {
+                    "type": "string"
+                },
+                "Profession": {
+                    "type": "string"
+                },
+                "Sports": {
+                    "type": "string"
+                },
+                "Animaux": {
+                    "type": "string"
+                },
+                "Instruments": {
+                    "type": "string"
+                },
+                "Loisirs": {
+                    "type": "string"
+                },
+                "Cinéma": {
+                    "type": "string"
+                },
+                "Musique": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Description"
+        },
+        "Instagram": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "connected": {
+                    "type": "boolean"
+                },
+                "pictures": {
+                    "type": "array",
+                    "items": {}
+                },
+                "register_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "lock": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "connected",
+                "lock",
+                "pictures",
+                "register_url"
+            ],
+            "title": "Instagram"
+        },
+        "Popu": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "visites": {
+                    "type": "integer"
+                },
+                "flashs": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "contacts": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "mails": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "invits": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "bonus": {
+                    "type": "integer"
+                },
+                "popu": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "profile_completion": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "rate": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "bonus",
+                "contacts",
+                "flashs",
+                "id",
+                "invits",
+                "mails",
+                "popu",
+                "profile_completion",
+                "rate",
+                "visites"
+            ],
+            "title": "Popu"
+        },
+        "Sexe": {
+            "type": "string",
+            "enum": [
+                "mixte",
+                "femme"
+            ],
+            "title": "Sexe"
+        }
+    }
+}
