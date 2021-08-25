@@ -21,7 +21,7 @@ base <http://example.org/>
 }
 
 :PromotedTweetInfo{
-  :tweetId xsd:long
+  :tweetId xsd:long;
   :tweetText xsd:string;
   :urls xsd:string *;
   :mediaUrls xsd:string *;
