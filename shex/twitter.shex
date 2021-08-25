@@ -23,4 +23,28 @@ base <http://example.org/>
   :advertiserAccount @:UserAccount;
 }
 
-:MatchedTargetingCriteria{}
+:MatchedTargetingCriteria{
+  :targetingType @:TargetingType ;
+  :targetingValue @:TargetingValue ;
+}
+
+:EngagementAttributes{
+  :time xsd:dateTime ;
+  :engagementType @:engagementType ;
+}
+
+:EngagementType{}
+
+:ImpressionAttributes{
+  :deviceInfo @:DeviceInfo
+}
+
+:DeviceInfo{
+  :osType @:OsType;
+  :deviceId @:deviceId;
+}
+
+:OsType{:value xsd:string; }
+
+:DeviceId{:value xsd:string;}
+
