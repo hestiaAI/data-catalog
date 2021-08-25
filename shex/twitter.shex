@@ -4,9 +4,9 @@ base <http://example.org/>
 
 :UserAccount {
   :follows @:UserAccount *;
-  :accountId @:AccountId;
-  :AdImpression @:AdImpression ;
-  :AdEngagement @:AdEngagement ;
+  :accountId xsd:long;
+  :adImpression @:AdImpression ;
+  :adEngagement @:AdEngagement ;
 }
 
 :AccountId{:value xsd:string;}
