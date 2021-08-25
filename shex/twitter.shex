@@ -49,7 +49,7 @@ base <http://example.org/>
 
 :EngagementAttributes{
   :engagementTime xsd:dateTime ;
-  :engagementType @:engagementType ;
+  :engagementType @:EngagementType ;
 }
 
 :EngagementType{:value xsd:string;}
