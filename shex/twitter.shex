@@ -38,31 +38,3 @@ base <http://example.org/>
 
 :EngagementType{:value xsd:string;}
 
-:ImpressionAttributes{
-  :deviceInfo @:DeviceInfo;
-  :displayLocation @:DisplayLocation;
-  :promotedTweetInfo @:PromotedTweetInfo;
-}
-
-:DeviceInfo{
-  :osType @:OsType;
-  :deviceId @:DeviceId;
-}
-
-:OsType{:value xsd:string; }
-
-:DeviceId{:value xsd:string;}
-
-:DisplayLocation{}
-
-:PromotedTweetInfo{
-  :tweetId @:TweetId;
-  :tweetText @:TweetText;
-  :urls @:Url *;
-  :mediaUrls @:Url *;
-}
-
-:TweetId{:value xsd:long;}
-:TweetText{:value xsd:string;}
-:Url{:value xsd:string;}
-
