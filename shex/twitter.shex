@@ -5,6 +5,22 @@ base <http://example.org/>
 :UserAccount {
   :follows @:UserAccount *;
   :accountId @:AccountId;
+  :AdImpression @:AdImpression *;
+  :AdEngagement @:AdEngagement *;
 }
 
 :AccountId{}
+
+:AdImpression{
+  :advertiser @:Advertiser;
+  :matchedTargetingCriteria @:matchedTargetingCriteria *;
+}
+
+:AdEngagement{}
+
+:Advertiser{
+  :advertiserName @:Name;
+  :advertiserAccount @:UserAccount;
+}
+
+:MatchedTargetingCriteria{}
