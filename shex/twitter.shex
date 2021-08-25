@@ -21,11 +21,18 @@ base <http://example.org/>
 }
 
 :Engagement{
-  :impressionAttributes @:impressionAttributes;
-  :displayLocation @:displayLocation;
+  :impressionAttributes @:ImpressionAttributes;
 }
 
-:Advertiser{
+:ImpressionAttributes{
+  :deviceInfo @:DeviceInfo;
+  :displayLocation @:DisplayLocation;
+  :promotedTweetInfo @:PromotedTweetInfo;
+  :advertiserInfo @:AdvertiserInfo;
+  :matchedTargetingCriteria @:MatchedTargetingCriteria *;
+}
+
+:AdvertiserInfo{
   :advertiserName xsd:string;
   :advertiserAccount @:UserAccount;
 }
@@ -35,8 +42,8 @@ base <http://example.org/>
   :targetingValue @:TargetingValue ;
 }
 
-:TargetingType {}
-:TargetingValue {}
+:TargetingType {:value xsd:string;}
+:TargetingValue {:value xsd:string;}
 
 :EngagementAttributes{
   :time xsd:dateTime ;
@@ -44,12 +51,6 @@ base <http://example.org/>
 }
 
 :EngagementType{:value xsd:string;}
-
-:ImpressionAttributes{
-  :deviceInfo @:DeviceInfo;
-  :displayLocation @:DisplayLocation;
-  :promotedTweetInfo @:PromotedTweetInfo;
-}
 
 :DeviceInfo{
   :osType @:OsType;
