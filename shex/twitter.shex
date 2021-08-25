@@ -13,7 +13,7 @@ base <http://example.org/>
 
 :AdImpression{
   :advertiser @:Advertiser;
-  :matchedTargetingCriteria @:matchedTargetingCriteria *;
+  :matchedTargetingCriteria @:MatchedTargetingCriteria *;
 }
 
 :AdEngagement{
