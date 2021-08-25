@@ -49,10 +49,8 @@ base <http://example.org/>
 
 :EngagementAttributes{
   :engagementTime xsd:dateTime ;
-  :engagementType @:EngagementType ;
+  :engagementType xsd:string;
 }
-
-:EngagementType{:value xsd:string;}
 
 :DeviceInfo{
   :osType @:OsType;
