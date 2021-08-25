@@ -1,0 +1,30 @@
+prefix : <>
+
+:UserAccount {
+  :has @:Profile
+}
+
+:Profile {
+  :has @:ProfileAttribute
+}
+
+:ProfileAttribute {
+  :value @:ProfileAttributeValue;
+  :type @:ProfileAttributeType
+}
+
+:ProfileAttributeValue {
+}
+
+:ProfileAttributeType {
+}
+
+:Judgment {
+  :source @:UserAccount;
+  :target @:UserAccount;
+  :value @:JudgmentValue;
+}
+
+:JudgmentValue { 
+}
+
