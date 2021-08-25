@@ -6,3 +6,5 @@ base <http://example.org/>
   :follows @:UserAccount *;
   :accountId @:AccountId;
 }
+
+:AccountId{}
