@@ -66,5 +66,5 @@ base <http://example.org/>
   :deviceId xsd:string;
 }
 
-
+:DisplayLocation{:value xsd:string;}
 
