@@ -16,7 +16,14 @@ base <http://example.org/>
   :matchedTargetingCriteria @:matchedTargetingCriteria *;
 }
 
-:AdEngagement{}
+:AdEngagement{
+  :engagements @:Engagement *;
+}
+
+:Engagement{
+  :impressionAttributes @:impressionAttributes;
+  :displayLocation @:displayLocation;
+}
 
 :Advertiser{
   :advertiserName xsd:string;
