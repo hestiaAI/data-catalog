@@ -43,3 +43,11 @@ base <http://example.org/>
   :displayLocation @:DisplayLocation;
   :promotedTweetInfo @:PromotedTweetInfo;
 }
+
+:DeviceInfo{
+  :osType @:OsType;
+  :deviceId @:DeviceId;
+}
+
+
+
