@@ -41,7 +41,7 @@ base <http://example.org/>
 
 :DeviceInfo{
   :osType @:OsType;
-  :deviceId @:deviceId;
+  :deviceId @:DeviceId;
 }
 
 :OsType{:value xsd:string; }
