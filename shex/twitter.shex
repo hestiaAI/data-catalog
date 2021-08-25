@@ -39,7 +39,7 @@ base <http://example.org/>
 :EngagementType{:value xsd:string;}
 
 :ImpressionAttributes{
-  :deviceInfo @:DeviceInfo
+  :deviceInfo @:DeviceInfo;
   :displayLocation @:DisplayLocation;
   :promotedTweetInfo @:PromotedTweetInfo;
 }
