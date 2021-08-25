@@ -28,6 +28,9 @@ base <http://example.org/>
   :targetingValue @:TargetingValue ;
 }
 
+:TargetingType {}
+:TargetingValue {}
+
 :EngagementAttributes{
   :time xsd:dateTime ;
   :engagementType @:engagementType ;
@@ -37,6 +40,8 @@ base <http://example.org/>
 
 :ImpressionAttributes{
   :deviceInfo @:DeviceInfo
+  :displayLocation @:DisplayLocation;
+  :promotedTweetInfo @:PromotedTweetInfo;
 }
 
 :DeviceInfo{
@@ -47,4 +52,17 @@ base <http://example.org/>
 :OsType{:value xsd:string; }
 
 :DeviceId{:value xsd:string;}
+
+:DisplayLocation{}
+
+:PromotedTweetInfo{
+  :tweetId @:TweetId;
+  :tweetText @:TweetText
+  :urls @:Url *;
+  :mediaUrls @:Url *;
+}
+
+:TweetId{:value xsd:long;}
+:TweetText{:value xsd:string;}
+:Url{:value xsd:string;}
 
