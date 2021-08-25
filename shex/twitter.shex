@@ -57,7 +57,7 @@ base <http://example.org/>
 
 :PromotedTweetInfo{
   :tweetId @:TweetId;
-  :tweetText @:TweetText
+  :tweetText @:TweetText;
   :urls @:Url *;
   :mediaUrls @:Url *;
 }
