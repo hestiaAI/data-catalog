@@ -9,7 +9,7 @@ base <http://example.org/>
   :AdEngagement @:AdEngagement *;
 }
 
-:AccountId{}
+:AccountId{:value xsd:string;}
 
 :AdImpression{
   :advertiser @:Advertiser;
@@ -19,7 +19,7 @@ base <http://example.org/>
 :AdEngagement{}
 
 :Advertiser{
-  :advertiserName @:Name;
+  :advertiserName xsd:string;
   :advertiserAccount @:UserAccount;
 }
 
@@ -33,7 +33,7 @@ base <http://example.org/>
   :engagementType @:engagementType ;
 }
 
-:EngagementType{}
+:EngagementType{:value xsd:string;}
 
 :ImpressionAttributes{
   :deviceInfo @:DeviceInfo
