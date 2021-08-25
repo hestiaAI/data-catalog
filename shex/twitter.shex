@@ -53,8 +53,8 @@ base <http://example.org/>
 }
 
 :DeviceInfo{
-  :osType @:OsType;
-  :deviceId @:DeviceId;
+  :osType xsd:string;
+  :deviceId xsd:string;
 }
 
 
