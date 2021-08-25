@@ -9,16 +9,25 @@ base <http://example.org/>
   :adEngagement @:AdEngagement ;
 }
 
-:AccountId{:value xsd:string;}
+:AdImpression{:impressions @:Impression *;}
 
-:AdImpression{
-  :advertiser @:Advertiser;
+:Impression{
+  :deviceInfo @:DeviceInfo;
+  :displayLocation @:DisplayLocation;
+  :promotedTweetInfo @:PromotedTweetInfo;
+  :advertiserInfo @:AdvertiserInfo;
   :matchedTargetingCriteria @:MatchedTargetingCriteria *;
+  :impressionTime xsd:dateTime;
 }
 
-:AdEngagement{
-  :engagements @:Engagement *;
+:PromotedTweetInfo{
+  :tweetId xsd:long
+  :tweetText xsd:string;
+  :urls xsd:string *;
+  :mediaUrls xsd:string *;
 }
+
+:AdEngagement{:engagements @:Engagement *;}
 
 :Engagement{
   :impressionAttributes @:ImpressionAttributes;
