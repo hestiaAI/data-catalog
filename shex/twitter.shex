@@ -30,7 +30,7 @@ base <http://example.org/>
   :promotedTweetInfo @:PromotedTweetInfo;
   :advertiserInfo @:AdvertiserInfo;
   :matchedTargetingCriteria @:MatchedTargetingCriteria *;
-  :impressionTime @:ImpressionTime
+  :impressionTime @:ImpressionTime;
 }
 
 :ImpressionTime{:value xsd:dateTime ;}
