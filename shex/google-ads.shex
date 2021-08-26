@@ -1,0 +1,17 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:Profile{
+  :name @:Name;
+  :displayName xsd:string;
+  :emails xsd:string *;
+  :gender xsd:string ;
+}
+
+:Name{
+  :givenName xsd:string;
+  :familyName xsd:string;
+  :formattedName xsd:string;
+}
+
