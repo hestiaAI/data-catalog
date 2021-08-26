@@ -63,7 +63,7 @@ base <http://example.org/>
 
 :DeviceInfo{
   :osType xsd:string;
-  :deviceId xsd:string;
+  :deviceId xsd:string *;
 }
 
 :DisplayLocation{:value xsd:string;}
