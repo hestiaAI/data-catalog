@@ -3,15 +3,31 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :Profile{
-  :name @:Name;
+  :name @:ProfileName;
   :displayName xsd:string;
   :emails xsd:string *;
   :gender xsd:string ;
 }
 
-:Name{
+:ProfileName{
   :givenName xsd:string;
   :familyName xsd:string;
   :formattedName xsd:string;
+}
+
+:Adds{
+  :add @:Add * ;
+}
+
+:Add{
+  :title xsd:string ;
+  :titleUrl xsd:string ;
+  :time xsd:dateTime ;
+  :products xsd:string * ;
+  :details @:AdDetails *;
+}
+
+:AdDetails{
+  :name  xsd:string * ;
 }
 
