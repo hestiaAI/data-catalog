@@ -14,6 +14,7 @@ base <http://example.org/>
 :Impression{
   :deviceInfo @:DeviceInfo;
   :displayLocation @:DisplayLocation;
+  
   :promotedTweetInfo @:PromotedTweetInfo;
   :advertiserInfo @:AdvertiserInfo;
   :matchedTargetingCriteria @:MatchedTargetingCriteria *;
@@ -27,6 +28,12 @@ base <http://example.org/>
   :mediaUrls xsd:string *;
 }
 
+:PromotedTrendInfo{
+  :trendId xsd:long;
+  :name xsd:string;
+  :description xsd:string;
+}
+
 :AdEngagement{:engagements @:Engagement *;}
 
 :Engagement{
@@ -37,6 +44,7 @@ base <http://example.org/>
 :ImpressionAttributes{
   :deviceInfo @:DeviceInfo;
   :displayLocation @:DisplayLocation;
+  :promotedTrendInfo @:PromotedTrendInfo;
   :promotedTweetInfo @:PromotedTweetInfo;
   :advertiserInfo @:AdvertiserInfo;
   :matchedTargetingCriteria @:MatchedTargetingCriteria *;
