@@ -22,6 +22,14 @@ base <http://example.org/>
   :timestamp @:Profile_v2_timestamp ;
   :education_experiences @:Profile_v2_education_experience * ;
   :work_experiences @:Profile_v2_work_experience * ;
+  :blood_info @:Profile_v2_blood_info ;
+  :websites @:Profile_v2_websites * ;
+  :phone_numbers @:Profile_v2_phone_numbers * ;
+  :places_lived @:Profile_v2_places_lived * ;
+  :pages @:Profile_v2_pages * ;
+  :groups @:Profile_v2_groups * ;
+  :registration_timestamp xsd:long ;
+  :profile_uri xsd:string  ;
 }
 
 :Profile_v2_name{
@@ -109,6 +117,31 @@ base <http://example.org/>
   :description xsd:string ;
   :start_timestamp xsd:long ;
   :end_timestamp xsd:long ;
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_blood_info{
+  :blood_donor_status xsd:string ;
+}
+
+:Profile_v2_websites{}
+
+:Profile_v2_phone_numbers{}
+
+:Profile_v2_places_lived{
+  :place xsd:string ;
+  :start_timestamp xsd:long;
+  :timestamp xsd:long;
+
+}
+:Profile_v2_pages{
+  :name xsd:string;
+  :pages xsd:string * ;
+  :timestamps xsd:long *;
+}
+
+:Profile_v2_groups{
+  :names xsd:string ;
   :timestamp xsd:long ;
 }
 
