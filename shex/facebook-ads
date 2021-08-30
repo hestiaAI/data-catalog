@@ -10,18 +10,18 @@ base <http://example.org/>
 
 :Profile_v2{
   :name Profile_v2_name ;
-  :emails Profile_v2_emails ;
-  :birthday Profile_v2_birthday ;
-  :gender Profile_v2_gender;
-  :previous_names  Profile_v2_previous_names * ;
-  :other_names  Profile_v2_other_names * ;
-  :current_city  Profile_v2_current_city ;
-  :hometown  Profile_v2_hometown ;
-  :relationship  Profile_v2_relationship ;
-  :family_members Profile_v2_family_member * ;
-  :timestamp Profile_v2_timestamp ;
-  :education_experiences Profile_v2_education_experience * ;
-  :work_experiences Profile_v2_work_experience * ;
+#  :emails Profile_v2_emails ;
+#  :birthday Profile_v2_birthday ;
+#  :gender Profile_v2_gender;
+#  :previous_names  Profile_v2_previous_names * ;
+#  :other_names  Profile_v2_other_names * ;
+#  :current_city  Profile_v2_current_city ;
+#  :hometown  Profile_v2_hometown ;
+#  :relationship  Profile_v2_relationship ;
+#  :family_members Profile_v2_family_member * ;
+#  :timestamp Profile_v2_timestamp ;
+#  :education_experiences Profile_v2_education_experience * ;
+#  :work_experiences Profile_v2_work_experience * ;
 }
 
 :Profile_v2_name{
