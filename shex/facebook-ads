@@ -10,6 +10,18 @@ base <http://example.org/>
 
 :Profile_v2{
   :name @:Profile_v2_name ;
+  :emails @:Profile_v2_emails ;
+  :birthday @:Profile_v2_birthday ;
+  :gender @:Profile_v2_gender;
+  :previous_names  @:Profile_v2_previous_names * ;
+  :other_names  @:Profile_v2_other_names * ;
+  :current_city  @:Profile_v2_current_city ;
+  :hometown  @:Profile_v2_hometown ;
+  :relationship  @:Profile_v2_relationship ;
+  :family_members @:Profile_v2_family_member * ;
+  :timestamp @:Profile_v2_timestamp ;
+  :education_experiences @:Profile_v2_education_experience * ;
+  :work_experiences @:Profile_v2_work_experience * ;
 }
 
 :Profile_v2_name{
@@ -18,6 +30,69 @@ base <http://example.org/>
   :middle_name xsd:string ;
   :last_name xsd:string ;
 }
+
+:Profile_v2_emails{
+  :emails xsd:string * ;
+  :previous_emails xsd:string * ;
+  :pending_emails xsd:string * ;
+  :ad_account_emails  xsd:string * ;
+}
+
+:Profile_v2_birthday{
+  :year xsd:int ;
+  :month xsd:int ;
+  :day xsd:int ;
+}
+
+:Profile_v2_gender{
+  :gender_option xsd:string ;
+  :pronoun xsd:string ;
+}
+
+:Profile_v2_previous_names{
+  :name xsd:string ;
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_other_names{
+  :name xsd:string ;
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_current_city{
+  :name xsd:string ;
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_hometown{
+  :name xsd:string ;
+  :timestamp xsd:long ;
+}
+  
+:Profile_v2_relationship{
+  :status xsd:string ;
+  :partner xsd:string ;
+  :anniversary @:Anniversary ;
+}
+
+:Anniversary{
+  :year xsd:int ;
+  :month xsd:int ;
+  :day xsd:int ;
+}
+
+:Profile_v2_timestamp{
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_family_member{
+  :name xsd:string ;
+  :relation xsd:string ;
+  :timestamp xsd:long ;
+}
+
+:Profile_v2_education_experience{}
+:Profile_v2_work_experience{}
 
 :Advertisers{
   :custom_audiences_v2 xsd:string *;
@@ -33,7 +108,4 @@ base <http://example.org/>
   :action xsd:string ;
   :timestamp xsd:long ;
 }
-
-
-
 
