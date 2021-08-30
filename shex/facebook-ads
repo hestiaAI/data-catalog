@@ -13,21 +13,6 @@ base <http://example.org/>
   :emails @:Profile_v2_emails ;
 }
 
-:Profile_v2_name{
-  :full_name xsd:string ;
-  :first_name xsd:string ;
-  :middle_name xsd:string ;
-  :last_name xsd:string ;
-}
-
-:Profile_v2_emails{
-  :emails xsd:string * ;
-  :previous_emails xsd:string * ;
-  :pending_emails xsd:string * ;
-  :ad_account_emails  xsd:string * ;
-}
-
-
 :Advertisers{
   :custom_audiences_v2 xsd:string *;
 }
