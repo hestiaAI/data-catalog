@@ -31,3 +31,11 @@ base <http://example.org/>
   :name  xsd:string * ;
 }
 
+:GoogleAnalytics{
+  :header xsd:string ;
+  :title xsd:string ;
+  :titleUrl xsd:string ;
+  :time xsd:dateTime ;
+  :products xsd:string * ;
+}
+
