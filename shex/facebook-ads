@@ -4,14 +4,73 @@ base <http://example.org/>
 
 :User{
   :profile_information @:Profile_v2 ;
+  :profile_updates @:Profile_updates_v2 * ;
   :advertisers @:Advertisers ;
   :advertisers_interactions @:Advertisers_interactions ;
+}
+
+:Profile_updates_v2{
+  :timestamp xsd:long ;
+  :attachments @:Attachment * ;
+  :title xsd:string ;
+}
+
+:Attachment{
+  :data @:Data * ;
+}
+
+:Data{
+  :data @:Media * ;
+  :place @:Place ? ;
+  :backdated_timestamp xsd:long ? ;
+  :life_event @:Life_event * ;
+}
+
+:Life_event{
+  :title xsd:string ;
+  :description xsd:string ? ;
+  :start_date @:FB_date ? ;
+  :end_date @:FB_date ? ;
+  :place @:Place ? ;
+}
+
+:Media{
+  :uri xsd:string ;
+  :creation_timestamp xsd:long ;
+  :title xsd:string ;
+  :media_metadata @:Media_metadata ? ;
+  :description xsd:string ? ;
+}
+
+:Media_metadata{
+  :photo_metadata @:Photo_metadata ? ;
+}
+
+:Photo_metadata{
+  :exif_data @:Exif_data * ;
+}
+
+:Exif_data{
+  :upload_ip xsd:string ? ;
+  :taken_timestamp xsd:long ? ;
+}
+
+:Place{
+  :name xsd:string ;
+  :coordinate @:Coordinate ? ;
+  :address xsd:string ? ;
+  :url xsd:string ? ;
+}
+
+:Coordinate{
+  :latitude xsd:float ;
+  :longitude xsd:float ;
 }
 
 :Profile_v2{
   :name @:Profile_v2_name ;
   :emails @:Profile_v2_emails ;
-  :birthday @:Profile_v2_birthday ;
+  :birthday @:FB_date ;
   :gender @:Profile_v2_gender;
   :previous_names  @:Profile_v2_previous_names * ;
   :other_names  @:Profile_v2_other_names * ;
@@ -46,7 +105,7 @@ base <http://example.org/>
   :ad_account_emails  xsd:string * ;
 }
 
-:Profile_v2_birthday{
+:FB_date{
   :year xsd:int ;
   :month xsd:int ;
   :day xsd:int ;
