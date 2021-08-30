@@ -27,66 +27,10 @@ base <http://example.org/>
   :ad_account_emails  xsd:string * ;
 }
 
-:Profile_v2_birthday{
-  :year xsd:int ;
-  :month xsd:int ;
-  :day xsd:int ;
-}
-
-:Profile_v2_gender{
-  :gender_option xsd:string ;
-  :pronoun xsd:string ;
-}
-
-:Profile_v2_previous_names{
-  :name xsd:string ;
-  :timestamp xsd:long ;
-}
-
-:Profile_v2_other_names{
-  :name xsd:string ;
-  :timestamp xsd:long ;
-}
-
-:Profile_v2_current_city{
-  :name xsd:string ;
-  :timestamp xsd:long ;
-}
-
-:Profile_v2_hometown{
-  :name xsd:string ;
-  :timestamp xsd:long ;
-}
-  
-:Profile_v2_relationship{
-  :status xsd:string ;
-  :partner xsd:string ;
-  :anniversary @:Anniversary ;
-}
-
-:Anniversary{
-  :year xsd:int ;
-  :month xsd:int ;
-  :day xsd:int ;
-}
-
-:Profile_v2_timestamp{
-  :timestamp xsd:long ;
-}
-
-:Profile_v2_family_member{
-  :name xsd:string ;
-  :relation xsd:string ;
-  :timestamp xsd:long ;
-}
-
-:Profile_v2_education_experience{}
-:Profile_v2_work_experience{}
 
 :Advertisers{
   :custom_audiences_v2 xsd:string *;
 }
-
 
 :Advertisers_interactions{
   :history_v2 @:Advertiser *;
