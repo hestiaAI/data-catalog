@@ -4,8 +4,8 @@ base <http://example.org/>
 
 :User{
   :profile_information Profile_v2 ;
-  :advertisers_who_uploaded_a_contact_list_with_your_information Advertisers_who_uploaded_a_contact_list_with_your_information ;
-  :advertisers_you_ve_interacted_with Advertisers_you_ve_interacted_with ;
+  :advertisers Advertisers ;
+  :advertisers_interactions Advertisers_interactions ;
 }
 
 :Profile_v2{
@@ -31,12 +31,12 @@ base <http://example.org/>
   :last_name xsd:string ;
 }
 
-:Advertisers_who_uploaded_a_contact_list_with_your_information{
+:Advertisers{
   :custom_audiences_v2 xsd:string *;
 }
 
 
-:Advertisers_you_ve_interacted_with{
+:Advertisers_interactions{
   :history_v2 @:Advertiser *;
 }
 
