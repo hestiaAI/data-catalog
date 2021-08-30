@@ -9,7 +9,7 @@ base <http://example.org/>
 }
 
 :Profile_v2{
-  :name Profile_v2_name ;
+  :name @:Profile_v2_name ;
 }
 
 :Profile_v2_name{
