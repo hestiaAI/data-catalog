@@ -11,8 +11,6 @@ base <http://example.org/>
 :Profile_v2{
   :name @:Profile_v2_name ;
   :emails @:Profile_v2_emails ;
-  :birthday @:Profile_v2_birthday ;
-  :gender @:Profile_v2_gender;
 }
 
 :Advertisers{
