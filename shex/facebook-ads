@@ -1,0 +1,19 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:Advertisers_who_uploaded_a_contact_list_with_your_information{
+  :custom_audiences_v2 xsd:string *;
+}
+
+
+:Advertisers_you_ve_interacted_with{
+  :history_v2 @:Advertiser *;
+}
+
+:Advertiser{
+  :title xsd:string ;
+  :action xsd:string ;
+  :timestamp xsd:long ;
+}
+
