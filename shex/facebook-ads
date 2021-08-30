@@ -14,6 +14,15 @@ base <http://example.org/>
   :birthday @:Profile_v2_birthday ;
 }
 
+
+:Profile_v2_name{
+  :full_name xsd:string ;
+  :first_name xsd:string ;
+  :middle_name xsd:string ;
+  :last_name xsd:string ;
+}
+
+
 :Advertisers{
   :custom_audiences_v2 xsd:string *;
 }
