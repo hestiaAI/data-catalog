@@ -2,11 +2,7 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-:User{
-  :profile_information @:Profile_v2 ;
-  :advertisers @:Advertisers ;
-  :advertisers_interactions @:Advertisers_interactions ;
-}
+
 
 :Profile_v2{
   :name @:Profile_v2_name ;
