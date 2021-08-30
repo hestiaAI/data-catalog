@@ -3,12 +3,12 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :User{
-  :profile_information profile_v2 ;
+  :profile_information Profile_v2 ;
   :advertisers_who_uploaded_a_contact_list_with_your_information Advertisers_who_uploaded_a_contact_list_with_your_information ;
   :advertisers_you_ve_interacted_with Advertisers_you_ve_interacted_with ;
 }
 
-:profile_v2{
+:Profile_v2{
   :name Profile_v2_name ;
   :emails Profile_v2_emails ;
   :birthday Profile_v2_birthday ;
