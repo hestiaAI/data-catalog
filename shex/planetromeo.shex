@@ -3,3 +3,247 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 # Planet Romeo data come in a single JSON file.
+
+:Travel_Locations{
+	:location @:LocationDate *;
+}
+
+:Bed_And_Breakfast{
+	:location @:LocationEnabled *;
+}
+
+:LocationDate{
+	:name xsd:string ;
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+	:date_created xsd:datetime ;
+}
+
+:LocationEnabled{
+	:name xsd:string ;
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+	:is_enabled xsd:boolean ;
+}
+
+:Visits{
+	:visits @:Visit * ;
+}
+
+:Visit{
+	:profile @:Profile ;
+	:date xsd:datetime ;
+}
+
+:Profile{
+	:id xsd:long ;
+	:name xsd:string ;
+	:type xsd:string ;
+}
+
+:Conversations{
+	:conversations @:Conversation *;
+}
+
+:Conversation{
+	:partner @:Partner ;
+	:messages @:Message *;
+}
+
+:Partner{
+	:id xsd:int;
+	:name xsd:string;
+	:type xsd:string;
+}
+
+:Message{
+	:direction xsd:string ;
+	:date_sent xsd:datetime ;
+	:text xsd:string ;
+	:attachments @:Attachment *;
+}
+
+:Attachment{
+	:index xsd:string;
+	:action xsd:string;
+	:text xsd:string;     
+}
+
+:Classic_Platform_Search_Settings{
+	:result_fields xsd:string *;
+	:highlighted_fields xsd:string *;
+}
+
+:Payment_data{}
+
+:Feature_Last_Accesses{
+	:feature_Last_Access @:Feature_Last_Access *;
+}
+
+:Feature_Last_Accesses{
+	:feature xsd:string ;
+	:last_access xsd:datetime ;
+}
+
+:Profile_data{
+	:type xsd:string ;
+	:id xsd:int ;
+	:name xsd:string ;
+	:birthday xsd:date ;
+	:age xsd:int ;
+	:last_location @:LocationCountry ;
+	:body_stats @:BodyStats ;
+	:texts @:Profile_texts ;
+	:sexual @:Sexual ;
+	:character @:Character ;
+	:interests @:Interests ;
+	:personal @:Personal ;
+	:looking_for @:LookingFor ;
+	:settings @:Settings ;
+	:log_entries @:LogEntry * ;
+}
+
+:LocationCountry{
+	:city xsd:string ;
+	:country xsd:string ;
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+}
+
+:BodyStats{
+	:height xsd:string ;
+	:weight xsd:string ;
+	:ethnicity xsd:string ;
+	:body_type xsd:string ;
+	:eye_colour xsd:string ;
+	:hair_type xsd:string ;
+	:hair_colour xsd:string ;
+	:beard xsd:string ;
+	:body_hair xsd:string ;
+	:smoker xsd:string ;
+	:piercings xsd:string ;
+	:tattoos xsd:string ;
+}
+
+:Profile_texts{
+	:headline xsd:string ;
+	:profile_text xsd:string ;
+}
+
+:Sexual{
+	:orientation xsd:string ;
+	:position xsd:string ;
+	:dick_size xsd:string ;
+	:circumcision_status xsd:string ;
+	:anal_Position xsd:string ;
+	:fisting xsd:string ;
+	:safer_sex xsd:string ;
+	:sm xsd:string ;
+	:dirty xsd:string ;
+}
+
+:Character{
+	:night_life xsd:string ;
+	:communication xsd:string ;
+	:tidiness xsd:string ;
+	:planning xsd:string ;
+}
+
+:Interests{
+	# Insufficient data to populated this section
+}
+
+
+:Personal{
+	:relationship_status xsd:string ;
+	:profession xsd:string ;
+	:religion xsd:string ;
+	:spoken_languages xsd:string *;
+	:offer_bed_and_breakfast xsd:string ;
+	:messenger_1 xsd:string ;
+	:messenger_2 xsd:string ;
+}
+
+:LookingFor{
+	:search_radius xsd:string ;
+	:min_age xsd:int ?;
+	:max_age xsd:int ?;
+	:dates xsd:boolean;
+	:friends xsd:boolean;
+	:relationship xsd:boolean;
+} 
+
+:Settings{
+	:send_email_on_new_msg xsd:boolean ;
+	:big_brother_active xsd:boolean ;
+	:show_friends_list xsd:string ;
+}
+
+:LogEntry{
+	:date xsd:datetime ;
+	:event xsd:string ;
+	:message xsd:string ;
+}
+
+:AccountData{
+	:account_email xsd:string ;
+	:confirmed_by xsd:string ;
+	:confirmed_at xsd:datetime ;
+	:registration_date xsd:datetime ;
+	:registration_platform xsd:string ;
+	:registration_region @:CountryCity ;
+	:first_login_date xsd:datetime ;
+	:last_logout_date xsd:datetime ;
+	:last_login @:LastLogin ;
+	:accept_terms_and_conditions @:DateEventMail *;
+	:log_entries @:AccountLogEntry *;
+}
+
+:CountryCity{
+	:country xsd:string ;
+	:region xsd:string ;
+	:city xsd:string ;
+}
+
+:LastLogin{
+	:date xsd:datetime ;
+	:ip xsd:string ;
+	:user_agent xsd:string ;
+}
+
+:DateEventMail{
+	:date xsd:string ;
+	:event xsd:string ;
+	:email xsd:string ;
+}
+
+:AccountLogEntry{
+	:date xsd:datetime;
+	:event xsd:string;
+	:accountType xsd:string;
+	:email xsd:string;
+}
+
+:Zendesk{
+	:user @:Zendeskuser ; 
+	:tickets @:ZendeskTicket *;
+}
+
+:Zendeskuser{
+	:name xsd:string ;
+	:email xsd:string ;
+	:created_at xsd:datetime ;
+	:updated_at xsd:datetime ;           
+}
+
+:ZendeskTicket{
+	:ticket_no xsd:long ;
+	:date_created xsd:datetime ;
+	:comments @:ZendeskTicketComment *;
+}
+
+:ZendeskTicketComment{
+	:direction xsd:string ;
+	:body xsd:string ;
+}
+
