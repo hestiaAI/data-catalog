@@ -1,0 +1,109 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Tinder data is contained in a single data file
+#       data.json
+# images are in a drectory called 
+#       your_photos/ 
+# There is an index.html file to display the context comfortably.
+
+:Messages{
+  :match_id @:Match_id * ;
+}
+
+:Match_id{
+  :match_id xsd:string ;
+  :messages xsd:string * ;
+}
+
+:Spotify{
+  :spotify_connected xsd:boolean ;
+}
+
+:Usage{
+  :app_opens @:Date_and_number ;
+  :swipes_likes @:Date_and_number ;
+  :swipes_passes @:Date_and_number ;
+  :matches @:Date_and_number ;
+  :messages_sent @:Date_and_number ;
+  :messages_received @:Date_and_number ;
+}
+
+:Date_and_number{
+  :date xsd:date ;
+  :number xsd:int ;
+}
+
+# No data in provided sample dataset
+:Purchases{
+  :subscription @:Things_one_can_buy * ;
+  :consumable @:Things_one_can_buy * ;
+  :boost_tracking @:Things_one_can_buy * ;
+  :super_like_tracking @:Things_one_can_buy * ;
+}
+
+:Things_one_can_buy{
+  # No data in provided sample dataset
+}
+
+:Campaigns{
+  :current_campaigns @:Campaign * ;
+  :expired_campaigns @:Campaign * ;
+}
+
+:Campaign{
+  # No data in provided sample dataset
+}
+
+:Experiences{
+  # No data in provided sample dataset
+}
+
+:User{
+  :active_time xsd:Datetime ;
+  :age_filter_max xsd:int ;
+  :age_filter_min xsd:int ;
+  :birth_date xsd:Datetime ;
+  :create_date xsd:Datetime ;
+  :email xsd:string ;
+  :full_name xsd:string ;
+  :gender xsd:string ;
+  :gender_filter xsd:string ;
+  :interested_in xsd:string ;
+  :ip_address xsd:string ;
+  :name xsd:string ;
+  :pos @:Position ;
+  :client_registration_info @:Client_registration_info ;
+  :phone_id xsd:long ;
+  :education xsd:string ;
+  :college @:College * ;
+}
+
+:Position{
+  :at  xsd:string ;
+  :lat xsd:float ;
+  :lon xsd:float ;
+}
+
+:Client_registration_info{
+  :platform xsd:string ;
+  :app_version xsd:int ;
+}
+
+:College{
+  # No data in provided sample dataset
+}
+
+:Photos{
+	:photos xsd:string * ; #filenames
+}
+
+:StudentVerifications{
+	:entries @:Student_verification_entry * ;
+}
+
+:Student_verification_entry{
+  # No data in provided sample dataset
+}
+
