@@ -1,0 +1,232 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# HER data comes in 19 csv files 
+
+# blocked.csv
+:Blockeds{
+	:blocked @:Blocked *;
+}
+:Blocked{
+	:name xsd:string ;
+  	:blocked_at xsd:datetime;
+}
+
+# conversations.csv
+:Conversations{
+	:conversations @:Conversation *;
+}
+:Conversation{
+	:name xsd:string ;	
+	:conversation xsd:long ;	
+	:unread_messages xsd:int ;	
+	:last_message_sent xsd:string ;	
+	:last_message_sent_at xsd:datetime ;	
+	:archived xsd:boolean ;	
+}
+
+# devices.csv
+:Devices{
+	:devices @:Device *;
+}
+:Device{
+	:device_OS xsd:string ;	
+	:installed_version xsd:string ;	
+}
+
+# event_comments.csv
+:EventComments{
+	:event_comments @:EventComment *;
+}
+:EventComment{
+	:event_title xsd:string ;	
+	:comment xsd:string ;	
+	:commented_at xsd:datetime ;	
+	:deleted_at xsd:datetime ;	
+}
+
+# events.csv
+# No information in currently available dataset
+# Only field names provided, type set to xsd:string as temporary solution unless obvious.
+:Events{
+	:events @:Event *;
+}
+:Event{
+	:title xsd:string ;	
+	:address xsd:string ;	
+	:body xsd:string ;	
+	:city xsd:string ;	
+	:image xsd:string ;	
+	:ticket_URI xsd:string ;	
+	:deleted xsd:string ;
+	:event_start xsd:datetime ;	
+	:event_end xsd:datetime ;	
+	:event_added xsd:datetime ;	
+	:location xsd:string ;	
+	:status xsd:string ;	
+}
+
+# feed_comments.csv
+# No information in currently available dataset
+# Only field names provided, type set to xsd:string as temporary solution unless obvious.
+:FeedComments{
+	:feed_comments @:FeedComment *;
+}
+:FeedComment{
+	:gif xsd:string ;	
+	:link xsd:string ;	
+	:file xsd:string ;	
+	:comment xsd:string ;	
+	:posted_at xsd:datetime ;	
+	:likes xsd:string ;	
+	:deleted_at xsd:datetime ;	
+}
+
+# feed_likes.csv
+# No information in currently available dataset
+# Only field names provided, type set to xsd:string as temporary solution unless obvious.
+:FeedLikes{
+	:feed_likes @:FeedLike *;
+}
+:FeedLike{
+	:post xsd:string ;	
+	:liked_at xsd:datetime ;	
+	:notification_sent_at xsd:datetime ;	
+}
+
+# feed_posts.csv
+# No information in currently available dataset
+# Only field names provided, type set to xsd:string as temporary solution.
+:FeedPosts{
+	:feed_posts @:FeedPost *;
+}
+:FeedPost{
+	:community xsd:string ;	
+	:post_title xsd:string ;	
+	:post_body xsd:string ;	
+	:location xsd:string ;	
+	:text xsd:string ;	
+	:likes xsd:string ;	
+	:comments xsd:string ;	
+	:shares xsd:string ;	
+	:gif xsd:string ;	
+	:link xsd:string ;	
+	:file xsd:string ;	
+}
+
+# friends.csv
+# No information in currently available dataset
+# Only field names provided, type set to xsd:string as temporary solution.
+:Friends{
+	:friends @:Friend *;
+}
+:Friend{
+	:id xsd:string ;	
+  	:name xsd:string ;
+  	:friend_request_made xsd:string ;
+  	:status xsd:string ;
+}
+
+# items.csv
+:Items{
+	:items @:Item *;	
+}
+:Item{
+	:text xsd:string ;
+	:image_URL xsd:string ;
+	:deleted xsd:boolean ;
+	:uploaded_at xsd:datetime ;
+}
+
+# liked.csv
+:Likeds{
+	:liked @:Liked *;
+}
+:Liked{
+	:name xsd:string ;  # third-party user pseudonym
+	:liked_at xsd:datetime ;
+	:matched xsd:boolean ;
+}
+
+# messages.csv
+:Messages{
+	:messages @:Message *;
+}
+:Message{
+	:conversation xsd:long ;
+	:message xsd:string ;
+	:message_type xsd:string ;
+	:sender xsd:string ;
+	:message_sent_at xsd:datetime ;
+}
+
+# notifications.csv
+:Notifications{
+	:notification_type @:Notification *;
+}
+:Notification{
+	:sender xsd:string ;
+	:notification_type xsd:string ;  # e.g. "liked_you" or "friend"
+	:notifcation_sent_at xsd:datetime ;
+}
+
+# phones.csv
+:Phones{
+	:phones @:Phone *;
+}
+:Phone{
+	:phone_number xsd:string ;
+	:associate_at xsd:datetime ;
+}
+
+# premium_transactions.csv
+:PremiumTransactions{
+	:premiumTransactions @:PremiumTransaction *;
+}
+:PremiumTransaction{
+	:store xsd:string ;
+	:refunded xsd:string ;
+	:cancelled xsd:string ;
+	:revoked_by_Her xsd:string ;
+	:original_app_store_transaction_Id xsd:string ;
+	:app_store_SKU xsd:string ;
+	:transaction_created xsd:string ;
+	:transaction_expires xsd:string ;
+}
+
+# profiles.csv
+:Profile{
+	:name xsd:string ;
+	:full_name xsd:string ;
+	:birthday xsd:date ;
+	:last_online_UTC xsd:string ; # e.g. "46.5216, 6.63653" 
+	:registration_date_UTC xsd:datetime ;
+	:email xsd:string ;
+	:push_notifications_enabled xsd:boolean ;
+	:last_used_filters xsd:string ; # e.g. "Min age: 0, Max Age: 0, Max Distance: 0"
+	:height_in_cm xsd:int ;
+	:location xsd:string ; # e.g. "46.5216, 6.63653"
+	:custom_location xsd:string ;
+	:status xsd:string ;
+}
+
+# reported.csv
+:Reporteds{
+	:reported @:Reported *;
+}
+:Reported{
+	:reported_type xsd:string ;  # third-party user pseudonym
+	:reason xsd:string ;
+	:reported_at xsd:datetime ;
+}
+
+# skipped.csv
+:Skippeds{
+	:skipped @:Skipped *;
+}
+:Skipped{
+	:name xsd:string ;
+  	:skipped_at xsd:datetime;
+}
+
