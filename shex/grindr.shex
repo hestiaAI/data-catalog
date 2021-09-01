@@ -1,1 +1,237 @@
 
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Grindr data comes in 9 csv files and one txt file that contains JSON data
+
+# audit.csv
+# moderators manually (?) review the photographs posted by the user 
+# and approve or reject them depending on nudidy and sexual suggestiveness.
+# e.g
+#,[MEDIA MODERATION TIER 2] Approved,Photo approved,NN/NN/NNNN NN:NN
+#,[MEDIA MODERATION TIER 2] Rejected,Sexually Suggestive,NN/NN/NNNN NN:NN
+#,[MEDIA MODERATION TIER 2] Rejected,Nudity,NN/NN/NNNN NN:NN
+
+:Audit{
+	:audit_Id xsd:string;
+	:action xsd:string;
+	:description xsd:string;
+	:time xsd:datetime;
+}
+
+# available_chats.csv
+# No information in currently available data sample
+:Available_chats{}
+
+# braze.txt
+# This file contains JSON data
+:BrazeUsers{
+	:users @:BrazeUser *;
+	:message xsd:string ; #  "message": "success"
+}
+
+:BrazeUser{
+	:created_at xsd:datetime ;
+	:external_id xsd:string ;
+	:user_aliases @:BrazeUserAlias *;
+	:appboy_id xsd:long ;
+	:braze_id xsd:string;
+	:random_bucket xsd:int;
+	:custom_attributes @:BrazeLookingFor *;
+	:profile_photo_set xsd:boolean ;
+	:plans_purchased xsd:string *;
+	:plan_expiration_date xsd:datetime ;
+	:grindr_roles xsd:string *;
+	:last_product_purchased xsd:string ;
+	:in_trial xsd:boolean ;
+	:profile_creation_date xsd:datetime ;
+	:purchased_products xsd:string *;
+	:subscribed_products xsd:string *;
+	:has_no_ads xsd:boolean ;
+	:xtra_purchase_status xsd:string ;
+	:unlimited_purchase_status xsd:string ;
+	:free_products xsd:string *;
+	:custom_events @:BrazeCustomEvent *;
+	:purchases @:BrazePurchases *;
+	:country xsd:string ;
+	:language xsd:string ;
+	:time_zone xsd:string ;
+	:last_coordinates xsd:float *;
+	:previous_last_coordinates xsd:float *;
+	:total_revenue xsd:float;
+	:cards_clicked @:BrazeCardsClicked *;
+	:push_subscribe xsd:string ;
+	:push_opted_in_at xsd:datetime ;
+	:email_subscribe xsd:string ;
+	:push_tokens @:BrazePushToken *;
+	:devices @:BrazeDevices *;
+	:apps @:BrazeApp *;
+	:campaigns_received @:BrazeCampaignReceived *;
+	:canvases_received @:BrazeCanvasReceived *;
+}
+
+:BrazeUserAlias{} # No information in currently available data sample
+:BrazeLookingFor{} # No information in currently available data sample
+:BrazeCustomEvent{
+	:name xsd:string ;
+	:first xsd:datetime ;
+	:last xsd:datetime ;
+	:count xsd:int ;
+}
+:BrazePurchases{
+	:name xsd:string ;
+	:first xsd:datetime ;
+	:last xsd:datetime ;
+	:count xsd:int ;
+}
+:BrazeCardsClicked{
+	:name xsd:string ;
+	:id xsd:string ;
+}
+:BrazePushToken{
+	:app xsd:string ;
+	:platform xsd:string ;
+	:token xsd:string ;
+	:device_id xsd:string ;
+	:notifications_enabled xsd:boolean ;
+}
+:BrazeDevices{
+	:model xsd:string ;
+	:os xsd:string ;
+	:carrier xsd:string ;
+	:device_id xsd:string ;
+	:idfv xsd:string ;
+	:idfa xsd:string ;
+	:ad_tracking_enabled xsd:boolean ;
+}
+:BrazeApp{
+	:name xsd:string ;
+	:platform xsd:string ;
+	:version xsd:string ;
+	:sessions xsd:int ;
+	:first_used xsd:datetime ;
+	:last_used xsd:datetime ;
+}
+:BrazeCampaignReceived{
+	:name xsd:string ;
+	:api_campaign_id xsd:string ;
+	:last_received xsd:string ;
+	:converted xsd:boolean ?;
+	:multiple_converted @:BrazeCampaignMultipleConverted ?;
+	:engaged @:BrazeCampaignEngaged ?;
+	:in_control xsd:boolean ?;
+	:variation_name xsd:string ;
+	:variation_api_id xsd:string ;
+}
+
+:BrazeCampaignEngaged{
+	:clicked_triggered_in_app_message xsd:boolean ;
+}
+
+:BrazeCampaignMultipleConverted{
+	:primary_conversion_event_A xsd:boolean ;
+}
+
+:BrazeCanvasReceived{
+	:name xsd:string ;
+	:api_canvas_id xsd:string ;
+	:last_received_message xsd:string ;
+	:last_entered xsd:datetime ;
+	:variation_name xsd:string ;
+	:in_control xsd:boolean ;
+	:is_in_control xsd:boolean ;
+	:last_entered_control_at xsd:string ;
+	:last_exited xsd:datetime ;
+	:steps_received @:BrazeCanvasReceivedStepReceived *;
+}
+
+:BrazeCanvasReceivedStepReceived{
+	:name xsd:string ;
+	:api_canvas_step_id xsd:string ;
+	:last_received xsd:datetime ;
+}
+
+
+#cascade_calls.csv
+:CascadeCalls{
+	:profile_id xsd:string ?;
+	:location_ping_time xsd:datetime ;
+	:lat xsd:float ;
+	:lon xsd:float ;
+}
+
+#comments.csv
+# No information in currently available data sample
+:Comments{}
+
+#ip_history.csv
+:IPHistory{
+	:profile_id xsd:string ?;
+	:ipaddress xsd:string ?;
+	:time xsd:datetime ;
+}
+
+#last_location.csv
+:LastLocation{
+	:profile_id xsd:int ;
+	:location_ping_time xsd:datetime ;
+	:lat xsd:float ;
+	:lon xsd:float ;
+}
+
+#profile_data.csv
+:ProfileData{
+	:profile_id xsd:string;
+	:age xsd:int;  
+	:displayName xsd:string;  
+	:created_at xsd:datetime;  
+	:about xsd:string ;  
+	:headline xsd:string ;  
+	:profileStatus xsd:string ;  
+	:ethnicity xsd:string ;  
+	:facebook xsd:string ;  
+	:twitter xsd:string ;  
+	:instagram xsd:string ;  
+	:profile_image xsd:string ;  
+	:tribe_bear xsd:string ;    # Possibly booleans, but no information in currently available data sample
+	:tribe_cleancut xsd:string ;  
+	:tribe_daddy xsd:string ;  
+	:tribe_discreet xsd:string ;  
+	:tribe_geek xsd:string ;  
+	:tribe_jock xsd:string ;  
+	:tribe_leather xsd:string ;  
+	:tribe_otter xsd:string ;  
+	:tribe_poz xsd:string ;  
+	:tribe_rugged xsd:string ;  
+	:tribe_trans xsd:string ;  
+	:tribe_twink xsd:string ;  
+	:sexual_pos_top xsd:string ;  
+	:sexual_pos_bottom xsd:string ;  
+	:sexual_pos_versatile xsd:string ;  
+	:sexual_pos_vers_bottom xsd:string ;  
+	:sexual_pos_vers_top xsd:string ;  
+	:sexual_pos_oral_only xsd:string ;  
+	:relationship xsd:string ;  
+	:hivStatus xsd:string ;  
+	:hivLastTested xsd:datetime ;  
+	:third_party_email xsd:string ;  
+	:incognitoStatus xsd:string ;  
+	:nsfwStatus xsd:string ;  
+	:meetAtStatus xsd:string ;  
+}
+
+#subs.csv
+:Subs{
+	:source xsd:string ;
+	:platform xsd:string ;
+	:vendor xsd:string ;
+	:vendor_product_id xsd:string ;
+	:name xsd:string ;
+	:created xsd:datetime ;
+	:type xsd:string ;
+	:expires xsd:datetime ;
+	:transaction_id xsd:string ;
+	:transaction_date xsd:datetime ;
+}
+
