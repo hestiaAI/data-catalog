@@ -1,0 +1,129 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Bumble data comes in one HTML file. 
+# The HTML contains several tables, the fields of which contain JSON code.
+
+:User{
+	:pictures @:Picture *;
+	:phone xsd:string ;
+	:email xsd:string ;
+	:last_activity_date xsd:datetime ;
+	:last_profile_update xsd:datetime ;
+	:last_location @:Location ;
+	:description xsd:string ;
+	:gender xsd:string ;
+	:age  xsd:int ;
+	:height xsd:string ;
+	:ethnicity xsd:string ;
+	:religion  xsd:string ;
+	:education @:Education *;
+	:occupation @:Occupation *;
+	:spoken_languages xsd:string ;
+	:has_kids xsd:string ;
+	:political_views xsd:string ;
+	:drinking_habits xsd:string ;
+	:smoking_habits xsd:string ;
+	:my_matching_preferences @:MatchingPreferences ;
+	:my_notifications_preferences @:NotificationsPreferences ;
+	:my_devices @:Devices ;
+}
+
+:Picture{}  # no data
+:Location{
+	:lon xsd:float ;
+	:lat xsd:float ;
+}
+:Education{
+	:school_type xsd:string ;
+	:school_name xsd:string ;
+}
+:Occupation{
+	:employer xsd:string ;
+	:position xsd:string ;
+}
+:MatchingPreferences{
+	:distance xsd:int ;
+	:ethnicity @:Ethnicity *; 
+	:religion @:Religion  *;
+	:age_min xsd:int ;
+	:age_max xsd:int ;
+}
+
+:NotificationsPreferences{
+	:message @:NotificationsPreference ;
+	:connection @:NotificationsPreference ;
+	:match @:NotificationsPreference ;
+	:marketing @:NotificationsPreference ;
+	:transactional @:NotificationsPreference ; 
+	:chat_request @:NotificationsPreference ;
+}
+:NotificationsPreference{
+	:email xsd:boolean ;
+	:app xsd:boolean ;
+}
+
+:Devices{
+	:android xsd:string ;
+	:ios xsd:string ;
+	:web xsd:string ;
+}
+
+:Reviews{
+    :reviews @:Review *;
+}
+
+:Reviews{
+    :name  xsd:string ;  # No data in sampe, put string as default
+	:comment_rating xsd:string ; # No data in sampe, put string as default
+	:reality_vs_picture  xsd:string ; # No data in sampe, put string as default
+}
+
+:CrownsPurchaseHistory{
+	:crown_purchases @:CrownsPurchase *;
+}
+:CrownsPurchase{
+	:datetime xsd:datetime ;
+	:amount xsd:int ;
+}
+
+:PremiumFeaturesUsed{
+	:datetime xsd:datetime ;
+	:feature xsd:string ;
+}
+
+:Ratings_I_gave{
+	:ratings @:Rating *;
+}
+:Rating{
+	:rating xsd:int ;
+}
+
+:ActionsOnMatches{
+	:actions_on_matches @:ActionOnMatch *;
+}
+
+:ActionOnMatch{
+	:name xsd:string ;
+	:action xsd:boolean ;
+}
+
+:ChatMessageHistory{
+	:conversations @:Conversation *;
+}
+:Conversation{
+	:name xsd:string ;
+	:messages @:ChatMessages *;
+}
+
+:ChatMessage{
+	:datetime xsd:datetime;
+	:text xsd:string ;
+}
+
+
+
+
+
+
