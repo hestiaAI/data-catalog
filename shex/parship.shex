@@ -1,0 +1,221 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Parship data comes in one, weirdly-formated CSV file.
+# There are several sections containing typical CSV segments, separated with dashed lines
+
+# 1 Adresses
+:AddressData{
+  :first_name xsd:string ;
+  :last_name xsd:string ;
+  :company xsd:string ;
+  :ZIP xsd:int ;
+  :city xsd:string ;
+  :street xsd:string ;
+  :house_number xsd:int ;
+  :state xsd:string ;
+  :country xsd:string ;
+  :phone xsd:string ;
+  :last_modification xsd:datetime ;
+  :nj_zip_code_flag xsd:string ;
+}
+
+# 2 Financial
+:FinancialData{
+	:purchaseData @:PurchaseData ;
+	:purchase @:Purchase *;
+	:appleIOSAppStorePurchase @:AppleIOSAppStorePurchase *;
+	:customerRight @:CustomerRight *;
+	:userInformation @:UserInformation *;
+	:outstandingReceivables OutstandingReceivables *;
+	:vouchers @:Vouchers *;
+	:credit_memo_data @:CreditMemoData *;
+	:account_data_1 @:AccountData1 *;
+	:account_data_2 @:AccountData2 *;
+	:time_related_account_data @:TimeRelatedAccountData *;
+	:consent_confirmation @:ConsentConfirmation *;
+	:contract_information @:ContractInformation *;
+	:payment_plan @:PaymentPlan *;
+	:purchase_and_billing_tech_support @:PurchaseAndBillingTechSupport *;
+	:payment_provider_notifications @:PaymentProviderNotifications *;
+}
+
+:PurchaseData{
+	:registration_date xsd:datetime ;
+	:purchases @:Purchase *;
+	:apple_IOS_AppStore_purchases @:AppleIOSAppStorePurchase *;
+	:customer_rights @:CustomerRight *;
+}
+:Purchase{
+	:purchase_date xsd:datetime ;
+	:time_of_purchase xsd:datetime ;
+	:payment_method xsd:string ;
+	:currency xsd:string ;
+	:country xsd:string ;
+	:language xsd:string ;
+	:internet_address_of_purchase xsd:string ;
+	:gross_price xsd:string ;
+	:net_price xsd:string ;
+	:transaction xsd:string ;
+}
+:AppleIOSAppStorePurchase{
+	:chiffre xsd:string ;
+	:purchase_data xsd:string ;
+	:transaction xsd:string ;
+	:product xsd:string ;
+	:transaction_identifier_of_the_original_purchase xsd:string ;
+}
+:CustomerRight{
+	:rights xsd:string ;   # e.g.: "premium", "contact", etc.
+	:time_until_the_Right_applies xsd:int ;
+	:last_modification xsd:dattime ;
+}
+
+:UserInformation{
+	:email_address xsd:string ;
+	:last_login xsd:dattime ;
+	:valid_from xsd:dattime ;
+	:user_status xsd:int ;
+	:last_modification xsd:dattime ;
+	:email_status xsd:int ;
+	:status_of_double_opt_in_proceedings xsd:int ;
+	:time_of_confirmation_of_double_opt_in_proceedings xsd:dattime ;
+	:unconfirmed_changed_email_address xsd:int ;
+	:status_of_id_secure_proceedings xsd:int ;
+	:status_of_questionnaire xsd:int ;
+	:browser_user_agent_during_registration xsd:string ;
+	:date_of_last_completion_of_questionnaire xsd:dattime ;
+}
+
+:OutstandingReceivables{
+	:country xsd:string ;
+	:total xsd:string ;
+	:open xsd:string ;
+	:currency xsd:string ;
+	:dunning_level xsd:string ;
+	:last_modification xsd:dattime ;
+}
+
+:Vouchers{
+	:country  xsd:string ;
+	:booking_date  xsd:dattime ;
+	:payment_date  xsd:dattime ;
+	:description  xsd:string ;
+	:credit xsd:float ;
+	:debit  xsd:float ;
+	:vat_percentage  xsd:float ;
+	:currency xsd:string ;
+	:invoice_number xsd:string ;
+	:last_modification xsd:dattime ;
+}
+
+:CreditMemoData{
+	:amount xsd:string ;
+	:currency xsd:string ;
+	:annotation xsd:string ;
+	:last_modification xsd:string ;
+}
+
+:AccountData1{
+	:first_name  xsd:string ;
+	:last_name xsd:string ;
+	:street xsd:string ;
+	:zip xsd:int ;
+	:city xsd:string ;
+	:country xsd:string ;
+	:state xsd:string ;
+	:email xsd:string ;
+	:status xsd:string ;
+	:since xsd:datetime ;
+	:contact_rights xsd:date ; # a date (day) in the future
+}
+
+:AccountData2{
+	:chiffre xsd:string ;
+	:salutation xsd:string ;
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:street xsd:string ;
+	:zip xsd:int ;
+	:city xsd:string ;
+	:country xsd:string ;
+	:state xsd:string ;
+	:phone xsd:string ;
+	:email xsd:string ;
+	:sex xsd:string ;
+	:search_sex xsd:string ;
+	:birthday xsd:date ;
+	:status xsd:string ;
+	:since xsd:datetime ;
+	:company xsd:string ;
+	:alias xsd:string ;
+	:contact_rights xsd:date ; # a date (day) in the future
+	:dunning_block xsd:string ;
+	:cancelled xsd:string ;     
+}
+
+:TimeRelatedAccountData{
+	:name xsd:string ;
+	:value xsd:string ;
+	:created xsd:datetime ;
+	:valid_from xsd:datetime ;
+	:last_modification xsd:datetime ;
+}
+
+:ConsentConfirmation{
+	:consent_type xsd:string ;
+	:value xsd:string ;
+	:valid_from xsd:datetime ;
+	:created xsd:datetime ;
+}
+
+:ContractInformation{
+	:type xsd:string ;
+	:start_date xsd:datetime ;
+	:end_date xsd:datetime ?;
+	:unsubscribe_date xsd:datetime ?;
+	:auto_renewal_date xsd:datetime ?;
+	:status xsd:string ;
+	:withdrawn_date xsd:datetime ?;
+	:product_name xsd:string ;
+	:internet_address xsd:string ?;
+	:country xsd:string ?;
+	:language xsd:string ?;
+	:state xsd:string ?;
+	:timezone xsd:string ?;
+}
+
+:PaymentPlan{
+	:amount xsd:string ;
+	:currency xsd:string ;
+	:due xsd:string ;
+	:status xsd:string ;
+	:text xsd:string ;
+	:second_attempt xsd:string ;
+}
+
+:PurchaseAndBillingTechSupport{
+	:amount xsd:string ;
+	:currency xsd:string ;
+	:creation_date xsd:string ;
+	:payment_method xsd:string ;
+	:status xsd:string ;
+	:collected xsd:string ;
+	:comments_provider xsd:string ;
+}
+
+:PaymentProviderNotifications{
+	:amount xsd:string ;
+	:currency xsd:string ;
+	:creation_date xsd:string ;
+	:payment_method xsd:string ;
+	:status xsd:string ;
+	:collected xsd:string ;
+	:comments_provider xsd:string ;
+	:additional_tax_rate xsd:string ;
+	:country xsd:string ;
+	:state xsd:string ;
+	:zip_code xsd:string ;
+}
+
