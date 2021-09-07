@@ -24,11 +24,8 @@ base <http://example.org/>
 # 2 Financial
 :FinancialData{
 	:purchaseData @:PurchaseData ;
-	:purchase @:Purchase *;
-	:appleIOSAppStorePurchase @:AppleIOSAppStorePurchase *;
-	:customerRight @:CustomerRight *;
-	:userInformation @:UserInformation *;
-	:outstandingReceivables OutstandingReceivables *;
+	:userInformation @:UserInformation ;
+	:outstandingReceivables @:OutstandingReceivables *;
 	:vouchers @:Vouchers *;
 	:credit_memo_data @:CreditMemoData *;
 	:account_data_1 @:AccountData1 *;
