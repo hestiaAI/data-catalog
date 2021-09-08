@@ -216,3 +216,67 @@ base <http://example.org/>
 	:zip_code xsd:string ;
 }
 
+######################################
+:ContactDetails{
+	:contacts_statuses @:ContactStatus *;
+	:photo_shares @:PhotoShare *; 
+	:passed_contact @:PassedContact *;
+	:individual_relationships @:IndividualRelationship *;
+	:members_visited @:MemberVisited *;
+	:messages_meta_information @:MessageMetaInformation* ;                  
+}
+
+:ContactStatus{
+	:partners_chiffre xsd:string ;
+	:contact_status xsd:string ; # .e.g "incoming", "outgoing" or "rejected"
+	:creation_date xsd:datetime ;
+	:last_modification xsd:datetime ;
+}
+:PhotoShare{
+	:partners_chiffre xsd:string ;
+	:creation_date xsd:datetime ;
+}
+:PassedContact{
+	:partners_chiffre xsd:string ;
+	:creation_date xsd:datetime ;
+	:last_modification xsd:datetime ;
+}
+:IndividualRelationship{
+	:partners_chiffre xsd:string ;
+	:partners_alias xsd:string ;
+	:date_of_first_contact xsd:datetime ;
+	:time_of_marking_as_favorite xsd:datetime ;
+	:number_of_text_messages xsd:int ;
+	:number_of_smiles_or_compliment_messages xsd:int ;
+	:number_of_replies_to_smiles_or_compliment_messages xsd:int ;
+	:number_of_comment_messages xsd:int ;
+	:number_of_goodbye_messages xsd:int ;
+	:number_of_image_sharing_messages xsd:int ;
+	:number_of_welcome_messages xsd:int ;
+	:number_of_fun_question_messages xsd:int ;
+	:number_of_free_text_messages xsd:int ;
+	:number_of_free_text_messages_read xsd:int ;
+	:number_of_like_messages xsd:int ;
+	:number_of_archived_messages xsd:int ;
+	:note_about_the_contact xsd:string ;
+	:creation_date xsd:datetime ;
+}
+:MemberVisited{
+	:userId xsd:string ;
+	:chiffre xsd:string ;
+	:timestamp xsd:long ;
+}
+
+:MessageMetaInformation{
+	:sender_of_message xsd:string ;
+	:messageId xsd:long ;
+	:recipient_of_message xsd:string ;
+	:send_time xsd:datetime ;
+	:message_contains_photo_release xsd:boolean ;
+	:status_of_message xsd:string ; # e.g. "RECEIVED", "READ", "READ_BY_RECEIVER"
+	:message_type xsd:string ; # e.g. "REJECTION", "TEXT", "LIKE", "SMILE", "ICEBREAKER_REQUEST" 
+	:message_contains_free_text xsd:boolean ;
+}
+
+
+
