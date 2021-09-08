@@ -278,5 +278,340 @@ base <http://example.org/>
 	:message_contains_free_text xsd:boolean ;
 }
 
+######################################
+
+:PersonalityData{
+	:personality_traits @:PersonalityTraits *;
+	:personality_test_questions @:PersonalityTestQuestion *;
+}
+:PersonalityTraits{
+	:characteristics xsd:string ;
+	:relation xsd:string ;
+	:value xsd:int ;
+	:value_to_standard xsd:int ;
+}
+:PersonalityTestQuestion{
+	:question_from_the_questionnaire xsd:string ;
+	:question_text  xsd:string ;
+	:answer_from_the_questionnaire xsd:string ;
+	:answer_text xsd:string ;
+}
+
+######################################
+:FurtherData{
+	:sort_options @:SortOptions *;
+	:mail_notification_settings @:MailNotificationSettings ;
+	:social_network_IDs @:SocialNetworkID *;
+	:password xsd:string ; # OBFUSCATED
+	:double_opt_in_token @:DoubleOptInToken ;
+	:self_descriptions @:SelfDdescription *;
+	:used_voucher_codes @:UserVoucherCode *;
+	:allowlisted xsd:string ; #no data
+	:profile_verification_ticket xsd:datetime ;
+	:profile_elements_verification_ticket @:ProfileElementVerificationTicket ;
+	:authentication_information @:AuthenticationInformation ;
+	:about_me_questions_and_answers @:AboutMeQuestionAndAnswer *;
+	:profile_settings @:ProfileSetting *;
+	:acceptance_of_the_value_compensation xsd:datetime ; # no data, probable type.
+	:id_secure_process @:IDSecureProcess *;
+	:photo_information @:PhotoInformation *;
+	:photo_meta_information @:PhotoMetaInformation *;
+	:profile_element_complaints @:ProfileElementComplaints *;
+	:states_where_looking_for_partners @:StateWhereLookingForPartners *;
+	:search_criteria @:SearchCriteria *;
+	:cookie_information @:CookieInformation *;
+	:profile_content @:ProfileContent *;
+	:personal_data_and_search_settings @:PersonalDataAndSearchSettings *;
+	:languages xsd:string *;
+	:behaviour_in_relationships xsd:string *;
+	:various_user_information @:VariousUserInformation *;
+	:opt_in @:OptIn ;
+	:answers_to_questionnaire @:AnswersToQuestionnaire *;
+	:selected_lifestyle_topics @:SelectedLifestyleTopics *;
+	:email_addresses_without_ads @:EmailAddresseWithoutAds *;
+	:double_opt_in_history @:DoubleOptInHistory *;
+	:two_factor_authentifications @:TwoFactorAuthentification *;
+	:ads_traking @:AdTraking *;
+	:match_recipients @:MatchRecipient *;
+}
+
+:SortOptions{
+	:preference_option xsd:string ;
+	:value xsd:string ;
+	:last_modification xsd:datetime ;
+}
+:MailNotificationSettings{
+	:mail_on_new_image xsd:boolean ;
+	:mail_on_new_match xsd:boolean ;
+	:mail_on_new_visit xsd:boolean ;
+	:mail_on_new_message xsd:boolean ;
+	:mail_on_partner_offer xsd:boolean ;
+	:mail_on_new_newsletter xsd:boolean ;
+	:mail_on_icebreaker_request xsd:boolean ;
+	:mail_on_icebreaker_response xsd:boolean ;
+	:mail_on_new_friendship_click xsd:boolean ;
+	:mail_on_new_information_events xsd:boolean ;
+	:mail_on_new_information_offers xsd:boolean ;
+	:mail_on_new_information_guidance xsd:boolean ;
+	:mail_on_friendship_click_answered xsd:boolean ;
+	:mail_on_weekly_crm_weekly_newsletter xsd:boolean ;
+	:last_modification xsd:datetime ;
+}
+:SocialNetworkID{
+	:service xsd:string ;
+	:social_network_user_id xsd:string ;
+	:token xsd:string ;
+	:state xsd:string ;
+	:creation_date xsd:datetime ;
+	:last_modification_date xsd:datetime ;
+	:last_validation_date xsd:datetime ;
+}
+:DoubleOptInToken{
+	:email_address xsd:string ;
+	:double_opt_in_token xsd:string ;
+	:last_modification xsd:datetime ;
+}
+:SelfDdescription{
+	:question xsd:int ;
+	:answer xsd:string ;
+	:inspection_status xsd:int ;
+	:last_modification xsd:datetime ;
+	:last_approved_answer xsd:string ;
+}
+
+:UserVoucherCode{} #No data
+
+:ProfileElementVerificationTicket{
+	:profileelement xsd:string ;
+	:change_status xsd:string ;
+	:value_before_change xsd:string ;
+	:value_after_change xsd:string ;
+	:photo_number xsd:string ;
+}
+
+:AuthenticationInformation{
+	:connection_token xsd:string ; # OBFUSCATED
+	:last_modification xsd:datetime ;
+}
+
+:AboutMeQuestionAndAnswer{
+	:question xsd:int ;
+	:answer xsd:string ;
+	:inspection_status xsd:int ;
+	:last_modification xsd:datetime ;
+}
+
+:ProfileSetting{
+	:attribute_name  xsd:string ;
+	:attribute_value xsd:string ;
+	:last_modification xsd:long ;
+}
+
+:IDSecureProcess{	# No data, defaulting to probable types
+	:phone xsd:string ;
+	:status xsd:string ;
+	:pin_send xsd:string ;
+	:number_of_repetitions xsd:int ;
+	:number_of_phone_number_changes xsd:int ;
+	:time_of_last_attempt xsd:datetime ;
+}
+
+:PhotoInformation{
+	:photo_number xsd:int ;
+	:status xsd:int ;
+	:reason_for_disapproval xsd:int ;
+	:portrait_photo xsd:boolean ;
+	:photo_title xsd:string ;
+	:ordinal_number xsd:int ;
+	:status_of_photo_title xsd:int ;
+	:last_modification xsd:datetime ;
+	:analyzer_status xsd:string ; #e.g. "ACCEPTED", "REJECTED"
+	:analyzer_annotation xsd:string ; 
+	:suitable_as_profile_photo xsd:boolean ;
+	:sex xsd:int ;
+}
+
+:PhotoMetaInformation{
+	:photo_number  xsd:int ;
+	:width xsd:int ;
+	:height xsd:int ;
+	:checksum_1 xsd:string ;
+	:checksum_2 xsd:string ;
+	:checksum_3 xsd:string ;
+	:checksum_4 xsd:string ;
+	:creation_date xsd:datetime ;
+}
+
+:ProfileElementComplaints{
+	:creation_date xsd:datetime ;
+	:reason_for_complaint xsd:string ;
+	:description xsd:string ;
+}
+
+:StateWhereLookingForPartners{
+	:country xsd:string ;
+	:state xsd:string ;
+}
+
+:SearchCriteria{
+	:if_distance_search_is_used xsd:boolean ;
+	:country xsd:string ;
+	:zip xsd:int ;
+	:distance xsd:int ;
+	:creation_date xsd:datetime ;
+	:last_modification xsd:datetime ;
+	:desire_to_have_children xsd:string ;
+}
+
+:CookieInformation{
+	:cookiename xsd:string ;
+	:cookie_value xsd:string ;
+	:creation_date xsd:datetime ;
+}
+
+:ProfileContent{
+	:name xsd:string ;
+	:value xsd:boolean ;
+	:creation_date xsd:datetime ;
+	:last_modification xsd:long ;
+}
+
+:PersonalDataAndSearchSettings{
+	:version xsd:int ;
+	:day_of_registration xsd:date ; # probable
+	:birthday xsd:date ;
+	:height xsd:int ;
+	:sex xsd:int ;
+	:sex_search xsd:int ;
+	:show_visits xsd:int ;
+	:profile_visibility xsd:int ;
+	:search_criterion_minimum_age xsd:string ;
+	:search_criterion_maximum_age xsd:string ;
+	:search_criterion_minimum_height xsd:string ;
+	:search_criterion_maximum_height xsd:string ;
+	:income xsd:string ; # ?
+	:education xsd:int ;
+	:smoking xsd:int ;
+	:search_criterion_children xsd:int ;
+	:search_criterion_maximum_smoking xsd:int ;
+	:search_criterion_maximum_children xsd:int ;
+	:search_criterion_maximum_distance xsd:int ;
+	:marital_status xsd:int ;
+	:body_type xsd:int ; 
+	:search_criterion_children xsd:int ;
+	:children_total xsd:int ;
+	:children_living_in_the_household xsd:int ;
+	:occupation xsd:string ;
+	:free_text_instruments_that_you_play xsd:string ;
+	:free_text_animals xsd:string ;
+	:title xsd:string ;
+	:last_modification xsd:datetime ;
+	:free_text_music xsd:string ;
+	:free_text_sports xsd:string ;
+	:free_text_interests xsd:string ;
+	:time_of_test_completion xsd:datetime ;
+	:search_criterion_maximum_income xsd:int ;
+	:search_criterion_maximum_education xsd:int ;
+	:status_of_occupation xsd:int ;
+	:status_free_text_sports xsd:int ;
+	:status_free_text_interests xsd:int ;
+	:status_free_text_instrument xsd:int ;
+	:status_free_text_animal xsd:int ;
+	:status_free_text_music xsd:int ;
+	:search_criterion_smoker xsd:int ;
+	:profile_background_image xsd:string ;
+	:religion xsd:int ;
+	:wish_to_have_children xsd:int ;
+	:appearance xsd:int ;
+	:academic_degree xsd:int ;
+	:free_text_course_of_studies xsd:string ;
+	:status_free_text_course_of_studies xsd:int ;
+	:occupation_group xsd:string ;
+	:free_text_leisure xsd:string ;
+	:status_free_text_leisure xsd:int ;
+	:profile_completeness xsd:int ;
+}
+
+:VariousUserInformation{
+	:name xsd:string ;
+	:value xsd:string ;
+	:last_modification xsd:datetime ;
+}
+
+:OptIn{
+	:firstname_consent  xsd:datetime ;
+	:unblurred_pictures_consent  xsd:datetime ;
+	:place_of_residence_consent  xsd:datetime ;
+}
+
+:AnswersToQuestionnaire{
+	:question xsd:int ;		# LEISURE  = 129
+							# INTEREST = 132
+							# SPORTS   = 133
+							# ACTIVITY = 134
+							# MUSIC    = 135
+							# HOLIDAY  = 138
+	:answer xsd:int ;
+	:last_modification xsd:datetime ;
+}
+
+:SelectedLifestyleTopics{
+	:category xsd:string ;
+	:selected xsd:string ;
+	:last_modification xsd:datetime ;
+}
+
+:EmailAddresseWithoutAds{
+	:email xsd:string ;
+	:last_modification xsd:datetime ;
+}
+
+:DoubleOptInHistory{
+	:email_address xsd:string ;
+	:status xsd:string ;
+	:double_opt_in_date xsd:datetime ;
+}
+
+:TwoFactorAuthentification{
+	:user_ID xsd:string ;
+	:origin_type xsd:string ;
+	:origin_ID xsd:string ;
+	:status xsd:string ;
+	:verification_code xsd:string ;
+	:creation_time xsd:datetime ;
+	:modification_time xsd:datetime ;
+	:verification_attempt_count xsd:int ;
+	:verification_code_resend_count xsd:int ;
+	:blocked_until xsd:datetime ;				# no data, probable type
+	:code_resend_blocked_until xsd:datetime ;	# no data, probable type
+	:code_expiration_time xsd:datetime ;		# no data, probable type
+	:last_code_sendout xsd:datetime ;			# no data, probable type
+	:last_verification_attempt xsd:datetime ;	# no data, probable type
+	:user_agent xsd:string ;
+}
+
+:AdTraking{
+	:user_ID xsd:string ;					# no data, probable type
+	:ad_ID xsd:string ;						# no data, probable type
+	:creation_time xsd:datetime ;			# no data, probable type
+	:modification_time xsd:datetime ;		# no data, probable type
+	:last_occurrence_time xsd:datetime ;	# no data, probable type
+}
+
+:MatchRecipient{
+	:user_ID  xsd:string ;
+	:email_address xsd:string ;
+	:owner_url xsd:string ;
+	:brand xsd:string ;
+	:user_State xsd:string ;
+	:weekly_newsletter_opt_in xsd:boolean ;
+	:profile_visible xsd:boolean ;
+	:questionnaire_finished xsd:boolean ;
+	:registration_date xsd:datetime ;
+	:creation_time xsd:datetime ;
+	:last_modification xsd:datetime ;
+	:version xsd:int ;
+}
+
 
 
