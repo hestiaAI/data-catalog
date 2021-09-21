@@ -39,6 +39,7 @@ base <http://example.org/>
 }
 
 :YouTube{
+  :my_activity @:YoutubeActivity *;
   :history @:YouTubeHistory ;
   :subscriptions @:YouTubeSubscription *;
 }
@@ -75,5 +76,21 @@ base <http://example.org/>
 	:high xsd:string;
 	:medium xsd:string;
 }
+
+:YoutubeActivity{
+	:header xsd:string;
+	:title xsd:string;
+	:titleUrl xsd:string;
+	:subtitles @:Subtitle *;
+	:time xsd:datetime;
+	:products xsd:string *;
+
+}
+
+:Subtitle{
+	:name xsd:string;
+	:url xsd:string;
+}
+
 
 
