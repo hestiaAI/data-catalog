@@ -7,16 +7,15 @@ base <http://example.org/>
   :displayName xsd:string;
   :emails xsd:string *;
   :gender xsd:string ;
+  :adds @:Add *;
+  :google_analytics @:GoogleAnalytics *;
+  :youtube @:YouTube ;
 }
 
 :ProfileName{
   :givenName xsd:string;
   :familyName xsd:string;
   :formattedName xsd:string;
-}
-
-:Adds{
-  :add @:Add * ;
 }
 
 :Add{
@@ -38,4 +37,43 @@ base <http://example.org/>
   :time xsd:dateTime ;
   :products xsd:string * ;
 }
+
+:YouTube{
+  :history @:YouTubeHistory ;
+  :subscriptions @:YouTubeSubscription *;
+}
+
+:YouTubeSubscription{
+	:contentDetails @:ContentDetails ;
+	:etag xsd:string;
+	:id  xsd:string;
+	:kind  xsd:string;
+	:snippet @:Snippet ;  
+	
+}
+
+:ContentDetails{
+	:activityType xsd:string;
+    :newItemCount xsd:int ;
+    :totalItemCount xsd:int ;
+}
+
+:Snippet{
+	:channelId xsd:string;
+	:description xsd:string;
+	:publishedAt xsd:datetime;
+	:resourceId @:ResourceId;
+	:thumbnails @:Thumbnail *;
+	:title xsd:string;
+}
+:ResourceId{
+	:channelId xsd:string;
+	:kind xsd:string;
+}
+:Thumbnail{
+	:default xsd:string;
+	:high xsd:string;
+	:medium xsd:string;
+}
+
 
