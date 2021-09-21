@@ -40,7 +40,10 @@ base <http://example.org/>
 
 :YouTube{
   :my_activity @:YoutubeActivity *;
-  :history @:YouTubeHistory ;
+#  :history @:YouTubeHistory ; 
+# This is present as a subdirectory with two HTML files
+# when asking for html version. Else, a JSON file
+# combines watch and search history
   :subscriptions @:YouTubeSubscription *;
 }
 
