@@ -10,6 +10,7 @@ base <http://example.org/>
   :adds @:Add *;
   :google_analytics @:GoogleAnalytics *;
   :youtube @:YouTube ;
+  :chrom @:Chrome ;
 }
 
 :ProfileName{
@@ -95,5 +96,86 @@ base <http://example.org/>
 	:url xsd:string;
 }
 
-
-
+:Chrome{
+	:autofill @:Autofill_Profile *;	# 
+	:bookmarks @:Bookmarks ;
+	:browserHistory @:BrowserHistory * ;
+	:dictionary @:Dictionary ;
+	:extensions @:Extensions ;
+	:searchEngines @:SearchEngine * ;
+	:syncSettings @:SyncSettings ;
+}
+:Autofill_Profile{
+    #often with value "VERIFICATION_STATUS_UNSPECIFIED",
+	:address_home_state_status xsd:string ;
+	:address_home_country_status xsd:string ;
+	:address_home_country xsd:string ;
+	:name_honorific_status xsd:string * ;
+	:name_first_status xsd:string * ;
+	:address_home_thoroughfare_number xsd:string ;
+	:address_home_zip_status xsd:string ;
+	:name_middle_status xsd:string * ;
+	:address_home_zip xsd:int * ;
+	:address_home_street_address xsd:string ;
+	:address_home_dependent_thoroughfare_name_status xsd:string ;
+	:name_last_first xsd:string * ;
+	:address_home_language_code xsd:string ;
+	:address_home_city_status xsd:string ;
+	:name_last_conjunction xsd:string * ;
+	:name_last_first_status xsd:string * ;
+	:name_middle xsd:string * ;
+	:company_name xsd:string ;
+	:name_last_status xsd:string * ;
+	:guid xsd:string ;
+	:address_home_dependent_thoroughfare_name xsd:string ;
+	:address_home_dependent_locality_status xsd:string ;
+	:address_home_city xsd:string ;
+	:name_full xsd:string * ;
+	:name_full_status xsd:string * ;
+	:origin xsd:string ;
+	:name_last_second_status xsd:string * ;
+	:address_home_subpremise_name_status xsd:string ;
+	:name_last xsd:string * ;
+	:use_count xsd:int ;
+	:address_home_thoroughfare_name xsd:string ;
+	:address_home_thoroughfare_number_status xsd:string ;
+	:address_home_premise_name_status xsd:string ;
+	:name_last_second xsd:string * ;
+	:address_home_premise_name xsd:string ;
+	:address_home_line1 xsd:string ;
+	:address_home_line2 xsd:string ;
+	:address_home_street_address_status xsd:string ;
+	:name_first xsd:string * ;
+	:address_home_sorting_code xsd:string ;
+	:name_honorific xsd:string * ;
+	:name_last_conjunction_status xsd:string * ;
+	:address_home_state xsd:string ;
+	:address_home_dependent_locality xsd:string ;
+	:address_home_sorting_code_status xsd:string ;
+	:is_client_validity_states_updated xsd:boolean ;
+	:address_home_subpremise_name xsd:string ;
+	:email_address xsd:string * ;
+	:validity_state_bitfield xsd:int ;
+	:address_home_thoroughfare_name_status xsd:string ;
+	:phone_home_whole_number xsd:string * ;
+	:use_date xsd:int ;                                     
+}
+:Bookmarks{}
+:BrowserHistory{
+	:page_transition xsd:string ; # e.g. "LINK" or "GENERATED" or "RELOAD"
+	:title xsd:string ;
+	:url xsd:string ;
+	:client_id xsd:string ;
+	:time_usec xsd:int ;
+}
+:Dictionary{}
+:Extensions{
+	:extensions @:Extension * ;
+	:extension_settings @:ExtensionSetting * ;
+}
+:SearchEngine{}
+:SyncSettings{
+	:apps @:App *;
+	:app_setting @:AppSetting *;
+	:preference @:AppPreference *;
+}
