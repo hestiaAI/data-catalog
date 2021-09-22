@@ -3,14 +3,33 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :Profile{
-  :name @:ProfileName;
-  :displayName xsd:string;
-  :emails xsd:string *;
-  :gender xsd:string ;
-  :adds @:Add *;
-  :google_analytics @:GoogleAnalytics *;
-  :youtube @:YouTube ;
-  :chrom @:Chrome ;
+	:name @:ProfileName;
+	:displayName xsd:string;
+	:emails xsd:string *;
+	:gender xsd:string ;
+	:activity @:Activity ;
+}
+
+:Activity{         # My Activity subdirectory
+	:adds @:Add *;							# file 'My Activity/Ads/MyActivity.json'
+	:android @:Android ; 					# file 'My Activity/Android/MyActivity.json'
+	:book @:Books ; 						# file 'My Activity/Books/MyActivity.json'
+	:chrome @:Chrome ;  					# file 'My Activity/Chrome/MyActivity.json'          
+	:discover @:Discover ; 					# file 'My Activity/Discover/MyActivity.json'
+	:drive @:Drive ; 						# file 'My Activity/Drive/MyActivity.json'
+	:gmail @:Gmail ; 						# file 'My Activity/Gmail/MyActivity.json'
+	:google_analytics @:GoogleAnalytics *;	# file 'My Activity/Google Analytics/MyActivity.json'
+	:google_apps @:GoogleApps ; 			# file 'My Activity/Google Apps/MyActivity.json'
+	:google_lens @:GoogleLens ; 			# file 'My Activity/Google Lens/MyActivity.json'
+	:google_news @:GoogleNews ; 			# file 'My Activity/Google News/MyActivity.json'
+	:google_play_store @:GooglePlayStore ; 	# file 'My Activity/Google Play Store/MyActivity.json'
+	:google_translate @:GoogleTranslate ; 	# file 'My Activity/Google Translate/MyActivity.json'
+	:help @:Help ;  						# file 'My Activity/Help/MyActivity.json'
+	:image_search @:ImageSearch ;  			# file 'My Activity/Image Search/MyActivity.json'
+	:maps @:Maps ;  						# file 'My Activity/Maps/MyActivity.json'
+	:search @:Search ;  					# file 'My Activity/Search/MyActivity.json'
+	:takeout @:Takeout ;  					# file 'My Activity/Takeout/MyActivity.json'
+	:youtube @:YouTube ; 					# file 'My Activity/YouTube/MyActivity.json'
 }
 
 :ProfileName{
