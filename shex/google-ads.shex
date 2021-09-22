@@ -11,25 +11,25 @@ base <http://example.org/>
 }
 
 :Activity{         # My Activity subdirectory
-	:adds @:Add *;							# file 'My Activity/Ads/MyActivity.json'
-	:android @:Android ; 					# file 'My Activity/Android/MyActivity.json'
-	:book @:Books ; 						# file 'My Activity/Books/MyActivity.json'
-	:chrome @:Chrome ;  					# file 'My Activity/Chrome/MyActivity.json'          
-	:discover @:Discover ; 					# file 'My Activity/Discover/MyActivity.json'
-	:drive @:Drive ; 						# file 'My Activity/Drive/MyActivity.json'
-	:gmail @:Gmail ; 						# file 'My Activity/Gmail/MyActivity.json'
-	:google_analytics @:GoogleAnalytics *;	# file 'My Activity/Google Analytics/MyActivity.json'
-	:google_apps @:GoogleApps ; 			# file 'My Activity/Google Apps/MyActivity.json'
-	:google_lens @:GoogleLens ; 			# file 'My Activity/Google Lens/MyActivity.json'
-	:google_news @:GoogleNews ; 			# file 'My Activity/Google News/MyActivity.json'
-	:google_play_store @:GooglePlayStore ; 	# file 'My Activity/Google Play Store/MyActivity.json'
-	:google_translate @:GoogleTranslate ; 	# file 'My Activity/Google Translate/MyActivity.json'
-	:help @:Help ;  						# file 'My Activity/Help/MyActivity.json'
-	:image_search @:ImageSearch ;  			# file 'My Activity/Image Search/MyActivity.json'
-	:maps @:Maps ;  						# file 'My Activity/Maps/MyActivity.json'
-	:search @:Search ;  					# file 'My Activity/Search/MyActivity.json'
-	:takeout @:Takeout ;  					# file 'My Activity/Takeout/MyActivity.json'
-	:youtube @:YouTube ; 					# file 'My Activity/YouTube/MyActivity.json'
+	:adds @:AddActivity ;							# file 'My Activity/Ads/MyActivity.json'
+	:android @:AndroidActivity ; 					# file 'My Activity/Android/MyActivity.json'
+	:book @:BooksActivity ; 						# file 'My Activity/Books/MyActivity.json'
+	:chrome @:ChromeActivity ;  					# file 'My Activity/Chrome/MyActivity.json'          
+	:discover @:DiscoverActivity *; 				# file 'My Activity/Discover/MyActivity.json'
+	:drive @:DriveActivity *; 						# file 'My Activity/Drive/MyActivity.json'
+	:gmail @:GmailActivity ; 						# file 'My Activity/Gmail/MyActivity.json'
+	:google_analytics @:GoogleAnalyticsActivity ;	# file 'My Activity/Google Analytics/MyActivity.json'
+	:google_apps @:GoogleAppsActivity ; 			# file 'My Activity/Google Apps/MyActivity.json'
+	:google_lens @:GoogleLensActivity ; 			# file 'My Activity/Google Lens/MyActivity.json'
+	:google_news @:GoogleNewsActivity ; 			# file 'My Activity/Google News/MyActivity.json'
+	:google_play_store @:GooglePlayStoreActivity ; 	# file 'My Activity/Google Play Store/MyActivity.json'
+	:google_translate @:GoogleTranslateActivity ; 	# file 'My Activity/Google Translate/MyActivity.json'
+	:help @:HelpActivity ;  						# file 'My Activity/Help/MyActivity.json'
+	:image_search @:ImageSearchActivity ;  			# file 'My Activity/Image Search/MyActivity.json'
+	:maps @:MapsActivity ;  						# file 'My Activity/Maps/MyActivity.json'
+	:search @:SearchActivity ;  					# file 'My Activity/Search/MyActivity.json'
+	:takeout @:TakeoutActivity ;  					# file 'My Activity/Takeout/MyActivity.json'
+	:youtube @:YouTubeActivity ; 					# file 'My Activity/YouTube/MyActivity.json'
 }
 
 :ProfileName{
@@ -38,19 +38,19 @@ base <http://example.org/>
   :formattedName xsd:string;
 }
 
-:Add{
+:Add{ # file 'My Activity/Ads/MyActivity.json'
   :title xsd:string ;
   :titleUrl xsd:string ;
   :time xsd:dateTime ;
   :products xsd:string * ;
-  :details @:AdDetails *;
+  :details @:AddDetails *;
 }
 
-:AdDetails{
+:AddDetails{
   :name  xsd:string * ;
 }
 
-:GoogleAnalytics{
+:GoogleAnalytics{	# file 'My Activity/Google Analytics/MyActivity.json'
   :header xsd:string ;
   :title xsd:string ;
   :titleUrl xsd:string ;
@@ -115,7 +115,7 @@ base <http://example.org/>
 	:url xsd:string;
 }
 
-:Chrome{
+:Chrome{  					# file 'My Activity/Chrome/MyActivity.json'          
 	:autofill @:Autofill_Profile *;	# 
 	:bookmarks @:Bookmarks ;
 	:browserHistory @:BrowserHistory * ;
@@ -198,3 +198,82 @@ base <http://example.org/>
 	:app_setting @:AppSetting *;
 	:preference @:AppPreference *;
 }
+
+#------------------------
+:ActivityEvent{
+	:header xsd:string ;
+	:title xsd:string ;
+	:titleUrl xsd:string ;
+	:time xsd:datetime ;
+	:products xsd:string *;
+}
+:AddActivity {
+	:add @:Add *;
+}
+:AndroidActivity{					# file 'My Activity/Android/MyActivity.json'
+	:activity_events @:ActivityEvent *;
+}
+:BooksActivity{						# file 'My Activity/Books/MyActivity.json'
+	:activity_events @:ActivityEvent *;
+}
+:DiscoverActivity{ 					# file 'My Activity/Discover/MyActivity.json'
+	:header xsd:string ;
+	:title  xsd:string ; # e.g.: "8 cards in your feed", "9 cards in your feed" etc.
+	:subtitles @:DiscoverActivitySubtitle *;
+	:time xsd:datetime ;
+	:products xsd:string *; # e.g.: ["Discover"]
+}
+:DiscoverActivitySubtitle{
+	:name xsd:string ;
+}
+:DriveActivity{						# file 'My Activity/Drive/MyActivity.json'
+	:header xsd:string ;
+	:title xsd:string ;
+	:subtitles @:DriveActivitySubtitle *;
+	:time xsd:datetime ;
+	:products xsd:string *; 
+	:details @:DriveActivityDetail *; 
+}
+:DriveActivitySubtitle{
+	:name xsd:string ;
+}
+:DriveActivityDetail{
+	:name xsd:string ;
+}
+
+:GmailActivity{ 						# file 'My Activity/Gmail/MyActivity.json'
+	:activity_events @:ActivityEvent *;
+}
+
+:GoogleAnalyticsActivity{ 				# file 'My Activity/Google Analytics/MyActivity.json'
+	:activity_events @:ActivityEvent *;
+}
+
+:GoogleAppsActivity{ 			# file 'My Activity/Google Apps/MyActivity.json'
+  	:activity_events @:ActivityEvent *;
+}
+:GoogleLensActivity{ 			# file 'My Activity/Google Lens/MyActivity.json'
+  	:activity_events @:ActivityEvent *;
+}
+:GoogleNewsActivity{ 			# file 'My Activity/Google News/MyActivity.json'
+  	:activity_events @:ActivityEvent *;
+}
+:GooglePlayStoreActivity{ 	# file 'My Activity/Google Play Store/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:GoogleTranslateActivity{ 	# file 'My Activity/Google Translate/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:HelpActivity{  					# file 'My Activity/Help/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:ImageSearchActivity{  			# file 'My Activity/Image Search/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:MapsActivity{  						# file 'My Activity/Maps/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:SearchActivity{  					# file 'My Activity/Search/MyActivity.json'
+    :activity_events @:ActivityEvent *;
+}
+:TakeoutActivity{}  					# file 'My Activity/Takeout/MyActivity.json'
