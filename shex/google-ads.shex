@@ -8,6 +8,7 @@ base <http://example.org/>
 	:emails xsd:string *;
 	:gender xsd:string ;
 	:activity @:Activity ;
+	:youtube @:YouTube ;
 }
 
 :Activity{         # My Activity subdirectory
@@ -28,7 +29,7 @@ base <http://example.org/>
 	:image_search @:ImageSearchActivity ;  			# file 'My Activity/Image Search/MyActivity.json'
 	:maps @:MapsActivity ;  						# file 'My Activity/Maps/MyActivity.json'
 	:search @:SearchActivity ;  					# file 'My Activity/Search/MyActivity.json'
-	:takeout @:TakeoutActivity ;  					# file 'My Activity/Takeout/MyActivity.json'
+	:takeout @:TakeoutActivity * ;  					# file 'My Activity/Takeout/MyActivity.json'
 	:youtube @:YouTubeActivity ; 					# file 'My Activity/YouTube/MyActivity.json'
 }
 
@@ -201,6 +202,7 @@ base <http://example.org/>
 
 #------------------------
 :ActivityEvent{
+    # Similar to DriveActivity and TakeOutActivity, without the details
 	:header xsd:string ;
 	:title xsd:string ;
 	:titleUrl xsd:string ;
@@ -276,4 +278,18 @@ base <http://example.org/>
 :SearchActivity{  					# file 'My Activity/Search/MyActivity.json'
     :activity_events @:ActivityEvent *;
 }
-:TakeoutActivity{}  					# file 'My Activity/Takeout/MyActivity.json'
+:TakeoutActivity{  					# file 'My Activity/Takeout/MyActivity.json'
+  # Similar to DriveActivity?
+	:header xsd:string ;
+	:title xsd:string ;
+	:subtitles @:TakeoutActivitySubtitle *;
+	:time xsd:datetime ;
+	:products xsd:string *; 
+	:details @:TakeoutActivityDetail *; 
+}
+:TakeoutActivitySubtitle{
+	:name xsd:string ;
+}
+:TakeoutActivityDetail{
+	:name xsd:string ;
+}
