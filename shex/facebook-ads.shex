@@ -14,6 +14,19 @@ base <http://example.org/>
 	:your_apps @:YourApp *;
 }
 
+
+# Found in apps_and_websites_off_of_facebook/your_off-facebook_activity.json
+:OffFacebookActivity{
+	:name xsd:string ; # e.g. "TikTok", "letemps.ch", ...
+	:off_facebook_events @:OffFacebookEvent * ;
+}
+:OffFacebookEvent{
+	:id xsd:int ;
+	:type xsd:string ;
+	:timestamp xsd:int ;
+
+}
+
 # Found in apps_and_websites_off_of_facebook/apps_and_websites.json
 :AppAndWebsite{
       :name xsd:string ;
@@ -254,14 +267,3 @@ base <http://example.org/>
   :timestamp xsd:long ;
 }
 
-# apps_and_websites_off_of_facebook/your_off-facebook_activity.json
-:OffFacebookActivity{
-	:name xsd:string ; # e.g. "TikTok", "letemps.ch", ...
-	:off_facebook_events @:OffFacebookEvent * ;
-}
-:OffFacebookEvent{
-	:id xsd:int ;
-	:type xsd:string ;
-	:timestamp xsd:int ;
-
-}
