@@ -3,12 +3,47 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :User{
-  :profile_information @:Profile_v2 ;
-  :profile_updates @:Profile_updates_v2 * ;
-  :advertisers @:Advertisers ;
-  :advertisers_interactions @:Advertisers_interactions ;
+	:profile_information @:Profile_v2 ;
+	:profile_updates @:Profile_updates_v2 * ;
+	:advertisers @:Advertisers ;
+	:advertisers_interactions @:Advertisers_interactions ;
+	:topics xsd:string *; # Found in file your_topics/your_topics.json
+	:off_facebook_activity @:OffFacebookActivity *;
+	:apps_and_websites @:AppAndWebsite *;
+	:posts_from_apps_and_websites @:PostFromAppsAndWebsites *;
+	:your_apps @:YourApp *;
 }
 
+# Found in apps_and_websites_off_of_facebook/apps_and_websites.json
+:AppAndWebsite{
+      :name xsd:string ;
+      :added_timestamp xsd:int ;
+      :user_app_scoped_id xsd:int ;
+      :category xsd:string ;
+      :removed_timestamp xsd:int ;
+}
+
+# Found in apps_and_websites_off_of_facebook/posts_from_apps_and_websites.json
+:PostFromAppsAndWebsites{
+	:timestamp xsd:int ;
+	:attachments @:PostFromAppsAndWebsitesAttachement *;
+	:title xsd:string ;
+}
+:PostFromAppsAndWebsitesAttachement{
+	:data @:PostFromAppsAndWebsitesAttachementData *;
+}
+:PostFromAppsAndWebsitesAttachementData{
+	:name xsd:string ;
+	:url  xsd:string ;
+}
+
+# Found in apps_and_websites_off_of_facebook/your_apps.json
+:YourApp{
+      :name xsd:string ;
+      :added_timestamp xsd:int ;
+}
+
+#============================
 :Profile_updates_v2{
   :timestamp xsd:long ;
   :attachments @:Attachment * ;
@@ -204,6 +239,7 @@ base <http://example.org/>
   :timestamp xsd:long ;
 }
 
+# Found in ads_information/advertisers_who_uploaded_a_contact_list_with_your_information.json
 :Advertisers{
   :custom_audiences_v2 xsd:string *;
 }
@@ -218,3 +254,14 @@ base <http://example.org/>
   :timestamp xsd:long ;
 }
 
+# apps_and_websites_off_of_facebook/your_off-facebook_activity.json
+:OffFacebookActivity{
+	:name xsd:string ; # e.g. "TikTok", "letemps.ch", ...
+	:off_facebook_events @:OffFacebookEvent * ;
+}
+:OffFacebookEvent{
+	:id xsd:int ;
+	:type xsd:string ;
+	:timestamp xsd:int ;
+
+}
