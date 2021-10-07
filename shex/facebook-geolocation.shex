@@ -1,0 +1,22 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data to be found in
+# "location/location_history.json"
+
+
+:LocationHistory{
+	:location_history @:LocationHistoryPoint * ;
+}
+
+:LocationHistoryPoint{
+	:name xsd:string ; # e.g. "Paris" or "Berlin"
+	:coordinate @:Coordinate ;
+	:creation_timestamp xsd:int; # e.g.: 1592374815
+}
+
+:Coordinate{
+	:latitude xsd:int; 
+	:longitude xsd:int; 
+}
