@@ -2,6 +2,11 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
+# Data to be found in monthly files in
+# "Semantic Location History/YYYY/YYYY_MONTH.json"
+# For instance:
+# "Semantic Location History/2020/2020_MAY.json"
+
 :UserGeolocalisation{
 	:timeline_objects @:TimelineObject *;
 }
