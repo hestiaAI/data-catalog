@@ -7,7 +7,8 @@ base <http://example.org/>
 }
 
 :TimelineObject{
-	:activity_segment @:ActivitySegment ;
+	:activity_segment @:ActivitySegment ? ;
+	:place_visit @:PlaceVisit ? ;
 }
 
 :ActivitySegment{
@@ -18,12 +19,16 @@ base <http://example.org/>
 	:activityType xsd:string ; 	# most probable of the "activities"
 	:confidence xsd:string ; # e.g. "HIGH", "MEDIUM", "LOW"
 	:activities @:Activity * ;
+	:waypoint_path @:WaypointPath ;
+	:simplified_raw_path @:SimplifiedRawPath ;
+	:parking_event @:ParkingEvent ? ;
 }
 
 :Location{
 	:latitudeE7 xsd:int; 	# e.g. 232546424
 	:longitudeE7 xsd:int; 	# e.g. -232546424
-	:source_info @:SourceInfo ;
+	:source_info @:SourceInfo ? ;
+	:accuracy_metres xsd:int ? ;
 }
 
 :SourceInfo{
@@ -56,3 +61,49 @@ base <http://example.org/>
 	:probability xsd:float ;  # percentage, e.g. 87.3829834
 }
 
+:WaypointPath{
+	:waypoints @:Waypoint * ;
+}
+          
+:Waypoint{
+	:latE7 xsd:int ;
+	:lngE7 xsd:int ;
+}          
+  
+:SimplifiedRawPath{
+	:points @:SimplifiedRawPathPoint * ;
+}
+
+:SimplifiedRawPathPoint{
+	:latE7 xsd:int ;
+	:lngE7 xsd:int ;
+	:timestampMs xsd:int ;
+	:accuracyMeters xsd:int ;
+}        
+   
+:PlaceVisit{
+	:location @:PlaceVisitLocation ;
+	:duration @:Duration ;
+	:placeConfidence xsd:string ; # e.g. "HIGH_CONFIDENCE", "MEDIUM_CONFIDENCE", "LOW_CONFIDENCE"
+	:centerLatE7 xsd:int ;
+	:centerLngE7 xsd:int ;
+	:visitConfidence xsd:int ; # percentage, in integer apparently (?)
+	:otherCandidateLocations @:PlaceVisitLocation * ;
+	:editConfirmationStatus xsd:string ; # e.g. "NOT_CONFIRMED"
+	:simplified_raw_path @:SimplifiedRawPath ? ;
+}
+
+:PlaceVisitLocation{
+	:latitudeE7 xsd:int ;
+	:longitudeE7 xsd:int ;
+	:placeId xsd:string ;  # random ID string, e.g. "DoPWX-8dwfdDpCrOspw9x3gEm6H",
+	:address xsd:string ? ;  # street number, street name, city, postcode and country
+	:semanticType xsd:string ;  # e.g.: "TYPE_HOME", "TYPE_ALIASED_LOCATION", "TYPE_SEARCHED_ADDRESS"
+	:sourceInfo @:SourceInfo ? ;
+	:locationConfidence xsd:float # percentage 
+}
+
+:ParkingEvent{
+	:timestampMs xsd:int ;
+	:location @:Location ;
+}
