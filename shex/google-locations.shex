@@ -1,0 +1,58 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserGeolocalisation{
+	:timeline_objects @:TimelineObject *;
+}
+
+:TimelineObject{
+	:activity_segment @:ActivitySegment ;
+}
+
+:ActivitySegment{
+	:start_location @:Location ;
+	:end_location @:Location ;
+	:duration @:Duration ;
+	:distance xsd:int;	# e.g. 2136 (probably metres
+	:activityType xsd:string ; 	# most probable of the "activities"
+	:confidence xsd:string ; # e.g. "HIGH", "MEDIUM", "LOW"
+	:activities @:Activity * ;
+}
+
+:Location{
+	:latitudeE7 xsd:int; 	# e.g. 232546424
+	:longitudeE7 xsd:int; 	# e.g. -232546424
+	:source_info @:SourceInfo ;
+}
+
+:SourceInfo{
+	:deviceTag xsd:int; 	# e.g. -232546424
+}
+
+:Duration{
+	:startTimestampMs xsd:int;	# e.g. 1588452953672
+	:endTimestampMs xsd:int;
+}
+
+:Activity{
+	:activityType xsd:string ;
+		# e.g.:
+        # "activityType" : "CYCLING",
+        # "activityType" : "FLYING",
+        # "activityType" : "IN_BUS",
+        # "activityType" : "IN_FERRY",
+        # "activityType" : "IN_PASSENGER_VEHICLE",
+        # "activityType" : "IN_SUBWAY",
+        # "activityType" : "IN_TRAIN",
+        # "activityType" : "IN_TRAM",
+        # "activityType" : "IN_VEHICLE",
+        # "activityType" : "MOTORCYCLING",
+        # "activityType" : "RUNNING",
+        # "activityType" : "SAILING",
+        # "activityType" : "SKIING",
+        # "activityType" : "STILL",
+        # "activityType" : "WALKING",        
+	:probability xsd:float ;  # percentage, e.g. 87.3829834
+}
+
