@@ -1,0 +1,202 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data found in the "Google Takeout" in the directory
+#           My Activity/Search/MyActivity.json
+
+:UserProfile{
+	:search_events @:ChromeActivity * ;
+	:autofill @:Autofill * ;
+	:bookmarks @:Bookmarks * ;
+	:browser_history @:BrowserHistory ;
+	:dictionary @:Dictionary * ;
+	:extensions @:Extensions * ;
+	:search_engines @:SearchEngine * ;
+	:sync_settings @:SyncSettings * ;
+}
+
+# Data available in file
+#       My Activity/Chrome
+#       Chrome/Autofill.json
+#       Chrome/Bookmarks.html
+#       Chrome/BrowserHistory.json
+#       Chrome/Dictionary.csv
+#       Chrome/Extensions.json
+#       Chrome/SearchEngines.json
+#       Chrome/SyncSettings.json
+
+:ChromeActivity{
+	:header xsd:string ;	# Always "Chrome" (in quotes)
+	:title xsd:string ;		# Title of the page, WITH PREFIX:
+           					# Known prefixes:
+           					# 		"Visited"
+           					# e.g. "Visited plouf"
+	:titleUrl xsd:string ;	# URL of the search. Can be replayed by following the URL.
+	:time  xsd:timestamp ;	
+	:products xsd:string * ;	# always "["Chrome]"
+}
+
+#       Chrome/Autofill.json
+:Autofill{
+	:autofill_profiles @:AutofillProfile * ;
+}
+:AutofillProfile{
+  	# Many fields will be autofilled with "VERIFICATION_STATUS_UNSPECIFIED"
+	:address_home_state_status xsd:string ; 
+	:address_home_country_status xsd:string ; 
+	:address_home_country xsd:string ; 
+	:name_honorific_status xsd:string *; 
+	:name_first_status xsd:string *;
+	:address_home_thoroughfare_number xsd:string ;
+	:address_home_zip_status xsd:string ;
+	:name_middle_status xsd:string *;
+	:address_home_zip xsd:int;
+	:address_home_street_address xsd:string ;
+	:address_home_dependent_thoroughfare_name_status xsd:string ;
+	:name_last_first xsd:string *;
+	:address_home_language_code xsd:string ;
+	:address_home_city_status xsd:string ;
+	:name_last_conjunction xsd:string *;
+	:name_last_first_status xsd:string *;
+	:name_middle xsd:string *;
+	:company_name xsd:string ;
+	:name_last_status xsd:string *;
+	:guid xsd:string ;
+	:address_home_dependent_thoroughfare_name xsd:string ;
+	:address_home_dependent_locality_status xsd:string ;
+	:address_home_city xsd:string ;
+	:name_full xsd:string *;
+	:name_full_status xsd:string *;
+	:origin xsd:string ;
+	:name_last_second_status xsd:string *;
+	:address_home_subpremise_name_status xsd:string ;
+	:name_last xsd:string *;
+	:use_count xsd:int ;
+	:address_home_thoroughfare_name xsd:string ;
+	:address_home_thoroughfare_number_status xsd:string ;
+	:address_home_premise_name_status xsd:string ;
+	:name_last_second xsd:string *;
+	:address_home_premise_name xsd:string ;
+	:address_home_line1 xsd:string ;
+	:address_home_line2 xsd:string ;
+	:address_home_street_address_status xsd:string ;
+	:name_first xsd:string *;
+	:address_home_sorting_code xsd:string ;
+	:name_honorific xsd:string *;
+	:name_last_conjunction_status xsd:string *;
+	:address_home_state xsd:string ;
+	:address_home_dependent_locality xsd:string ;
+	:address_home_sorting_code_status xsd:string ;
+	:is_client_validity_states_updated xsd:string ;
+	:address_home_subpremise_name xsd:string ;
+	:email_address xsd:string *;
+	:validity_state_bitfield xsd:int ;
+	:address_home_thoroughfare_name_status xsd:string ;
+	:phone_home_whole_number xsd:string *;
+	:use_date xsd:int ; # a UNIX timestamp
+}
+
+#       Chrome/Bookmarks.html
+:Bookmarks{
+	:bookmarks @:Bookmark *;
+}
+:Bookmark{
+	:href xsd:string ;	# bookmark URL
+	:add_date xsd:int ;	# A UNIX timestamp
+	:icon_uri xsd:string ;	
+	:title xsd:string ;	
+}
+
+#       Chrome/BrowserHistory.json
+:BrowserHistory{
+	:history @:VisitedPage *;
+}
+:VisitedPage
+{
+	:page_transition xsd:string ;	# e.g. "LINK",
+	:title xsd:string ;	
+	:url xsd:string ;	
+	:client_id xsd:string ;
+	:time_usec xsd:int  ;	# UNIX timestamp
+}
+
+
+#       Chrome/Dictionary.csv
+:Dictionary{
+
+}
+#       Chrome/Extensions.json
+:Extensions{
+	:extensions @:Extension *;
+	:extension_settings @:ExtensionSetting *;
+}
+:Extension{
+	:incognito_enabled xsd:boolean ;
+	:remote_install xsd:boolean ;
+	:disable_reasons xsd:int ;
+	:update_url xsd:string ;
+	:name xsd:string ;
+	:id xsd:string ; # 32-letter ID. e.g. "jahlohdiphaexeiceequiereithaeshi"
+	:version xsd:string ; # e.g. "2.94" 
+	:enabled xsd:boolean ;
+
+}
+:ExtensionSetting{
+	:extension_id xsd:string ; # 32-letter ID. e.g. "jahlohdiphaexeiceequiereithaeshi"
+	:value xsd:boolean ;
+	:key xsd:string ;
+}
+
+#       Chrome/SearchEngines.json
+:SearchEngine{
+	:suggestions_url xsd:string ;
+	:favicon_url xsd:string ;
+	:safe_for_autoreplace xsd:boolean ;
+	:date_created xsd:int ; # UNIX timestamp
+	:url xsd:string ;
+	:autogenerate_keyword xsd:boolean ;
+	:instant_url xsd:string ;
+	:originating_url xsd:string ;
+	:deprecated_show_in_default_list xsd:boolean ;
+	:sync_guid xsd:string ;
+	:short_name xsd:string ;
+	:keyword xsd:string ;
+	:input_encodings xsd:string ;
+	:prepopulate_id xsd:string ;
+	:last_modified xsd:int ; # UNIX timestamp
+}
+
+#       Chrome/SyncSettings.json
+:SyncSettings{
+	:apps @:SyncSettingsApp * ;
+	:app_settings @:ExtensionSetting *;
+	:preferences @:SyncSettingsPreference *;
+	:themes @:SyncSettingsTheme *;
+}
+:SyncSettingsApp{
+	:app_launch_ordinal xsd:string ;
+	:extension @:SyncSettingsAppExtension ;
+	:page_ordinal xsd:string ;
+}
+:ExtensionSetting{
+	:extension_id xsd:string ;
+	:value xsd:boolean ;
+	:key xsd:string ;
+}
+:SyncSettingsAppExtension{
+	:incognito_enabled xsd:boolean ;
+	:update_url xsd:string ;
+	:name xsd:string ;
+	:id xsd:string ;
+	:version xsd:string ;
+	:enabled xsd:boolean ;
+}
+:SyncSettingsPreference{
+	:name xsd:string ;
+    :value xsd:string ;
+}
+:SyncSettingsTheme{   
+	:use_custom_theme xsd:boolean ;
+}
+    
