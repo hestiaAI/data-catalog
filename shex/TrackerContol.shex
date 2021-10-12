@@ -1,0 +1,20 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserProfile{
+  :app_trackers @:AppTrackers *;  
+}
+
+# a log of trackers acting in the context of one application or website
+:AppTrackers {
+  :tracker_events @:TrackerEvent *;  
+}
+
+:TrackerEvent{
+  :daddr xsd:string ;   # IP address, either v4 or v6 (e.g. "209.237.200.128", a Twitter server)
+  :time xsd:int ;       # UNIX timestamp in milliseconds (e.g. "1628687671685")
+  :tracker_name ?;      # 
+  :tracker_category ?;  # 
+}
+
