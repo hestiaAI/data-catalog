@@ -14,7 +14,7 @@ base <http://example.org/>
 :TrackerEvent{
   :daddr xsd:string ;   # IP address, either v4 or v6 (e.g. "209.237.200.128", a Twitter server)
   :time xsd:int ;       # UNIX timestamp in milliseconds (e.g. "1628687671685")
-  :tracker_name ?;      # 
-  :tracker_category ?;  # 
+  :tracker_name xsd:string ?;      # 
+  :tracker_category xsd:string ?;  # 
 }
 
