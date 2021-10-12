@@ -1,0 +1,35 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data found in the "Google Takeout" in the directory
+#           My Activity/Search/MyActivity.json
+
+:UserProfile{
+	:search_events @:SearchEvent * ;
+}
+
+:SearchEvent{
+	:header xsd:string ;	# Always "Search" (in quotes)
+	:title xsd:string ;		# Title of the page, WITH PREFIX:
+           					# Known prefixes:
+           					# 		"Visited"
+           					#		"Searched for"
+           					# 		"Defined"
+           					# 		"Used Search"
+           					# 		"Viewed"
+           					# e.g. "Visited plouf" or "Searched for plouf"
+	:titleUrl xsd:string ;	# URL of the search. Can be replayed by following the URL.
+	:time  xsd:timestamp ;	
+	:products xsd:string * ;	# always "["Search]"
+	:location_infos @:LocationInfos * ;	# may be absent entirely
+}
+
+:LocationInfos{
+	:name xsd:string ;		# e.g. "At this general area"
+	:url xsd:string ;		# URL to relevant Google Maps grid square.
+	:source xsd:string ; 	# e.g. "Based on your past activity", 
+         					#      "From your device", "From your places (Home)"
+
+}
+
