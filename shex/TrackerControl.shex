@@ -3,16 +3,29 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :UserProfile{
+  :general_tracker_log @:GeneralTracker *;  
   :app_trackers @:AppTrackers *;  
 }
 
+:GeneralTracker{
+  :uid xsd:int ; # an ID
+  :daddr xsd:string ;   # IP address, either v4 or v6 (e.g. "209.237.200.128", a Twitter server) or URL
+  :time xsd:int ;       # UNIX timestamp in milliseconds (e.g. "1628687671685")
+  :tracker xsd:string ?;    # e.g. "Google", "Microsoft"
+  :category xsd:string ?;  	# e.g. "Content", "Uncategorised", "Analytics", "Social", 
+         					#      "FingerprintingGeneral", "Advertising"
+  :package xsd:string ?;  	# e.g. "com.google.android.apps.docs", "com.Slack", "com.facebook.katana"
+  :app xsd:string ?;  		# e.g. "Drive", "Spotify", "YouTube Music"          
+}
+
 # a log of trackers acting in the context of one application or website
+# can be exported in the submenu relevant for each app.
 :AppTrackers {
   :tracker_events @:TrackerEvent *;  
 }
 
 :TrackerEvent{
-  :daddr xsd:string ;   # IP address, either v4 or v6 (e.g. "209.237.200.128", a Twitter server)
+  :daddr xsd:string ;   # IP address, either v4 or v6 (e.g. "209.237.200.128", a Twitter server) or URL
   :time xsd:int ;       # UNIX timestamp in milliseconds (e.g. "1628687671685")
   :tracker_name xsd:string ?;      # 
   :tracker_category xsd:string ?;  # 
