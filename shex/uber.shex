@@ -1,0 +1,112 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data comes in csv files
+
+:UserProfile{
+	:communications_sent @:CommunicationSent * ;
+	:customer_support_contacts @:CustomerSupportContacts * ;
+	:payment_methods @:PaymentMethods * ;
+	:profile_data @:ProfileData * ;
+	:rider_eater_saved_locations @:RiderEaterSavedLocations * ;
+	:trips_data @:TripData * ;
+}
+
+# Found in file Account and Profile/communications_sent.csv <==
+:CommunicationSent{
+	:time xsd:timestamp ;
+	:subject xsd:string ;
+	:content xsd:string ;	# a hash (e.g. 49257ac-b691-529f-ca83-c82a6b27591) or human-readable text
+	:medium xsd:string ;	# e.g. "push", "intercom_text"
+	:direction xsd:string ;	# e.g. "out", "external"
+}
+
+# Found in file Account and Profile/customer_support_contacts.csv <==
+:CustomerSupportContacts{
+	:trip_request_time xsd:timestamp ;
+	:create_ticket_time xsd:timestamp ;
+	:trip_unique_user_id xsd:string ;	# a hash
+	:ticket_status xsd:string ;
+	:channel xsd:string ;
+	:city xsd:string ;
+	:country xsd:string ;
+	:product_name xsd:string ;
+	:is_csr_ticket xsd:boolean ;
+	:locale xsd:string ;
+	:modality xsd:string ;
+	:requester_type xsd:string ;
+	:requester_unique_user_id xsd:string ;	# a hash
+  }
+
+# Found in file Account and Profile/payment_methods-0.csv <==
+:PaymentMethods{
+	:profile_type xsd:string ;
+	:bank_issuer_name xsd:string ;
+	:payment_method_brand xsd:string ;
+	:payment_method_type xsd:string ;
+	:used_for_collections xsd:boolean ;
+	:used_for_disbursements xsd:boolean ;
+	:is_the_latest_version xsd:boolean ;
+	:not_payable xsd:boolean ;
+	:billing_country xsd:string ;
+	:country xsd:string ;
+	:region xsd:string ;
+	:deleted_at xsd:string ;
+  }
+
+# Found in file Account and Profile/profile_data.csv <==
+:ProfileData{
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:e_mail xsd:string ;
+	:mobile xsd:int ;
+	:rating xsd:float ;
+	:user_type xsd:string ;
+	:country xsd:int ;
+	:first_payment_method_added_timestamp xsd:timestamp ;
+	:has_confirmed_mobile xsd:string ; # e.g. "yes" or "no"
+	:referred_to_uber  xsd:boolean ;
+	:language xsd:string ;
+	:referral_code xsd:string ;
+	:signup_app_version xsd:string ;
+	:signup_city xsd:string ;
+	:signup_form xsd:string ;
+	:signup_lat xsd:float ;
+	:signup_long xsd:float ;
+	:signup_date xsd:timestamp ;
+  }
+
+# Found in file Account and Profile/rider_eater_saved_locations.csv <==
+:RiderEaterSavedLocations{
+	:label xsd:string ;
+	:house_number xsd:string ;
+	:street_name xsd:string ;
+	:city xsd:string ;
+	:state xsd:string ;
+	:postal_code xsd:string ;
+	:country_code xsd:string ;
+	:latitude xsd:string ;
+	:longitude xsd:string ;
+}
+
+
+# Found in file Rider/trips_data.csv <==
+:TripData{
+	:city xsd:int ;		# a city code? Internal?
+	:product_type xsd:string ;
+	:trip_or_order_status xsd:string ;		# e.g. "COMPLETED"
+	:request_time xsd:timestamp ;
+	:begin_trip_time xsd:timestamp ;
+	:begin_trip_lat xsd:float ;
+	:begin_trip_lng xsd:float ;
+	:begin_trip_address xsd:string ;
+	:dropoff_time xsd:timestamp ;
+	:dropoff_lat xsd:float ;
+	:dropoff_lng xsd:float ;
+	:dropoff_address xsd:string ;
+	:distance_in_miles xsd:float ;
+	:fare_amount xsd:float ;
+	:fare_currency xsd:string ;
+}
+
