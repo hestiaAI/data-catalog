@@ -18,15 +18,21 @@ base <http://example.org/>
 #    ACCOUNT
 
 :UserAccount{
+	:account @:Account ;
+	:clickstream @:Clickstream * ;
+	:devices @:Devices * ;
+	:messages_sent_by_netflix @:MessagesSentByNetflix * ;
+	:billing_history @:BillingHistory * ;
+	:avatar_history @:AvatarHistory * ;
+	:social_media_connections @:SocialMediaConnections *;
+	:content_iteraction @:ContentInteraction ;   
+}
+
+:Account{
 	:account_details @:AccountDetails ;
 	:subscription_history @:SubscriptionHistory * ;
 	:terms_of_use @:TermsOfUse ;
-	:clickstream @:Clickstream * ;
-	:indicated_preferences @:IndicatedPreferences * ;
-	:devices @:Devices * ;
-	:messages_sent_by_netflix @:MessagesSentByNetflix * ;
 }
-
 # Found in ACCOUNT/AccountDetails.csv
 :AccountDetails{
 	:first_name xsd:string ;
@@ -90,15 +96,6 @@ base <http://example.org/>
 	:click_utc_ts xsd:timestamp ;
 }
 
-# Found in CONTENT_INTERACTION/IndicatedPreferences.csv
-:IndicatedPreferences{
-	:profile_name xsd:string ;
-	:show xsd:string ;
-	:has_watched xsd:boolean ;
-	:is_interested xsd:boolean ;
-	:event_date xsd:timestamp ;
-}
-
 # Found in DEVICES/Devices.csv
 :Devices{
 	:profile_name xsd:string ;
@@ -132,7 +129,112 @@ base <http://example.org/>
 	:click_cnt xsd:int ;
 }
 
+# Found in PAYMENT_AND_BILLING/BillingHistory.csv
+:BillingHistory{
+	:transaction_date xsd:timestamp ;
+	:service_period_start_date xsd:timestamp ;
+	:service_period_end_date xsd:timestamp ;
+	:description xsd:string ; 	# e.g. "SUBSCRIPTION"
+	:payment_type xsd:string ;	# e.g. "VISA"
+	:mop_last_4 xsd:int ;
+	:mop_creation_date xsd:timestamp ;
+	:mop_pmt_processor_desc xsd:string ;	# e.g. "PAYMENTECH", "ADYEN"
+	:item_price_amt xsd:float ;
+	:currency xsd:string ;
+	:tax_amt xsd:float ;
+	:gross_sale_amt xsd:float ;
+	:pmt_txn_type xsd:string ;	# e.g. "SALE", "CAPTURE", "CHARGE"
+	:pmt_status xsd:string ;	# e.g. "APPROVED", "DECLINED", "PENDING"
+	:final_invoice_result xsd:string ;	# e.g. "SETTLED", "REVERSAL", "RECOVERY"
+	:country xsd:string ;	# country code
+	:next_billing_date xsd:timestamp ;
+}
 
+# Found in PROFILES/AvatarHistory.csv
+:AvatarHistory{
+	:profile_namex xsd:string ;
+  	:icons xsd:string * ;
+}
+
+# Found in SOCIAL_MEDIA_CONNECTIONS/SocialMediaConnections.csv
+:SocialMediaConnections{
+	:facebook_sso xsd:string ;
+	:facebook_avatar xsd:string * ;
+}
+
+:ContentInteraction{
+	:indicated_preferences @:IndicatedPreferences * ;
+	:interactive_titles @:InteractiveTitles *;
+	:my_list @:MyList * ;
+	:playback_related_events @:PlaybackRelatedEvents * ;
+	:ratings @:Ratings * ;
+	:search_history @:SearchHistory * ;
+	:taste_preferences @:TastePreferences * ;
+	:viewing_activity @:ViewingActivity     * ;                 
+}
+
+# Found in CONTENT_INTERACTION/IndicatedPreferences.csv
+:IndicatedPreferences{
+	:profile_name xsd:string ;
+	:show xsd:string ;
+	:has_watched xsd:boolean ;
+	:is_interested xsd:boolean ;
+	:event_date xsd:timestamp ;
+}
+
+# Found in CONTENT_INTERACTION/InteractiveTitles.csv
+:InteractiveTitles{
+	:profile_name xsd:string ;
+	:title_desc xsd:string ;
+	:selection_type xsd:string ;
+	:choice_segment_id xsd:string ;
+	:has_watched xsd:boolean ;
+	:source xsd:string ;
+	:utc_timestamp xsd:timestamp ;
+}
+
+# Found in CONTENT_INTERACTION/MyList.csv
+:MyList{
+	:profile_name xsd:string ;
+	:title_name xsd:string ;
+	:country xsd:string ;
+	:utc_title_add_date xsd:timestamp ;
+}
+
+# Found in CONTENT_INTERACTION/PlaybackRelatedEvents.csv
+:PlaybackRelatedEvents{
+	:profile_name xsd:string ;
+	:title_description xsd:string ;
+	:device xsd:string ;
+	:playback_start_utc_ts xsd:timestamp ;
+	:country xsd:string ;
+	:playtraces @:Playtrace *;     
+}
+:Playtrace{
+	:event_type xsd:string ;	# e.g.: "start", "playing"
+	:sessionOffsetMs xsd:int ;	# e.g.: 0
+	:mediaOffsetMs xsd:string ;	# e.g.: "null"
+}
+
+# Found in CONTENT_INTERACTION/Ratings.csv
+:Ratings{
+
+}
+
+# Found in CONTENT_INTERACTION/SearchHistory.csv
+:SearchHistory{
+
+}
+
+# Found in CONTENT_INTERACTION/TastePreferences.txt
+:TastePreferences{
+
+}
+
+# Found in CONTENT_INTERACTION/ViewingActivity.csv
+:ViewingActivity{
+
+}
 
 
 
