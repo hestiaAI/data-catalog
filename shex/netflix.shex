@@ -23,9 +23,11 @@ base <http://example.org/>
 	:devices @:Devices * ;
 	:messages_sent_by_netflix @:MessagesSentByNetflix * ;
 	:billing_history @:BillingHistory * ;
-	:avatar_history @:AvatarHistory * ;
+	:profiles @:Profiles ;
 	:social_media_connections @:SocialMediaConnections *;
 	:content_iteraction @:ContentInteraction ;   
+	:customer_service @:CustomerService ;
+	:ip_addresses @:IPAddresses ; 
 }
 
 :Account{
@@ -150,12 +152,6 @@ base <http://example.org/>
 	:next_billing_date xsd:timestamp ;
 }
 
-# Found in PROFILES/AvatarHistory.csv
-:AvatarHistory{
-	:profile_namex xsd:string ;
-  	:icons xsd:string * ;
-}
-
 # Found in SOCIAL_MEDIA_CONNECTIONS/SocialMediaConnections.csv
 :SocialMediaConnections{
 	:facebook_sso xsd:string ;
@@ -241,8 +237,6 @@ base <http://example.org/>
 	:utc_timestamp xsd:timestamp ;
 }
 
-
-
 # Found in CONTENT_INTERACTION/ViewingActivity.csv
 :ViewingActivity{
 	:profile_name xsd:string ;
@@ -257,8 +251,69 @@ base <http://example.org/>
 	:country xsd:string ;
 }
 
+:CustomerService{
+	:cs_contact @:CSContact ;
+	:chat_transcripts @:ChatTranscripts ;
+}
 
+# Found in CUSTOMER_SERVICE/CSContact.csv
+:CSContact{
+	:contact_start_utc_ts xsd:timestamp ;
+	:contact_end_utc_ts xsd:timestamp ;
+	:negative_survey_response_count xsd:int ;
+	:survey_response_count xsd:int ;
+	:language xsd:string ;
+	:end_state xsd:string ;
+	:cancel_reason xsd:string ;
+	:cancel_reason_explained xsd:string ;
+}
 
+:IPAddresses{
+	:ip_addresses_login @:IpAddressesLogin ;
+	:ip_addresses_streaming @:IpAddressesStreaming ;
+}
 
+# Found in IP_ADDRESSES/IpAddressesLogin.csv
+:IpAddressesLogin{
+	:esn xsd:string ;
+	:country xsd:string ;
+	:region_code xsd:string ;
+	:device_description xsd:string ;
+	:ip xsd:string ;		# IP v4 or v6
+	:ts xsd:timestamp ;
+}
 
+# Found in IP_ADDRESSES/IpAddressesStreaming.csv
+:IpAddressesStreaming{
+	:esn xsd:string ;
+	:country xsd:string ;
+	:localized_device_description xsd:string ;
+	:device_description xsd:string ;
+	:ip xsd:string ;
+	:region_code_display_name xsd:string ;
+	:ts xsd:timestamp ;
+}
+
+:Profiles{
+	:avatar_history @:AvatarHistory * ;
+    :profile_list @:ProfileList * ;                
+}
+
+# Found in PROFILES/AvatarHistory.csv
+:AvatarHistory{
+	:profile_namex xsd:string ;
+  	:icons xsd:string * ;
+}
+
+# Found in PROFILES/Profiles.csv
+:ProfileList{
+	:profile_name xsd:string ;
+	:email_address xsd:string ;
+	:profile_creation_time xsd:timestamp ;
+	:maturity_level xsd:int ;
+	:primary_lang xsd:string ;
+	:has_auto_playback xsd:boolean ;
+	:max_stream_quality xsd:string ;	# e.g. "HD_STREAMS", "UNSPECIFIED"
+	:profile_lock_enabled  xsd:boolean ;
+}
 
