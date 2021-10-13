@@ -218,22 +218,43 @@ base <http://example.org/>
 
 # Found in CONTENT_INTERACTION/Ratings.csv
 :Ratings{
-
+	:profile_name xsd:string ;
+	:title_name xsd:string ;
+	:rating_type xsd:string ;
+	:star_value xsd:string ;
+	:thumbs_value xsd:int ;
+	:device_model xsd:string ;
+	:event_utc_ts xsd:timestamp ;
+	:region_view_date xsd:timestamp ;
 }
 
 # Found in CONTENT_INTERACTION/SearchHistory.csv
 :SearchHistory{
-
+	:profile_name xsd:string ;
+	:country_iso_code xsd:string ;
+	:device xsd:string ;
+	:is_kids xsd:int ;	# 0 for no, 1 for yes?
+	:query_typed xsd:string ;
+	:displayed_name xsd:string ;
+	:action xsd:string ;
+	:section xsd:string ;
+	:utc_timestamp xsd:timestamp ;
 }
 
-# Found in CONTENT_INTERACTION/TastePreferences.txt
-:TastePreferences{
 
-}
 
 # Found in CONTENT_INTERACTION/ViewingActivity.csv
 :ViewingActivity{
-
+	:profile_name xsd:string ;
+	:start_time xsd:timestamp ;
+	:duration xsd:duration ;
+	:attributes xsd:string ;
+	:title xsd:string ;
+	:supplemental_video_type xsd:string ;
+	:device_type xsd:string ;
+	:bookmark xsd:string ;
+	:latest_bookmark xsd:string ;
+	:country xsd:string ;
 }
 
 
