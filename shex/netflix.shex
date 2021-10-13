@@ -1,0 +1,101 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Information comes in several directories, with two PDFs files
+# ('Cover sheet.pdf' and 'Additional Information.pdf') for documentation. 
+# The directories are
+#    SURVEYS
+#    SOCIAL_MEDIA_CONNECTIONS
+#    PROFILES
+#    PAYMENT_AND_BILLING
+#    MESSAGES
+#    IP_ADDRESSES
+#    DEVICES
+#    CUSTOMER_SERVICE
+#    CONTENT_INTERACTION
+#    CLICKSTREAM
+#    ACCOUNT
+
+:UserAccount{
+	:account_details @:AccountDetails ;
+	:subscription_history @:SubscriptionHistory * ;
+	:terms_of_use @:TermsOfUse ;
+	:clickstream @:Clickstream * ;
+	:indicated_preferences @:IndicatedPreferences * ;
+}
+
+# Found in ACCOUNT/AccountDetails.csv
+:AccountDetails{
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:email_address xsd:string ;
+	:phone_number xsd:string ;
+	:country_of_registration xsd:string ;
+	:country_of_signup xsd:string ;
+	:primary_lang xsd:string ;
+	:cookie_disclosure xsd:boolean ;
+	:membership_status xsd:string ;					# e.g. "CURRENT_MEMBER"
+	:customer_creation_timestamp xsd:timestamp ; 	# a timestamp, e.g. "2017-04-23T13:54:23Z"
+	:has_rejoined xsd:boolean ;
+	:netflix_updates xsd:string ;		# e.g. "YES" or "NO"
+	:now_on_netflix xsd:string ;		# e.g. "YES" or "NO"
+	:netflix_offers xsd:string ;		# e.g. "YES" or "NO"
+	:netflix_surveys xsd:string ;		# e.g. "YES" or "NO"
+ 	:netflix_kids_and_family xsd:string ;		# e.g. "YES" or "NO"
+	:sms_account_related xsd:string ;		# e.g. "YES" or "NO"
+	:sms_content_updates_and_special_offers xsd:string ;		# e.g. "YES" or "NO"
+	:test_participation xsd:string ;		# e.g. "YES" or "NO"
+	:whats_app xsd:string ;		# e.g. "YES" or "NO"
+	:marketing_communications_matched_identifiers xsd:string ;		# e.g. "Yes" or "No"
+}
+
+# Found in ACCOUNT/SubscriptionHistory.csv  
+:SubscriptionHistory{
+	:subscription_opened_ts xsd:timestamp ;
+	:is_free_trial_at_signup xsd:int ; 		# e.g. 0
+	:subscription_closed_ts xsd:timestamp ;
+	:is_customer_initiated_cancel xsd:string ;
+	:signup_plan_category xsd:string ;		# e.g. "STREAMING ONLY"
+	:signup_max_concurrent_streams xsd:int ; 		# e.g. 2
+	:signup_max_streaming_quality xsd:string ;		# e.g. "HD"
+	:plan_change_date   xsd:string ;
+	:plan_change_old_category xsd:string ;
+	:plan_change_old_max_concurrent_streams xsd:int ;
+	:plan_change_old_max_streaming_quality xsd:string ;
+	:plan_change_new_category xsd:string ;
+	:plan_change_new_max_concurrent_streams xsd:int ;
+	:plan_change_new_max_streaming_quality xsd:string ;
+	:cancellation_reason xsd:string ;
+}
+
+
+# Found in ACCOUNT/TermsOfUse.csv
+:TermsOfUse{
+	:tou_accepted_date xsd:timestamp ;
+}
+
+
+
+# Found in CLICKSTREAM/Clickstream.csv
+:Clickstream{
+	:profile_name xsd:string ;
+	:source xsd:string ;
+	:navigation xsd:string ;
+	:level xsd:string ;
+	:referrer_url xsd:string ;
+	:webpage_url xsd:string ;
+	:click_utc_ts xsd:timestamp ;
+}
+
+# Found in CONTENT_INTERACTION/IndicatedPreferences.csv
+:IndicatedPreferences{
+	:profile_name xsd:string ;
+	:show xsd:string ;
+	:has_watched xsd:boolean ;
+	:is_interested xsd:boolean ;
+	:event_date xsd:timestamp ;
+}
+
+
+
