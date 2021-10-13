@@ -23,6 +23,8 @@ base <http://example.org/>
 	:terms_of_use @:TermsOfUse ;
 	:clickstream @:Clickstream * ;
 	:indicated_preferences @:IndicatedPreferences * ;
+	:devices @:Devices * ;
+	:messages_sent_by_netflix @:MessagesSentByNetflix * ;
 }
 
 # Found in ACCOUNT/AccountDetails.csv
@@ -96,6 +98,44 @@ base <http://example.org/>
 	:is_interested xsd:boolean ;
 	:event_date xsd:timestamp ;
 }
+
+# Found in DEVICES/Devices.csv
+:Devices{
+	:profile_name xsd:string ;
+	:esn xsd:string ;
+	:device_type xsd:string ;
+	:acct_first_playback_date xsd:timestamp ;
+	:acct_last_playback_date xsd:timestamp ;
+	:acct_first_playback_date_for_user_generated_plays xsd:timestamp ;
+	:acct_last_playback_date_for_user_generated_plays xsd:timestamp ;
+	:profile_first_playback_date xsd:timestamp ;
+	:profile_last_playback_date xsd:timestamp ;
+	:profile_first_playback_date_for_user_generated_plays xsd:timestamp ;
+	:profile_last_playback_date_for_user_generated_plays xsd:timestamp ;
+	:deactivation_time xsd:timestamp ;
+}
+
+# Found in MESSAGES/MessagesSentByNetflix.csv
+:MessagesSentByNetflix{
+	:profile_name xsd:string ;
+	:sent_utc_ts xsd:timestamp ;
+	:message_name xsd:string ;
+	:channel xsd:string ;
+	:country_iso_code xsd:string ;
+	:account_locale xsd:string ;
+	:email_locale xsd:string ;
+	:title_name xsd:string ;
+	:email_domain_name xsd:string ;
+	:link_url xsd:string ;
+	:click_utc_ts xsd:timestamp ;
+	:device_model xsd:string ;
+	:click_cnt xsd:int ;
+}
+
+
+
+
+
 
 
 
