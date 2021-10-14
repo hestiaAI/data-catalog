@@ -1,3 +1,75 @@
 prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
+
+:UserData{
+	:location_history @:LocationHistory ;
+	:maps @:Maps ;
+	:maps_your_places @:MapsYourPlaces ;
+	:my_activity @:MyActivity ;
+	:my_maps @:MyMaps ;
+}
+
+#..........................
+:LocationHistory{
+
+}
+
+#..........................
+
+:Maps{
+	:added_dishes_products_activities @:AddedDishesProductsActivities ;
+	:commute_routes @:CommuteRoutes ;
+	:commute_settings @:CommuteSettings ;
+	:electric_vehicle_settings @:ElectricVehicleSettings ;
+	:my_labelled_places @:MyLabelledPlaces ;
+	:photos_contribution @:PhotosContribution ;
+	:questions_and_answers @:QuestionsAndAnswers ;
+	:requests_for_services @:RequestsForServices ;
+	:your_personalisation_feedback @:YourPersonalisationFeedback ;
+}
+
+:AddedDishesProductsActivities{
+}
+
+:CommuteRoutes{
+}
+
+:CommuteSettings{
+}
+
+:ElectricVehicleSettings{
+}
+
+:MyLabelledPlaces{
+}
+
+:PhotosContribution{
+}
+
+:QuestionsAndAnswers{
+}
+
+:RequestsForServices{
+}
+
+:YourPersonalisationFeedback{
+}
+
+#..........................
+:MapsYourPlaces{
+
+}
+#..........................
+:MyActivity{
+
+}
+#..........................
+:MyMaps{
+
+}
+
+
+
+
+
