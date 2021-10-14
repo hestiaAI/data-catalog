@@ -11,9 +11,120 @@ base <http://example.org/>
 }
 
 #..........................
+# directory content: 'Location History.json'  'Semantic Location History/'
+# 	'Location History.json' is a very large text file with raw data points
 :LocationHistory{
-
+	:locations @:Location * ;
+	:semantic_locations @:SemanticLocation * ;
 }
+:Location{
+	:timestampMs xsd:int ? ;
+	:latitudeE7 xsd:int ; 	# e.g. 232546424
+	:longitudeE7 xsd:int ; 	# e.g. 232546424
+	:accuracy xsd:int ? ;
+	:source xsd:string ? ;
+}
+:SemanticLocation{
+	:timeline_objects @:TimelineObject *;
+}
+
+:TimelineObject{
+	:activity_segment @:ActivitySegment ? ;
+	:place_visit @:PlaceVisit ? ;
+}
+
+:ActivitySegment{
+	:start_location @:Location ;
+	:end_location @:Location ;
+	:duration @:Duration ;
+	:distance xsd:int;	# e.g. 2136 (probably metres
+	:activityType xsd:string ; 	# most probable of the "activities"
+	:confidence xsd:string ; # e.g. "HIGH", "MEDIUM", "LOW"
+	:activities @:Activity * ;
+	:waypoint_path @:WaypointPath ;
+	:simplified_raw_path @:SimplifiedRawPath ;
+	:parking_event @:ParkingEvent ? ;
+}
+
+:SourceInfo{
+	:deviceTag xsd:int; 	# e.g. -232546424
+}
+
+:Duration{
+	:startTimestampMs xsd:int;	# e.g. 1588452953672
+	:endTimestampMs xsd:int;
+}
+
+:Activity{
+	:activityType xsd:string ;
+		# e.g.:
+        # "activityType" : "CYCLING",
+        # "activityType" : "FLYING",
+        # "activityType" : "IN_BUS",
+        # "activityType" : "IN_FERRY",
+        # "activityType" : "IN_PASSENGER_VEHICLE",
+        # "activityType" : "IN_SUBWAY",
+        # "activityType" : "IN_TRAIN",
+        # "activityType" : "IN_TRAM",
+        # "activityType" : "IN_VEHICLE",
+        # "activityType" : "MOTORCYCLING",
+        # "activityType" : "RUNNING",
+        # "activityType" : "SAILING",
+        # "activityType" : "SKIING",
+        # "activityType" : "STILL",
+        # "activityType" : "WALKING",        
+	:probability xsd:float ;  # percentage, e.g. 87.3829834
+}
+
+:WaypointPath{
+	:waypoints @:Waypoint * ;
+}
+          
+:Waypoint{
+	:latE7 xsd:int ;
+	:lngE7 xsd:int ;
+}          
+  
+:SimplifiedRawPath{
+	:points @:SimplifiedRawPathPoint * ;
+}
+
+:SimplifiedRawPathPoint{
+	:latE7 xsd:int ;
+	:lngE7 xsd:int ;
+	:timestampMs xsd:int ;
+	:accuracyMeters xsd:int ;
+}        
+   
+:PlaceVisit{
+	:location @:PlaceVisitLocation ;
+	:duration @:Duration ;
+	:placeConfidence xsd:string ; # e.g. "HIGH_CONFIDENCE", "MEDIUM_CONFIDENCE", "LOW_CONFIDENCE"
+	:centerLatE7 xsd:int ;
+	:centerLngE7 xsd:int ;
+	:visitConfidence xsd:int ; # percentage, in integer apparently (?)
+	:otherCandidateLocations @:PlaceVisitLocation * ;
+	:editConfirmationStatus xsd:string ; # e.g. "NOT_CONFIRMED"
+	:simplified_raw_path @:SimplifiedRawPath ? ;
+}
+
+:PlaceVisitLocation{
+	:latitudeE7 xsd:int ;
+	:longitudeE7 xsd:int ;
+	:placeId xsd:string ;  # random ID string, e.g. "DoPWX-8dwfdDpCrOspw9x3gEm6H",
+	:address xsd:string ? ;  # street number, street name, city, postcode and country
+	:semanticType xsd:string ;  # e.g.: "TYPE_HOME", "TYPE_ALIASED_LOCATION", "TYPE_SEARCHED_ADDRESS"
+	:sourceInfo @:SourceInfo ? ;
+	:locationConfidence xsd:float # percentage 
+}
+
+:ParkingEvent{
+	:timestampMs xsd:int ;
+	:location @:Location ;
+}
+
+
+
 
 #..........................
 
@@ -26,23 +137,67 @@ base <http://example.org/>
 	:photos_contribution @:PhotosContribution ;
 	:questions_and_answers @:QuestionsAndAnswers ;
 	:requests_for_services @:RequestsForServices ;
-	:your_personalisation_feedback @:YourPersonalisationFeedback ;
+	:your_personalisation_feedback @:YourPersonalisationFeedback * ;
 }
 
 :AddedDishesProductsActivities{
+	:contributions @:Contributions * ;
 }
+:Contributions{} # No data available.
 
 :CommuteRoutes{
+	:trips @:Trip * ;
+}
+:Trip{
+	:id xsd:int ;
+	:place_visit @:PlaceVisit * ;
+	:transition @:Transition * ;
+}
+:PlaceVisit{
+	:id xsd:string ;
+	:place xsd:string ;
+}
+:Transition{
+	:route @:Route *;
+	:origin xsd:string ;
+	:destination xsd:string ;
+}
+:Route{
+	:mode xsd:string ;	# e.g. "WALKING", "TRANSIT"
+	:destination xsd:string ;
 }
 
 :CommuteSettings{
+	:commuteMode xsd:string ;
+	:otherTravelMode xsd:string ;
 }
 
+
 :ElectricVehicleSettings{
+	:electric_vehicle_profiles @:ElectricVehicleProfile * ;
+}
+:ElectricVehicleProfile{
+	:name xsd:string ;
 }
 
 :MyLabelledPlaces{
+	:features @:MyLabelledPlacesFeature * ;
+	:type xsd:string ;
 }
+:MyLabelledPlacesFeature{
+	:geometry @:MyLabelledPlacesFeatureGeometry ;
+	:properties @:MyLabelledPlacesFeatureProperties ;
+	:type xsd:string ; # e.g. "Feature"
+}
+:MyLabelledPlacesFeatureGeometry{
+	:coordinates xsd:float * ; # two floats, e.g. [ -1.536734572677783, 42.6832534 ],
+	:type xsd:string ; # e.g. "Point"
+}
+:MyLabelledPlacesFeatureProperties{
+	:address xsd:string ;
+	:name xsd:string ; # e.g. "Home"
+}
+
 
 :PhotosContribution{
 }
@@ -54,17 +209,26 @@ base <http://example.org/>
 }
 
 :YourPersonalisationFeedback{
+	:place xsd:string ; 	
+  	:feedback xsd:string ; 	
+  	:url xsd:string ; 	
 }
+	
+
 
 #..........................
+# directory content: Reviews.json  'Saved Places.json'
 :MapsYourPlaces{
 
 }
 #..........................
+# directory content: Maps  Travel
 :MyActivity{
+
 
 }
 #..........................
+# directory content: a number of binary files in kmz format
 :MyMaps{
 
 }
