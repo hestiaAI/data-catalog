@@ -200,7 +200,26 @@ base <http://example.org/>
 
 
 :PhotosContribution{
+# Data in multiple jpg files, with associated jpg.json files
+	:title xsd:string ;
+	:description xsd:string ;
+	:imageViews xsd:int ;
+	:creationTime @:PhotosContributionTime ;
+	:photoTakenTime @:PhotosContributionTime ;
+	:geoDataExif @:GeoDataExif ;
 }
+:PhotosContributionTime{
+	:timestamp xsd:int ; # UNIX timestamp
+	:formatted xsd:timestamp ; # e.g. "27 Mar 2019, 21:43:13 UTC"
+}
+:GeoDataExif{
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+	:altitude xsd:float ;
+	:latitudeSpan xsd:float ;
+	:longitudeSpan xsd:float ;
+}
+
 
 :QuestionsAndAnswers{
 }
