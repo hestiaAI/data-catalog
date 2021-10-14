@@ -222,9 +222,15 @@ base <http://example.org/>
 
 
 :QuestionsAndAnswers{
+	:answers @:Answer *;			# No data to map object
+	:questions @:Question *;		# No data to map object
+	:replies @:Reply *;				# No data to map object
+	:thumbs_ups @:ThumbUp *;		# No data to map object
 }
 
+
 :RequestsForServices{
+	# No data to map object
 }
 
 :YourPersonalisationFeedback{
@@ -238,8 +244,46 @@ base <http://example.org/>
 #..........................
 # directory content: Reviews.json  'Saved Places.json'
 :MapsYourPlaces{
+	:reviews @:Reviews ;
+	:saved_places @:SavedPlaces ;
 
 }
+
+:Reviews{
+	:type xsd:string ; 	 # e.g. "FeatureCollection"
+	:features @:ReviewsFeature * ;
+}
+:ReviewsFeature{
+	:geometry @:ReviewsFeatureGeometry ;
+	:properties @:ReviewsFeatureProperties ;
+	:type xsd:string ; 	 # e.g. "Feature"
+}
+:ReviewsFeatureGeometry{
+	:coordinates xsd:float * ; # two floats
+	:type xsd:string ;
+}
+:ReviewsFeatureProperties{
+	:google_maps_url xsd:string ; 	 # e.g. "http://maps.google.com/?cid=2364577345275834920"
+	:location @:ReviewsFeatureLocation ;
+	:published xsd:timestamp ;
+	:title xsd:string ; 
+	:updated xsd:timestamp ;
+}
+:ReviewsFeatureLocation{
+	:address xsd:string ; 
+	:business_name xsd:string ; 
+	:country_code xsd:string ; 
+	:geo_coordinates @:ReviewsFeatureGeoCoordinates ;
+}
+:ReviewsFeatureGeoCoordinates{
+	:latitude xsd:float ; 
+	:longitude xsd:float ; 
+}
+
+:SavedPlaces{
+
+}
+
 #..........................
 # directory content: Maps  Travel
 :MyActivity{
