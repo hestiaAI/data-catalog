@@ -250,36 +250,38 @@ base <http://example.org/>
 }
 
 :Reviews{
-
+	:type xsd:string ; 	 # e.g. "FeatureCollection"
+	:features @:Feature * ;
 }
 
 :SavedPlaces{
 	:type xsd:string ; 	 # e.g. "FeatureCollection"
-	:features @:ReviewsFeature * ;
+	:features @:Feature * ;
 }
-:SavedPlacesFeature{
-	:geometry @:SavedPlacesFeatureGeometry ;
-	:properties @:SavedPlacesFeatureProperties ;
+:Feature{
+	:geometry @:FeatureGeometry ;
+	:properties @:FeatureProperties ;
 	:type xsd:string ; 	 # e.g. "Feature"
 }
-:SavedPlacesFeatureGeometry{
+:FeatureGeometry{
 	:coordinates xsd:float * ; # two floats
 	:type xsd:string ;
 }
-:SavedPlacesFeatureProperties{
+:FeatureProperties{
 	:google_maps_url xsd:string ; 	 # e.g. "http://maps.google.com/?cid=2364577345275834920"
-	:location @:SavedPlacesFeatureLocation ;
+	:location @:FeatureLocation ;
 	:published xsd:timestamp ;
-	:title xsd:string ; 
-	:updated xsd:timestamp ;
+	:star_rating xsd:int ? ; 	# present in Reviews but not in Saved Places
+	:title xsd:string ? ;  		# present in Saved Places but not in Reviews
+	:updated xsd:timestamp ? ;  # present in Saved Places but not in Reviews
 }
-:SavedPlacesFeatureLocation{
+:FeatureLocation{
 	:address xsd:string ; 
 	:business_name xsd:string ; 
 	:country_code xsd:string ; 
-	:geo_coordinates @:SavedPlacesFeatureGeoCoordinates ;
+	:geo_coordinates @:FeatureGeoCoordinates ;
 }
-:SavedPlacesFeatureGeoCoordinates{
+:FeatureGeoCoordinates{
 	:latitude xsd:float ; 
 	:longitude xsd:float ; 
 }
