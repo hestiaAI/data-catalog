@@ -250,39 +250,40 @@ base <http://example.org/>
 }
 
 :Reviews{
+
+}
+
+:SavedPlaces{
 	:type xsd:string ; 	 # e.g. "FeatureCollection"
 	:features @:ReviewsFeature * ;
 }
-:ReviewsFeature{
-	:geometry @:ReviewsFeatureGeometry ;
-	:properties @:ReviewsFeatureProperties ;
+:SavedPlacesFeature{
+	:geometry @:SavedPlacesFeatureGeometry ;
+	:properties @:SavedPlacesFeatureProperties ;
 	:type xsd:string ; 	 # e.g. "Feature"
 }
-:ReviewsFeatureGeometry{
+:SavedPlacesFeatureGeometry{
 	:coordinates xsd:float * ; # two floats
 	:type xsd:string ;
 }
-:ReviewsFeatureProperties{
+:SavedPlacesFeatureProperties{
 	:google_maps_url xsd:string ; 	 # e.g. "http://maps.google.com/?cid=2364577345275834920"
-	:location @:ReviewsFeatureLocation ;
+	:location @:SavedPlacesFeatureLocation ;
 	:published xsd:timestamp ;
 	:title xsd:string ; 
 	:updated xsd:timestamp ;
 }
-:ReviewsFeatureLocation{
+:SavedPlacesFeatureLocation{
 	:address xsd:string ; 
 	:business_name xsd:string ; 
 	:country_code xsd:string ; 
-	:geo_coordinates @:ReviewsFeatureGeoCoordinates ;
+	:geo_coordinates @:SavedPlacesFeatureGeoCoordinates ;
 }
-:ReviewsFeatureGeoCoordinates{
+:SavedPlacesFeatureGeoCoordinates{
 	:latitude xsd:float ; 
 	:longitude xsd:float ; 
 }
 
-:SavedPlaces{
-
-}
 
 #..........................
 # directory content: Maps  Travel
