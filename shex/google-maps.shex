@@ -308,7 +308,7 @@ base <http://example.org/>
 #..........................
 # directory content: a number of binary files in kmz format
 :MyMaps{
-
+	# No text data in this directory.
 }
 
 
