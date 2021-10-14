@@ -290,9 +290,21 @@ base <http://example.org/>
 #..........................
 # directory content: Maps  Travel
 :MyActivity{
-
-
+	:maps @:Activity *;
+	:travel @:Activity *;
 }
+:Activity{
+	:header xsd:string ;
+	:title xsd:string ;
+	:titleUrl xsd:string ;
+	:subtitles @:TravelSubtitles * ; # Not present in Maps?
+	:time xsd:timestamp ;
+	:products xsd:string * ;
+}
+:TravelSubtitles{
+	:name xsd:string ; 
+}
+
 #..........................
 # directory content: a number of binary files in kmz format
 :MyMaps{
