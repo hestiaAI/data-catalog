@@ -20,8 +20,8 @@ base <http://example.org/>
 	:playlist_2 @:Playlist2 ;
 	:playlist_3 @:Playlist3 ;
 	:playlist_4 @:Playlist4 ;
-	:search_queries @:SearchQueries ;
-	:streaming_history_0 @:StreamingHistory0 ;
+	:search_queries @:SearchQuery *;
+	:streaming_history_0 @:StreamingHistory0 * ;
 	:userdata @:Userdata ;
 	:your_library @:YourLibrary ;
 }
@@ -101,24 +101,60 @@ base <http://example.org/>
 	:playlists @:Playlist *;
 }
 
-:SearchQueries{
-
+:SearchQuery{
+	:platform xsd:string ;
+	:search_time xsd:dateTime ;
+	:search_query xsd:string ;
+	:search_interaction_uris xsd:string * ;
 }
 
 :StreamingHistory0{
-
+	:end_time xsd:dateTime ;
+	:artist_name xsd:string ;
+	:track_name xsd:string ;
+	:ms_played xsd:int ;
 }
 
 :Userdata{
-
+	:username xsd:string ;
+	:email xsd:string ;
+	:country xsd:string ;
+	:createdFromFacebook xsd:boolean ;
+	:facebookUid xsd:string ;
+	:birthdate xsd:date ;
+	:gender xsd:string ;
+	:postalCode xsd:string ;
+	:mobileNumber xsd:string ;
+	:mobileOperator xsd:string ;
+	:mobileBrand xsd:string ;
+	:creationTime xsd:date ;
 }
 
 :YourLibrary{
-
+	:tracks @:Track *;
+	:albums @:Album *;
+	:episodes @:Episode *;
+	:banned_tracks @:BannedTrack *;
+	:other xsd:string *;
+}
+:Track{
+	:artist xsd:string ;
+	:album xsd:string ;
+	:track xsd:string ;
+}
+:Album{
+	:artist xsd:string ;
+	:album xsd:string ;
 }
 
 :KidsAccount{
-
+	:account_created xsd:dateTime ;
+	:account_last_modified xsd:dateTime ;
+	:account_disabled xsd:boolean ;
+	:name xsd:string ;
+	:avatar xsd:string ;
+	:popular_music_allowed xsd:boolean ;
+	:date_of_birth xsd:date ;
 }
 
 
