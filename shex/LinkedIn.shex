@@ -17,9 +17,9 @@ base <http://example.org/>
 	:inferences_about_you @:InferenceAboutYou *;
 	:invitations @:Invitation *;
 	:job_applicant_saved_answers @:JobApplicantSavedAnswer * ;       
-	:job_application JobApplication *;  
-	:job_seeker_preference JobSeekerPreference *;
-	:saved_job SavedJob *;
+	:job_application @:JobApplication *;  
+	:job_seeker_preference @:JobSeekerPreference *;
+	:saved_job @:SavedJob *;
 	:languages @:Languages ;
 	:learning @:Learning ;
 	:logins @:Logins ;
