@@ -55,27 +55,50 @@ base <http://example.org/>
 }
 
 :Inferences{
-
+	:inferences xsd:string *;
 }
 
 :Payments{
+	:payment_method xsd:string ;
+	:creation_date xsd:date ;
+	:country xsd:string ;
+	:postal_code xsd:string ;
 
 }
 
 :Playlist1{
+	:playlists @:Playlist *;
+}
 
+:Playlist{
+	:name xsd:string ;
+	:lastModifiedDate xsd:date ;
+	:items @:Item *;
+	:description xsd:string ;
+	:numberOfFollowers xsd:int ;
+
+}
+:Item{
+	:track @:Track ;
+	:episode @:Episode ;
+	:local_track @:LocalTrack ;
+}
+:Track{
+	:trackName xsd:string ;
+	:artistName xsd:string ;
+	:albumName xsd:string ;
 }
 
 :Playlist2{
-
+	:playlists @:Playlist *;
 }
 
 :Playlist3{
-
+	:playlists @:Playlist *;
 }
 
 :Playlist4{
-
+	:playlists @:Playlist *;
 }
 
 :SearchQueries{
