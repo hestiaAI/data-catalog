@@ -11,14 +11,15 @@ base <http://example.org/>
 	:certifications @:Certifications ;
 	:company_follows @:CompanyFollows ;
 	:connections @:Connections ;
-	:education @:Education ;
-	:email_addresses @:EmailAddresses ;
-	:endorsement_received_info @:EndorsementReceivedInfo ;
-	:endorsement_received_info @:Endorsement_Received_Info ;
-	:inferences_about_you @:InferencesAboutYou ;
-	:invitations @:Invitations ;
-	:job_applicant_saved_answers @:JobApplicantSavedAnswers ;
-	:jobs @:Jobs ;
+	:education @:Education * ;
+	:email_addresses @:EmailAddress * ;
+	:endorsement_received_info @:EndorsementReceivedInfo * ;
+	:inferences_about_you @:InferenceAboutYou *;
+	:invitations @:Invitation *;
+	:job_applicant_saved_answers @:JobApplicantSavedAnswer * ;       
+	:job_application JobApplication *;  
+	:job_seeker_preference JobSeekerPreference *;
+	:saved_job SavedJob *;
 	:languages @:Languages ;
 	:learning @:Learning ;
 	:logins @:Logins ;
@@ -102,11 +103,120 @@ base <http://example.org/>
 	:connected_on xsd:string ;
 }
 
+:Education{
+	:school_name xsd:string ;
+	:start_date xsd:string ;
+	:end_date xsd:string ;
+	:notes xsd:string ;
+	:degree_name xsd:string ;
+	:activities xsd:string ;
+}
 
+:EmailAddress{
+	:email_address xsd:string ;
+	:confirmed xsd:boolean ;
+	:primary xsd:boolean ;
+	:updated_on xsd:dateTime ;
+}
 
+:EndorsementReceivedInfo{
+# Two files with similar names and content: "Endorsement Received Info.csv" contains
+# the additional field "Display Status"
+	:endorsement_date xsd:dateTime ;
+	:skill_name xsd:string ;
+	:endorser_first_name xsd:string ;
+	:endorser_last_name xsd:string ;
+	:endorsement_status xsd:string ;
+	:display_status xsd:string ;
+}
 
+:InferenceAboutYou{
+	:category xsd:string ;
+	:type_of_inference xsd:string ;
+	:description xsd:string ;
+	:inference xsd:string ;
+}
 
+:Invitation{
+	:from xsd:string ;
+	:to xsd:string ;
+	:sent_at xsd:dateTime ;
+	:message xsd:string ;
+	:direction xsd:string ; # e.g.: "INCOMING"
+}
 
+:JobApplicantSavedAnswer{
+	:question xsd:string ;
+	:answer xsd:string ;
+}
+
+:JobApplication{
+
+}
+
+:JobSeekerPreference{
+
+}
+
+:SavedJob{
+
+}
+
+:Languages{
+
+}
+
+:Learning{
+
+}
+
+:Logins{
+
+}
+
+:PhoneNumbers{
+
+}
+
+:Positions{
+
+}
+
+:Profile{
+
+}
+
+:Reactions{
+
+}
+
+:Receipts{
+
+}
+
+:Registration{
+
+}
+
+:RichMedia{
+
+}
+
+:SavedJobAlerts{
+
+}
+
+:SearchQueries{
+
+}
+
+:Skills{
+
+}
+
+:Messages{
+
+}
 
 
 
