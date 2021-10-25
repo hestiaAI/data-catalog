@@ -1,0 +1,102 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data comes in two directories containing JSON files
+# 	MyData/
+#	MyKidsData_1/
+
+:UserProfile{
+	:my_data @:MyData ;
+	:my_kids_data @:MyKidsData ;
+}
+  
+:MyData{
+	:family_plan @:FamilyPlan ;
+	:follow @:Follow ;
+	:inferences @:Inferences ;
+	:payments @:Payments ;
+	:playlist_1 @:Playlist1 ;
+	:playlist_2 @:Playlist2 ;
+	:playlist_3 @:Playlist3 ;
+	:playlist_4 @:Playlist4 ;
+	:search_queries @:SearchQueries ;
+	:streaming_history_0 @:StreamingHistory0 ;
+	:userdata @:Userdata ;
+	:your_library @:YourLibrary ;
+}
+
+:MyKidsData{
+	:follow @:Follow ;
+	:inferences @:Inferences ;
+	:kids_account @:KidsAccount ;
+	:payments @:Payments ;
+	:streaming_history_0 @:StreamingHistory0 ;
+	:userdata @:Userdata ;
+	:your_library @:YourLibrary ;
+}
+
+:FamilyPlan{
+	:address @:Address ;
+}
+:Address{
+	:street xsd:string;
+	:city xsd:string;
+	:postal_code xsd:string;
+	:state xsd:string;
+	:country xsd:string;
+	:real_name xsd:string;
+}
+                             
+:Follow{
+	:follower_count xsd:int ;
+	:followingUsersCount xsd:int ;
+	:followingArtists xsd:string * ;
+}
+
+:Inferences{
+
+}
+
+:Payments{
+
+}
+
+:Playlist1{
+
+}
+
+:Playlist2{
+
+}
+
+:Playlist3{
+
+}
+
+:Playlist4{
+
+}
+
+:SearchQueries{
+
+}
+
+:StreamingHistory0{
+
+}
+
+:Userdata{
+
+}
+
+:YourLibrary{
+
+}
+
+:KidsAccount{
+
+}
+
+
+
