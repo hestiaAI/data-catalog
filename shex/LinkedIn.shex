@@ -1,0 +1,83 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data comes in two directories containing CSV files
+
+:UserProfile{
+	:account_status_history @:AccountStatusHistory * ;
+	:ad_targeting @:AdTargeting ;
+	:ads_clicked @:AdsClicked ;
+	:certifications @:Certifications ;
+	:company_follows @:CompanyFollows ;
+	:connections @:Connections ;
+	:education @:Education ;
+	:email_addresses @:EmailAddresses ;
+	:endorsement_received_info @:EndorsementReceivedInfo ;
+	:endorsement_received_info @:Endorsement_Received_Info ;
+	:inferences_about_you @:InferencesAboutYou ;
+	:invitations @:Invitations ;
+	:job_applicant_saved_answers @:JobApplicantSavedAnswers ;
+	:jobs @:Jobs ;
+	:languages @:Languages ;
+	:learning @:Learning ;
+	:logins @:Logins ;
+	:phone_numbers @:PhoneNumbers ;
+	:positions @:Positions ;
+	:profile @:Profile ;
+	:reactions @:Reactions ;
+	:receipts @:Receipts ;
+	:registration @:Registration ;
+	:rich_media @:RichMedia ;
+	:saved_job_alerts @:SavedJobAlerts ;
+	:search_queries @:SearchQueries ;
+	:skills @:Skills ;
+	:messages @:Messages ;
+}
+
+:AccountStatusHistory{
+	:time xsd:dateTime ;
+	:event xsd:string ;
+}
+
+:AdTargeting{
+	:member_age xsd:string *;
+	:company_names xsd:string *;
+	:company_names xsd:string *;
+	:company_follower_of xsd:string *;
+	:company_names xsd:string *;
+	:company_category xsd:string *;
+	:company_size xsd:string *;
+	:degrees xsd:string *;
+	:degree_class xsd:string *;
+	:member_schools xsd:string *;
+	:company_growth_rate xsd:string *;
+	:fields_of_study xsd:string *;
+	:company_connections xsd:string *;
+	:function_by_size xsd:string *;
+	:job_functions xsd:string *;
+	:member_gender xsd:string *;
+	:graduation_year xsd:string *;
+	:member_groups xsd:string *;
+	:company_industries xsd:string *;
+	:member_interests xsd:string *;
+	:interface_locales xsd:string *;
+	:interface_locale xsd:string *;
+	:member_traits xsd:string *;
+	:profile_locations xsd:string *;
+	:job_seniorities xsd:string *;
+	:member_skills xsd:string *;
+	:job_titles_1 xsd:string *;
+	:job_titles_2 xsd:string *;
+	:job_titles_3 xsd:string *;
+	:years_of_experience xsd:string *;
+}
+
+
+
+
+
+
+
+
+
