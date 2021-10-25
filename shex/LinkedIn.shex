@@ -74,6 +74,40 @@ base <http://example.org/>
 }
 
 
+:AdsClicked{
+	:ad_clicked_date xsd:dateTime ;
+	:ad_title_id xsd:string *;
+}
+
+:Certification{
+	:name xsd:string ;
+	:url xsd:string ;
+	:authority xsd:string ;
+	:started_on xsd:string ;
+	:finished_on xsd:string ;
+	:license_number xsd:string ;
+}
+
+:CompanyFollows{
+	:organization xsd:string ;
+	:followed_on xsd:dateTime ;
+}
+
+:Connection{
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:email_address xsd:string ;
+	:company xsd:string ;
+	:position xsd:string ;
+	:connected_on xsd:string ;
+}
+
+
+
+
+
+
+
 
 
 
