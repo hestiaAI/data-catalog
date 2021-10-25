@@ -8,7 +8,7 @@ base <http://example.org/>
 
 :UserProfile{
 	:my_data @:MyData ;
-	:my_kids_data @:MyKidsData ;
+	:my_kids_data @:MyKidData *;
 }
   
 :MyData{
@@ -26,7 +26,7 @@ base <http://example.org/>
 	:your_library @:YourLibrary ;
 }
 
-:MyKidsData{
+:MyKidData{
 	:follow @:Follow ;
 	:inferences @:Inferences ;
 	:kids_account @:KidsAccount ;
