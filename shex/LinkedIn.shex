@@ -8,9 +8,9 @@ base <http://example.org/>
 	:account_status_history @:AccountStatusHistory * ;
 	:ad_targeting @:AdTargeting ;
 	:ads_clicked @:AdsClicked ;
-	:certifications @:Certifications ;
+	:certifications @:Certification *;
 	:company_follows @:CompanyFollows ;
-	:connections @:Connections ;
+	:connections @:Connection *;
 	:education @:Education * ;
 	:email_addresses @:EmailAddress * ;
 	:endorsement_received_info @:EndorsementReceivedInfo * ;
