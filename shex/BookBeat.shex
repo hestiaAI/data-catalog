@@ -1,0 +1,28 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:saved_books @:SavedBook *;
+	:bookmarks @:Bookmark *;
+	:ratings @:Rating * ;
+	:finished @:Finished ;
+	:userbookmarks @:UserBookmark * ;
+}
+
+:SavedBook{
+	:title xsd:string ;
+	:author xsd:string ;
+	:isbn xsd:longint ;
+}
+
+:Bookmark{
+	:book @:SavedBook ;
+	:progress xsd:float ; # percentage of book read.
+}
+
+:UserBookmark{
+	:bookmark @:Bookmark ;
+	:comment xsd:string ;
+}
+
