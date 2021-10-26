@@ -284,7 +284,7 @@ base <http://example.org/>
 }
 
 :Message{
-	:conversation_id xsd:string ; xsd:string ;
+	:conversation_id xsd:string ;
 	:conversation_title xsd:string ;
 	:from xsd:string ;
 	:sender_profile_url xsd:string ;
