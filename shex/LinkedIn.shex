@@ -20,20 +20,20 @@ base <http://example.org/>
 	:job_application @:JobApplication *;  
 	:job_seeker_preference @:JobSeekerPreference *;
 	:saved_job @:SavedJob *;
-	:languages @:Languages ;
+	:languages @:Language *;
 	:learning @:Learning ;
 	:logins @:Logins ;
 	:phone_numbers @:PhoneNumbers ;
 	:positions @:Positions ;
 	:profile @:Profile ;
-	:reactions @:Reactions ;
-	:receipts @:Receipts ;
-	:registration @:Registration ;
-	:rich_media @:RichMedia ;
-	:saved_job_alerts @:SavedJobAlerts ;
-	:search_queries @:SearchQueries ;
-	:skills @:Skills ;
-	:messages @:Messages ;
+	:reactions @:Reaction *;
+	:receipts @:Receipt *;
+	:registration @:Registration *;
+	:rich_media @:RichMedia *;
+	:saved_job_alerts @:SavedJobAlert * ;
+	:search_queries @:SearchQuerie * ;
+	:skills @:Skill * ;
+	:messages @:Message * ;
 }
 
 :AccountStatusHistory{
@@ -151,71 +151,148 @@ base <http://example.org/>
 }
 
 :JobApplication{
-
+	:application_date xsd:dateTime ;
+	:contact_email xsd:string ;
+	:contact_phone_number xsd:string ;
+	:company_name xsd:string ;
+	:job_title xsd:string ;
+	:job_url xsd:string ;
+	:resume_name xsd:string ;
+	:question_and_answers xsd:string ;
 }
 
 :JobSeekerPreference{
-
+	:locations xsd:string * ;
+	:industries xsd:string * ;
+	:company_employee_count xsd:string * ;
+	:preferred_job_types xsd:string * ;
+	:job_titles xsd:string * ;
+	:open_to_recruiters xsd:boolean ;
+	:dream_companies xsd:string * ;
+	:profile_shared_with_job_poster xsd:boolean ;
+	:job_title_for_searching_fast_growing_companies xsd:string * ;
+	:introduction_statement xsd:string ;
+	:phone_number xsd:string ;
+	:job_seeker_activity_level xsd:string ;
+	:preferred_start_time_range xsd:string ;
+	:commute_preference_starting_address xsd:string ;
+	:commute_preference_starting_time xsd:string ;
+	:mode_of_transportation xsd:string * ;
+	:maximum_commute_duration xsd:string ;
+	:open_candidate_visibility xsd:string ;
+	:job_seeking_urgency_level xsd:string ;
 }
 
 :SavedJob{
-
+	:saved_date xsd:string ;
+	:job_url xsd:string ;
+	:job_title xsd:string ;
+	:company_name xsd:string ;
 }
 
-:Languages{
-
+:Language{
+	:name xsd:string ;
+	:proficiency xsd:string ;
 }
 
 :Learning{
-
+	# No data in available sample
 }
 
 :Logins{
-
+	:login_date xsd:dateTime ;
+	:ip_address xsd:string ;
+	:user_agent xsd:string *;
+	:login_type xsd:string ;
 }
 
 :PhoneNumbers{
-
+	:extension xsd:string ;
+	:number xsd:string ;
+	:type xsd:string ;
 }
 
 :Positions{
-
+	:company_name xsd:string ;
+	:title xsd:string ;
+	:description xsd:string ;
+	:location xsd:string ;
+	:started_on xsd:string ;
+	:finished_on xsd:string ;
 }
 
 :Profile{
-
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:maiden_name xsd:string ;
+	:address xsd:string ;
+	:birth_date xsd:string ;
+	:headline xsd:string ;
+	:summary xsd:string ;
+	:industry xsd:string ;
+	:zip_code xsd:string ;
+	:geo_location xsd:string ;
+	:twitter_handles xsd:string ;
+	:websites xsd:string ;
+	:instant_messengers xsd:string ;
 }
 
-:Reactions{
-
+:Reaction{
+	:date xsd:dateTime ;
+	:type xsd:string ;	# e.g. "LIKE"
+	:link xsd:string ;
 }
 
-:Receipts{
-
+:Receipt{
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:billing_country xsd:string ;
+	:postal_code xsd:string ;
+	:transaction_made_at xsd:string ;
+	:payment_method_type xsd:string ;
+	:invoice_number xsd:string ;
+	:description xsd:string ;
+	:tax_amount xsd:int ;
+	:sub_total xsd:int ;
+	:total_amount xsd:int ;
+	:currency_code xsd:string ;
 }
 
 :Registration{
-
+	:registered_at xsd:dateTime ;
+	:registration_ip xsd:string ;
+	:subscription_types xsd:string ;
 }
 
 :RichMedia{
-
+	:type xsd:string ; # e.g. "Video content can be downloaded at", "Documents can be downloaded at"
+	:link xsd:string ;
 }
 
-:SavedJobAlerts{
-
+:SavedJobAlert{
+	:saved_search_date xsd:dateTime ;
+	:jobs_search_url xsd:string ;
 }
 
-:SearchQueries{
-
+:SearchQuerie{
+	:time xsd:dateTime ;
+	:search_query xsd:string ;
 }
 
-:Skills{
-
+:Skill{
+	:name xsd:string ;
 }
 
-:Messages{
-
+:Message{
+	:conversation_id xsd:string ; xsd:string ;
+	:conversation_title xsd:string ;
+	:from xsd:string ;
+	:sender_profile_url xsd:string ;
+	:to xsd:string ;
+	:date xsd:dateTime ;
+	:subject xsd:string ;
+	:content xsd:string ;
+	:folder xsd:string ; # e.g. "INBOX"
 }
 
 
