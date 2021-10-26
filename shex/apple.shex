@@ -91,13 +91,37 @@ base <http://example.org/>
 	:apple_care_communications xsd:string ;
 }
 :AppleIdDeviceInformation{
-
+	:device_name xsd:string ;
+	:device_added_date xsd:dateTime ;
+	:device_imei xsd:string ;
+	:device_serial_number xsd:string ;
+	:device_last_heartbeat_ip xsd:string ;
+	:device_last_heartbeat_timestamp xsd:dateTime ;
+	:device_model_name xsd:string ;
+	:device_phone_number xsd:string ;
+	:device_iccid xsd:string ;
+	:device_meid xsd:string ;
+	:device_time_zone xsd:string ;
+	:device_locale_language xsd:string ;
 }
 :AppleIdSignOnInformation{
-
+	:application xsd:string ;
+	:logged_in_date xsd:dateTime ;
+	:ip_address xsd:string ;
 }
 :DataPrivacyRequestHistory{
-
+	:request_id xsd:string ;
+	:category_name xsd:string ;
+	:request_time xsd:string ;
+	:activity_type xsd:string ;
+	:apple_id_number xsd:string ;
+	:activity_completed_time xsd:string ;
+	:request_completed_time xsd:string ;
+	:archive_size_transfer_success_count xsd:string ;
+	:transfer_failure_count xsd:string ;
+	:developer_name xsd:string ;
+	:request_status xsd:string ;
+	:transfer_type xsd:string ;
 }
 
 
