@@ -1,0 +1,130 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+
+:AppleIdAccountAndDeviceInformation{
+	:apple_id_account_information @:AppleIdAccountInformation *;
+	:apple_id_device_information @:AppleIdDeviceInformation *;
+	:apple_id_sign_on_information @:AppleIdSignOnInformation *;
+	:data_privacy_request_history @:DataPrivacyRequestHistory *;
+}
+:AppleIdAccountInformation{
+	:apple_id_number xsd:int ;
+	:apple_id xsd:string ;
+	:create_date xsd:dateTime ;
+	:user_prefix xsd:string ;
+	:first_name xsd:string ;
+	:middle_name xsd:string ;
+	:last_name xsd:string ;
+	:nickname xsd:string ;
+	:title xsd:string ;
+	:suffix xsd:string ;
+	:gender xsd:string ;
+	:language xsd:string ;
+	:last_update_date xsd:dateTime ;
+	:phonetic_prefix xsd:string ;
+	:phonetic_first_name xsd:string ;
+	:phonetic_middle_name xsd:string ;
+	:phonetic_last_name xsd:string ;
+	:phonetic_nickname xsd:string ;
+	:phonetic_title xsd:string ;
+	:phonetic_suffix xsd:string ;
+	:legal_name xsd:string ;
+	:time_zone xsd:string ;
+	:company_name xsd:string ;
+	:apple_id_alias xsd:string ;
+	:organization_name xsd:string ;
+	:last_password_change_date xsd:string ;
+	:trusted_devices xsd:string ;
+	:trusted_phone_numbers_1 xsd:string ;
+	:trusted_phone_numbers_2 xsd:string ;
+	:i_message_phone xsd:string ;
+	:emails xsd:string ;
+	:i_cloud_mail_aliases xsd:string ;
+	:phones xsd:string ;
+	:official_address xsd:string ;
+	:residence_address xsd:string ;
+	:mailing_address xsd:string ;
+	:shipping_address xsd:string ;
+	:billing_address xsd:string ;
+	:payment_type xsd:string ;
+	:billing_info_prefix xsd:string ;
+	:billing_info_first_name xsd:string ;
+	:billing_info_last_name xsd:string ;
+	:billing_info_suffix xsd:string ;
+	:billing_info_phonetic_first_name xsd:string ;
+	:billing_info_phonetic_last_name xsd:string ;
+	:shipping_info_prefix xsd:string ;
+	:shipping_info_first_name xsd:string ;
+	:shipping_info_last_name xsd:string ;
+	:shipping_info_suffix xsd:string ;
+	:shipping_info_phonetic_first_name xsd:string ;
+	:shipping_info_phonetic_last_name xsd:string ;
+	:app_store_announcements_and_offers xsd:string ;
+	:apps_music_movies_and_more xsd:string ;
+	:apple_news_updates xsd:string ;
+	:apple_music xsd:string ;
+	:beats_email_subscription xsd:string ;
+	:teacher_engagement_program xsd:string ;
+	:apple_survey xsd:string ;
+	:share_i_cloud_analytics xsd:string ;
+	:compliance_phone xsd:string ;
+	:family_sharing xsd:string ;
+	:third_party_email_permission xsd:string ;
+	:apple_store_app_communications xsd:string ;
+	:recovery_contacts xsd:string ;
+	:recovery_id xsd:string ;
+	:recovery_initiated_device_class xsd:string ;
+	:recovery_initiated_device_locale xsd:string ;
+	:recovery_initiated_client_ip xsd:string ;
+	:apple_care_communications xsd:string ;
+}
+:AppleIdDeviceInformation{
+
+}
+:AppleIdSignOnInformation{
+
+}
+:DataPrivacyRequestHistory{
+
+}
+
+
+:AppleMediaServicesInformation{
+
+}
+
+:AppleOnlineStoreAndRetailStore{
+
+}
+
+:AppleCare{
+
+}
+
+:GameCenter{
+
+}
+
+:MarketingCommunications{
+
+}
+
+:OtherData{
+
+}
+
+:ICloudNotes{
+
+}
