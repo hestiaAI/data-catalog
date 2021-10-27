@@ -1,0 +1,90 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##############################
+:AppleOnlineStoreAndRetailStore{
+}
+
+##############################
+:AppleCare{
+}
+
+##########################################################################################
+:GameCenter{
+	:game_center_data @:GameCenterData ;
+}
+:GameCenterData{
+	:games_state @:GameState *;
+	:terms_data @:TermsData *;
+	:auth_data @:AuthData *;
+	:friends xsd:string *;
+	:friends_api @:FriendsApi *;
+}
+:GameState{
+	:game_name xsd:string ;
+	:leaderboard @:LeaderBoard *;
+	:achievements @:GameStateAchievement *;
+	:last_played_utc xsd:dateTime ;
+}
+:LeaderBoard{
+	:leaderboard_score @:LeaderboardScore *;
+	:leaderboard_title xsd:string ;
+}
+:LeaderboardScore{
+	# NO DATA
+}
+:GameStateAchievement{
+	# NO DATA
+}
+
+:TermsData{
+	:terms_version xsd:int ;
+	:previous_terms_version xsd:int ;
+	:terms_accepted_time xsd:int ;
+}
+:AuthData{
+	:auth_modified_epoch xsd:int ;
+	:auth_status xsd:int ;
+	:auth_password_serial_number xsd:int ;
+	:auth_version xsd:int ;
+}
+
+:FriendsApi{
+	:allow_friends_api xsd:string ;
+}
+
+
+##########################################################################################
+
+:MarketingCommunications{
+
+}
+
+##############################
+:OtherData{
+
+}
+
+##############################
+:ICloudNotes{
+
+}
