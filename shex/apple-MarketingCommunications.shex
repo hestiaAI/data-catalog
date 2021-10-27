@@ -1,0 +1,161 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##############################
+:AppleOnlineStoreAndRetailStore{
+}
+
+##############################
+:AppleCare{
+}
+
+##############################
+:GameCenter{
+}
+
+
+##########################################################################################
+
+:MarketingCommunications{
+	:additional_subscriptions @:AdditionalSubscription *;
+	:apple_software_downloads @:AppleSoftwareDownload *;
+	:device_registration_history_pre_i_os_8_and_yosemite @:DeviceRegistrationHistoryPreIOs8AndYosemite *;
+	:marketing_communications_delivery @:MarketingCommunicationsDelivery *;
+	:marketing_communications_response @:MarketingCommunicationsResponse *;
+}
+
+:AdditionalSubscription{
+	:original_unique_identifier xsd:string ;
+	:subscription_name xsd:string ;
+	:name_prefix xsd:string ;
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:middle_name xsd:string ;
+	:email_address xsd:string ;
+	:date_of_birth xsd:string ;
+	:client_ip_address xsd:string ;
+	:client_browser_details xsd:string ;
+	:main_address_line_1 xsd:string ;
+	:main_address_line_2 xsd:string ;
+	:main_address_line_3 xsd:string ;
+	:main_city xsd:string ;
+	:main_postal_cd xsd:string ;
+	:main_prefecture_cd xsd:string ;
+	:province_name xsd:string ;
+	:main_country xsd:string ;
+	:preferred_language xsd:string ;
+	:locale_cd xsd:string ;
+	:main_phone_nr xsd:string ;
+	:home_phone_nr xsd:string ;
+	:mobile_phone_nr xsd:string ;
+	:application_data_text xsd:string ;
+	:application_data_text_1 xsd:string ;
+	:application_data_text_2 xsd:string ;
+	:person_title xsd:string ;
+	:accepts_apple_email xsd:string ;
+	:accepts_itunes_email xsd:string ;
+	:company_name xsd:string ;
+	:create_timestamp xsd:dateTime ;
+	:change_timestamp xsd:dateTime ;
+}
+:AppleSoftwareDownload{
+	:original_unique_identifier xsd:string ;
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:phonetic_first_name xsd:string ;
+	:phonetic_last_name xsd:string ;
+	:email_address xsd:string ;
+	:client_ip_address xsd:string ;
+	:country xsd:string ;
+	:language_cd xsd:string ;
+	:locale_cd xsd:string ;
+	:device_details xsd:string ;
+	:software_download_timestamp xsd:dateTime ;
+	:change_timestamp xsd:dateTime ;
+}
+:DeviceRegistrationHistoryPreIOs8AndYosemite{
+	:original_unique_identifier xsd:string ;
+	:registration_timestamp xsd:dateTime ;
+	:activation_timestamp xsd:dateTime ;
+	:unbrick_timestamp xsd:dateTime ;
+	:product xsd:string ;
+	:email_address xsd:string ;
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:middle_name xsd:string ;
+	:home_phone_nr xsd:string ;
+	:serial_nr xsd:string ;
+	:iccid_nr xsd:string ;
+	:imei_nr xsd:string ;
+	:udid_nr xsd:string ;
+	:client_ip_address xsd:string ;
+	:exclusive_chip_id xsd:string ;
+	:ethernet_mac_address xsd:string ;
+	:mailing_address_line_1 xsd:string ;
+	:mailing_address_line_2 xsd:string ;
+	:mailing_address_line_3 xsd:string ;
+	:mailing_city_name xsd:string ;
+	:mailing_postal_cd xsd:string ;
+	:mailing_state_province xsd:string ;
+	:country xsd:string ;
+	:language_cd xsd:string ;
+	:accepts_email_flag xsd:string ;
+	:mail_sent_indicator xsd:string ;
+	:phonetic_first_name xsd:string ;
+	:phonetic_last_name xsd:string ;
+	:server_serial_nr xsd:string ;
+	:software_name xsd:string ;
+	:software_serial_nr xsd:string ;
+	:software_version_nr xsd:string ;
+	:create_timestamp xsd:dateTime ;
+	:change_timestamp xsd:dateTime ;
+	:paired_serial_nr xsd:string ;
+	:paired_udid xsd:string ;
+	:paired_imei xsd:string ;
+	:paired_ip_address xsd:string ;
+}
+:MarketingCommunicationsDelivery{
+	:communication_name xsd:string ;
+	:country xsd:string ;
+	:language xsd:string ;
+	:apple_id_reference_number xsd:int ;
+	:delivery_time xsd:dateTime ;
+}
+:MarketingCommunicationsResponse{
+	:communication_name xsd:string ;
+	:apple_id_reference_number xsd:int ;
+	:response_type xsd:string ;
+	:response_time xsd:dateTime ;
+	:application_name xsd:string ;
+	:operating_system xsd:string ;
+}
+
+
+##########################################################################################
+:OtherData{
+
+}
+
+##############################
+:ICloudNotes{
+
+}
