@@ -1,0 +1,260 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+#------------
+:AppleIdAccountAndDeviceInformation{
+}
+
+#------------
+:AppleMediaServicesInformation{
+	:apple_media_services @:AppleMediaServices ;
+	:update_and_redownload_history @:UpdateAndRedownloadHistory ;
+	:i_tunes_gift_card_credit_redemption_history @:ITunesGiftCardCreditRedemptionHistory ;
+}
+:AppleMediaServices{
+	:apple_music_activity @:AppleMusicActivity ;
+	:apps_and_services_analytics @:AppsAndServicesAnalytics ;
+	:stores_activity @:StoresActivity ;
+}
+:AppleMusicActivity{
+	:social_and_connect_post_information @:SocialAndConnectPostInformation ;
+	:music_onboarding_artists @:MusicOnboardingArtists ;
+	:music_onboarding_genres @:MusicOnboardingGenres ;
+}
+:SocialAndConnectPostInformation{
+	# No data in available sample
+}
+:MusicOnboardingArtists{
+	:artist_id xsd:string ;
+	:artists xsd:string ;
+	:like xsd:string ;
+	:dislike xsd:string ;
+}
+:MusicOnboardingGenres{
+	:genre xsd:string ;
+	:like xsd:string ;
+	:dislike xsd:string ;
+}
+
+:AppsAndServicesAnalytics{
+	:notifications @:AppsAndServicesAnalyticsNotifications ;	# No data in available sample 
+}
+:StoresActivity{
+	:account_and_transaction_history @:AccountAndTransactionHistory ;
+	:apple_tv_and_podcast_information @:AppleTvAndPodcastInformation ;
+	:other_activity @:OtherActivity ;
+	:play_position_information @:PlayPositionInformation ;
+}
+:AccountAndTransactionHistory{
+	:account_history_account_details @:AccountHistoryAccountDetails ;
+	:account_history_apple_media_products_welcome_page_action @:AccountHistoryAppleMediaProductsWelcomePageAction ;
+	:billing_information_history @:BillingInformationHistory ;
+	:customer_device_history_computer_authorizations @:CustomerDeviceHistoryComputerAuthorizations ;
+	:customer_device_history_push_notification_authorization @:CustomerDeviceHistoryPushNotificationAuthorization ;
+	:customer_device_history_i_tunes_in_the_cloud_authorization @:CustomerDeviceHistoryITunesInTheCloudAuthorization ;
+	:pre_order_history @:PreOrderHistory ;
+	:store_free_transaction_history @:StoreFreeTransactionHistory ;
+	:store_transaction_history @:StoreTransactionHistory ;
+	:u_2_songs_of_innocence_album_information @:U2SongsOfInnocenceAlbumInformation ;
+	:i_tunes_and_app_store_hidden_purchases @:ITunesAndAppStoreHiddenPurchases ;
+}
+:AccountHistoryAccountDetails{
+	:apple_id_number xsd:string ;
+	:account_signup_date xsd:dateTime ;
+	:screen_name xsd:string ;
+	:country xsd:string ;
+	:device_user_agent_string xsd:string ;
+	:birth_year xsd:int ;
+	:opted_out_of_personalized_recommendations xsd:string ;
+	:opted_out_of_receiving_subscription_renewal_receipts xsd:string ;
+	:last_date_of_vppa_consent xsd:string ;
+}
+
+:AccountHistoryAppleMediaProductsWelcomePageAction{
+	:apple_id_number xsd:string ;
+	:app_name xsd:string ;
+	:first_user_action_date xsd:dateTime ;
+	:latest_user_action_date xsd:dateTime ;
+	:version xsd:string ;
+}
+:BillingInformationHistory{
+	:apple_id_number xsd:string ;
+	:billing_information_id xsd:string ;
+	:active xsd:string ;
+	:rank xsd:string ;
+	:billing_information_created_date xsd:string ;
+	:e_mail_address xsd:string ;
+	:billing_name_prefix xsd:string ;
+	:billing_first_name xsd:string ;
+	:billing_last_name xsd:string ;
+	:billing_street_address xsd:string ;
+	:billing_street_address_2 xsd:string ;
+	:billing_street_address_3 xsd:string ;
+	:billing_address_city xsd:string ;
+	:billing_address_county xsd:string ;
+	:billing_district xsd:string ;
+	:billing_address_suburb xsd:string ;
+	:billing_state_province xsd:string ;
+	:billing_postal_code xsd:string ;
+	:billing_phone_area_code xsd:string ;
+	:billing_phone_number xsd:string ;
+	:billing_storefront_country xsd:string ;
+	:payment_type xsd:string ;
+	:apple_pay_indicator xsd:string ;
+	:carrier_billing_country_dial_code xsd:string ;
+	:carrier_billing_phone_number xsd:string ;
+	:carrier_billing_carrier xsd:string ;
+	:carrier_billing_account_type xsd:string ;
+	:device_ip_address xsd:string ;
+	:device_details xsd:string ;
+	:billing_first_name_phonetic xsd:string ;
+	:billing_last_name_phonetic xsd:string ;
+	:card_issuing_bank_name  xsd:string ;
+	:card_issuing_country xsd:string ;
+	:card_number xsd:string ;
+	:payment_card_category xsd:string ;
+}
+:CustomerDeviceHistoryComputerAuthorizations{
+	:apple_id_number xsd:string ;
+	:device_identifier xsd:string ;
+	:device_name xsd:string ;
+	:enabled xsd:string ;
+	:associated_date xsd:dateTime ;
+}
+:CustomerDeviceHistoryPushNotificationAuthorization{
+	:apple_id_number xsd:string ;
+	:device_identifier xsd:string ;
+	:device_name xsd:string ;
+	:device_serial_number xsd:string ;
+	:associated_date xsd:dateTime ;
+	:latest_device_user_agent_string xsd:string ;
+}
+:CustomerDeviceHistoryITunesInTheCloudAuthorization{
+	:apple_id_number xsd:string ;
+	:device_identifier xsd:string ;
+	:device_name xsd:string ;
+	:associated_date xsd:dateTime ;
+	:enabled xsd:string ;
+	:latest_device_user_agent_string xsd:string ;
+}
+:PreOrderHistory{
+	:apple_id_number xsd:string ;
+	:device_ip_address xsd:string ;
+	:item_reference_number xsd:string ;
+	:item_description xsd:string ;
+	:seller xsd:string ;
+	:content_type xsd:string ;
+	:pre_order_date xsd:dateTime ;
+	:pre_order_completed_date xsd:dateTime ;
+	:pre_order_status xsd:string ;
+	:device_identifier xsd:string ;
+	:device_details xsd:string ;
+}
+:StoreFreeTransactionHistory{
+	:apple_id_number xsd:string ;
+	:order_number xsd:string ;
+	:item_purchased_date xsd:dateTime ;
+	:content_type xsd:string ;
+	:item_reference_number xsd:string ;
+	:item_description xsd:string ;
+	:seller xsd:string ;
+	:device_identifier xsd:string ;
+	:device_details xsd:string ;
+	:device_ip_address xsd:string ;
+	:i_cloud_family_purchase xsd:string ;
+}
+:StoreTransactionHistory{
+	:apple_id_number xsd:string ;
+	:item_purchased_date xsd:dateTime ;
+	:content_type xsd:string ;
+	:item_reference_number xsd:string ;
+	:item_description xsd:string ;
+	:seller xsd:string ;
+	:container_reference_number xsd:string ;
+	:container_description xsd:string ;
+	:invoice_item_total xsd:string ;
+	:device_identifier xsd:string ;
+	:device_details xsd:string ;
+	:device_ip_address xsd:string ;
+	:refund_amount xsd:string ;
+	:document_number xsd:string ;
+	:invoice_date xsd:dateTime ;
+	:invoice_tax_amount xsd:string ;
+	:invoice_total_amount xsd:string ;
+	:purchase_created_date xsd:dateTime ;
+	:order_number xsd:string ;
+	:billing_information_id xsd:string ;
+	:payment_type xsd:string ;
+	:currency_id xsd:string ;
+	:purchase_chargeback xsd:string ;
+	:i_cloud_family_purchase xsd:string ;
+}
+:U2SongsOfInnocenceAlbumInformation{
+	:track_name xsd:string ;
+	:entitlement_date xsd:dateTime ;
+	:item_type xsd:string ;
+	:track_reference_number xsd:string ;
+}
+:ITunesAndAppStoreHiddenPurchases{
+	:creation_date xsd:dateTime ;
+	:modification_date xsd:dateTime ;
+	:hidden xsd:string ;
+	:item_description xsd:string ;
+	:item_reference_number xsd:string ;
+}
+
+#------------------
+:AppleTvAndPodcastInformation{
+
+}
+:OtherActivity{
+
+}
+:PlayPositionInformation{
+
+}
+
+:UpdateAndRedownloadHistory{
+
+}
+:ITunesGiftCardCreditRedemptionHistory{
+
+}
+
+
+#------------
+
+:AppleOnlineStoreAndRetailStore{
+
+}
+
+:AppleCare{
+
+}
+
+:GameCenter{
+
+}
+
+:MarketingCommunications{
+
+}
+
+:OtherData{
+
+}
+
+:ICloudNotes{
+
+}
