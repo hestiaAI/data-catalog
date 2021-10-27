@@ -216,14 +216,331 @@ base <http://example.org/>
 
 #------------------
 :AppleTvAndPodcastInformation{
-
+	:apple_tv_bookmarks @:AppleTvBookmark * ;
+	:apple_tv_favorites_and_wishlist  @:AppleTvFavoritesAndWishlist ;
+	:podcasts_playstate @:PodcastsPlaystate ;
+	:tv_app_favorites_and_activity @:TvAppFavoritesAndActivity ;
+	:your_podcasts @:YourPodcast * ;
 }
+:AppleTvBookmark{
+	:item_reference xsd:string ;
+	:last_activity_timestamp_item_description xsd:string ;
+	:marked_as_unwatched xsd:boolean ;
+	:has_been_played xsd:boolean ;
+	:playback_position xsd:float ;
+	:play_count xsd:int ;
+	:has_been_rented xsd:boolean ;
+}
+:AppleTvFavoritesAndWishlist{
+	:item_reference xsd:string ;
+	:created xsd:string ;
+	:item_description xsd:string ;
+	:type xsd:string ;
+}
+:PodcastsPlaystate{
+	:feed_url xsd:string ;
+	:episode_id xsd:string ;
+	:visible xsd:string ;
+	:marked_as_played_on xsd:boolean ;
+	:manually_set xsd:boolean ;
+	:is_new xsd:boolean ;
+	:last_played_on xsd:dateTime ;
+	:playback_position xsd:float ;
+	:play_count xsd:int ;
+	:has_been_played xsd:boolean ;
+}
+:TvAppFavoritesAndActivity{
+	:generated_at_timestamp xsd:dateTime ;
+}
+:YourPodcast{
+	:last_updated xsd:dateTime ;
+	:added_on xsd:dateTime ;
+	:feed_url xsd:string ;
+	:title xsd:string ;
+	:subscribed xsd:string ;
+	:last_touched_on xsd:dateTime ;
+	:show_type xsd:string ;
+	:sort xsd:string ;
+	:playback_newest_to_oldest xsd:string ;
+}
+
+#..................
 :OtherActivity{
-
+	:app_store_click_activity @:AppStoreClickActivity ;
+	:apps_and_service_analytics @:AppsAndServiceAnalytics ;
+	:limit_ad_tracking_information @:LimitAdTrackingInformation ;
+	:media_preview_previewed @:MediaPreviewPreviewed ;
+	:playlist_moderation @:PlaylistModeration ;
+	:review_profile @:ReviewProfile ;
+	:reviews @:Reviews ;
+	:i_tunes_wishlist @:ITunesWishlist ;
 }
+
+:AppStoreClickActivity{
+	:ab_test xsd:string ;
+	:action_context xsd:string ;
+	:action_details xsd:string ;
+	:action_type xsd:string ;
+	:action_url xsd:string ;
+	:app xsd:string ;
+	:apple_id_number xsd:string ;
+	:application_name xsd:string ;
+	:app_store_referral_id xsd:string ;
+	:billing_currency_code xsd:string ;
+	:channel_partner xsd:string ;
+	:channel_partner_id xsd:string ;
+	:channel_partner_type xsd:string ;
+	:channel_product_code xsd:string ;
+	:click_target xsd:string ;
+	:click_target_type xsd:string ;
+	:client_id xsd:string ;
+	:content_location xsd:string ;
+	:event_date_time xsd:string ;
+	:event_type xsd:string ;
+	:external_referral_app_name xsd:string ;
+	:external_referral_url xsd:string ;
+	:final_search_term xsd:string ;
+	:free_app_adam_id xsd:string ;
+	:free_app_amount xsd:string ;
+	:free_app_content_id xsd:string ;
+	:free_app_currency_code xsd:string ;
+	:free_app_developer_id xsd:string ;
+	:free_app_genre xsd:string ;
+	:free_app_product_type xsd:string ;
+	:free_app_timestamp xsd:string ;
+	:free_app_transaction_id xsd:string ;
+	:hardware_model xsd:string ;
+	:hardware_type xsd:string ;
+	:host_app_name xsd:string ;
+	:impressed_content_names xsd:string ;
+	:ip_city xsd:string ;
+	:ip_country_code xsd:string ;
+	:is_apple_one_subscription xsd:string ;
+	:is_arcade_subscription xsd:string ;
+	:is_personalized xsd:string ;
+	:is_purchase xsd:string ;
+	:is_redownload xsd:string ;
+	:item_descriptions xsd:string ;
+	:item_id xsd:string ;
+	:language_id xsd:string ;
+	:location xsd:string ;
+	:major_os_version xsd:string ;
+	:offer_placement xsd:string ;
+	:offer_placement_type xsd:string ;
+	:offer_trial_id xsd:string ;
+	:offer_type xsd:string ;
+	:offer_variant xsd:string ;
+	:operating_system_languages xsd:string ;
+	:os xsd:string ;
+	:os_build_number xsd:string ;
+	:os_version xsd:string ;
+	:page xsd:string ;
+	:page_context xsd:string ;
+	:page_custom_id xsd:string ;
+	:page_details xsd:string ;
+	:page_history xsd:string ;
+	:page_id xsd:string ;
+	:page_reason_type xsd:string ;
+	:page_type xsd:string ;
+	:page_url xsd:string ;
+	:page_variant_id xsd:string ;
+	:platform xsd:string ;
+	:post_time xsd:string ;
+	:pre_tax_price xsd:string ;
+	:price xsd:string ;
+	:purchased_item_descriptions xsd:string ;
+	:referral_app_name xsd:string ;
+	:referral_url xsd:string ;
+	:referring_url xsd:string ;
+	:search_filters xsd:string ;
+	:search_tab_term xsd:string ;
+	:search_term xsd:string ;
+	:search_term_source xsd:string ;
+	:search_terms_selected xsd:string ;
+	:software xsd:string ;
+	:store_front xsd:string ;
+	:store_front_header xsd:string ;
+	:subscription_state xsd:string ;
+	:tab xsd:string ;
+	:tab_indicator xsd:string ;
+	:term xsd:string ;
+	:timezone_offset_min xsd:string ;
+	:total_amount xsd:string ;
+	:transaction_id xsd:string ;
+	:url xsd:string ;
+	:user_agent xsd:string ;
+	:widget_name xsd:string ;
+	:widget_size xsd:string ;
+	:widget_type xsd:string ;
+}
+
+:AppsAndServiceAnalytics{
+    :action_context xsd:string ;
+    :action_subtype xsd:string ;
+    :action_type xsd:string ;
+    :action_url xsd:string ;
+    :app_name xsd:string ;
+    :apple_id_number xsd:string ;
+    :artist_name xsd:string ;
+    :available_subscriptions xsd:string ;
+    :banner_app xsd:string ;
+    :banner_message_type xsd:string ;
+    :banner_offer_type xsd:string ;
+    :banner_song xsd:string ;
+    :billing_currency_code xsd:string ;
+    :campaign_group xsd:string ;
+    :campaign_token xsd:string ;
+    :click_target xsd:string ;
+    :client_id xsd:string ;
+    :consented_tv_provider xsd:string ;
+    :content_name xsd:string ;
+    :content_provider xsd:string ;
+    :content_specific_type xsd:string ;
+    :content_that_triggered_age_verification xsd:string ;
+    :content_type_that_triggered_age_verification xsd:string ;
+    :cookies xsd:string ;
+    :destination_url xsd:string ;
+    :device_data_capacity xsd:string ;
+    :device_data_capacity_available xsd:string ;
+    :device_disk_capacity xsd:string ;
+    :device_system_capacity xsd:string ;
+    :device_system_capacity_available xsd:string ;
+    :dialog_buttons xsd:string ;
+    :dialog_message xsd:string ;
+    :dialog_options xsd:string ;
+    :dialog_result xsd:string ;
+    :dialog_subject_id xsd:string ;
+    :dialog_title xsd:string ;
+    :dialog_type xsd:string ;
+    :eligible_tv_provider xsd:string ;
+    :event_date_time xsd:string ;
+    :event_post_date_time xsd:string ;
+    :event_type xsd:string ;
+    :external_referral_app_name xsd:string ;
+    :external_referral_url xsd:string ;
+    :genre xsd:string ;
+    :hardware_family xsd:string ;
+    :hardware_model xsd:string ;
+    :has_global_account_consent xsd:string ;
+    :has_previously_consented xsd:string ;
+    :host_app_name xsd:string ;
+    :host_app_version xsd:string ;
+    :impressed_content_names xsd:string ;
+    :installed_tv_provider xsd:string ;
+    :ip xsd:string ;
+    :is_free_eligible xsd:string ;
+    :is_personalized xsd:string ;
+    :item_description xsd:string ;
+    :item_descriptions xsd:string ;
+    :media_content_url xsd:string ;
+    :media_play_duration_ms xsd:string ;
+    :media_play_position_ms xsd:string ;
+    :media_tv_provider xsd:string ;
+    :navigation xsd:string ;
+    :offer_release_date xsd:string ;
+    :offer_type xsd:string ;
+    :original_title xsd:string ;
+    :os xsd:string ;
+    :os_build_number xsd:string ;
+    :os_language xsd:string ;
+    :os_version xsd:string ;
+    :page_id xsd:string ;
+    :page_type xsd:string ;
+    :page_url xsd:string ;
+    :price xsd:string ;
+    :referral_app_name xsd:string ;
+    :referral_type xsd:string ;
+    :referral_url xsd:string ;
+    :screen_height_pixel xsd:string ;
+    :screen_pixel_ratio xsd:string ;
+    :screen_width_pixel xsd:string ;
+    :search_filters xsd:string ;
+    :search_term xsd:string ;
+    :software xsd:string ;
+    :store_front xsd:string ;
+    :subscribed_tv_provider xsd:string ;
+    :subscription_sku xsd:string ;
+    :subscription_state xsd:string ;
+    :tab xsd:string ;
+    :term xsd:string ;
+    :timezone_offset_min xsd:string ;
+    :transaction_id xsd:string ;
+    :type xsd:string ;
+    :upsell_type xsd:string ;
+    :uri xsd:string ;
+    :user_actions xsd:string ;
+    :user_agent xsd:string ;
+    :user_subscription_status xsd:string ;
+    :window_inner_height_pixel xsd:string ;
+    :window_inner_width_pixel xsd:string ;
+    :window_orientation xsd:string ;
+    :window_outer_height_pixel xsd:string ;
+    :window_outer_width_pixel xsd:string ;
+}
+
+:LimitAdTrackingInformation{
+    :status xsd:string ;
+    :created_date xsd:dateTime ;
+}
+
+:MediaPreviewPreviewed{
+    :previewed_item_description xsd:string ;
+    :date_created xsd:dateTime ;
+    :item_reference_number xsd:string ;
+}
+
+:PlaylistModeration{
+	# No data in sample
+}
+
+:ReviewProfile{
+    :dsid xsd:string ;
+    :wantsAllArtistAlerts xsd:boolean ;
+    :wantsGeniusArtistAlerts xsd:boolean ;
+    :nickname xsd:string ;
+}
+
+:Reviews{
+    :review_reference_number xsd:string ;
+    :item_reference_number xsd:string ;
+    :item_type xsd:string ;
+    :item_description xsd:string ;
+    :provider_name xsd:string ;
+    :app_version xsd:string ;
+    :review_title xsd:string ;
+    :review_text xsd:string ;
+    :created_on xsd:dateTime ;
+    :rating xsd:string ;
+    :removed xsd:string ;
+    :language xsd:string ;
+    :ip_address xsd:string ;
+    :user_agent xsd:string ;
+    :pulled_for_concern xsd:string ;
+}
+
+:ITunesWishlist{
+    :created_date xsd:dateTime ;
+    :last_modified_date xsd:dateTime ;
+    :item_description xsd:string ;
+    :content_type xsd:string ;
+    :item_reference_number xsd:string ;
+}
+
+#..................
+
 :PlayPositionInformation{
-
+	:playback_activity @:PlaybackActivity ;
 }
+:PlaybackActivity{
+	:item_reference xsd:string ;
+	:item_description xsd:string ;
+	:last_activity_timestamp xsd:dateTime ;
+	:playback_position xsd:float ;
+	:play_count xsd:int ;
+	:has_been_played xsd:boolean ;
+}
+
+#..................
 
 :UpdateAndRedownloadHistory{
 
