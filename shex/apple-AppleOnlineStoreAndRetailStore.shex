@@ -1,0 +1,76 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##########################################################################################
+:AppleOnlineStoreAndRetailStore{
+	:apple_online_store_and_retail_store_activity @:AppleOnlineStoreAndRetailStoreActivity ;
+	:apple_online_and_retail_stores @:AppleOnlineAndRetailStores ;
+}
+#===================
+:AppleOnlineStoreAndRetailStoreActivity{
+	:transaction_history @:TransactionHistory ;
+}
+:TransactionHistory{
+	:email_receipts @:EmailReceipt * ;
+}
+:EmailReceipt{
+	:pdf_data xsd:string ; # actually a PDF file
+}
+
+#===================
+:AppleOnlineAndRetailStores{
+	:other_activity @:OtherActivity ;
+}
+:OtherActivity{
+	:apple_online_store_push_notifications @:AppleOnlineStorePushNotifications * ;
+}
+:AppleOnlineStorePushNotifications{
+	:category xsd:string ;
+	:subsription_status xsd:string ;
+	:device xsd:string ;
+	:registration_date_time_utc xsd:dateTime ;
+}
+
+##########################################################################################
+:AppleCare{
+
+}
+
+##############################
+:GameCenter{
+
+}
+
+##############################
+:MarketingCommunications{
+
+}
+
+##############################
+:OtherData{
+
+}
+
+##############################
+:ICloudNotes{
+
+}
