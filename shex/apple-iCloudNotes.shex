@@ -1,0 +1,68 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##############################
+:AppleOnlineStoreAndRetailStore{
+}
+
+##############################
+:AppleCare{
+}
+
+##############################
+:GameCenter{
+}
+
+
+##############################
+
+:MarketingCommunications{
+}
+
+
+##############################
+:OtherData{
+  
+}
+
+
+##########################################################################################
+
+:ICloudNotes{
+	:notes @:ICloudNote *;
+}
+:ICloudNote{
+	:subject xsd:string ;
+	:from xsd:string ;
+	:x_universally_unique_identifier xsd:string ;
+	:content_type xsd:string ;
+	:charset xsd:string ;
+	:x_uniform_type_identifier xsd:string ;
+	:message_id xsd:string ;
+	:date xsd:dateTime ;
+	:x_mail_created_date xsd:dateTime ;
+	:content_transfer_encoding xsd:string ;
+	:mime_version xsd:string ;
+	:text xsd:string ;
+}
+##########################################################################################
+
