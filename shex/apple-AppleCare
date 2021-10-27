@@ -1,0 +1,130 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##############################
+:AppleOnlineStoreAndRetailStore{
+}
+
+##########################################################################################
+:AppleCare{
+	:apple_care @:AppleCareDir ; # actually also named "apple care"
+}
+:AppleCareDir{
+	:apple_care_support @:AppleCareSupport ;
+}
+:AppleCareSupport{
+	:apple_support_communities_profiles @:AppleSupportCommunitiesProfile *;
+	:apple_support_communities_questions @:AppleSupportCommunitiesQuestion *;
+	:apple_support_communities_replies @:AppleSupportCommunitiesReply *;
+	:apple_care_cases @:AppleCareCase *;
+	:apple_care_device_details @:AppleCareDeviceDetail *;
+}
+
+:AppleSupportCommunitiesProfile{
+	:language xsd:string ;
+	:username xsd:string ;
+	:member_since_gmt xsd:dateTime ;
+	:last_login_gmt xsd:dateTime ;
+	:level xsd:string ;
+	:points xsd:int ;
+	:bio xsd:string ;
+	:location xsd:string ;
+	:occupation xsd:string ;
+	:specialities xsd:string ;
+	:awards_001 xsd:string ;
+	:awards_002 xsd:string ;
+	:awards_003 xsd:string ;
+	:awards_004 xsd:string ;
+	:awards_005 xsd:string ;
+	:awards_006 xsd:string ;
+	:awards_007 xsd:string ;
+	:awards_008 xsd:string ;
+	:awards_009 xsd:string ;
+	:awards_010 xsd:string ;
+	:avatar_url_01 xsd:string ;
+	:avatar_url_02 xsd:string ;
+	:avatar_url_03 xsd:string ;
+	:timezone xsd:string ;
+	:profile_url xsd:string ;
+	:active xsd:boolean ;
+}
+:AppleSupportCommunitiesQuestion{
+	:creation_time_gmt xsd:dateTime ;
+	:language xsd:string ;
+	:community xsd:string ;
+	:associated_device xsd:string ;
+	:subject xsd:string ;
+	:body xsd:string ;
+	:replies xsd:int ;
+	:solved xsd:boolean ;
+	:url xsd:string ;
+}
+:AppleSupportCommunitiesReply{
+	:creation_time_gmt xsd:dateTime ;
+	:language xsd:string ;
+	:community xsd:string ;
+	:reply_content xsd:string ;
+	:helpful xsd:boolean ;
+	:recommended xsd:boolean ;
+	:solved xsd:boolean ;
+	:url xsd:string ;
+}
+:AppleCareCase{
+	:case_id xsd:int ;
+	:case_title xsd:string ;
+	:interaction_type xsd:string ;
+	:apple_id_number xsd:string ;
+	:first_name xsd:string ;
+	:last_name xsd:string ;
+	:email xsd:string ;
+	:phone_number xsd:string ;
+	:serial_number xsd:string ;
+	:order_number xsd:string ;
+	:creation_date xsd:dateTime ;
+}
+:AppleCareDeviceDetail{
+	:serial_number xsd:string ;
+	:product_description xsd:string ;
+	:purchase_date xsd:dateTime ;
+	:shipped_date xsd:dateTime ;
+	:apple_id_number xsd:int ;
+}
+
+##########################################################################################
+:GameCenter{
+
+}
+
+##############################
+:MarketingCommunications{
+
+}
+
+##############################
+:OtherData{
+
+}
+
+##############################
+:ICloudNotes{
+
+}
