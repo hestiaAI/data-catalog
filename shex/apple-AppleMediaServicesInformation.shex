@@ -542,15 +542,44 @@ base <http://example.org/>
 
 #..................
 
+#==============================
 :UpdateAndRedownloadHistory{
-
+	:i_tunes_and_app_book_re_download_and_update_history @:ITunesAndAppBookReDownloadAndUpdateHistory ;
 }
+:ITunesAndAppBookReDownloadAndUpdateHistory{
+	:apple_id_number xsd:int ;
+	:activity_date xsd:dateTime ;
+	:content_type xsd:string ;
+	:item_reference_number xsd:int ;
+	:item_description xsd:string ;
+	:version_text xsd:string ;
+	:seller xsd:string ;
+	:device_details xsd:string ;
+	:device_ip_address xsd:string ;
+	:device_identifier xsd:string ;
+}
+
+#==============================
 :ITunesGiftCardCreditRedemptionHistory{
-
+	:i_tunes_gift_card_redemption_balance_history  @:ITunesGiftCardRedemptionBalanceHistory ;
+	:i_tunes_gift_card_redemption_history  @:ITunesGiftCardRedemptionHistory ;
+}
+:ITunesGiftCardRedemptionBalanceHistory{
+	:transaction_date xsd:dateTime ;
+	:country xsd:string ;
+	:order_number xsd:string ;
+	:amount xsd:float ;
+	:transaction_type xsd:string ;
+}
+:ITunesGiftCardRedemptionHistory{
+	:total_credit xsd:float ;
+	:total_debit xsd:float ;
+	:total_balance xsd:float ;
+	:country xsd:string ;
+	:account_status xsd:string ;
 }
 
-
-#------------
+##############################
 
 :AppleOnlineStoreAndRetailStore{
 
