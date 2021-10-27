@@ -1,0 +1,142 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:apple_id_account_and_device_information @:AppleIdAccountAndDeviceInformation ;
+	:apple_media_services_information @:AppleMediaServicesInformation ;
+	:apple_online_store_and_retail_store @:AppleOnlineStoreAndRetailStore ;
+	:apple_care @:AppleCare ;
+	:game_center @:GameCenter ;
+	:marketing_communications @:MarketingCommunications ;
+	:other_data @:OtherData ;
+	:i_cloud_notes @:ICloudNotes ;
+}
+##############################
+:AppleIdAccountAndDeviceInformation{
+}
+
+##############################
+:AppleMediaServicesInformation{
+}
+
+##############################
+:AppleOnlineStoreAndRetailStore{
+}
+
+##############################
+:AppleCare{
+}
+
+##############################
+:GameCenter{
+}
+
+
+##############################
+
+:MarketingCommunications{
+}
+
+
+##########################################################################################
+:OtherData{
+	:apple_features_using_i_cloud @:AppleFeaturesUsingICloud ;
+	:devices_registered_with_apple_messaging @:DevicesRegisteredWithAppleMessaging ;
+}
+:AppleFeaturesUsingICloud{
+	:calendar @:Calendar ;
+	:event_kit  @:EventKit ;
+	:face_time @:FaceTime ;
+	:mail @:Mail ;
+	:maps @:Maps ;
+	:wallet @:Wallet ;
+	:wi_fi @:WiFi ;
+}
+:Calendar{
+	:recents @:CalendarRecent *;
+}
+:CalendarRecent{
+	:max_recents @:MaxRecent *;
+}
+:MaxRecent{
+	:map_location xsd:int ;
+	:encoding_version xsd:int ;
+}
+
+:EventKit{
+	:event_kit_location @:EventKitLocation * ;
+}
+:EventKitLocation{
+	:property xsd:string ;
+	:t xsd:dateTime *;
+	:map_location @:MapLocation *;
+	:original_source xsd:string ;
+	:encoding_version xsd:int ;
+	:display_name xsd:string ;
+	:address  xsd:string ;
+	:max_recents @:MaxRecent ;
+}
+:MapLocation{
+	:longitude xsd:float ;
+	:hAccuracy xsd:float ;
+	:vAccuracy xsd:float ;
+	:latitude xsd:float ;
+}
+
+:FaceTime{
+	:max_recents @:MaxRecent *;
+}
+:Mail{
+	:mail_recents @:MailRecent *;
+	:vip_senders @:VIPSender * ;
+}
+:MailRecent{
+	:key xsd:string ;
+	:address xsd:string * ;
+	:display_name xsd:string ;
+	:sending_address xsd:string ;
+	:encoding_version xsd:int ;
+	:t xsd:dateTime * ;        
+}
+:VIPSender{
+	:key xsd:string ;
+	:encoding_version xsd:int ;
+	:display_name xsd:string ;
+	:address xsd:string * ;
+}
+
+:Maps{
+	# NO DATA
+}
+:Wallet{
+	:max_recents @:MaxRecent *;
+}
+:WiFi{
+	:known_networks @:KnownNetwork *;
+}
+:KnownNetwork{
+	:key xsd:string ;
+	:added_by xsd:string ;
+	:enabled xsd:boolean ;
+	:wep xsd:boolean ;
+	:is_network_configured xsd:boolean ;
+	:ssid_str xsd:string ;
+	:is_network_customized xsd:boolean ;
+	:added_at xsd:dateTime ;
+	:user_directed xsd:boolean ;
+	:is_network_eap xsd:boolean ;
+	:ap_mode xsd:int ;
+}
+
+:DevicesRegisteredWithAppleMessaging{
+	:devices xsd:string * ;
+	:user-handles xsd:string * ;
+}
+
+
+##########################################################################################
+
+:ICloudNotes{
+
+}
