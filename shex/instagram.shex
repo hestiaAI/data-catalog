@@ -1,0 +1,113 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:comments @:Comments ;
+	:connections @:Connections ;
+	:contacts @:Contacts ;
+	:likes @:Likes ;
+	:media @:Media ;
+	:messages @:Messages ;
+	:profile @:Profile ;
+	:saved @:Saved ;
+	:searches @:Searches ;
+	:settings @:Settings ;
+}
+
+:Comments{
+	:media_comments @:MediaComment *;
+}
+:MediaComment{
+	:date xsd:dateTime ;
+	:text xsd:string ;
+	:from xsd:string ;
+}
+
+:Connections{
+	:blocked_users @:DatedText * ;
+	:follow_requests_sent  @:DatedText * ;
+	:followers @:DatedText * ;
+	:following @:DatedText * ;
+	:following_hashtags @:DatedText * ;
+}
+:DatedText{
+	:date xsd:dateTime ;
+	:text xsd:string ;
+}
+
+:Contacts{
+	:contacts @:Contact * ;
+}
+:Contacts{
+	#NO DATA
+}
+
+:Likes{
+	:media_likes @:DatedText * ;
+	:comment_likes @:DatedText * ;
+}
+:Media{
+	:photos @:Photograph * ;
+	:profile @:Photograph *;
+}
+:Photograph{
+	:caption xsd:string ;
+	:taken_at xsd:dateTime ;
+	:is_active_profile xsd:boolean ;
+	:path xsd:string ;
+}
+
+:Messages{
+	:conversations @:Conversation *;
+}
+:Conversation{
+	:participants xsd:string * ;
+    :conversation @:ConversationMessage * ;
+}
+:ConversationMessage{
+	:sender xsd:string * ;
+	:created_at xsd:dateTime ;
+	:text xsd:string * ;
+}
+
+:Profile{
+	:biography xsd:string * ; 
+	:date_joined xsd:dateTime ;
+	:email xsd:string * ; 
+	:website xsd:string * ; 
+	:gender xsd:string * ; 
+	:private_account xsd:boolean * ; 
+	:name xsd:string * ; 
+	:phone_number xsd:string * ; 
+	:profile_pic_url xsd:string * ; 
+	:username xsd:string * ; 
+}
+:Saved{
+	:saved_collections @:SavedCollection * ;
+	:saved_media @:DatedText * ;
+}
+:SavedCollection{
+	:name xsd:string ; 
+	:created_at xsd:dateTime ;
+	:updated_at xsd:dateTime ;
+	:media @:DatedText * ;
+}
+
+:Searches{
+	:searched @:Search * ;
+}
+:Search{
+	:search_click xsd:string ; 
+	:time xsd:dateTime ;
+	:type xsd:string ; 
+}
+
+:Settings{
+	:allow_comments_from xsd:string ;
+	:blocked_commenters xsd:string *;
+	:filtered_keywords xsd:string *;
+}
+
+
+
