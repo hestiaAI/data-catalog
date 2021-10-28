@@ -1,0 +1,45 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:P13nData{
+	:demographics @:Demographics ;
+	:interests @:Interests ;
+	:location_history @:LocationHistory ;
+	:inferred_age_info @:InferredAgeInfo ;
+}
+:Demographics{
+	:languages @:PersonalisationItem * ;
+	:gender_info xsd:string ;
+}
+:PersonalisationItem{
+	:language xsd:string ;
+	:is_disabled xsd:boolean ;
+}
+
+:Interests{
+	:interests @:PersonalisationItem * ;
+	:partner_interests @:PersonalisationItem * ;
+	:audience_and_advertisers @:AudienceAndAdvertisers ;
+	:shows xsd:string * ;
+}
+
+:AudienceAndAdvertisers{
+	:num_audiences xsd:int ;
+	:advertisers xsd:string * ;
+	:lookalike_advertisers  xsd:string * ;
+}
+
+:LocationHistory{
+	:location_history @:LocationHistoryPoint *; # NO DATA
+}
+
+
+:InferredAgeInfo{
+	:age xsd:string * ;
+	:birthDate xsd:string ;
+}
+
+
+
+
