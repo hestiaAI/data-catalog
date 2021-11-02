@@ -12,7 +12,7 @@ base <http://example.org/>
 }
 
 :Activity{         # My Activity subdirectory
-	:adds @:AddActivity ;							# file 'My Activity/Ads/MyActivity.json'
+	:ads @:AdActivity ;							# file 'My Activity/Ads/MyActivity.json'
 	:android @:AndroidActivity ; 					# file 'My Activity/Android/MyActivity.json'
 	:book @:BooksActivity ; 						# file 'My Activity/Books/MyActivity.json'
 	:chrome @:ChromeActivity ;  					# file 'My Activity/Chrome/MyActivity.json'          
@@ -39,15 +39,15 @@ base <http://example.org/>
   :formattedName xsd:string;
 }
 
-:Add{ # file 'My Activity/Ads/MyActivity.json'
+:Ad{ # file 'My Activity/Ads/MyActivity.json'
   :title xsd:string ;
   :titleUrl xsd:string ;
   :time xsd:dateTime ;
   :products xsd:string * ;
-  :details @:AddDetails *;
+  :details @:AdDetails *;
 }
 
-:AddDetails{
+:AdDetails{
   :name  xsd:string * ;
 }
 
