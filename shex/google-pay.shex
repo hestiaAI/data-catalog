@@ -1,0 +1,25 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:events @:Event *;
+}
+
+:Event{
+	:header xsd:string; 		# "Google Pay",
+	:title xsd:string; 			#  e.g. "Used Google Pay to attempt contactless payment at a place",
+	:time xsd:dateTime; 
+	:products xsd:string * ; 	# ["Google Pay"],
+	:details @:Detail * ;
+	:locationInfos @:LocationInfo * ;
+}
+
+:Detail{
+	:name xsd:string ; 	# e.g. "Estimated amount: XXX "
+}
+:LocationInfo {
+	:name xsd:string; 		# e.g."At this place",
+	:url xsd:string; 		# 
+	:source xsd:string; 	# e.g."From your Google Pay transaction"
+  }
