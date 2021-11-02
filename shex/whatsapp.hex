@@ -1,0 +1,23 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Data comes in one single "portability.json" JSON file.
+
+:UserProfile{
+	:pay xsd:string ? ;
+	:about xsd:string ? ;
+    :groups xsd:string * ; 		# array of group names
+	:contacts  xsd:string * ;	# array of phone numbers, with international prefixes (+33 for France, etc.)
+	:profile_pic @:ProfilePicture ;
+	:email xsd:string ? ;
+	:account_number xsd:string ;# phone number, with international prefixes (+33 for France, etc.)
+	:generation_time xsd:int ; 	# UNIX timestamp
+	:request_time xsd:int ; 	# UNIX timestamp
+}
+:ProfilePicture{
+	:timestamp xsd:int ; 	# UNIX timestamp
+	:data xsd:string ;		# base64 string for a jpeg file
+}
+
+
