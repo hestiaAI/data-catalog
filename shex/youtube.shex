@@ -1,0 +1,19 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:view_events @:ViewEvent *;
+}
+:ViewEvent{
+	:header xsd:string;		# "YouTube"
+	:title  xsd:string;
+	:titleUrl  xsd:string;
+	:subtitles @:NamedURL *;
+	:time xsd:dateTime;
+	:products  xsd:string *;	# e.g.: ["YouTube"]
+}
+:NamedURL{
+	:name xsd:string ;
+	:url xsd:string ;
+}
