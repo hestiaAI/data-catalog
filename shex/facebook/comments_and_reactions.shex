@@ -1,0 +1,36 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "comments_and_reactions" contains 2 files:
+# 		comments.json  
+#		posts_and_comments.json
+
+:UserData{
+	:comments_v2 @:Comment *;
+	:reactions_v2 @:Reaction * ;
+}
+
+# 		comments.json  
+:Comment{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:data @:CommentData ;
+	:title xsd:string ;	
+}
+:CommentData{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:comment xsd:string ;	
+	:author xsd:string ;	
+}
+            
+#		posts_and_comments.json
+:Reaction{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:data @:ReactionData * ;
+	:title xsd:string ;
+}
+:ReactionData{
+	:reaction xsd:string ;		# e.g."ANGER","HAHA","LIKE","LOVE","SORRY","WOW"
+	:actor xsd:string ;			# e.g. name of the account owner
+}
+
