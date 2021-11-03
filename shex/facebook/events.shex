@@ -1,0 +1,42 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "events" contains 3 files:
+# 		event_invitations.json
+# 		your_event_responses.json
+# 		your_events.json
+
+:UserData{
+	:events_invited_v2 @:Event *;
+	:event_responses_v2 @:EventResponses * ;
+	:your_events_v2 @:Event *;
+}
+
+# 		event_invitations.json
+# 		your_events.json
+:Event{
+	:name xsd:string ; 
+	:start_timestamp xsd:int ; # UNIX timestamp
+	:end_timestamp xsd:int ; # UNIX timestamp
+	:place @:Place ?;
+	:description  xsd:string ?; 
+	:create_timestamp xsd:int ?; # UNIX timestamp
+}
+:Place{
+	:name xsd:string ; 
+	:coordinate @:Coordinate;
+	:address xsd:string ; 
+}
+:Coordinate{
+	:latitude xsd:float ; 
+	:longitude xsd:float ; 
+}
+
+# 		your_event_responses.json
+:EventResponses{
+	:events_joined @:Event *;
+	:events_declined @:Event *;
+	:events_interested @:Event *;
+}
+
