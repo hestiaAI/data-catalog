@@ -1,0 +1,38 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "groups" contains 2 files:
+# 		your_group_membership_activity.json  
+#		your_posts_in_groups.json
+
+
+:UserData{
+	:groups_joined_v2 @:Contact *;
+	:group_posts_v2 @:Post *;
+}
+
+:Contact{
+	:name xsd:string ;
+	:timestamp xsd:int ; # UNIX timestamp
+}
+
+:Post{
+	:timestamp xsd:int ; # UNIX timestamp
+	:attachments @:Attachment * ;
+	:data @:Data * ;
+	:title xsd:string ;
+}
+:Attachment{
+	:data @:AttachmentData * ;
+}
+:Data{
+	:post xsd:string ;
+}
+:AttachmentData{
+	:external_context @:ExternalContent ;
+}
+:ExternalContent{
+	:url xsd:string ;
+}
+
