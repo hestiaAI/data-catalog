@@ -2,12 +2,16 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# Data to be found in
-# "location/location_history.json"
+# The directory "location" contains 3 files:
+# 		primary_location.json  
+#		timezone.json
+#		location_history.json
 
 
-:LocationHistory{
+:UserData{
 	:location_history @:LocationHistoryPoint * ;
+	:primary_location_v2 @:PrimaryLocation ;
+	:timezone_v2 xsd:string ;
 }
 
 :LocationHistoryPoint{
@@ -19,4 +23,13 @@ base <http://example.org/>
 :Coordinate{
 	:latitude xsd:int; 
 	:longitude xsd:int; 
+}
+
+:PrimaryLocation{
+	:city_region_pairs @:CityRegionPair * ;
+	:zipcode xsd:int * ;
+}
+:CityRegionPair{
+	:city xsd:string ;
+	:region xsd:string ;          
 }
