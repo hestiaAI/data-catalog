@@ -1,0 +1,45 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "ads_information" contains 2 files:
+# 		group_interactions.json  
+#		people_and_friends.json
+
+
+
+:UserData{
+	:group_interactions_v2 @:GroupInteraction *;
+	:people_interactions_v2 @:PeopleInteraction * ;
+}
+
+# 		group_interactions.json  
+:GroupInteraction{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:GroupInteractionEntry * ;
+}
+:GroupInteractionEntry{
+	:entry_data @:GroupInteractionEntryData ;
+}
+:GroupInteractionEntryData
+{
+	:name xsd:string ;
+	:value xsd:string ;		# e.g. "1 time:, "3 times"
+	:uri xsd:string ;
+}
+
+#		people_and_friends.json
+:PeopleInteraction{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:PeopleInteractionEntry * ;
+}
+:PeopleInteractionEntry{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:entry_data @:PeopleInteractionEntryData ;
+}
+:PeopleInteractionEntryData{
+	:name xsd:string ;
+	:uri xsd:string ;
+}
