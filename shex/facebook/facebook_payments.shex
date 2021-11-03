@@ -1,0 +1,14 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "facebook_payments" contains 1 files:
+# 		payment_history.json
+
+:UserData{
+	:payments_v2 @:Payments_v2 *;
+}
+:Payments_v2{
+	:preferred_currency xsd:string ;
+}
+
