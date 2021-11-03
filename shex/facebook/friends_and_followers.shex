@@ -1,0 +1,26 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "friends_and_followers" contains 6 files:
+# 		friend_requests_received.json  
+#		friend_requests_sent.json
+#		friends.json
+#		rejected_friend_requests.json
+#		removed_friends.json
+#		who_you_follow.json
+
+:UserData{
+	:received_requests_v2 @:Contact *;
+	:sent_requests_v2 @:Contact *;
+	:friends_v2 @:Contact *;
+	:rejected_requests_v2 @:Contact *;
+	:deleted_friends_v2 @:Contact *;
+	:following_v2 @:Contact *;
+}
+
+:Contact{
+	:name xsd:string ;
+	:timestamp xsd:int ; # UNIX timestamp
+}
+
