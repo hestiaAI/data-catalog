@@ -1,0 +1,47 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory contains three files:
+# 		apps_and_websites.json  
+#		posts_from_apps_and_websites.json  
+#		your_apps.json
+
+:UserData{
+	:installed_apps_v2 @:InstalledApp *;
+	:app_posts_v2 @:AppPost * ;
+	:admined_apps_v2 @:AdminedApp * ;
+}
+
+# 		apps_and_websites.json  
+:InstalledApp{
+	:name xsd:string ;
+	:added_timestamp xsd:int ;		# UNIX timestamp
+	:user_app_scoped_id xsd:int ;
+	:category xsd:string ; 			# e.g."active", "inactive", "offline"
+	:removed_timestamp xsd:int ;
+}
+
+#		posts_from_apps_and_websites.json  
+:AppPost{
+	:timestamp xsd:int ;		# UNIX timestamp
+	:attachments @:Attachment * ;
+    :title xsd:string ;
+}
+:Attachment{
+	:data @:AttachmentData * ;
+}
+:AttachmentData{
+	:external_context @:ExternalContext;
+}
+:ExternalContext{
+	:name xsd:string ;
+	:url xsd:string ;
+}
+
+:AdminedApp
+{
+	:name xsd:string ;
+	:added_timestamp xsd:int ;
+}
+
