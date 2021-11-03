@@ -1,0 +1,19 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "facebook_accounts_center" contains 1 files:
+# 		accounts_center.json
+
+:UserData{
+	:accounts_center_v2 @:Account *;
+}
+:Account{
+	:service_name xsd:string ; # e.g., "Instagram", "Facebook",
+	:native_app_id xsd:int ;
+	:username xsd:string ;
+	:email xsd:string ;
+	:name xsd:string ;
+	:linked_time xsd:int ; 	# UNIX timestamp
+}
+
