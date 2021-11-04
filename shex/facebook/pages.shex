@@ -1,0 +1,35 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "pages" contains 6 JSON files:
+# 		ads_interests.json  "
+#		pages_you've_liked.json
+#		pages_you've_recommended.json
+#		pages_you've_unfollowed.json
+#		pages_you_follow.json
+#		your_pages.json
+
+
+:UserData{
+	:page_likes_v2 @:Page * ;
+  	:recommended_pages_v2 @:Page * ;
+	:pages_unfollowed_v2 @:PageFollowing * ;
+	:pages_followed_v2 @:PageFollowing * ;
+	:pages_v2 @:Page * ;	# your_pages
+}
+:Page{
+	:name xsd:string ;
+	:timestamp xsd:int ; # UNIX timestamp
+	:url xsd:string ? ;
+}
+:PageFollowing{
+	:timestamp xsd:int ; # UNIX timestamp
+	:data @:PageData * ;
+	:title xsd:string ;
+}
+:PageData{
+	:name xsd:string ;
+}         
+         
+         
