@@ -1,0 +1,16 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "other_activity" contains 1 JSON files:
+# 		pokes.json  
+
+:UserData{
+	:pokes_v2 @:Poke * ;
+}
+:Poke{
+	:timestamp xsd:int ; # UNIX timestamp
+	:rank xsd:int ;
+	:poker xsd:string ;
+	:pokee xsd:string ;
+}
