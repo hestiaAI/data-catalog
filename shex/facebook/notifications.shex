@@ -1,0 +1,16 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "notifications" contains 1 JSON files:
+# 		autofill_information.json  
+
+:UserData{
+	:notifications_v2 @:Notification * ;
+}
+:Notification{
+	:timestamp xsd:int ; # UNIX timestamp
+	:unread xsd:boolean ;
+	:href xsd:string ;
+	:text xsd:string ;
+}
