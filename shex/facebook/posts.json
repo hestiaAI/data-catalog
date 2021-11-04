@@ -43,6 +43,8 @@ base <http://example.org/>
 	:media @:Media ;
 	:title xsd:string ;
 	:description xsd:string ;
+	:place @:Place ? ;
+	:external_context @:ExternalContext ? ;
 }
 :Media{
 	:uri xsd:string ;
@@ -50,6 +52,7 @@ base <http://example.org/>
 	:media_metadata @:MediaMetadata ;
 	:thumbnail @:ThumbNail ? ;
 	:description xsd:string ? ;
+	:title xsd:string ? ;
 }
 :MediaMetadata{
 	:photo_metadata @:PhotoMetadata ? ;
@@ -71,3 +74,18 @@ base <http://example.org/>
 :ThumbNail{
 	:uri xsd:string ;
 }
+:Place{
+	:name xsd:string ;
+	:coordinate @:Coordinate ?;
+	:address xsd:string ;
+	:url xsd:string ;
+}
+:Coordinate{
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+}
+:ExternalContext{
+	:url xsd:string ;
+}
+
+
