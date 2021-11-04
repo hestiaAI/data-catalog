@@ -13,6 +13,8 @@ base <http://example.org/>
 :UserData{
 	:pinned_posts_v2 @:PinnedPosts ;
 	:your_posts  @:YourPost * ;
+	:videos_v2 @:YourVideo * ;
+	:albums @:Album * ;
 }
 
 :PinnedPosts{
@@ -88,4 +90,19 @@ base <http://example.org/>
 	:url xsd:string ;
 }
 
+:YourVideo{
+	:uri xsd:string ;
+	:creation_timestamp xsd:int ;
+	:media_metadata @:MediaMetadata ;
+	:thumbnail @:ThumbNail ;
+	:description xsd:string ;
+}
 
+:Album{
+	# Content of the numbered files
+	:name xsd:string ;
+	:photos @:Media * ;
+	:cover_photo @:Media ;
+	:last_modified_timestamp xsd:int  ; #UNIX timestamp
+	:description xsd:string ;
+}
