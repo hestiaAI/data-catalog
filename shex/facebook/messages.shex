@@ -1,0 +1,97 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "messages" contains 4 JSON files:
+# 		autofill_information.json  
+#		messenger_contacts_you've_blocked.json   
+#		secret_conversations.json   
+#		secret_groups.json
+# as well as 6 directories
+#		archived_threads
+#		filtered_threads   
+#		inbox   
+#		message_requests
+#		photos
+#		stickers_used
+
+:UserData{
+	:autofill_information_v2 @:AutofillInformation ;
+	:messenger_contacts_blocked_v2 @:MessengerContactsBlocked ;
+	:secret_conversations_v2 @:SecretConversations ;
+	:secret_groups_v2 @:SecretGroups ;
+	:archived_threads @:Thread *;
+	:filtered_threads @:Thread *;
+	:inbox @:InboxItem *;
+	:message_requests @:Thread *;
+}
+
+:AutofillInformation{
+	:city xsd:string * ;
+	:country xsd:string * ;
+	:email xsd:string * ;
+	:job_title xsd:string * ;
+	:company_name xsd:string * ;
+	:gender xsd:string * ;
+	:first_name xsd:string * ;
+	:last_name xsd:string * ;
+	:full_name xsd:string * ;
+}
+
+:MessengerContactsBlocked{
+	:name xsd:string ;			# e.g. "Messenger contacts you've blocked"
+	:description xsd:string	;	# e.g. "Contacts you've blocked on Messenger"
+	:entries @:BlockedEntries * ;
+}
+:BlockedEntries{
+	:timestamp xsd:int ; 	# UNIX timestamp
+	:data @:NamedURI ;
+}
+:NamedURI{
+	:name xsd:string ;
+	:uri xsd:string ;
+}
+
+:SecretConversations{
+	:has_sent_message xsd:boolean ; 
+	:has_received_message xsd:boolean ; 
+	:tincan_devices xsd:string * ; 	# NO DATA
+	:armadillo_devices xsd:string * ; 	# NO DATA
+}
+
+:SecretGroups{
+	:unnamed_group_count xsd:int ;
+	:secret_groups_owned_data xsd:string * ; 	# NO DATA
+	:secret_groups_participating_data xsd:string * ; 	# NO DATA
+}
+
+:Thread{
+	:participants @:Participant *;
+	:messages @:Message *;
+	:title xsd:string ;
+	:is_still_participant xsd:boolean ;
+	:thread_type xsd:string ;
+	:thread_path xsd:string ;
+	:magic_words xsd:string *;
+}
+:Participant{
+	:name xsd:string ;
+}
+:Message{
+	:sender_name xsd:string ;
+	:timestamp_ms xsd:int ;		#UNIX timestamp
+	:content xsd:string ;
+	:type xsd:string ; # e.g. "Subscribe", "Unsubscribe", "Generic"
+	:users @:Participant *;
+	:is_unsent xsd:boolean ;
+}
+
+:FilteredThread{}
+
+:InboxItem{
+	:thread @:Thread ;
+	:photos @:PhotoDirectory ;
+	:videos @:VideoDirectory ;
+}
+
+
