@@ -1,0 +1,73 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "posts" contains 6 JSON files:
+# 		your_pinned_posts.json  
+# 		your_posts_1.json  
+# 		your_videos.json
+# and the directory
+# 		album
+# containing numbered JSON files
+
+:UserData{
+	:pinned_posts_v2 @:PinnedPosts ;
+	:your_posts  @:YourPost * ;
+}
+
+:PinnedPosts{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:Entry * ;
+}
+:Entry{
+	:timestamp xsd:int ;
+	:data @:NamedURI ;
+}
+:NamedURI{
+	:name xsd:string ;
+	:uri xsd:string ;
+}
+
+
+:YourPost{
+	:timestamp xsd:int ;
+	:attachments @:Attachment * ;
+	:data @:YourPostData *;
+	:title xsd:string ;
+}
+:Attachment{
+	:data @:AttachmentData *;
+}
+:AttachmentData{
+	:media @:Media ;
+	:title xsd:string ;
+	:description xsd:string ;
+}
+:Media{
+	:uri xsd:string ;
+	:creation_timestamp xsd:int ; #UNIX timestamp
+	:media_metadata @:MediaMetadata ;
+	:thumbnail @:ThumbNail ? ;
+	:description xsd:string ? ;
+}
+:MediaMetadata{
+	:photo_metadata @:PhotoMetadata ? ;
+	:video_metadata @:VideoMetadata ? ;
+}
+:PhotoMetadata{
+	:exif_data @:ExifData * ;
+}
+:VideoMetadata{
+	:exif_data @:ExifData * ;
+}
+:ExifData{
+	:upload_ip xsd:string ;
+	:taken_timestamp xsd:int  ; #UNIX timestamp
+}
+:YourPostData{
+	:post xsd:string ;
+}
+:ThumbNail{
+	:uri xsd:string ;
+}
