@@ -1,0 +1,13 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "other_logged_information" contains 2 JSON files:
+# 		ads_interests.json  
+#		friend_peer_group.json
+
+:UserData{
+	:ads_interests xsd:string * ;
+  	:friend_peer_group xsd:string ;
+
+}
