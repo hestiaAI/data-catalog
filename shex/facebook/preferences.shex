@@ -1,0 +1,32 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "preferences" contains 1 JSON file:
+# 		language_and_locale.json
+
+
+:UserData{
+	:language_and_locale_v2 @:LanguageAndLocale * ;
+}
+
+:LanguageAndLocale    {
+	:name xsd:string ;
+	:description xsd:string ;
+	:children @:Child * ;
+}
+
+:Child{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:Entry *;
+}
+:Entry{
+	:data @:EntryData;
+	:timestamp xsd:int ? ; # UNIX timestamp
+}
+:EntryData{
+	:value xsd:string ;
+}
+
+
