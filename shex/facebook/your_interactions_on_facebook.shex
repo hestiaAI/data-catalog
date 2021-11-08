@@ -6,7 +6,8 @@ base <http://example.org/>
 # 		language_and_locale.json
 
 :UserData{
-	:recently_viewed @:RecentlyViewed * ; 	
+	:recently_viewed @:RecentlyViewed * ; 
+	:visited_things_v2 @:VisitedThing * ;
 }
 ################################
 :RecentlyViewed{
@@ -36,6 +37,17 @@ base <http://example.org/>
 	:value xsd:string ?;
 }
   
-
-
-
+########################
+:VisitedThing{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:VisitedThing *
+}
+:VisitedThing{
+	:timestamp xsd:int ;
+	:data @:VisitedThingData ; 
+}
+:VisitedThingData{
+	:name xsd:string ;
+	:uri xsd:string ;
+}
