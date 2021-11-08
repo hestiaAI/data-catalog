@@ -1,0 +1,41 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "preferences" contains 1 JSON file:
+# 		language_and_locale.json
+
+:UserData{
+	:recently_viewed @:RecentlyViewed * ; 	
+}
+################################
+:RecentlyViewed{
+	:name xsd:string ;		# e.g.:
+                			#		"name": "Ads",
+                			#		"name": "Articles",
+                			#		"name": "Facebook Watch videos and shows",
+                			#		"name": "Marketplace interactions",
+                			#		"name": "Posts that have been shown to you in your News Feed",
+                			#		"name": "Videos you've watched",
+	:description xsd:string ;
+	:children @:RecentlyViewedChild * ;
+}
+:RecentlyViewedChild{
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:RecentlyViewedChildEntry * ;
+}
+:RecentlyViewedChildEntry{
+	:timestamp xsd:int ; 	# UNIX timestamp
+	:data @:RecentlyViewedChildEntryData;
+}
+:RecentlyViewedChildEntryData{
+	:name xsd:string ?;
+	:uri xsd:string ?;
+	:watch_time xsd:int ?;
+	:value xsd:string ?;
+}
+  
+
+
+
