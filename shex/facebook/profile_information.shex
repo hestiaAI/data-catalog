@@ -1,0 +1,107 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "preferences" contains 1 JSON file:
+# 		language_and_locale.json
+
+:UserData{
+	:profile_information @:ProfileInformation ;
+	:profile_update_history @:ProfileUpdateHistory ;
+}
+
+#######################################
+:ProfileInformation{
+	:name @:Name;
+	:emails @:Emails ;
+	:birthday @:YearMonthDay ;
+	:gender @:Gender ;
+	:previous_names @:DatedString *;
+	:other_names xsd:string *;			# Probably, no data in available sample
+	:current_city @:DatedString ;
+	:hometown @:DatedString ;
+	:relationship @:Relationship ;
+	:family_members @:FamilyMember *;
+	:education_experiences @:EducationExperience * ;
+	:work_experiences @:WorkExperience * ;
+	:blood_info @:BloodInfo ;
+	:websites xsd:string *;			# Probably, no data in available sample
+	:phone_numbers xsd:string *;			# Probably, no data in available sample
+	:places_lived @:PlaceLived *;
+	:pages @:Page * ;
+	:groups @:DatedString * ;
+	:registration_timestamp xsd:int ; # UNIX timestamp
+	:profile_uri xsd:string ;
+}
+:Name{
+	:full_name xsd:string ;
+	:first_name xsd:string ;
+	:middle_name xsd:string ;
+	:last_name xsd:string ;
+}
+:Emails{
+	:emails xsd:string * ;
+	:previous_emails xsd:string * ;
+	:pending_emails xsd:string * ;
+	:ad_account_emails xsd:string * ;
+}
+:YearMonthDay{
+	:year xsd:int ;
+	:month xsd:int ;
+	:day xsd:int ;
+}
+:Gender{
+	:gender_option xsd:string ; # e.g.: "MALE"
+	:pronoun xsd:string ; # e.g.: "MALE"
+}
+:DatedString{
+	:name xsd:string ;
+	:timestamp xsd:int ; # UNIX timestamp
+}
+:Relationship{
+	:status xsd:string ;
+	:partner xsd:string ;
+	:anniversary @:YearMonthDay ;
+	:timestamp xsd:int ; # UNIX timestamp
+}
+:FamilyMember{
+	:name xsd:string ;
+	:relation xsd:string ;	# e.g. "Brother"
+	:timestamp xsd:int ; 	# UNIX timestamp
+}
+:EducationExperience{
+	:name xsd:string ;					# name of institution
+	:graduated xsd:boolean ;
+	:concentrations @:Concentration *;	# Unclear what this is. No data in available sample
+	:school_type xsd:string ;			# e.g. "University",  "High School"
+	:timestamp xsd:int ; 				# UNIX timestamp
+}
+:WorkExperience{
+	:employer xsd:string ;
+	:title xsd:string ;
+	:location xsd:string ;
+	:description xsd:string ;
+	:start_timestamp xsd:int ; 	# UNIX timestamp
+	:end_timestamp xsd:int ; 	# UNIX timestamp
+	:timestamp xsd:int ; 		# UNIX timestamp
+}
+:BloodInfo{
+	:blood_donor_status xsd:string ;
+}
+:PlaceLived{
+	:place xsd:string ;
+	:start_timestamp xsd:int ; 	# UNIX timestamp
+	:timestamp xsd:int ; 		# UNIX timestamp
+}
+:Page{
+# Seems to be sets of pages grouped by type of interest.
+# Subject is in the "name" field. 
+	:name xsd:string ;	# e.g. "Music", "Books", "Movies", "Television", "Other", "Games", "Websites",
+	:pages xsd:string * ;
+	:timestamps xsd:int * ; 		# UNIX timestamp
+}
+
+#######################################
+:ProfileUpdateHistory{
+
+}
