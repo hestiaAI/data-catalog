@@ -1,0 +1,14 @@
+bug_bounty/no-data.txt
+facebook_assistant/no-data.txt
+facebook_gaming/no-data.txt
+facebook_marketplace/no-data.txt
+fundraisers/no-data.txt
+help_community/no-data.txt
+music_recommendations/no-data.txt
+news_feed/no-data.txt
+other_personal_information/no-data.txt
+polls/no-data.txt
+privacy_checkup/no-data.txt
+reviews/no-data.txt
+short_videos/no-data.txt
+your_problem_reports/no-data.txt
