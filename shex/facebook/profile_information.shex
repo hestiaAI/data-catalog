@@ -7,7 +7,7 @@ base <http://example.org/>
 
 :UserData{
 	:profile_information @:ProfileInformation ;
-	:profile_update_history @:ProfileUpdateHistory ;
+	:profile_update_history @:ProfileUpdate * ;
 }
 
 #######################################
@@ -102,6 +102,33 @@ base <http://example.org/>
 }
 
 #######################################
-:ProfileUpdateHistory{
-
+:ProfileUpdate{
+	:timestamp xsd:int ; 		# UNIX timestamp
+	:title xsd:string ;
+	:attachments @:Attachment * ;
 }
+:Attachment{
+	:data @:AttachmentData * ;
+}
+:AttachmentData{
+	:media @:AttachmentMedia ;
+}
+:AttachmentMedia{
+	:uri xsd:string ;
+	:creation_timestamp xsd:int ; 		# UNIX timestamp
+	:title xsd:string ;
+	:media_metadata @:MediaMetadata ;
+	:description xsd:string ;
+}
+:MediaMetadata{
+	:photo_metadata @:PhotoMetadata ? ;
+}
+:PhotoMetadata{
+	:exif_data @:ExifData * ;
+}
+:ExifData{
+	:upload_ip xsd:string ;
+	:taken_timestamp xsd:int ? ; 		# UNIX timestamp
+}
+
+
