@@ -1,0 +1,62 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "preferences" contains 1 JSON file:
+# 		language_and_locale.json
+
+:UserData{
+	:account_activity_v2 @:AccountActivity * ;
+	:recognized_devices_v2 @:RecognizedDevice * ;
+	:datr_stats_v2 @:DatrStat * ;
+	:contact_verifications_v2 @:ContactVerification * ;
+	:used_ip_address_v2 @:UsedIPAddress * ;
+}
+################################
+:AccountActivity{
+	:action xsd:string ; 		# e.g.: "Session updated",
+	:timestamp xsd:int ;		# UNIX timestamp
+	:ip_address xsd:string ;	# Seen IPv4
+	:user_agent xsd:string ;
+	:datr_cookie xsd:string ; 
+	:city xsd:string ; 
+	:region xsd:string ; 
+	:country xsd:string ; 
+	:site_name xsd:string ; 	# e.g.: "www.facebook.com"
+}
+
+################################
+:RecognizedDevice{
+	:name xsd:string ; 
+	:created_timestamp xsd:int ;		# UNIX timestamp
+	:ip_address xsd:string ;			# Seen IPv4
+	:user_agent xsd:string ; 
+	:datr_cookie xsd:string ; 
+}
+################################
+:DatrStat{
+	:cookie_name xsd:string ; 
+	:timestamp xsd:int * ;			# UNIX timestamp                 
+}
+################################
+:ContactVerification{
+	:contact xsd:string ; 			# e.g. an email address
+	:contact_type xsd:int ;			# a number, signification not clear.	
+	:verification_time xsd:int ;	# UNIX timestamp
+}
+################################
+:UsedIPAddress{
+	:ip xsd:string ;		# Seen IPv4 and IPv6
+	:action xsd:string ;	# e.g.    
+            				# 		"action": "Email change",
+                            #   	"action": "Login",
+                            #   	"action": "Name Change",
+                            #   	"action": "Password Change",
+                            #   	"action": "Remove Profile Photo",
+                            #   	"action": "Security question and response changed",
+                            #   	"action": "Username",
+	:timestamp xsd:int ;	# UNIX timestamp
+}
+
+
+
