@@ -11,6 +11,10 @@ base <http://example.org/>
 	:datr_stats_v2 @:DatrStat * ;
 	:contact_verifications_v2 @:ContactVerification * ;
 	:used_ip_address_v2 @:UsedIPAddress * ;
+	:login_protection_data_v2 @:LoginProtectionData *;
+	:account_accesses_v2 @:AccountAccess * ;
+	:devices_v2 @:Device * ;
+	:admin_records_v2 @:AdminRecord * ;
 }
 ################################
 :AccountActivity{
@@ -57,6 +61,69 @@ base <http://example.org/>
                             #   	"action": "Username",
 	:timestamp xsd:int ;	# UNIX timestamp
 }
+################################
+:LoginProtectionData{
+	:name xsd:string ; 	# e.g. 
+          				#		"Cookie XXX", 
+						#		"Estimated location inferred from IP XXX"
+						#		"IP address: XXX"
+	:session @:LoginProtectionDataSssion ;
+}
+:LoginProtectionDataSssion{
+	:created_timestamp xsd:int ;	# UNIX timestamp
+	:updated_timestamp xsd:int ? ;	# UNIX timestamp
+	:ip_address xsd:string ? ;		# Seen IPv4
+}
+################################
+:AccountAccess{
+	:action xsd:string ;		# e.g. "Login", "Log Out"
+	:timestamp xsd:int ;		# UNIX timestamp
+	:site xsd:string ;			# e.g.: "www.facebook.com", "m.facebook.com",
+	:ip_address xsd:string ;	# Seen IPv4 and IPv6
+}
+################################
+:Device{
+	:type xsd:string ;
+	:os xsd:string ;
+	:update_time xsd:int ;		# UNIX timestamp
+	:advertiser_id xsd:string ;
+	:family_device_id xsd:string ;
+	:device_locale xsd:string ;
+}
+################################
+:AdminRecord{
+	:event xsd:string ;		# e.g.:
+	  						#		"Add Phone Number",
+	  						#		"Checkpoint completed",
+	  						#		"Checkpoint",
+	  						#		"Credit Card/Coupon Action",
+	  						#		"Email change",
+	  						#		"Name Change",
+	  						#		"Password Change",
+	  						#		"Remove Phone Number",
+	  						#		"Remove Profile Photo",
+	  						#		"SI Roadblock",
+	  						#		"Security question and response changed",
+	  						#		"Username",
+	:session @:AdminRecordSession ;
+	:extra_info @:AdminRecordExtraInfo ;
+}
+:AdminRecordSession{
+	:created_timestamp xsd:int ;		# UNIX timestamp
+	:user_agent xsd:string ;
+	:datr_cookie xsd:string ;
+}
+:AdminRecordExtraInfo{
+	:old_name xsd:string ;
+	:new_name xsd:string ;
+	:old_number xsd:string ;
+	:old_vanity xsd:string ;
+	:new_vanity xsd:string ;
+	:old_email xsd:string ;
+    :new_email xsd:string ;
+	:new_number xsd:string ;
+}
+
 
 
 
