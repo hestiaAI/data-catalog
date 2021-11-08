@@ -15,6 +15,8 @@ base <http://example.org/>
 	:account_accesses_v2 @:AccountAccess * ;
 	:devices_v2 @:Device * ;
 	:admin_records_v2 @:AdminRecord * ;
+	:active_sessions_v2 @:ActiveSession * ;
+	:last_activity_v2 @:LastActivity * ;
 }
 ################################
 :AccountActivity{
@@ -123,7 +125,29 @@ base <http://example.org/>
     :new_email xsd:string ;
 	:new_number xsd:string ;
 }
-
-
-
-
+################################
+:ActiveSession{
+	:created_timestamp xsd:int ;		# UNIX timestamp
+	:updated_timestamp xsd:int ;		# UNIX timestamp
+	:ip_address xsd:string ;
+	:user_agent xsd:string ;
+	:datr_cookie xsd:string ;
+	:device xsd:string ;
+	:location xsd:string ;
+	:app xsd:string ;
+	:session_type xsd:string ;			# e.g.
+                            			#		"session_type": "instagram"
+      									#		"session_type": "web"
+}
+################################
+:LastActivity{
+	:last_activity_time @:LastActivityTime ;
+}
+:LastActivityTime{
+	:website @:ActivityByDay ;
+	:facebook_app @:ActivityByDay ;
+	:mobile_web @:ActivityByDay ;
+}
+:ActivityByDay{
+	:activity_by_day xsd:int * ;	# UNIX timestamps
+}
