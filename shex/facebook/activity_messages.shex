@@ -11,8 +11,10 @@ base <http://example.org/>
 :UserData{
 	:group_interactions_v2 @:GroupInteraction *;
 	:people_interactions_v2 @:PeopleInteraction * ;
+	:events_interactions_v2 @:EventInteraction * ;
 }
 
+####################################
 # 		group_interactions.json  
 :GroupInteraction{
 	:name xsd:string ;
@@ -29,6 +31,7 @@ base <http://example.org/>
 	:uri xsd:string ;
 }
 
+####################################
 #		people_and_friends.json
 :PeopleInteraction{
 	:name xsd:string ;
@@ -43,3 +46,19 @@ base <http://example.org/>
 	:name xsd:string ;
 	:uri xsd:string ;
 }
+
+####################################
+#		events_interactions.json
+:EventInteraction    {
+	:name xsd:string ;
+	:description xsd:string ;
+	:entries @:EventInteractionEntry * ;
+}
+:EventInteractionEntry{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:entry_data @:EventInteractionEntryData ;
+}               
+:EventInteractionEntryData{
+	:value xsd:string ;		# seems to actually contain integers, but in string format
+}            
+
