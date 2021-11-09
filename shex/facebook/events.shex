@@ -42,7 +42,7 @@ base <http://example.org/>
 }
 
 
-#
+#		event_contact_you've_blocked.json
 :EventBlocked{
 	:name xsd:string ; 					# "Event contact that you've blocked",
 	:description xsd:string ; 			#  "People you've blocked from inviting you to events",
