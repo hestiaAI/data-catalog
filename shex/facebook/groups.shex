@@ -2,14 +2,19 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# The directory "groups" contains 2 files:
+# The directory "groups" 
 # 		your_group_membership_activity.json  
 #		your_posts_in_groups.json
-
+#		creator_badges.json  
+#		your_comments_in_groups.json  
+#		your_groups.json
 
 :UserData{
 	:groups_joined_v2 @:Contact *;
 	:group_posts_v2 @:Post *;
+	:group_badges_v2 @:GroupBadge *;
+	:group_comments_v2 @:GroupComment *;
+	:groups_admined_v2 @:GroupAdmined *;
 }
 
 :Contact{
@@ -36,3 +41,32 @@ base <http://example.org/>
 	:url xsd:string ;
 }
 
+################################
+#		creator_badges.json
+:GroupBadge{
+	:name xsd:string ;
+	:values xsd:string *;
+}
+
+################################
+#		your_comments_in_groups.json  
+:GroupComment{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:data @:GroupCommentData * ;
+	:title xsd:string ;
+    }
+:GroupCommentData{
+	:comment @:GroupCommentContent; 
+}                                  
+:GroupCommentContent{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:comment xsd:string ;
+	:author xsd:string ;
+	:group xsd:string ;
+}                    
+################################
+#		your_groups.json
+:GroupAdmined{
+	:name xsd:string ;
+	:timestamp xsd:int ;	# UNIX timestamp
+}
