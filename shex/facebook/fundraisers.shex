@@ -1,0 +1,23 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+:UserData{
+	:fundraisers_donated_to_v2 @:FundraiserDonatedTo * ;
+}  
+:FundraiserDonatedTo{
+	:timestamp xsd:int ;	# UNIX timestamp
+	:attachments @:Attachment * ;
+}
+:Attachment{
+	:data @:FundraiserAttachmentData *;
+}
+:FundraiserAttachmentData{
+	:fundraiser @:FundraiserInformation ;
+}
+:FundraiserInformation{
+	:title xsd:string ;
+	:donated_amount xsd:string ;
+}
+
