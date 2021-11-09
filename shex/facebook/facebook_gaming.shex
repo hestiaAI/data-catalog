@@ -1,0 +1,14 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+:UserData{
+	:instant_games_played_v2 @:InstantGamePlayed * ;
+}
+:InstantGamePlayed{
+	:name xsd:string ;
+	:added_timestamp xsd:int ; 	# UNIX timestamp
+	:user_app_scoped_id xsd:int ;
+}
+
