@@ -2,12 +2,16 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# The directory "posts" contains 6 JSON files:
+# The directory "posts" contains JSON files:
+#		archive.json    
+#		photo_effects.json
 # 		your_pinned_posts.json  
 # 		your_posts_1.json  
+#		your_posts_2.json
 # 		your_videos.json
-# and the directory
+# and the directories
 # 		album
+#		media
 # containing numbered JSON files
 
 :UserData{
@@ -15,8 +19,11 @@ base <http://example.org/>
 	:your_posts  @:YourPost * ;
 	:videos_v2 @:YourVideo * ;
 	:albums @:Album * ;
+	:archive_v2 @:Archive * ;
+	:media_effects_v2 @:MediaEffect * ;
 }
 
+# 		your_pinned_posts.json  
 :PinnedPosts{
 	:name xsd:string ;
 	:description xsd:string ;
@@ -31,7 +38,8 @@ base <http://example.org/>
 	:uri xsd:string ;
 }
 
-
+# 		your_posts_1.json  
+#		your_posts_2.json
 :YourPost{
 	:timestamp xsd:int ;
 	:attachments @:Attachment * ;
@@ -69,6 +77,7 @@ base <http://example.org/>
 :ExifData{
 	:upload_ip xsd:string ;
 	:taken_timestamp xsd:int  ; #UNIX timestamp
+	:orientation xsd:int ? ;                     
 }
 :YourPostData{
 	:post xsd:string ;
@@ -104,5 +113,22 @@ base <http://example.org/>
 	:photos @:Media * ;
 	:cover_photo @:Media ;
 	:last_modified_timestamp xsd:int  ; #UNIX timestamp
+	:description xsd:string ;
+}
+
+#		archive.json    
+:Archive {
+	:timestamp xsd:int  ; #UNIX timestamp
+	:attachments :Attachment * ;
+	:data :YourPostData * ;
+}
+
+#		photo_effects.json
+:MediaEffect{
+	:effect xsd:string ;
+	:timestamp xsd:int  ; #UNIX timestamp
+	:media_type xsd:int  ;
+	:media @ :Media ;
+	:title xsd:string ;
 	:description xsd:string ;
 }
