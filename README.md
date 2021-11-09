@@ -14,7 +14,7 @@ There will be more in the `shex/` folder, we highlight a few examples below.
 
 
 ## The Eyeballs
-* Google
+* [Google](https://github.com/hestiaAI/data-catalog/blob/main/shex/google/README.md)
 * Apple
 * Facebook
 * [Amazon](https://github.com/hestiaAI/data-catalog/blob/main/shex/amazon/README.md)
