@@ -1,0 +1,25 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+#		news_feed.json
+
+
+:UserData{
+	:people_and_friends_v2 @:PeopleAndFriend * ;
+}
+
+:PeopleAndFriend{
+	:name xsd:string ;
+	:description  xsd:string ;
+	:entries @:PeopleAndFriendEntry * ;
+}
+:PeopleAndFriendEntry{
+	:timestamp xsd:int; 	# UNIX timestamp
+	:data @:PeopleAndFriendEntryData ;
+}
+:PeopleAndFriendEntryData{
+	:name xsd:string ;
+	:uri xsd:string ;
+}
+
