@@ -17,7 +17,7 @@ There will be more in the `shex/` folder, we highlight a few examples below.
 * Google
 * Apple
 * Facebook
-* Amazon: [Shex]() — [Visualisation]()
+* Amazon
 * Twitter
 
 ## Mobility
