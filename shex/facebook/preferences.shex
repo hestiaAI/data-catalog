@@ -8,8 +8,10 @@ base <http://example.org/>
 
 :UserData{
 	:language_and_locale_v2 @:LanguageAndLocale * ;
+	:facial_data_v2 @:FacialData ;
 }
 
+# 		language_and_locale.json
 :LanguageAndLocale    {
 	:name xsd:string ;
 	:description xsd:string ;
@@ -29,4 +31,12 @@ base <http://example.org/>
 	:value xsd:string ;
 }
 
+#		face_recognition.json 
+:FacialData{
+	:threshold_green xsd:string ;
+	:threshold_yellow xsd:string ;
+	:threshold_red xsd:string ;
+	:example_count xsd:int ;
+	:raw_data xsd:string ;
+}
 
