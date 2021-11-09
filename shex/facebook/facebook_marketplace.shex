@@ -1,0 +1,29 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+:UserData{
+	:items_selling_v2 @:ItemSelling *;
+}
+
+####################################
+# 		items_sold.json
+:ItemSelling {
+	:title xsd:string ;
+	:price xsd:string ;
+	:seller xsd:string ;
+	:created_timestamp xsd:int ; 	# UNIX timestamp
+	:updated_timestamp xsd:int ; 	# UNIX timestamp
+	:category xsd:string ;
+	:location @:Location ;
+	:description xsd:string ;
+}
+:Location{
+	:coordinate @:Coordinate;
+}
+:Coordinate{
+	:latitude xsd:float ;
+	:longitude xsd:float ;
+}
+
