@@ -11,6 +11,7 @@ base <http://example.org/>
 	:events_invited_v2 @:Event *;
 	:event_responses_v2 @:EventResponses * ;
 	:your_events_v2 @:Event *;
+	:event_blocked_v2 @:EventBlocked * ;
 }
 
 # 		event_invitations.json
@@ -40,3 +41,17 @@ base <http://example.org/>
 	:events_interested @:Event *;
 }
 
+
+#
+:EventBlocked{
+	:name xsd:string ; 					# "Event contact that you've blocked",
+	:description xsd:string ; 			#  "People you've blocked from inviting you to events",
+	:entries @:EventBlockedEntry * ;
+}
+:EventBlockedEntry{
+	:timestamp xsd:int ; # UNIX timestamp
+	:data @:EventBlockedEntryData ;
+}
+:EventBlockedEntryData{
+	:name xsd:string ;
+}
