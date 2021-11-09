@@ -2,29 +2,36 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# The directory "location" contains 3 files:
+# The directory "location"
 # 		primary_location.json  
 #		timezone.json
 #		location_history.json
-
+# 		device_location.json  
+# 		primary_public_location.json
 
 :UserData{
-	:location_history @:LocationHistoryPoint * ;
+	:location_history_v2 @:LocationHistoryPoint * ;
 	:primary_location_v2 @:PrimaryLocation ;
 	:timezone_v2 xsd:string ;
+	:phone_number_location_v2 @:PhoneNumberLocation *;
+	:primary_public_location_v2 @:PrimaryPublicLocation ;
 }
 
+##################################
+#		location_history.json
 :LocationHistoryPoint{
 	:name xsd:string ; # e.g. "Paris" or "Berlin"
 	:coordinate @:Coordinate ;
-	:creation_timestamp xsd:int; # e.g.: 1592374815
+	:creation_timestamp xsd:int; # UNIX timestamp, e.g.: 1592374815
 }
 
 :Coordinate{
-	:latitude xsd:int; 
-	:longitude xsd:int; 
+	:latitude xsd:float; 
+	:longitude xsd:float; 
 }
 
+##################################
+# 		primary_location.json  
 :PrimaryLocation{
 	:city_region_pairs @:CityRegionPair * ;
 	:zipcode xsd:int * ;
@@ -32,4 +39,19 @@ base <http://example.org/>
 :CityRegionPair{
 	:city xsd:string ;
 	:region xsd:string ;          
+}
+
+##################################
+# 		device_location.json  
+:PhoneNumberLocation{
+	:spn xsd:string ;
+	:country_code xsd:string ;
+}
+
+##################################
+# 		primary_public_location.json
+:PrimaryPublicLocation{
+	:city xsd:string ;
+	:region xsd:string ;
+	:country xsd:string ;
 }
