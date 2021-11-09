@@ -1,0 +1,33 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "other_personal_information"
+# 		avatars.json  
+#		your_address_books.json
+
+:UserData{
+	:avatars_v2 @:Avatar ;				# Actually just one, in spite of the plural
+  	:address_book_v2 @:AddressBook ;
+	
+}
+
+# 		avatars.json  
+:Avatar{
+	:uri xsd:string ;				# URI to an image file
+	:creation_timestamp xsd:int ; 	# UNIX timestamp
+}
+
+#		your_address_books.json
+:AddressBook{
+	:Contacts @:Contact * ;
+}
+:Contact{
+	:name xsd:string ;
+	:details @:Detail * ;
+	:created_timestamp xsd:int ; 	# UNIX timestamp
+	:updated_timestamp xsd:int ; 	# UNIX timestamp
+}
+:Detail{
+	:contact_point xsd:string; 	# e.g. phone number
+}
