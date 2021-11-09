@@ -1,0 +1,21 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "privacy_checkup" 
+# 		interactions.json
+
+:UserData{
+	:privacy_checkup_interactions_v2 @:PrivacyCheckupInteraction ;
+}
+
+# 		interactions.json
+:PrivacyCheckupInteraction{
+	:privacy_checkup_topic @:PrivacyCheckupTopic * ;
+}
+:PrivacyCheckupTopic{
+	:name xsd:string ;
+	:started_timestamp xsd:int; 	# UNIX timestamp
+	:completed_timestamp xsd:int; 	# UNIX timestamp
+	:updates_seen @:UpdateSeen * ;
+}
