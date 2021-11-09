@@ -17,10 +17,11 @@ base <http://example.org/>
 	:rejected_requests_v2 @:Contact *;
 	:deleted_friends_v2 @:Contact *;
 	:following_v2 @:Contact *;
+	:followers_v2 @:Contact *;
 }
 
 :Contact{
 	:name xsd:string ;
-	:timestamp xsd:int ; # UNIX timestamp
+	:timestamp xsd:int ? ; # UNIX timestamp
 }
 
