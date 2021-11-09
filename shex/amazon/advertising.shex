@@ -1,0 +1,13 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Amazon files delivered in several zip files
+
+:UserData{
+	:3PAudiences xsd:string * ; 			# Audiences in which you are included via 3rd Parties
+	:advertiser_audiences xsd:string * ; 	# Advertisers who brought audiences in which you are included
+	:advertiser_clicks xsd:string * ; 		# Advertisers whose ads you clicked
+	:amazon_audiences xsd:string * ;		# Amazon Audiences in which you are included
+	:opt_out xsd:string * ;					# Interest based ads opt out setting per marketplace
+}
