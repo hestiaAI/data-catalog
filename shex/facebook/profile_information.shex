@@ -2,12 +2,13 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# The directory "preferences" contains 1 JSON file:
-# 		language_and_locale.json
+# The directory "preferences" 
 
 :UserData{
 	:profile_information @:ProfileInformation ;
 	:profile_update_history @:ProfileUpdate * ;
+	:profile_hobbies_v2 @:ProfileHobby * ;
+	:profile_music_v2 @:ProfileMusic * ;
 }
 
 #######################################
@@ -131,4 +132,36 @@ base <http://example.org/>
 	:taken_timestamp xsd:int ? ; 		# UNIX timestamp
 }
 
-
+#######################################
+#		your_hobbies.json  
+:ProfileHobby{
+	:timestamp xsd:int ; 		# UNIX timestamp
+	:data @:ProfileHobbyData * ;
+	:title xsd:string ;
+}
+:ProfileHobbyData{
+	:profile_update @:ProfileHobbyUpdate ;
+}
+:ProfileHobbyUpdate{
+	:field xsd:string ;
+	:data xsd:string ;
+}
+#######################################
+#your_music.json
+:ProfileMusic{
+	:timestamp xsd:int ; 		# UNIX timestamp
+	:attachments @:ProfileMusicAttachment * ;
+	:data @:ProfileMusicData * ;
+	:title xsd:string ;
+}
+:ProfileMusicAttachment{
+	:data @:ProfileMusicAttachmentData * ;
+}
+:ProfileMusicAttachmentData{
+	:external_context @:ProfileMusicAttachmentExernalContext ;
+}
+:ProfileMusicAttachmentExernalContext{
+	:name xsd:string ;
+	:source xsd:string ;
+	:url xsd:string ;
+}
