@@ -1,0 +1,48 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Amazon files delivered in several zip files containing csv files
+
+:UserData{
+	:feedback @:Feedback * ;
+	:smart_home_hunches @:Smart_Home_Hunches ;
+	:video_provider_selection @:VideoProviderSelection * ;
+	:devices_mobile @:DevicesMobile * ;
+	:smart_home_camera_smart_alerts @:SmartHomeCameraSmartAlert * ;
+}
+
+:Feedback{
+	:dsn xsd:string ;
+	:model_name xsd:string ;
+	:feedback xsd:string ;
+	:locale xsd:string ;
+	:feedback_category xsd:string ;
+	:category_setting xsd:string ;
+	:timestamp xsd:string ;
+}
+:Smart_Home_Hunches{
+	:hunches_enabled xsd:string ;		# e.g. "Yes", "No"
+	:notification_enabled xsd:string ;	# e.g. "Yes", "No"
+}
+:VideoProviderSelection{
+	:video_name xsd:string ;	
+	:customer_preferred_provider xsd:string ;	
+}
+:DevicesMobile{
+	:description xsd:string ;
+	:event_timestamp xsd:string ;
+	:device_os xsd:string ;
+	:device_make xsd:string ;
+	:device_model xsd:string ;
+	:metric_name xsd:string ;
+}
+:SmartHomeCameraSmartAlert{
+	:device_name xsd:string ;
+	:frame_image xsd:string ;
+	:timestamp xsd:string ;
+	:detector_type xsd:string ;
+}
+
+
+
