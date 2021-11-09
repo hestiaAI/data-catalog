@@ -11,6 +11,7 @@ base <http://example.org/>
 	:installed_apps_v2 @:InstalledApp *;
 	:app_posts_v2 @:AppPost * ;
 	:admined_apps_v2 @:AdminedApp * ;
+	:off_facebook_activity_v2 @:OffFacebookActivity * ;
 }
 
 # 		apps_and_websites.json  
@@ -45,3 +46,21 @@ base <http://example.org/>
 	:added_timestamp xsd:int ;
 }
 
+#################################
+#	your_off-facebook_activity.json
+:OffFacebookActivity{
+	:name xsd:string ;
+	:events @:OffFacebookActivityEvent * ;
+}
+:OffFacebookActivityEvent{
+	:id xsd:int ;
+	:type xsd:string ;			# e.g.
+								#	"type": "ACTIVATE_APP",
+								#	"type": "ADD_TO_WISHLIST",
+								#	"type": "COMPLETE_REGISTRATION",
+								#	"type": "CUSTOM",
+								#	"type": "LEVEL_ACHIEVED",
+								#	"type": "SEARCH",
+								#	"type": "TUTORIAL_COMPLETION",
+	:timestamp xsd:int ;		# UNIX timestamp
+}
