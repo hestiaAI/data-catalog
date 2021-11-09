@@ -2,18 +2,49 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
-# The directory "preferences" contains 1 JSON file:
+# The directory "preferences" contains 2 JSON file:
 # 		language_and_locale.json
+# 		archived_stories.json
 
 :UserData{
 	:stories_feedback_v2 @:StoryFeedback * ;
+	:archived_stories_v2 @:ArchivedStory * ;
 }
+
 ################################
+# 		language_and_locale.json
 :StoryFeedback{
 	:timestamp xsd:int ; 		# UNIX timestamp
 	:title xsd:string ;
 }
 
-
-
-
+################################
+# 		archived_stories.json
+:ArchivedStory{
+	:timestamp xsd:int ; 		# UNIX timestamp
+	:attachments @:StoryAttachment * ;
+	:data @:StoryData ;
+	:title xsd:string ;
+}
+:StoryAttachment{
+	:data @:StoryAttachmentData * ;
+}
+:StoryAttachmentData{
+	:media @:StoryAttachmentDataMedia ;
+}
+:StoryAttachmentDataMedia{
+	:uri xsd:string ;
+	:creation_timestamp xsd:int ; 		# UNIX timestamp
+	:media_metadata @:StoryAttachmentDataMedia ;
+	:title xsd:string ;
+}
+:StoryAttachmentDataMedia{
+	:photo_metadata @:PhotoMetadata ;
+}
+:PhotoMetadata{
+	:exif_data @:ExitData * ; 
+}                   
+:ExitData{
+	:upload_ip xsd:string ;
+	:taken_timestamp xsd:int ; 		# UNIX timestamp
+}                      
