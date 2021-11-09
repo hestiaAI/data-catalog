@@ -22,7 +22,7 @@ There will be more in the `shex/` folder, we highlight a few examples below.
 * [Apple](https://github.com/hestiaAI/data-catalog/blob/main/shex/apple/README.md)
 * [Facebook](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/README.md)
 * [Amazon](https://github.com/hestiaAI/data-catalog/blob/main/shex/amazon/README.md)
-* Twitter
+* [Twitter](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/README.md)
 * Netflix: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/netflix.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fnetflix.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * Spotify: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/spotify.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fspotify.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * Whatsapp: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/whatsapp.hex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fwhatsapp.hex&schemaFormat=ShExC&schemaEngine=ShEx)
@@ -38,7 +38,7 @@ There will be more in the `shex/` folder, we highlight a few examples below.
 
 ## Digipower
 * [Google](https://github.com/hestiaAI/data-catalog/blob/main/shex/google/README.md)
-* Twitter
+* [Twitter](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/README.md)
 * [Facebook](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/README.md)
 * [Apple](https://github.com/hestiaAI/data-catalog/blob/main/shex/apple/README.md)
 * Netflix: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/netflix.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fnetflix.shex&schemaFormat=ShExC&schemaEngine=ShEx)
