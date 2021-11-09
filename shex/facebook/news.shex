@@ -1,0 +1,10 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+#		your_locations.json
+
+:UserData{
+	:news_your_locations_v2 xsd:string * ;
+}
+
