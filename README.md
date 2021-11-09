@@ -30,8 +30,6 @@ There will be more in the `shex/` folder, we highlight a few examples below.
 
 ## Mobility
 * Uber: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/uber.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fuber.shex&schemaFormat=ShExC&schemaEngine=ShEx)
-*
-*
 
 ## Gig work
 * Uber: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/uber.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fuber.shex&schemaFormat=ShExC&schemaEngine=ShEx)
