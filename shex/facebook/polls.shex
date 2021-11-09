@@ -1,0 +1,33 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# The directory "polls" 
+#		polls_you_voted_on.json
+
+
+:UserData{
+	:poll_votes_v2 @:PollVote * ;
+}
+
+####################################
+#		polls_you_voted_on.json
+:PollVote{
+	:timestamp xsd:int ; 		# UNIX timestamp
+	:attachments @:Attachment * ;
+	:title xsd:string ;
+}
+:Attachment{
+	:data @:AttachmentData * ;
+}
+:AttachmentData{
+	:poll @:Poll ;
+}
+:Poll{
+	:options @:Option * ;
+}
+:Option{
+	:option xsd:string ;
+	:voted xsd:boolean ;
+}
+
