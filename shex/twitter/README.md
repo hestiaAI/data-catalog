@@ -34,30 +34,30 @@ Sample of the Twitter data format (more to come).
 ## JSON files (58)
 
 ```
-account-creation-ip.js
-account-suspension.js                    # EMPTY
-account-timezone.js
-account.js
-ad-engagements.js
-ad-impressions.js
-ad-mobile-conversions-attributed.js
-ad-mobile-conversions-unattributed.js    # EMPTY
-ad-online-conversions-attributed.js      # EMPTY
-ad-online-conversions-unattributed.js    # EMPTY
-ageinfo.js                               # EMPTY
-app.js                                   # EMPTY
-birdwatch-note-rating.js                 # EMPTY
-birdwatch-note.js                        # EMPTY
+   account-creation-ip.js
+   account-suspension.js                    # EMPTY
+   account-timezone.js
+   account.js
+   ad-engagements.js
+   ad-impressions.js
+   ad-mobile-conversions-attributed.js
+   ad-mobile-conversions-unattributed.js    # EMPTY
+   ad-online-conversions-attributed.js      # EMPTY
+   ad-online-conversions-unattributed.js    # EMPTY
+   ageinfo.js                               # EMPTY
+   app.js                                   # EMPTY
+   birdwatch-note-rating.js                 # EMPTY
+   birdwatch-note.js                        # EMPTY
 block.js
 branch-links.js
 connected-application.js
 contact.js
 device-token.js
-direct-message-group-headers.js
-direct-message-headers.js
-direct-message-mute.js
-direct-messages-group.js
-direct-messages.js
+   direct-message-group-headers.js
+   direct-message-headers.js
+   direct-message-mute.js
+   direct-messages-group.js
+   direct-messages.js
 email-address-change.js
 fleet-mute.js
 fleet.js
@@ -72,14 +72,14 @@ manifest.js
 moment.js
 mute.js
 ni-devices.js
-periscope-account-information.js
-periscope-ban-information.js                  # EMPTY
-periscope-broadcast-metadata.js               # EMPTY
-periscope-comments-made-by-user.js            # EMPTY
-periscope-expired-broadcasts.js               # EMPTY
-periscope-followers.js                        # EMPTY
-periscope-profile-description.js
-personalization.js
+   periscope-account-information.js
+   periscope-ban-information.js                  # EMPTY
+   periscope-broadcast-metadata.js               # EMPTY
+   periscope-comments-made-by-user.js            # EMPTY
+   periscope-expired-broadcasts.js               # EMPTY
+   periscope-followers.js                        # EMPTY
+   periscope-profile-description.js
+   personalization.js
 phone-number.js
 profile.js
 protected-history.js
