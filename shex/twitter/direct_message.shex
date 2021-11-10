@@ -1,0 +1,40 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# direct-message-group-headers.js
+# direct-message-headers.js
+# direct-message-mute.js
+# direct-messages-group.js
+# direct-messages.js
+
+
+:UserAccount {
+	:direct_messages @:DMConversation * ;
+	:direct_message_group_headers @:DMConversation * ;
+	:direct_message_headers @:DMConversation * ;
+	:direct_message_mute @:DMConversation * ;
+	:direct_messages_group @:DMConversation * ;
+}
+
+:DMConversation{
+	:conversationId xsd:string ;
+	:messages @:DirectMessage * ;
+}
+
+:DirectMessage{
+	:type xsd:string ;			# e.g.: "joinConversation", "messageCreate"
+	:recipientId xsd:int ? ;
+	:reactions xsd:string * ;
+	:urls @:URL * ;
+	:text xsd:string ? ;
+	:mediaUrls @:URL * ;
+	:senderId xsd:int ;
+	:id xsd:int ;
+	:createdAt xsd:dateTime ;
+}
+:URL{
+	:url xsd:string ;
+	:expanded xsd:string ;
+	:display xsd:string ;
+}
