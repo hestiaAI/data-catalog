@@ -1,0 +1,61 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# periscope-account-information.js
+# periscope-ban-information.js
+# periscope-broadcast-metadata.js
+# periscope-comments-made-by-user.js
+# periscope-expired-broadcasts.js
+# periscope-followers.js
+# periscope-profile-description.js
+
+:UserAccount {
+	:periscope_account_information @:PeriscopeAccountInformation * ;
+	:periscope_ban_information @:PeriscopeBanInformation * ;
+	:periscope_broadcast_metadata @:PeriscopeBroadcastMetadata * ;
+	:periscope_comments_made_by_user @:PeriscopeCommentsMadeByUser * ;
+	:periscope_expired_broadcasts @:PeriscopeExpiredBroadcasts * ;
+	:periscope_followers @:PeriscopeFollowers * ;
+	:periscope_profile_description @:PeriscopeProfileDescription * ;
+}
+
+############################
+# periscope-account-information.js
+:PeriscopeAccountInformation{
+	:displayName xsd:string ;
+	:digitsId xsd:string ;
+	:username xsd:string ;
+	:twitterId xsd:int ;
+	:id xsd:string ;
+	:twitterScreenName xsd:string ;
+	:isTwitterUser xsd:boolean ;
+	:createdAt xsd:dateTime ;
+}
+
+############################
+# periscope-ban-information.js
+# NO DATA
+
+############################
+# periscope-broadcast-metadata.js
+# NO DATA
+
+############################
+# periscope-comments-made-by-user.js
+# NO DATA
+
+############################
+# periscope-expired-broadcasts.js
+# NO DATA
+
+############################
+# periscope-followers.js
+# NO DATA
+
+############################
+# periscope-profile-description.js
+:PeriscopeProfileDescription{
+	:bio xsd:string ;
+}
+
