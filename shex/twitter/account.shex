@@ -1,0 +1,47 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	account-creation-ip.js  
+#	account-suspension.js  
+#	account-timezone.js  
+#	account.js
+
+
+:UserData {
+	:account_creation_ip @:AccountCreationIp * ;
+	:account_suspension @:AccountSuspension * ;
+	:account_timezone @:AccountTimezone * ;            
+	:account @:Account * ;
+}
+
+############################
+#	account-creation-ip.js  
+:AccountCreationIp{
+	:accountId xsd:int ;
+	:userCreationIp xsd:string ;
+}
+
+############################
+#	account-suspension.js  
+# NO DATA
+
+############################
+#	account-timezone.js  
+:AccountTimezone{
+	:accountId xsd:int ;
+	:timeZone xsd:string ;
+}
+############################
+#	account.js
+:Account{
+	:email xsd:string ;
+	:createdVia xsd:string ;
+	:username xsd:string ;
+	:accountId xsd:int ;
+	:createdAt xsd:dateTime ;
+	:accountDisplayName xsd:string ;
+}
+
+
