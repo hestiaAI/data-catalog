@@ -2,19 +2,31 @@ prefix : <http://example.org/>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
+
+# ad-engagements.js
+# ad-impressions.js
+# ad-mobile-conversions-attributed.js
+# ad-mobile-conversions-unattributed.js
+# ad-online-conversions-attributed.js
+# ad-online-conversions-unattributed.js
+
+
 :UserAccount {
   :follows @:UserAccount *;
   :accountId xsd:long;
   :adImpression @:AdImpression ;
   :adEngagement @:AdEngagement ;
+  :ad_mobile_conversions_attributed @:Conversion * ;
+  :ad_mobile_conversions_unattributed @:Conversion * ;
+  :ad_online_conversions_attributed @:Conversion * ;
+  :ad_online_conversions_unattributed @:Conversion * ;
 }
 
 :AdImpression{:impressions @:Impression *;}
 
 :Impression{
   :deviceInfo @:DeviceInfo;
-  :displayLocation @:DisplayLocation;
-  
+  :displayLocation xsd:string ;
   :promotedTweetInfo @:PromotedTweetInfo;
   :advertiserInfo @:AdvertiserInfo;
   :matchedTargetingCriteria @:MatchedTargetingCriteria *;
@@ -43,7 +55,7 @@ base <http://example.org/>
 
 :ImpressionAttributes{
   :deviceInfo @:DeviceInfo;
-  :displayLocation @:DisplayLocation;
+  :displayLocation xsd:string;
   :promotedTrendInfo @:PromotedTrendInfo;
   :promotedTweetInfo @:PromotedTweetInfo;
   :advertiserInfo @:AdvertiserInfo;
@@ -57,12 +69,9 @@ base <http://example.org/>
 }
 
 :MatchedTargetingCriteria{
-  :targetingType @:TargetingType ;
-  :targetingValue @:TargetingValue ;
+  :targetingType xsd:string ;
+  :targetingValue xsd:string ;
 }
-
-:TargetingType {:value xsd:string;}
-:TargetingValue {:value xsd:string;}
 
 :EngagementAttributes{
   :engagementTime xsd:dateTime ;
@@ -74,5 +83,21 @@ base <http://example.org/>
   :deviceId xsd:string *;
 }
 
-:DisplayLocation{:value xsd:string;}
+##############################################
+# ad-mobile-conversions-attributed.js
+# ad-mobile-conversions-unattributed.js
+# ad-online-conversions-attributed.js
+# ad-online-conversions-unattributed.js
+:Conversion
+{
+	:attributedConversionType xsd:string;	# e.g.: "SiteVisit",
+	:eventType xsd:string;					# e.g.: "pageview",
+	:conversionPlatform xsd:string;			# e.g.: "Mobile",
+	:conversionUrl xsd:string;
+	:advertiserInfo @:AdvertiserInfo ;
+	:conversionValue xsd:string; 			# actually an integer
+	:conversionTime xsd:dateTime;
+	:additionalParameters xsd:string;		# No info
+}
+
 
