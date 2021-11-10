@@ -14,7 +14,13 @@ Sample of the Twitter data format (more to come).
   * ad-mobile-conversions-unattributed.js
   * ad-online-conversions-attributed.js
   * ad-online-conversions-unattributed.js
-* periscope: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/periscope.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Faperiscope.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+* direct_message: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/direct_message.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fdirect_message.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * direct-message-group-headers.js
+  * direct-message-headers.js
+  * direct-message-mute.js
+  * direct-messages-group.js
+  * direct-messages.js
+* periscope: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/periscope.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fperiscope.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * periscope-account-information.js
   * periscope-ban-information.js
   * periscope-broadcast-metadata.js
