@@ -8,6 +8,12 @@ Sample of the Twitter data format (more to come).
   * account-timezone.js
   * account.js
 * ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * ad-engagements.js
+  * ad-impressions.js
+  * ad-mobile-conversions-attributed.js
+  * ad-mobile-conversions-unattributed.js
+  * ad-online-conversions-attributed.js
+  * ad-online-conversions-unattributed.js
 * personalisation: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/personalisation.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fpersonalisation.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 
 
