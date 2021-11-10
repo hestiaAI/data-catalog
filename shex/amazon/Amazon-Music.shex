@@ -1,0 +1,12 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+:UserData{
+	:type xsd:string ;
+	:name xsd:string ;
+	:artist xsd:string ;
+	:asin xsd:string ;
+	:status xsd:string ;
+}
