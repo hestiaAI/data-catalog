@@ -4,6 +4,10 @@ base <http://example.org/>
 
 
 :UserData{
+  	:profile @:Profile * ;
+}
+
+:Profile{
 	:type xsd:string ;
 	:name xsd:string ;
 	:artist xsd:string ;
