@@ -14,6 +14,14 @@ Sample of the Twitter data format (more to come).
   * ad-mobile-conversions-unattributed.js
   * ad-online-conversions-attributed.js
   * ad-online-conversions-unattributed.js
+* periscope: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/periscope.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Faperiscope.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+ * periscope-account-information.js
+ * periscope-ban-information.js
+ * periscope-broadcast-metadata.js
+ * periscope-comments-made-by-user.js
+ * periscope-expired-broadcasts.js
+ * periscope-followers.js
+ * periscope-profile-description.js
 * personalisation: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/personalisation.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fpersonalisation.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 
 
@@ -32,8 +40,8 @@ ad-online-conversions-attributed.js      # EMPTY
 ad-online-conversions-unattributed.js    # EMPTY
 ageinfo.js                               # EMPTY
 app.js                                   # EMPTY
-birdwatch-note-rating.js
-birdwatch-note.js
+birdwatch-note-rating.js                 # EMPTY
+birdwatch-note.js                        # EMPTY
 block.js
 branch-links.js
 connected-application.js
@@ -59,11 +67,11 @@ moment.js
 mute.js
 ni-devices.js
 periscope-account-information.js
-periscope-ban-information.js
-periscope-broadcast-metadata.js
-periscope-comments-made-by-user.js
-periscope-expired-broadcasts.js
-periscope-followers.js
+periscope-ban-information.js                  # EMPTY
+periscope-broadcast-metadata.js               # EMPTY
+periscope-comments-made-by-user.js            # EMPTY
+periscope-expired-broadcasts.js               # EMPTY
+periscope-followers.js                        # EMPTY
 periscope-profile-description.js
 personalization.js
 phone-number.js
