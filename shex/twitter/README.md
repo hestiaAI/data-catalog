@@ -21,17 +21,17 @@ Sample of the Twitter data format (more to come).
 
 ```
 account-creation-ip.js
-account-suspension.js
+account-suspension.js                    # EMPTY
 account-timezone.js
 account.js
 ad-engagements.js
 ad-impressions.js
 ad-mobile-conversions-attributed.js
-ad-mobile-conversions-unattributed.js
-ad-online-conversions-attributed.js
-ad-online-conversions-unattributed.js
-ageinfo.js
-app.js
+ad-mobile-conversions-unattributed.js    # EMPTY
+ad-online-conversions-attributed.js      # EMPTY
+ad-online-conversions-unattributed.js    # EMPTY
+ageinfo.js                               # EMPTY
+app.js                                   # EMPTY
 birdwatch-note-rating.js
 birdwatch-note.js
 block.js
