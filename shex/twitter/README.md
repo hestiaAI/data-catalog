@@ -8,7 +8,7 @@ Sample of the Twitter data format (more to come).
 
 ## JSON files (58)
 
-account-creation-ip.js
+`account-creation-ip.js
 account-suspension.js
 account-timezone.js
 account.js
@@ -65,4 +65,6 @@ sso.js
 tweet-part1.js
 tweet.js
 user-link-clicks.js
-verified.js
+verified.js`
+
+
