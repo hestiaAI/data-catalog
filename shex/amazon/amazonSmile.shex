@@ -1,0 +1,52 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# AmazonSmile.CustomerEngagementCampaignCurrentStatus.Data.csv  
+# AmazonSmile.CustomerEngagementCampaignHistory.Data.csv  
+# AmazonSmile.CustomerEngagementCampaignHistory.Description.csv 
+
+:UserData{
+  	:customer_engagement_campaign_current_status_data @:CustomerEngagementCampaignCurrentStatusData *;
+  	:customer_engagement_campaign_history_data @:CustomerEngagementCampaignHistoryData *;
+  	:customer_engagement_campaign_history_description @:CustomerEngagementCampaignHistoryDescription *;
+}
+
+###############################
+# AmazonSmile.CustomerEngagementCampaignCurrentStatus.Data.csv  
+:CustomerEngagementCampaignCurrentStatusData{
+  	:marketplace xsd:string ;
+  	:key xsd:string ; 						# e.g.: ACQUISITION, OVERLAY_LAST_DISPLAYED
+  	:overlay_last_displayed_time_in_utc xsd:dateTime ;
+  	:campaign_last_displayed_time_in_utc xsd:dateTime ;
+  	:campaign_first_displayed_time_in_utc xsd:dateTime ;
+  	:total_number_of_campaigns_displayed xsd:int ;
+  	:campaign_opted_out xsd:boolean ;
+  	:is_logically_deleted xsd:boolean ;
+  	:creation_time_in_utc xsd:dateTime ;
+  	:last_updated_time_in_utc xsd:dateTime ;
+}
+
+###############################
+# AmazonSmile.CustomerEngagementCampaignHistory.Data.csv  
+:CustomerEngagementCampaignHistoryData{
+  	:marketplace xsd:string ;
+  	:campaign xsd:string ;
+  	:creative_treatment xsd:string ;
+  	:action xsd:string ;
+  	:event_time_in_utc xsd:dateTime ;
+}
+
+###############################
+# AmazonSmile.CustomerEngagementCampaignHistory.Description.csv 
+:CustomerEngagementCampaignHistoryDescription{
+  	:name xsd:string ;
+  	:full_name xsd:string ;
+  	:description xsd:string ;
+}
+
+
+
+
+
+
