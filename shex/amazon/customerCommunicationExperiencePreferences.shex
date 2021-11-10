@@ -1,0 +1,29 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# customer_communication_experience_preferences_email_history
+# customer_communication_experience_preferences
+
+
+:UserData{
+  	:email_history @:Preference * ;
+	:preferences @:Preference * ;
+
+}
+
+###############################
+:Preference{
+	:notification_type xsd:string ;
+	:notification_id xsd:int ;
+	:notification_id_description xsd:string ;
+	:notification_topic xsd:string ;
+	:notification_communication_channel xsd:string ;
+	:action xsd:string ;
+	:action_timestamp xsd:dateTime ;
+	:marketplace xsd:string ;
+}
+
+
+
+
