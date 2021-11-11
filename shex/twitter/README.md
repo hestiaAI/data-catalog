@@ -10,8 +10,7 @@ Code such as
         "deviceType" : "Full",
 ```
 is described as featuring a "type" and "subtype" field with values "niDeviceResponse" and "messagingDevice", respectively.
-
-Some files do not contain information in the available samples and are either left without semantics (e.g. fleets), or shown with a content inferred from the context (e.g. in Lists).
+    
 
 ## ShEx files and corresponding JSON files
 * account: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/account.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Faccount.shex&schemaFormat=ShExC&schemaEngine=ShEx)
@@ -39,6 +38,9 @@ Some files do not contain information in the available samples and are either le
   * ad-mobile-conversions-unattributed.js
   * ad-online-conversions-attributed.js
   * ad-online-conversions-unattributed.js
+* birdwatch: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/birdwatch.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fbirdwatch.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * birdwatch-note-rating.js
+  * birdwatch-note.js
 * devices: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/devices.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fdevices.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * connected-application.js
   * device-token.js
@@ -72,12 +74,6 @@ Some files do not contain information in the available samples and are either le
   * follower.js
   * following.js
   * mute.js
-
-## Todo
-
-* birdwatch
-  * birdwatch-note-rating.js
-  * birdwatch-note.js
 
 
 ## JSON files (57)
@@ -117,7 +113,7 @@ branch-links.js
    lists-created.js
    lists-member.js
    lists-subscribed.js
-manifest.js                        # EMPTY
+manifest.js                        
    moment.js
    mute.js
    ni-devices.js
