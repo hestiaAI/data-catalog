@@ -1,0 +1,29 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	lists-created.js
+#   lists-member.js
+#   lists-subscribed.js
+
+:UserData {
+	:lists_created @:List * ;
+	:lists_member @:List * ;
+	:lists_subscribed @:List * ;
+}
+
+############################
+#	lists-created.js
+# NO DATA
+
+############################
+#   lists-member.js
+:List{
+	:type xsd:string ; # e.g. "userListInfo"
+	:url xsd:string ;
+}
+
+############################
+#   lists-subscribed.js
+# NO DATA
