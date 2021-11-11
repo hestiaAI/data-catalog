@@ -19,7 +19,7 @@ base <http://example.org/>
 	:account_suspension @:AccountSuspension * ;
 	:account_timezone @:AccountTimezone * ;            
 	:account @:Account * ;
-	:age_meta @:AgeMeta ;		# NO DATA
+	:age_meta xsd:int ;
 	:email_address_change @:EmailAddressChange * ;
 	:phone_number @:PhoneNumber *;
 	:profile @:Profile ;
@@ -36,8 +36,10 @@ base <http://example.org/>
 
 ############################
 #	account-suspension.js  
-# NO DATA
-
+:AccountSuspension{
+	:timeStamp xsd:dateTime ;
+	:action xsd:string ;
+}
 ############################
 #	account-timezone.js  
 :AccountTimezone{
@@ -97,4 +99,5 @@ base <http://example.org/>
 	:changedFrom xsd:string ;
 	:changedTo xsd:string ;
 }
+
 
