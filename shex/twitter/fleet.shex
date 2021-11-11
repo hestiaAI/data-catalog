@@ -1,0 +1,20 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	fleet-mute.js
+#	fleet.js
+
+
+:UserData {
+	:fleet @:Fleet * ;
+	:fleet_mute @:FleetMute * ;
+}
+
+############################
+#	fleet-mute.js
+# NO DATA
+############################
+#	fleet.js
+# NO DATA
