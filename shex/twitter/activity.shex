@@ -1,0 +1,91 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	like.js
+#	moment.js
+#	protected-history.js
+#	saved-search.js
+#	tweet.js
+#	user-link-clicks.js
+
+:UserData {
+	:like @:Like * ;
+	:moment @:Moment * ;
+	:protected_history @:ProtectedHistory * ;
+	:saved_search @:SavedSearch * ;
+	:tweets @:Tweet * ;
+	:user_link_clicks @:UserLinkClick *;
+}
+
+############################
+#	like.js
+:Like{
+	:type xsd:string ; 	# e.g. "like"
+	:tweetId xsd:int ;
+	:fullText xsd:string ;
+	:expandedUrl xsd:string ;
+}
+
+############################
+#	moment.js
+# NO DATA
+
+############################
+#	protected-history.js
+# NO DATA
+
+############################
+#	saved-search.js
+# NO DATA
+
+############################
+#	tweet.js
+:Tweet{
+	:type xsd:string ; 	# e.g."tweet"
+	:retweeted xsd:boolean ;
+	:source xsd:string ;
+	:entities @:Entities ;
+	:display_text_range xsd:int * ;
+	:favorite_count xsd:string ;				# actually an integer in string format
+	:in_reply_to_status_id_str xsd:string ;		# actually an integer in string format
+	:id_str xsd:string ;						# actually an integer in string format
+	:in_reply_to_user_id xsd:string ;			# actually an integer in string format
+	:truncated xsd:boolean ;
+	:retweet_count xsd:string ;					# actually an integer in string format
+	:id xsd:string ;							# actually an integer in string format
+	:in_reply_to_status_id xsd:string ;			# actually an integer in string format
+	:created_at xsd:dateTime ;
+	:favorited xsd:boolean ;
+	:full_text xsd:string ;
+	:lang xsd:string ;							# two-letter language code
+	:in_reply_to_screen_name xsd:string ;
+	:in_reply_to_user_id_str xsd:string ;		# actually an integer in string format
+}
+:Entities{
+	:hashtags xsd:string * ;
+	:symbols xsd:string * ;
+	:user_mentions @:UserMention * ;
+	:urls xsd:string * ;
+}
+:UserMention{
+	:name xsd:string ;
+	:screen_name xsd:string ;
+	:indices xsd:string * ;			# actually integers in string format
+	:id_str xsd:string ;			# actually an integer in string format
+	:id xsd:string ;				# actually an integer in string format
+}
+
+############################
+#	user-link-clicks.js
+:UserLinkClick{
+	:type xsd:string ; 	# e.g. "userInteractionsData"
+	:subtype xsd:string ; 	# e.g. "linkClick"
+	:tweetId xsd:int ;
+	:finalUrl xsd:string ;
+	:timeStampOfInteraction xsd:dateTime ;
+}
+
+    
+
