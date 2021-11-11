@@ -11,6 +11,7 @@ Sample of the Twitter data format (more to come).
   * email-address-change.js
   * phone-number.js
   * profile.js
+  * screen-name-change.js
   * verified.js
 * ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * ad-engagements.js
@@ -90,7 +91,7 @@ ni-devices.js
 protected-history.js
 reply-prompt.js
 saved-search.js
-screen-name-change.js
+   screen-name-change.js
 spaces-metadata.js
 sso.js
 tweet-part1.js
