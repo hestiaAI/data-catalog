@@ -15,8 +15,8 @@ base <http://example.org/>
 	:periscope_ban_information @:PeriscopeBanInformation * ;
 	:periscope_broadcast_metadata @:PeriscopeBroadcastMetadata * ;
 	:periscope_comments_made_by_user @:PeriscopeCommentsMadeByUser * ;
-	:periscope_expired_broadcasts @:PeriscopeExpiredBroadcasts * ;
-	:periscope_followers @:PeriscopeFollowers * ;
+	:periscope_expired_broadcasts @:PeriscopeExpiredBroadcast * ;
+	:periscope_followers @:PeriscopeFollower * ;
 	:periscope_profile_description @:PeriscopeProfileDescription * ;
 }
 
@@ -35,27 +35,45 @@ base <http://example.org/>
 
 ############################
 # periscope-ban-information.js
-# NO DATA
-
+:PeriscopeBanInformation{
+	:periscopeBanActions xsd:string ; 			# A list of timestamps and reasons an account was disabled.
+	:periscopeBanOverrideActions xsd:string ;	# A list of timestamps and ban reasons that an administrator has determined were incorrectly automatically applied to the account.
+}
 ############################
 # periscope-broadcast-metadata.js
-# NO DATA
-
+:PeriscopeBroadcastMetadata{
+	:id xsd:string ; 							#  Unique id for the broadcast posted by the shell account.
+	:hasLocation xsd:boolean ; 					#  Flag to indicate if the broadcast has associated location.
+	:latitude xsd:string ; 						#  Specific latitude for the broadcast’s location.
+	:longitude xsd:string ; 					#  Specific longitude for the broadcast’s location.
+	:city xsd:string ; 							#  (optional) City where the broadcast took place.
+	:country xsd:string ; 						#  (optional) Country where the broadcast took place.
+	:createdAt xsd:dateTime ; 					#  Time broadcast was created.
+	:updatedAt xsd:dateTime ; 					#  Time broadcast was updated or modified.
+}
 ############################
 # periscope-comments-made-by-user.js
-# NO DATA
-
+:PeriscopeCommentsMadeByUser{
+	:broadcastId xsd:string ; 					# Unique id for the broadcast posted by the shell account.
+	:byAccountId xsd:string ; 					# Account ID of the commenter.
+	:createdAt xsd:dateTime ; 					# Time comment was made.
+	:text xsd:string ; 							# The comment text.
+}
 ############################
 # periscope-expired-broadcasts.js
-# NO DATA
-
+:PeriscopeExpiredBroadcast{
+	:broadcastIds xsd:string ; 					# A list of the broadcast IDs posted by the shell account that have expired and cannot be encoded.
+	:reason xsd:string ; 						# Explanation of why broadcast replay files are unavailable (hard-coded).
+}
 ############################
 # periscope-followers.js
-# NO DATA
-
+:PeriscopeFollower{
+		:id xsd:string ; 
+}
 ############################
 # periscope-profile-description.js
 :PeriscopeProfileDescription{
 	:bio xsd:string ;
+	:profileImageUrls xsd:string ? ;
 }
 
