@@ -10,7 +10,8 @@ Code such as
         "deviceType" : "Full",
 ```
 is described as featuring a "type" and "subtype" field with values "niDeviceResponse" and "messagingDevice", respectively.
-    
+
+Further information is available in the README file of the archive.
 
 ## ShEx files and corresponding JSON files
 * account: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/account.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Faccount.shex&schemaFormat=ShExC&schemaEngine=ShEx)
