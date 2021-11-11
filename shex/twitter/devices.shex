@@ -1,0 +1,63 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	connected-application.js
+#	device-token.js
+#	ip-audit.js
+#	ni-devices.js
+
+
+:UserData {
+	:connected_application @:ConnectedApplication * ;
+	:device_token @:DeviceToken * ;
+	:ip_audit @:IPAudit * ;
+	:ni_devices @:NiDevices * ;
+}
+
+############################
+#	connected-application.js
+:ConnectedApplication{
+	:type xsd:string ; 		# e.g. "connectedApplication"
+	:organisation @:Organisation ;
+	:name xsd:string ;
+	:description xsd:string ;
+	:permissions xsd:string * ;
+	:approvedAt xsd:dateTime ;
+	:id xsd:string ;	# int as a string
+}
+:Organisation{
+	:name xsd:string ;
+	:url xsd:string ;
+}
+
+############################
+#	device-token.js
+# NO DATA
+
+############################
+#	ip-audit.js
+:IPAudit{
+ 	:type xsd:string ; 			# e.g. "ipAudit"
+ 	:accountId xsd:string ;		# int as a string
+ 	:createdAt xsd:dateTime ;
+ 	:loginIp xsd:string ;		# seen IPv4
+}
+  
+############################
+#	ni-devices.js
+:NiDevices{
+ 	:type xsd:string ; 			# e.g. "niDeviceResponse"
+ 	:subtype xsd:string ; 		# e.g. "pushDevice", "messagingDevice"
+ 	:deviceVersion xsd:string ;
+ 	:udid xsd:string ;
+ 	:deviceType xsd:string ;
+ 	:token xsd:string ;
+ 	:updatedDate xsd:dateTime ;
+ 	:createdDate xsd:dateTime ;
+}
+
+
+    
+
