@@ -35,18 +35,18 @@ Sample of the Twitter data format (more to come).
   * periscope-followers.js
   * periscope-profile-description.js
 * personalisation: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/personalisation.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fpersonalisation.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+* user_interactions: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/user_interactions.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fuser_interactions.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * block.js
+  * contact.js
+  * follower.js
+  * following.js
+  * mute.js
 
 ## Todo
 * lists
   * lists-created.js
   * lists-member.js
   * lists-subscribed.js
-* user_interactions
-  * block.js
-  * contact.js
-  * follower.js
-  * following.js
-  * mute.js
 * activity
   * like.js
   * moment.js
