@@ -7,13 +7,22 @@ base <http://example.org/>
 #	account-suspension.js  
 #	account-timezone.js  
 #	account.js
-
+#	ageinfo.js
+#	email-address-change.js
+#	phone-number.js
+#	profile.js
+#	verified.js
 
 :UserData {
 	:account_creation_ip @:AccountCreationIp * ;
 	:account_suspension @:AccountSuspension * ;
 	:account_timezone @:AccountTimezone * ;            
 	:account @:Account * ;
+	:age_meta @:AgeMeta ;		# NO DATA
+	:email_address_change @:EmailAddressChange * ;
+	:phone_number @:PhoneNumber *;
+	:profile @:Profile ;
+	:verified @:Verified ;
 }
 
 ############################
@@ -43,5 +52,41 @@ base <http://example.org/>
 	:createdAt xsd:dateTime ;
 	:accountDisplayName xsd:string ;
 }
+
+############################
+#	email-address-change.js
+:EmailAddressChange{
+	:accountId xsd:int ;
+	:changedAt xsd:dateTime ;
+	:changedFrom xsd:string ;
+	:changedTo xsd:string ;
+}
+
+############################
+#	verified.js
+:Verified{
+	:type xsd:string ;
+	:accountId xsd:int ;
+	:verified xsd:boolean ;
+}
+
+############################
+#	profile.js
+:Profile{
+	:profile_description @:ProfileDescription ;
+	:avatarMediaUrl xsd:string ;
+	:headerMediaUrl xsd:string ;
+}
+:ProfileDescription{
+	:bio xsd:string ;
+	:website xsd:string ;
+	:location xsd:string ;
+}
+############################
+#	phone-number.js
+:PhoneNumber{
+	:phoneNumber xsd:string ;
+}
+
 
 
