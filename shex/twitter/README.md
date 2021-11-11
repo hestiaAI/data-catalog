@@ -48,6 +48,10 @@ is described as featuring a "type" and "subtype" field with values "niDeviceResp
   * direct-message-mute.js
   * direct-messages-group.js
   * direct-messages.js
+* lists: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/lists.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Flists.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * lists-created.js
+  * lists-member.js
+  * lists-subscribed.js
 * periscope: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/periscope.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fperiscope.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * periscope-account-information.js
   * periscope-ban-information.js
@@ -65,10 +69,6 @@ is described as featuring a "type" and "subtype" field with values "niDeviceResp
   * mute.js
 
 ## Todo
-* lists
-  * lists-created.js
-  * lists-member.js
-  * lists-subscribed.js
 * fleet
   * fleet-mute.js
   * fleet.js
