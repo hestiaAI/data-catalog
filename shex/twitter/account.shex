@@ -11,6 +11,7 @@ base <http://example.org/>
 #	email-address-change.js
 #	phone-number.js
 #	profile.js
+#	screen-name-change.js
 #	verified.js
 
 :UserData {
@@ -22,6 +23,7 @@ base <http://example.org/>
 	:email_address_change @:EmailAddressChange * ;
 	:phone_number @:PhoneNumber *;
 	:profile @:Profile ;
+	:screen-name-change @:ScreenNameChange *;
 	:verified @:Verified ;
 }
 
@@ -87,6 +89,12 @@ base <http://example.org/>
 :PhoneNumber{
 	:phoneNumber xsd:string ;
 }
-
-
+############################
+#	screenNameChange
+:ScreenNameChange{
+	:accountId xsd:int ;
+	:changedAt xsd:dateTime ;
+	:changedFrom xsd:string ;
+	:changedTo xsd:string ;
+}
 
