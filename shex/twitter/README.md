@@ -36,8 +36,40 @@ Sample of the Twitter data format (more to come).
   * periscope-profile-description.js
 * personalisation: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/personalisation.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fpersonalisation.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 
+## Todo
+* lists
+  * lists-created.js
+  * lists-member.js
+  * lists-subscribed.js
+* user_interactions
+  * block.js
+  * contact.js
+  * follower.js
+  * following.js
+  * mute.js
+* activity
+  * like.js
+  * moment.js
+  * protected-history.js
+  * saved-search.js
+  * tweet.js
+  * user-link-clicks.js
+* fleet
+  * fleet-mute.js
+  * fleet.js
+* birdwatch
+  * birdwatch-note-rating.js                 # EMPTY
+  * birdwatch-note.js                        # EMPTY
+* devices
+  * connected-application.js
+  * device-token.js
+  * ip-audit.js
+  * ni-devices.js
 
-## JSON files (58)
+
+
+
+## JSON files (57)
 
 ```
    account-creation-ip.js
@@ -52,32 +84,32 @@ Sample of the Twitter data format (more to come).
    ad-online-conversions-unattributed.js    # EMPTY
    ageinfo.js                               # EMPTY
    app.js                                   # EMPTY
-birdwatch-note-rating.js                 # EMPTY
-birdwatch-note.js                        # EMPTY
-block.js
+   birdwatch-note-rating.js                 # EMPTY
+   birdwatch-note.js                        # EMPTY
+   block.js
 branch-links.js
-connected-application.js
-contact.js
-device-token.js
+   connected-application.js
+   contact.js
+   device-token.js
    direct-message-group-headers.js
    direct-message-headers.js
    direct-message-mute.js
    direct-messages-group.js
    direct-messages.js
    email-address-change.js
-fleet-mute.js
-fleet.js
-follower.js
-following.js
-ip-audit.js
-like.js
-lists-created.js
-lists-member.js
-lists-subscribed.js
-manifest.js
-moment.js
-mute.js
-ni-devices.js
+   fleet-mute.js
+   fleet.js
+   follower.js
+   following.js
+   ip-audit.js
+   like.js
+   lists-created.js
+   lists-member.js
+   lists-subscribed.js
+manifest.js                        # EMPTY
+   moment.js
+   mute.js
+   ni-devices.js
    periscope-account-information.js
    periscope-ban-information.js                  # EMPTY
    periscope-broadcast-metadata.js               # EMPTY
@@ -88,15 +120,14 @@ ni-devices.js
    personalization.js
    phone-number.js
    profile.js
-protected-history.js
-reply-prompt.js
-saved-search.js
+   protected-history.js
+reply-prompt.js                        # EMPTY
+   saved-search.js
    screen-name-change.js
-spaces-metadata.js
-sso.js
-tweet-part1.js
-tweet.js
-user-link-clicks.js
-   verified.js
+spaces-metadata.js                        # EMPTY
+sso.js                        # EMPTY
+  tweet.js
+  user-link-clicks.js
+  verified.js
 ```
 
