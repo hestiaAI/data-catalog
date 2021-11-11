@@ -14,7 +14,21 @@ base <http://example.org/>
 
 ############################
 #	fleet-mute.js
-# NO DATA
+:FleetMute{
+	:accountId xsd:string ;
+	:userLink xsd:string ;
+}
 ############################
 #	fleet.js
-# NO DATA
+:Fleet{
+	:id xsd:string ;
+	:userId xsd:string ;
+	:threadId xsd:string ;
+	:text xsd:string ;
+	:createdAt xsd:dateTime ;
+	:deletedAt xsd:dateTime ;
+	:viewCount xsd:int ;
+	:urls xsd:string ;
+	:mediaEntity xsd:string ;
+	:seenByUsers xsd:string * ;
+}
