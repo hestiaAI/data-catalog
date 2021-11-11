@@ -1,0 +1,19 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	birdwatch-note-rating.js
+#	birdwatch-note.js
+
+:UserData {
+	:birdwatch_note @:BirdwatchNote * ;
+	:birdwatch_note_rating @:BirdwatchNoteRating * ;
+}
+
+############################
+#	birdwatch-note-rating.js
+# NO DATA
+############################
+#	birdwatch-note.js
+# NO DATA
