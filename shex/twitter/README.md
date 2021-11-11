@@ -27,6 +27,11 @@ Sample of the Twitter data format (more to come).
   * ad-mobile-conversions-unattributed.js
   * ad-online-conversions-attributed.js
   * ad-online-conversions-unattributed.js
+* devices: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/devices.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fdevices.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * connected-application.js
+  * device-token.js
+  * ip-audit.js
+  * ni-devices.js
 * direct_message: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/direct_message.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fdirect_message.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * direct-message-group-headers.js
   * direct-message-headers.js
@@ -54,20 +59,12 @@ Sample of the Twitter data format (more to come).
   * lists-created.js
   * lists-member.js
   * lists-subscribed.js
-
 * fleet
   * fleet-mute.js
   * fleet.js
 * birdwatch
   * birdwatch-note-rating.js
   * birdwatch-note.js
-* devices
-  * connected-application.js
-  * device-token.js
-  * ip-audit.js
-  * ni-devices.js
-
-
 
 
 ## JSON files (57)
