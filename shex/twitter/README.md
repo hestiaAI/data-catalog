@@ -11,6 +11,8 @@ Code such as
 ```
 is described as featuring a "type" and "subtype" field with values "niDeviceResponse" and "messagingDevice", respectively.
 
+Some files do not contain information in the available samples and are either left without semantics (e.g. fleets), or shown with a content inferred from the context (e.g. in Lists).
+
 ## ShEx files and corresponding JSON files
 * account: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/account.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Faccount.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * account-creation-ip.js
@@ -48,6 +50,9 @@ is described as featuring a "type" and "subtype" field with values "niDeviceResp
   * direct-message-mute.js
   * direct-messages-group.js
   * direct-messages.js
+* fleet: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/fleet.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Ffleet.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * fleet-mute.js
+  * fleet.js
 * lists: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/lists.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Flists.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * lists-created.js
   * lists-member.js
@@ -69,9 +74,7 @@ is described as featuring a "type" and "subtype" field with values "niDeviceResp
   * mute.js
 
 ## Todo
-* fleet
-  * fleet-mute.js
-  * fleet.js
+
 * birdwatch
   * birdwatch-note-rating.js
   * birdwatch-note.js
