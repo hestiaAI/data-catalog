@@ -13,7 +13,29 @@ base <http://example.org/>
 
 ############################
 #	birdwatch-note-rating.js
-# NO DATA
+:BirdwatchNoteRating{
+	:noteId xsd:string ;
+	:userId xsd:string ;
+	:createdAt xsd:string ;
+	:agree xsd:boolean ;
+	:helpful xsd:boolean ;
+	:helpfulTags xsd:string ;
+	:nothelpfulTags xsd:string ;
+	:helpfulnessLevel xsd:string ; 			# e.g. "helpful", "somewhat helpful", "not helpful"
+}
 ############################
 #	birdwatch-note.js
-# NO DATA
+:BirdwatchNote{
+	:noteId xsd:string ;
+	:userId xsd:string ;
+	:createdAt xsd:string ;
+	:tweetId xsd:string ;
+	:summary xsd:string ;
+	:classification xsd:string ;
+	:believable xsd:string ;
+	:trustworthySources xsd:string *;
+	:misleadingTags xsd:string *;
+	:notMisleadingTags xsd:string * ;
+	:harmful xsd:string ; 					# e.g.: “little harm”, “considerable harm”
+	:validation xsd:string ; 				# e.g.: “easy”, “challenging”.
+}
