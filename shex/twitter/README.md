@@ -7,6 +7,11 @@ Sample of the Twitter data format (more to come).
   * account-suspension.js
   * account-timezone.js
   * account.js
+  * ageinfo.js
+  * email-address-change.js
+  * phone-number.js
+  * profile.js
+  * verified.js
 * ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * ad-engagements.js
   * ad-impressions.js
@@ -46,8 +51,8 @@ Sample of the Twitter data format (more to come).
    ad-online-conversions-unattributed.js    # EMPTY
    ageinfo.js                               # EMPTY
    app.js                                   # EMPTY
-   birdwatch-note-rating.js                 # EMPTY
-   birdwatch-note.js                        # EMPTY
+birdwatch-note-rating.js                 # EMPTY
+birdwatch-note.js                        # EMPTY
 block.js
 branch-links.js
 connected-application.js
@@ -58,7 +63,7 @@ device-token.js
    direct-message-mute.js
    direct-messages-group.js
    direct-messages.js
-email-address-change.js
+   email-address-change.js
 fleet-mute.js
 fleet.js
 follower.js
@@ -80,8 +85,8 @@ ni-devices.js
    periscope-followers.js                        # EMPTY
    periscope-profile-description.js
    personalization.js
-phone-number.js
-profile.js
+   phone-number.js
+   profile.js
 protected-history.js
 reply-prompt.js
 saved-search.js
@@ -91,6 +96,6 @@ sso.js
 tweet-part1.js
 tweet.js
 user-link-clicks.js
-verified.js
+   verified.js
 ```
 
