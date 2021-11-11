@@ -58,8 +58,8 @@ Sample of the Twitter data format (more to come).
   * fleet-mute.js
   * fleet.js
 * birdwatch
-  * birdwatch-note-rating.js                 # EMPTY
-  * birdwatch-note.js                        # EMPTY
+  * birdwatch-note-rating.js
+  * birdwatch-note.js
 * devices
   * connected-application.js
   * device-token.js
