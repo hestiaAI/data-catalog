@@ -1,0 +1,38 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# Encompassing files
+#	block.js
+#	contact.js
+#	follower.js
+#	following.js
+#	mute.js
+
+
+:UserData {
+	:block @:UserInteraction * ;
+	:contact @:UserInteraction * ;
+	:following @:UserInteraction * ;
+	:follower @:UserInteraction * ;
+	:muting @:UserInteraction * ;
+}
+
+
+############################
+#	block.js
+#	mute.js
+#	follower.js
+#	following.js
+
+:UserInteraction{
+	:type xsd:string ; 	# e.g.: "blocking", "contact", "following",  "muting"
+	:accountId xsd:int ;
+	:user_link xsd:string ; 
+}
+
+############################
+#	contact.js
+# 	NO DATA
+
+
