@@ -13,6 +13,13 @@ Sample of the Twitter data format (more to come).
   * profile.js
   * screen-name-change.js
   * verified.js
+* activity: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/activity.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Factivity.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+  * like.js
+  * moment.js
+  * protected-history.js
+  * saved-search.js
+  * tweet.js
+  * user-link-clicks.js
 * ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/twitter/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ftwitter%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
   * ad-engagements.js
   * ad-impressions.js
@@ -47,13 +54,7 @@ Sample of the Twitter data format (more to come).
   * lists-created.js
   * lists-member.js
   * lists-subscribed.js
-* activity
-  * like.js
-  * moment.js
-  * protected-history.js
-  * saved-search.js
-  * tweet.js
-  * user-link-clicks.js
+
 * fleet
   * fleet-mute.js
   * fleet.js
