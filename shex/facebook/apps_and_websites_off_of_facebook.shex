@@ -19,7 +19,7 @@ base <http://example.org/>
 	:name xsd:string ;
 	:added_timestamp xsd:int ;		# UNIX timestamp
 	:user_app_scoped_id xsd:int ;
-	:category xsd:string ; 			# e.g."active", "inactive", "offline"
+	:category xsd:string ; 			# e.g."active", "inactive", "offline", "removed"
 	:removed_timestamp xsd:int ;
 }
 
