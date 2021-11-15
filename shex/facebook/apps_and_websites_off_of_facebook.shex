@@ -6,6 +6,7 @@ base <http://example.org/>
 # 		apps_and_websites.json  
 #		posts_from_apps_and_websites.json  
 #		your_apps.json
+#               your_off-facebook_activity.json
 
 :UserData{
 	:installed_apps_v2 @:InstalledApp *;
