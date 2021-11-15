@@ -1,7 +1,6 @@
 # Facebook data format
 
 * activity_messages: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/activity_messages.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Factivity_messages.shex&schemaFormat=ShExC&schemaEngine=ShEx)
-* ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * ads_information: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/ads_information.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fads_information.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * apps_and_websites_off_of_facebook: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/apps_and_websites_off_of_facebook.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fapps_and_websites_off_of_facebook.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * comments_and_reactions: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/comments_and_reactions.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fcomments_and_reactions.shex&schemaFormat=ShExC&schemaEngine=ShEx)
@@ -34,3 +33,8 @@
 * your_interactions_on_facebook: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/your_interactions_on_facebook.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fyour_interactions_on_facebook.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * your_places: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/your_places.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fyour_places.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * your_topics: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/your_topics.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fyour_topics.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+
+# older files
+
+* ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/facebook/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Ffacebook%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
+
