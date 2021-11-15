@@ -1,0 +1,53 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# 34 directories containing 1 'My Activity.json' file each
+# "Assistant" and "'Voice and Audio'" contain thousands of archive mp3 files.
+# The format Activity_item is the same for all diectories.
+#
+# Ads                 Drive               'Google Play Movies _ TV'   Search
+# Android             Gmail               'Google Play Store'         Shopping
+# Assistant          'Google Analytics'   'Google Store'              Takeout
+#'Assistant Memory'  'Google Apps'        'Google Translate'          Travel
+# Books              'Google Lens'         Help                      'Video Search'
+# Calendar           'Google News'        'Image Search'             'Voice and Audio'
+# Chrome             'Google Pay'          Maps                       YouTube
+# Developers         'Google Play Books'   News
+# Discover           'Google Play Games'   Podcasts
+
+
+:UserAccount {
+	:ads @:Activity_item * ;
+	:android @:Activity_item * ;
+	:assistant  @:Activity_item * ;
+	:assistant_memory  @:Activity_item * ;
+		# etc...
+}
+
+:Activity_item{
+	:header xsd:string ; 		# e.g. "Ads", "youtube.com", "Chrome", "Signal Private Messenger" ,
+            					#		"Google",  "Assistant Memory", "Calendar", "Books"
+	:title xsd:string ; 
+	:subtitles @:Subtitles * ;	# e.g. in "Discover"
+	:titleUrl xsd:string ; 
+	:time xsd:dateTime ; 
+	:products xsd:string * ; 	# e.g. ["Ads"], ["Chrome"], ["Android"], ["Assistant Memory"]
+	:details @:Detail * ;		# e.g. 
+           						#	[{:name": "From Google Ads"}]
+           						#	
+	:locationInfos @:LocationInfos * ;
+}
+:Detail{
+	:name xsd:string ;
+}
+:Subtitles{
+	:name xsd:string ; 
+	:url xsd:string ? ; 
+}
+:LocationInfos{
+	:name xsd:string ; 
+	:url xsd:string ; 
+	:source xsd:string ; 		# e.g. "From your device"
+	:sourceUrl xsd:string ? ; 
+}
