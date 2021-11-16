@@ -1,0 +1,121 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# 1 directory containing 4 JSON files
+#		GoogleNestPartnerConnections.json
+#		HomeApp.json
+#		HomeHistory.json
+#		SoundSensing.json
+
+:UserAccount { 
+	:google_nest_partner_connections @:GoogleNestPartnerConnection * ;
+	:home_app @:HomeApp ;
+	:home_history @:HomeHistory ;
+	:sound_sensing @:SoundSensing ;
+}
+
+####################################
+:GoogleNestPartnerConnection{
+	# NO DATA
+}
+####################################
+:HomeApp{
+	:full_structures @:FullStructure * ;
+	:unassigned_devices @:UnassignedDevice * ;
+	:structure @:Structure ;
+}
+:FullStructure{
+	:owner_emails xsd:string * ;
+	:rooms_and_devices @:RoomOrDevice * ;
+}
+:RoomOrDevice{
+	:devices @:Device * ;
+	:room @:Room * ;
+}
+:Device{
+	:state_changes @:StateChange * ;
+	:device_info @:DeviceInfo ; 
+	:create_time @:TimeSecondsNano ;
+	:creator_emails xsd:string * ;
+	:agent_device_names @:AgentDeviceNames ;
+	:type xsd:string ;
+	:supported_traits xsd:string * ; 	# e.g. "action.devices.traits.Cast",
+										# 		"action.devices.traits.OnOff",
+										# 		"action.devices.traits.RemoteDucking"
+}
+:StateChange{
+	:state_commit_time @:TimeSecondsNano ;
+	:state_change_time @:TimeSecondsNano ? ;
+	:state @:State ; 
+}
+:State{
+	:duration_millis xsd:int ;
+	:application_name xsd:string ;
+	:content_id xsd:string ;
+	:artist xsd:string ;
+	:playback_state xsd:string ; # e.g. "STOPPED",
+	:subtitle xsd:string ;
+	:played_time_millis xsd:int ;
+	:title xsd:string ;
+	:activity_state xsd:string ;
+}
+  
+:DeviceInfo{
+	:device_model_id xsd:string ;
+	:model xsd:string ;
+}
+:TimeSecondsNano{
+	:seconds xsd:float ; 
+	:nanos xsd:float ; 
+}
+:AgentDeviceNames{
+	:name xsd:string ;
+}
+:Room{
+	:name xsd:string ;
+	:type xsd:string ;		# e.g.:  "BEDROOM"
+}
+:Structure{
+	:create_time @:TimeSecondsNano ;
+	:personalized_nicknames xsd:string * ;
+	:physical_location @:PhysicalLocation ; 
+	:description xsd:string ;
+	:version_timestamp xsd:int ;	# UNIX timestamp
+	:time_zone xsd:string ;
+}
+:PhysicalLocation{
+	:geo_coordinate @:GeoCoordinate ;
+}
+:GeoCoordinate{
+	:lng_degrees xsd:float ;
+	:lat_degrees xsd:float ;
+}
+                    
+                    
+:UnassignedDevice{
+	:room_hint xsd:string ;
+	:device_info xsd:string ;	# No sure, check with non-null data
+	:create_time @:TimeSecondsNano ;
+	:creator_emails xsd:string * ;
+	:agent_device_names @:AgentDeviceNames; 
+	:type xsd:string ;
+	:supported_traits xsd:string * ;
+	:custom_data  xsd:string ;
+}
+:AgentDeviceNames{
+	:default_names xsd:string * ;
+	:name xsd:string ;
+}
+####################################
+:HomeHistory{
+	# NO DATA
+}
+####################################
+:SoundSensing{
+	# NO DATA
+}
+
+
+
+
