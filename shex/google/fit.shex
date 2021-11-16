@@ -1,0 +1,86 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+# 2 directories containing numerous files
+# "Activities" has XML files
+# 		e.g. YYYY-MM-DDTHH_MM_SSZ_SOMETHING_Walking.tcx
+# 		e.g. YYYY-MM-DDTHH_MM_SSZ_SOMETHING_Cycling.tcx
+
+
+:UserAccount { 
+	:activities @:ActivityFile * ;
+	:daily_aggregations @:DailyAggregation * ;
+}
+
+####################################
+:ActivityFile{
+	:activities @:Activity * ;
+	:author @:ActivityAuthor
+}
+:ActivityAuthor{
+	:type xsd:string ; 		# In header. e.g. "Application_t"
+	:name xsd:string ; 		# e.g. "Google Fit"
+	:build @:Build ;
+	:lang xsd:string ;
+	:part_number xsd:string ;
+}
+:Build{
+	:version @:Version ;
+}
+:Version{
+	:versionMajor xsd:int ;
+	:versionMinor xsd:int ;
+	:buildMajor xsd:int ;
+	:buildMinor xsd:int ;
+}
+:Activity{
+	:sport xsd:string ; 		# In header. e.g. "Biking"
+	:id xsd:string ;			# Looks like a DateTime with some sort of serial number added
+	:note xsd:string ; 			#  e.g. "Biking"
+	:lap @:Lap ;
+}
+:Lap{
+	:track @:Track ;
+	:distanceMeters xsd:float ;
+	:totalTimeSeconds xsd:float ;
+	:calories xsd:float ;
+	:intensity xsd:string ;			#  e.g. "Active"
+	:triggerMethod xsd:string ;		#  e.g. "Manual"
+}
+:Track{
+	:trackpoints @:Trackpoint * ;
+}
+:Trackpoint{
+	:distanceMeters xsd:float ;
+	:time xsd:dateTime;
+	:position @:Position ;
+	:altitudeMeters xsd:float ;
+}
+:Position{
+	:latitudeDegrees xsd:float ;
+	:longitudeDegrees xsd:float ;
+}
+
+####################################
+:DailyAggregation{
+	:start_time xsd:dateTime;		# Relative ( starts at 00:00:00.000+01:00 )
+	:end_time xsd:dateTime;			# Relative ( starts at 00:00:00.000+01:00 )
+	:calories_kcal xsd:float ;
+	:distance_m xsd:float ;
+	:low_latitude_deg xsd:float ;
+	:low_longitude_deg xsd:float ;
+	:high_latitude_deg xsd:float ;
+	:high_longitude_deg xsd:float ;
+	:average_speed_m_s xsd:float ;
+	:max_speed_m_s xsd:float ;
+	:min_speed_m_s xsd:float ;
+	:step_count xsd:int ;
+	:average_weight_kg xsd:int ;
+	:max_weight_kg xsd:int ;
+	:min_weight_kg xsd:int ;
+	:move_minutes_count xsd:int ;
+	:heart_points xsd:int ;
+	:heart_minutes xsd:int ;
+	:inactive_duration_ms xsd:int ;
+}
