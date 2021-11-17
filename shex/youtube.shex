@@ -4,7 +4,14 @@ base <http://example.org/>
 
 :UserData{
 	:view_events @:ViewEvent *;
+	:children @:Child * ;
+	:history @:History ;
+	:my_comments @:MyComment * ;
+	:playlists @:Playlist * ;
+	:subscriptions @:Subscription * ;
 }
+
+#################################
 :ViewEvent{
 	:header xsd:string;		# "YouTube"
 	:title  xsd:string;
@@ -17,3 +24,69 @@ base <http://example.org/>
 	:name xsd:string ;
 	:url xsd:string ;
 }
+#################################
+:Child{
+	:search_history @:ActivityItem * ;
+  	:watch_history @:ActivityItem * ;
+}
+:ActivityItem{
+	:header xsd:string; 		# e.g. "YouTube Kids",
+	:title xsd:string;			# e.g. 
+           						# "Searched for + [search terms]"
+           						# "Watched + [title]
+	:titleUrl xsd:string;
+	:subtitles @:Subtitle * ;
+	:time xsd:dateTime;
+	:products xsd:string * ;	# e.g. ["YouTube"]
+}
+:Subtitle{
+	:name xsd:string;
+	:url xsd:string;
+}
+
+#################################
+:History{
+	:search_history @:ActivityItem * ;
+  	:watch_history @:ActivityItem * ;
+}
+#################################
+# Actually an HTML file, would need a bit of work to parse
+:MyComment{
+	:comment_type xsd:string ; 		# e.g.: "You added", "You replied"
+	:comment_url xsd:string ; 		# URL of the comment
+	:video_url xsd:string ; 		# URL of the relevant video
+	:comment_time xsd:dateTime ;
+	:comment_text xsd:string ;
+}
+#################################
+:Playlist{
+	# Playlists come in individual csv files, named after the playlist name
+	# e.g.: "Jazz.csv", etc.
+	:playlist_id @:PlaylistID ;
+	:playlist_entries @:PlaylistEntry * ;
+}
+:PlaylistID{
+	:playlist_id xsd:string ;		# 18-character identifier
+	:channel_id xsd:string ;		# 22-character identifier
+	:time_created xsd:dateTime ;
+	:time_updated xsd:dateTime ;
+	:title xsd:string ;				# the name of the file
+	:description xsd:string ? ;		#
+	:visibility xsd:string ;		# e.g.: "Private", "Public"
+}
+:PlaylistEntry{
+	:video_id xsd:string ;		# 11-character identifier
+	:time_added xsd:dateTime ;
+}
+
+#################################
+# CSV file
+:Subscription{
+	:channel_id xsd:string ;		# 24-character identifier
+	:channel_url xsd:string ;
+	:channel_title xsd:string ;
+}
+#################################
+
+
+
