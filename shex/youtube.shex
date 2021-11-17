@@ -3,7 +3,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 base <http://example.org/>
 
 :UserData{
-	:view_events @:ViewEvent *;
+#	:view_events @:ViewEvent *;
 	:children @:Child * ;
 	:history @:History ;
 	:my_comments @:MyComment * ;
@@ -12,18 +12,18 @@ base <http://example.org/>
 }
 
 #################################
-:ViewEvent{
-	:header xsd:string;		# "YouTube"
-	:title  xsd:string;
-	:titleUrl  xsd:string;
-	:subtitles @:NamedURL *;
-	:time xsd:dateTime;
-	:products  xsd:string *;	# e.g.: ["YouTube"]
-}
-:NamedURL{
-	:name xsd:string ;
-	:url xsd:string ;
-}
+#:ViewEvent{
+#	:header xsd:string;		# "YouTube"
+#	:title  xsd:string;
+#	:titleUrl  xsd:string;
+#	:subtitles @:NamedURL *;
+#	:time xsd:dateTime;
+#	:products  xsd:string *;	# e.g.: ["YouTube"]
+#}
+#:NamedURL{
+#	:name xsd:string ;
+#	:url xsd:string ;
+#}
 #################################
 :Child{
 	:search_history @:ActivityItem * ;
