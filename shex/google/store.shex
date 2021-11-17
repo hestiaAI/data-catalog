@@ -1,0 +1,53 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+#		Purchases.json  'Returns and Repairs.json'
+
+:UserData{
+	:purchases @:Purchase * ;
+	:returns_and_repairs @:ReturnOrRepair * ;
+}
+
+##############################
+:Purchase{
+	:order @:Order * ;
+}
+:Order{
+	:externalOrderId xsd:string ; 
+	:orderCreationTime xsd:string ;  	# date in "17 Dec 2021" format
+	:overallPrice @:OverallPrice;
+	:shipment @:Shipment * ;
+}                 
+:OverallPrice{
+	:preTaxAmount xsd:string ;
+	:discount xsd:string ;
+	:tax xsd:string ;
+	:total xsd:string ;
+}
+:Shipment{ 
+	:shipmentNumber xsd:int;
+	:status xsd:string ;
+	:shippingAddress xsd:string ;
+	:trackingInfo @:TrackingInfo ; 
+	:lineItem @:LineItem * ;
+}
+:TrackingInfo{
+	:carrier xsd:string ;
+	:trackingNumber xsd:string ;
+	:deliveredTime xsd:string ;
+}
+:LineItem{
+	:productTitle xsd:string ;
+	:quantity xsd:int ;
+	:preTaxPrice xsd:string ;
+	:deviceId @:DeviceID * ; 
+}
+:DeviceID{
+	:serialId xsd:string * ;
+}
+##############################
+:ReturnOrRepair{
+	# NO DATA
+}
