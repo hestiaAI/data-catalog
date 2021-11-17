@@ -1,0 +1,49 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+
+#		'Activities #U2013 A list of Google services accessed by.csv'  
+#		'Devices #U2013 A list of devices (i.e. Nest, Pixel, iPh.csv'
+
+
+:UserData{
+	:activities @:Activity * ;
+	:devices @:Device * ;
+}
+###################################
+:Activity{
+	:gaia_id xsd:string ;
+	:activity_timestamp xsd:dateTime ;
+	:ip_address xsd:string ;
+	:proxiedhost_ip_address xsd:string ;
+	:is_non_routable_ip_address xsd:string ;
+	:activity_country xsd:string ;
+	:activity_region xsd:string ;
+	:activity_city xsd:string ;
+	:user_agent_string xsd:string ;
+	:product_name xsd:string ;
+	:sub_product_name xsd:string ;
+	:referer_product_name xsd:string ;
+	:referer_sub_product_name xsd:string ;
+	:activity_type xsd:string ;
+	:gmail_access_channel xsd:string ;
+	:android_webview_package_name xsd:string ;
+}
+
+###################################
+:Device{
+	:gaia_id xsd:string ;
+	:device_type xsd:string ;
+	:brand_name xsd:string ;
+	:device_model xsd:string ;
+	:os xsd:string ;
+	:device_last_country xsd:string ;
+	:device_last_location_time xsd:dateTime ;
+	:device_first_activity_time xsd:dateTime ;
+	:device_last_activity_time xsd:dateTime ;
+}
+
+
+
+
