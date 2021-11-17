@@ -1,0 +1,45 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+base <http://example.org/>
+
+:UserData{
+	:addresses @:NameAndAddress * ;
+	:collection_point @:NameAndAddress * ;
+	:loyalty @:Loyalty * ;
+	:merchant_reviews @:Review * ;
+	:order_preferred_contact_emails @:OrderPreferredContactEmail * ;
+	:orders @:Order * ;
+	:person_collecting @:NameAndAddress * ;
+	:product_reviews @:Review* ;
+
+}
+
+##########################
+:NameAndAddress{
+	# txt file
+	:recipient_name xsd:string ;
+	:recipient_address xsd:string ;
+}
+##########################
+:Loyalty{
+	:merchant_name xsd:string ;
+	:loyalty_code xsd:string ;
+	:loyalty_user xsd:string ;
+}
+##########################
+:Review{
+	:rating xsd:string ;
+	:comment xsd:string ;
+	:creation_timestamp xsd:dateTime ;
+}
+##########################
+:OrderPreferredContactEmail{
+	:order_contact_emails xsd:string ;
+}
+##########################
+:Order{
+	# NO DATA
+}
+
+
+
