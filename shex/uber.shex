@@ -4,14 +4,8 @@ base <http://example.org/>
 
 # Data comes in csv files
 
-:TestRel{
-}
-
-:TestNode{
-}
 
 :UserProfile{
-	@:TestRel @:TestNode;
 	:communications_sent @:CommunicationSent * ;
 	:customer_support_contacts @:CustomerSupportContacts * ;
 	:payment_methods @:PaymentMethods * ;
