@@ -5,6 +5,9 @@ Complex data formats are split into their various facets in sub-directories. e.g
 * Simple data fomat: Uber: [Shex](https://github.com/hestiaAI/data-catalog/blob/main/shex/uber.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fuber.shex&schemaFormat=ShExC&schemaEngine=ShEx)
 * Complex data format: [Google](https://github.com/hestiaAI/data-catalog/blob/main/shex/google/README.md)
 
+# Collaboration
+We are looking for collaborations in the academic and education areas, or even more generally civil society. Feel free to contact us at contact @ hestia.ai
+
 # Data formats
 There will be more in the `shex/` folder, we highlight a few examples below.
 
