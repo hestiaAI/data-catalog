@@ -1,6 +1,6 @@
 # Google data format
 
-The data is requested from [Google Takeout] (https://takeout.google.com/) and, depending on the services selected, we receive an archive containing a folder for each service and an html file to view this data. One of the issues is that, depending on the user's language, the names of the file hierarchy change, making it difficult to process/retrieve the data. However, thanks to the html file at the root, we can match the unique IDs with the folder names with a regex on the service titles which are displayed like this: 
+The data is requested from [Google Takeout](https://takeout.google.com/) and, depending on the services selected, we receive an archive containing a folder for each service and an html file to view this data. One of the issues is that, depending on the user's language, the names of the file hierarchy change, making it difficult to process/retrieve the data. However, thanks to the html file at the root, we can match the unique IDs with the folder names with a regex on the service titles which are displayed like this: 
 
 `<h1 class="data-folder-name" data-english-name="MY_ACTIVITY" data-folder-name="My Activity">My Activity</h1>`
 
