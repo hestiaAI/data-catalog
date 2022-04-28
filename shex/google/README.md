@@ -4,7 +4,9 @@ The data is requested from [Google Takeout](https://takeout.google.com/) and, de
 
 `<h1 class="data-folder-name" data-english-name="MY_ACTIVITY" data-folder-name="My Activity">My Activity</h1>`
 
-
+Known IDs: `[ 'MY_ORDERS','NEWS','CALENDAR','HOME_GRAPH','ARTS_AND_CULTURE','CHROME','CLOUD_PRINT','SUPPORT_CONTENT','GOOGLE_ACCOUNT','CONTACTS','SEARCH_UGC','DATA_SHARED_FOR_RESEARCH','SAVE','MY_BUSINESS','FIT','GOOGLE_CLOUD_SEARCH','GTRANS','GOOGLE_PAY','PHOTOS','PLAY_MOVIES','BOOKS','PLAY','SHOPPING','APPS_MARKETPLACE','GROUPS','CHAT','LOCATION_HISTORY','KEEP','GMAIL','MAPS','LOCAL_ACTIONS','MY_ACTIVITY','MYMAPS','BACKLIGHT','PROFILE','QUESTION_HUB','REMINDERS','CRISIS_UGC','CHECKIN','PLAY_GAMES_SERVICES','STREETVIEW','TASKS','YOUTUBE'
+]`
+        
 We have the following services, also comprising Youtube.
 
 * Ads: [ShEx](https://github.com/hestiaAI/data-catalog/blob/main/shex/google/ads.shex) — [Visualisation](http://rdfshape.herokuapp.com/schemaInfo?schemaURL=https%3A%2F%2Fraw.githubusercontent.com%2FhestiaAI%2Fdata-catalog%2Fmain%2Fshex%2Fgoogle%2Fads.shex&schemaFormat=ShExC&schemaEngine=ShEx)
