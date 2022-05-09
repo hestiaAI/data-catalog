@@ -1,3 +1,3 @@
-# Getting your data from easyJet
+# Demander vos données à easyJet
 
-Please contact us at workshop@hestia.ai and we will provide instructions.
+voir https://experiences.hestialabs.org/easyjet#load-data
