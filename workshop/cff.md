@@ -2,7 +2,7 @@
 
 Contactez les CFF via l'adresse mail suivante
 
-<a href="mailto:datenschutz@sbb.ch?subject=demande d'accès à mes données personnelle">app.privacy@fairtiq.com</a>
+<a href="mailto:datenschutz@sbb.ch?subject=demande d'accès à mes données personnelle">datenschutz@sbb.ch</a>
 avec votre adresse mail pour laquelle vous avez créé votre compte aux CFF accompagnée d'une pièce d'identité en n'oubliant pas de mettre votre prénom et nom à la fin du message
 
 
