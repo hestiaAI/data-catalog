@@ -60,7 +60,7 @@ Please select as many of the following companies that you would like to access d
 
 - [Google] - please contact us at **workshop@hestia.ai** and we will provide instructions.
 - [Facebook] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Twitter] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [Twitter](twitter.md)
 - [LinkedIn] - please contact us at **workshop@hestia.ai** and we will provide instructions.
 - [TikTok] - please contact us at **workshop@hestia.ai** and we will provide instructions.
 - [Instagram] - please contact us at **workshop@hestia.ai** and we will provide instructions.
