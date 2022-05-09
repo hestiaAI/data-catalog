@@ -6,10 +6,10 @@ Afin de préparer les ateliers du 17 mai et du 13 juin 2022, il y a un certain n
 
 Les demandes d'accès aux données personnelles doivent être effectuées un mois avant l'atelier du 13 juin, afin de donner aux entreprises cibles le délai légal de 30 jours pour répondre aux demandes d'accès aux données personnelles. Les demandes d'accès via un portail (Facebook, Google, Instagram, Twitter, LinkedIn, Easyjet, Tiktok, Uber, Fitbit, Strava, ...) doivent être complétées quelques jours avant l'atelier du 17 mai, car certaines entreprises mettent plus de quelques heures, parfois plusieurs jours, à répondre.
 
-Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhaitez faire une demande d'accès. Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'adresse **workshop@hestia.ai** pour demander des instructions supplémentaires pour des entreprises spécifiques. Nous vous encourageons à le faire, afin que nous puissions obtenir une représentation de toutes les catégories d'entreprises.
+Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhaitez faire une demande d'accès. Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'adresse mail suivante  **workshop@hestia.ai** afin de demander des instructions supplémentaires pour des entreprises spécifiques. Nous vous encourageons à le faire, afin que nous puissions obtenir une représentation de toutes les catégories d'entreprises.
 
 
-### Types of company
+### Types d'entreprises
 
 #### Compagnies ferroviaires
 
