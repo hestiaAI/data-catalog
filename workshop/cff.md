@@ -7,7 +7,7 @@ avec votre adresse mail pour laquelle vous avez créé votre compte aux CFF acco
 
 
 ***********************************************************************************
-
+```
 Demande d'accès aux données
 
 personnelles (art. 8 LPD) 
@@ -65,4 +65,4 @@ rendre attentif à la teneur de l’article 34 LPD relatif aux conséquences pé
 
 En vous remerciant de votre diligence et en vous souhaitant bonne réception de la présente, je vous prie d’agréer, Cher-e délégué-e à la protection des données, mes salutations distinguées.
 
-
+```
