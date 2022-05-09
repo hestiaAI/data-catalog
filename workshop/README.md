@@ -13,48 +13,50 @@ Please select as many of the following companies that you would like to access d
 
 - [SBB/CFF](cff.md)
 - [DB](db.md)
-- For other companies, please contact us at **workshop@hestia.ai**.
+- Others? Please contact us (see above).
 
 #### Taxi/Ride share companies
 
 - [Uber](uber.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any other taxi or rideshare company. 
+- Others? Please contact us (see above).
 
 #### Bus/Coach companies
 
-- Please contact us at **workshop@hestia.ai** if you would like to target a bus or coach company.
+- Please contact us (see above) and tell us which company you would like to target.
 
 #### Ferry / Toll / Tunnel companies
 
 - [CGN](cgn.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any ferry, toll road or tunnel operating company.
+- Others? Please contact us (see above).
 
 #### E-Scooter / Public Bike companies
 
-- Please contact us at **workshop@hestia.ai** if you would like to target an e-scooter or public bike company such as Voi, Lime, Velobike etc.
+- Please contact us (see above) and tell us which company you would like to target.
 
 #### Takeaway food delivery companies
 
 - [Uber Eats](uber.md)
 - [Wolt](wolt.md)
 - [Just Eat / Takeaway.com](takeaway.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any other takeaway food delivery company such as Deliveroo, Doordash etc.
+- Others? Please contact us (see above).
 
-#### Logistics companies
+#### Logistics companies (e.g. DHL, FedEx, Posti etc.)
 
-- Please contact us at **workshop@hestia.ai** if you would like to target a logistics company such as DHL, FedEx etc.
+- Please contact us (see above) and tell us which company you would like to target.
 
 #### Airlines
 
 - [easyJet](easyjet.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any other airlines
+- Others? Please contact us (see above).
 
 #### Travel booking companies
 
 - [Fairtiq](fairtiq.md)
 - [Transport Lausanne](tl.md)
 - [Booking](booking.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any other travel booking company such as tripadvisor, Airbnb, expedia, hotels.com etc.
+- [Expedia](expedia.md)
+- [TripAdvisor](tripadvisor.md)
+- Others? Please contact us (see above).
 
 #### Tech companies / Location Tracking Companies
 
@@ -66,4 +68,8 @@ Please select as many of the following companies that you would like to access d
 - [Instagram](instagram.md)
 - [Strava](strava.md)
 - [Fitbit](fitbit.md)
-- Please contact us at **workshop@hestia.ai** if you would like to target any other tech company not listed here. 
+- Others? Please contact us (see above).
+
+----
+If you have any questions, don't hesitate to contact us. You can e-mail **workshop@hestia.ai**.
+
