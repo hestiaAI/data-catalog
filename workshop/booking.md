@@ -57,8 +57,8 @@ If your organisation considers me a controller for whom you process
 Furthermore, if your business considers me the controller of any personal data for which your business acts as processor, please provide me **with all the data you process on my behalf in machine readable format** in accordance with your obligation to respect my to determination of the means and purposes of processing.
 
 Metadata on processing
-
 ====================== 
+
 This request also includes the metadata I am entitled to under the GDPR. 
 
 
