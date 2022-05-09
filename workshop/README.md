@@ -12,7 +12,7 @@ Please select as many of the following companies that you would like to access d
 #### Train companies
 
 - [SBB/CFF] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [DB] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [DB](db.md)
 - ....
 
 #### Taxi/Ride share companies
