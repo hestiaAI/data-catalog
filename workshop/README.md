@@ -1,4 +1,4 @@
-# Transport Lausanne / Hestia.ai Workshop
+# Transport Lausannois / Hestia.ai Workshop
 
 ## Important Pre-Workshop Preparation Steps
 
