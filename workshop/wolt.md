@@ -1,6 +1,6 @@
 # Getting your data from Wolt
 
-1. Please copy the text below the line into a new mail *from whichever email address you have on file with* this company.
+1. Please copy the text below the line into a new mail **from whichever email address you have on file with** this company.
 2. Please replace `<<PARTICIPANT TO INSERT USERNAME, ACCOUNT ID, PHONE NUMBER OR OTHER APPROPRIATE IDENTIFIERS HERE>>` with any identifying information you have with this company, including your account e-mail address and any other identifiers they may have for you such as a customer number or loyalty card number.
 3. Please replace `<<PARTICIPANT FULL NAME>>` with your name on the account that they know you by.
 4. Make any other changes to the mail if you wish.
