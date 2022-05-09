@@ -1,8 +1,8 @@
-# Transport Lausannois / Hestia.ai Workshop
+# Transports Lausannois / Hestia.ai Workshop
 
 ##  Étapes importantes en vue de la préparation des ateliers
 
-Afin de préparer les ateliers du 17 mai et du 13 juin, il y a un certain nombre de démarches à entreprendre Toutes ces étapes doivent être accomplies *AVANT LE 13 MAI*. 
+Afin de préparer les ateliers du 17 mai et du 13 juin 2022, il y a un certain nombre de démarches à entreprendre. Toutes ces étapes doivent être accomplies *AVANT LE 13 MAI*. 
 
 Les demandes d'accès aux données personnelles doivent être effectuées un mois avant l'atelier du 13 juin, afin de donner aux entreprises cibles le délai légal de 30 jours pour répondre aux demandes d'accès aux données personnelles. Les demandes d'accès via un portail (Facebook, Google, Instagram, Twitter, LinkedIn, Easyjet, Tiktok, Uber, Fitbit, Strava, ...) doivent être complétées quelques jours avant l'atelier du 17 mai, car certaines entreprises mettent plus de quelques heures, parfois plusieurs jours, à répondre.
 
@@ -31,7 +31,7 @@ Veuillez sélectionner  2 entreprises parmi les suivantes que vous souhaitez fai
 - [CGN](cgn.md)
 - Autres? Contactez-nous (voir ci dessus).
 
-#### E-Scooter / Public Bike companies
+#### E-Scooter / Vélos en libre service
 
 - Veuillez nous contacter (voir ci-dessus) et nous indiquer l'entreprise que vous souhaitez cibler.
 
@@ -47,7 +47,7 @@ Veuillez sélectionner  2 entreprises parmi les suivantes que vous souhaitez fai
 - [easyJet](easyjet.md)
 -  Autres? Contactez-nous (voir ci dessus).
 
-#### Agences de voyages
+#### Agences de voyages/réservation d'hôtels
 - [Booking](booking.md)
 - [Expedia](expedia.md)
 - [TripAdvisor](tripadvisor.md)
