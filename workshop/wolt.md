@@ -1,8 +1,8 @@
 # Getting your data from Wolt
 
-1. Please copy the text below the line into a new mail FROM WHICHEVER EMAIL ADDRESS YOU HAVE ON FILE WITH this company.
-2. Please replace << PARTICIPANT TO INSERT USERNAME, ACCOUNT ID, PHONE NUMBER OR OTHER APPROPRIATE IDENTIFIERS HERE >> with any identifying information you have with this company, including your account e-mail address and any other identifiers they may have for you such as a customer number or loyalty card number.
-3. Please replace << PARTICIPANT FULL NAME >> with your name on the account that they know you by.
+1. Please copy the text below the line into a new mail *from whichever email address you have on file with* this company.
+2. Please replace `<<PARTICIPANT TO INSERT USERNAME, ACCOUNT ID, PHONE NUMBER OR OTHER APPROPRIATE IDENTIFIERS HERE>>` with any identifying information you have with this company, including your account e-mail address and any other identifiers they may have for you such as a customer number or loyalty card number.
+3. Please replace `<<PARTICIPANT FULL NAME>>` with your name on the account that they know you by.
 4. Make any other changes to the mail if you wish.
 5. Please send the edited mail to support@wolt.com with the subject line “GDPR Data Access Request for Wolt”.
 6. Monitor the account email address regularly for acknowledgements, questions or updates, and contact us with any updates or questions.
@@ -76,14 +76,14 @@ IDENTIFYING INFORMATION
 
 I understand that according to Article 11 GDPR, and particularly Art 11.2, you might need additional information to identify me for the purpose of this request. The following information should help you locate my personal data:
 
-<< PARTICIPANT TO INSERT USERNAME, ACCOUNT ID, PHONE NUMBER OR OTHER APPROPRIATE IDENTIFIERS HERE >>
+<<PARTICIPANT TO INSERT USERNAME, ACCOUNT ID, PHONE NUMBER OR OTHER APPROPRIATE IDENTIFIERS HERE>>
 
 If you do not normally deal with these requests, please pass this email to your Data Protection Officer. If you need advice on dealing with this request, any European Data Protection Authority should be able to provide you with assistance.
 
 In accordance with the law, I look forward to hearing from you within one month of receipt.
 
 Regards,
-<< PARTICIPANT FULL NAME >>
+<<PARTICIPANT FULL NAME>>
 
 References:
 [1] UK Information Commissioner’s Office, Subject Access Code of Practice (9 June 2017) p13; Information Commissioner’s Office, ‘Guide to the GDPR: Right to access’ (22 May 2019): 'Even if you have a form, you should note that a subject access request is valid if it is submitted by any means, so you will still need to comply with any requests you receive in a letter, a standard email or verbally [..] although you may invite individuals to use a form, you must make it clear that it is not compulsory'.
