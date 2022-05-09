@@ -7,7 +7,7 @@ To get data from Google you have two options. To use their download portal ("Goo
 1. In a web browser on your main computer, go to https://takeout.google.com/
 2. If you are logged into the wrong account, or not logged in, please login to the correct Google account and return to this page.
 3. We are now going to select a set of Google data which will be quick to download and avoid larger items such as Mail, Drive, Photos, YouTube Videos etc. Start by clicking "Deselect All" on the right hand side near the top of the Select Data to Include window
-4. Now click the tickbox next to the following rows to add them to your selection. Don't worry if some of these don't appear for you, it just means you don't use them so can ignore. You can also omit any that you don't wish to see the data for.
+4. Now click the tickbox next to the following rows to **add** them to your selection. Don't worry if some of these don't appear for you, it just means you don't use them so can ignore. You can also omit any that you don't wish to see the data for.
 
   - Arts & Culture
   - Chrome
@@ -45,7 +45,7 @@ To get data from Google you have two options. To use their download portal ("Goo
   - Tasks
   - YouTube (TWO options on this need changing - see step 6 & 7 below)
 
-5. You can add others that may appear for you that are not listed here if they are of interest, but take care NOT to select (as they may be large or cause delays):
+5. You can add others that may appear for you that are not listed here if they are of interest, but take care **NOT** to select (as they may be large or cause delays):
 
   - Access Log Activity (not to be confused with 'My Activity', which you *must* select)
   - Blogger
