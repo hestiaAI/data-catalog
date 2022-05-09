@@ -1,7 +1,7 @@
 # Getting your data from Booking
 
 Contactez Booking via l'adresse mail suivante
-<a href="mailto:dataprotectionoffice@booking.com?subject=Subject Access Request to Booking.com">dataprotectionoffice@booking.com/a>
+<a href="mailto:dataprotectionoffice@booking.com?subject=Subject Access Request to Booking.com">dataprotectionoffice@booking.com </a>
 avec votre adresse mail pour laquelle vous avez créé votre compte Booking en n'oubliant pas de mettre votre prénom et nom à la fin du message.
 
 ***************************************************************************************
