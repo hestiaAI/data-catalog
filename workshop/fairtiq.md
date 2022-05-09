@@ -36,7 +36,7 @@ rendre attentif à la teneur de l’article 34 LPD relatif aux conséquences pé
 
 En vous remerciant de votre diligence et en vous souhaitant bonne réception de la présente, je vous prie d’agréer, Cher-e délégué-e à la protection des données, mes salutations distinguées.
 
-<<PRENOM NOM>>
+
 
 
 
