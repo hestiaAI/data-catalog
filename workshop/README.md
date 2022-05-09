@@ -35,7 +35,7 @@ Veuillez sélectionner  2 entreprises parmi les suivantes que vous souhaitez fai
 
 - Veuillez nous contacter (voir ci-dessus) et nous indiquer l'entreprise que vous souhaitez cibler.
 
-#### Takeaway food delivery companies
+#### Livraison de repas
 
 - [Uber Eats](uber.md)
 - [Wolt](wolt.md)
@@ -43,7 +43,7 @@ Veuillez sélectionner  2 entreprises parmi les suivantes que vous souhaitez fai
 - Autres? Contactez-nous (voir ci dessus).
 
 
-#### Airlines
+#### Compagnies aériennes
 - [easyJet](easyjet.md)
 -  Autres? Contactez-nous (voir ci dessus).
 
