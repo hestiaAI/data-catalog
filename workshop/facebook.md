@@ -9,11 +9,11 @@ For more complex or bespoke requests, use the Subject Access Requests process fu
 2. Select Format > JSON, Media Quality > Low, Date Range > 3 months
 3. Deselect all
 4. Reselect
- - Your Activity > Other Activity,
- - Personal Information > Other Personal Information,
- - Logged Information > Your Topics, Location, Other Logged Information
- - Apps and Websites Off Facebook > Apps and Websites Off Facebook
- - Ads Information
+   - Your Activity > Other Activity,
+   - Personal Information > Other Personal Information,
+   - Logged Information > Your Topics, Location, Other Logged Information
+   - Apps and Websites Off Facebook > Apps and Websites Off Facebook
+   - Ads Information
 5. Click "Request a Download"
 6. You will be notified when your zip file is ready to download.
 
