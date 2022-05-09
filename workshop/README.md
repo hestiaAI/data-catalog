@@ -11,9 +11,9 @@ Please select as many of the following companies that you would like to access d
 
 #### Train companies
 
-- [SBB/CFF] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [SBB/CFF](cff.md)
 - [DB](db.md)
-- ....
+- For other companies, please contact us at **workshop@hestia.ai**.
 
 #### Taxi/Ride share companies
 
@@ -26,7 +26,7 @@ Please select as many of the following companies that you would like to access d
 
 #### Ferry / Toll / Tunnel companies
 
-- [CGN] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [CGN](cgn.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any ferry, toll road or tunnel operating company.
 
 #### E-Scooter / Public Bike companies
@@ -35,9 +35,9 @@ Please select as many of the following companies that you would like to access d
 
 #### Takeaway food delivery companies
 
-- [Uber Eats] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Wolt] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Just Eat / Takeaway.com] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [Uber Eats](uber.md)
+- [Wolt](wolt.md)
+- [Just Eat / Takeaway.com](takeaway.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any other takeaway food delivery company such as Deliveroo, Doordash etc.
 
 #### Logistics companies
@@ -46,24 +46,24 @@ Please select as many of the following companies that you would like to access d
 
 #### Airlines
 
-- [easyJet] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [easyJet](easyjet.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any other airlines
 
 #### Travel booking companies
 
-- [Fairtiq] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Transport Lausanne] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Booking] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [Fairtiq](fairtiq.md)
+- [Transport Lausanne](tl.md)
+- [Booking](booking.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any other travel booking company such as tripadvisor, Airbnb, expedia, hotels.com etc.
 
 #### Tech companies / Location Tracking Companies
 
-- [Google] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Facebook] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [Google](google.md)
+- [Facebook](facebook.md)
 - [Twitter](twitter.md)
-- [LinkedIn] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [TikTok] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Instagram] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Strava] - please contact us at **workshop@hestia.ai** and we will provide instructions.
-- [Fitbit] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [LinkedIn](linkedin.md)
+- [TikTok](tiktok.md)
+- [Instagram](instagram.md)
+- [Strava](strava.md)
+- [Fitbit](fitbit.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any other tech company not listed here. 
