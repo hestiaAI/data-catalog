@@ -34,7 +34,7 @@ For further help, see Facebook's official instructions [here](https://www.facebo
 7. For "What question do you have?" select "How can I get support for a privacy issue from the Data Protection Officer?"
 8. For "Have you previously contacted the ODPO about the issue you're experiencing?" select "No"
 9. In the name boxes, enter your First Name and Last Name.
-10. Enter WHICHEVER EMAIL ADDRESS YOU HAVE STORED IN YOUR FACEBOOK ACCOUNT in the email address field. (You can check this in your Facebook Profile settings if need be).
+10. Enter **whichever e-mail address you have stored in your Facebook account** in the email address field. (You can check this in your Facebook Profile settings if need be).
 11. Select your Country of Residence from the dropdown.
 12. Paste the address your copied at Step 4 into the box labelled "Please provide a link to or the username of your account (if applicable)":
     - Ctrl+V (Windows)
