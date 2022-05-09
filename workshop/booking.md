@@ -5,6 +5,7 @@ Contactez Booking via l'adresse mail suivante
 avec votre adresse mail pour laquelle vous avez créé votre compte Booking en n'oubliant pas de mettre votre prénom et nom à la fin du message.
 
 ***************************************************************************************
+```
 Dear Booking.com, 
 
 
@@ -112,9 +113,4 @@ In accordance with the law, I look forward to hearing from you within one month 
 Regards, 
 
 
-
-
-
-
-
-.
+```
