@@ -52,7 +52,7 @@ Please select as many of the following companies that you would like to access d
 #### Travel booking companies
 
 - [Fairtiq](fairtiq.md)
-- [Transport Lausanne](tl.md)
+- [Transport Lausanneois](tl.md)
 - [Booking](booking.md)
 - [Expedia](expedia.md)
 - [TripAdvisor](tripadvisor.md)
