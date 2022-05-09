@@ -17,7 +17,7 @@ Please select as many of the following companies that you would like to access d
 
 #### Taxi/Ride share companies
 
-- [Uber] - please contact us at **workshop@hestia.ai** and we will provide instructions.
+- [Uber](uber.md)
 - Please contact us at **workshop@hestia.ai** if you would like to target any other taxi or rideshare company. 
 
 #### Bus/Coach companies
