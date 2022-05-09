@@ -1,62 +1,61 @@
 # Transport Lausannois / Hestia.ai Workshop
 
-## Important Pre-Workshop Preparation Steps
+##  Étapes importantes en vue de la préparation des ateliers
 
-In order to prepare for the workshops on May 17th and June 13th, there are a number of steps to complete. All of these need to be completed *BEFORE MAY 13TH*. 
-Subject Access Requests have to be done one month before the June 13th workshop, in order to give the target companies the legally required 30 days to respond to Subject Access Requests. Portal requests need to be completed a few days before the May 17th workshop, as some companies take more than a few hours, sometimes several days, to respond.
+Afin de préparer les ateliers du 17 mai et du 13 juin, il y a un certain nombre de démarches à entreprendre Toutes ces étapes doivent être accomplies *AVANT LE 13 MAI*. 
 
-Please select as many of the following companies that you would like to access data from. Where we have not already provided instructions, please contact us on **workshop@hestia.ai** to ask for additional instructions for specific companies. We encourage you to do so, so that we can get representation across all categories of company.
+Les demandes d'accès aux données personnelles doivent être effectuées un mois avant l'atelier du 13 juin, afin de donner aux entreprises cibles le délai légal de 30 jours pour répondre aux demandes d'accès aux données personnelles. Les demandes d'accès via un portail (Facebook, Google, Instagram, Twitter, LinkedIn, Easyjet, Tiktok, Uber, Fitbit, Strava,  doivent être complétées quelques jours avant l'atelier du 17 mai, car certaines entreprises mettent plus de quelques heures, parfois plusieurs jours, à répondre.
+
+Veuillez sélectionner  2 entreprises parmi les suivantes que vous souhaitez faire une demande d'accès. Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'adresse **workshop@hestia.ai** pour demander des instructions supplémentaires pour des entreprises spécifiques. Nous vous encourageons à le faire, afin que nous puissions obtenir une représentation de toutes les catégories d'entreprises.
+
 
 ### Types of company
 
-#### Train companies
+#### Compagnies ferroviaires
 
 - [SBB/CFF](cff.md)
 - [DB](db.md)
-- Others? Please contact us (see above).
+- Autres? Contactez-nous (voir ci dessus).
 
-#### Taxi/Ride share companies
+#### Taxi
 
 - [Uber](uber.md)
-- Others? Please contact us (see above).
+- Autres? Contactez-nous (voir ci dessus).
 
-#### Bus/Coach companies
+#### Bus
 
-- Please contact us (see above) and tell us which company you would like to target.
+- Autres? Contactez-nous (voir ci dessus).
 
-#### Ferry / Toll / Tunnel companies
+#### Bateaux
 
 - [CGN](cgn.md)
-- Others? Please contact us (see above).
+- Autres? Contactez-nous (voir ci dessus).
 
 #### E-Scooter / Public Bike companies
 
-- Please contact us (see above) and tell us which company you would like to target.
+- Veuillez nous contacter (voir ci-dessus) et nous indiquer l'entreprise que vous souhaitez cibler.
 
 #### Takeaway food delivery companies
 
 - [Uber Eats](uber.md)
 - [Wolt](wolt.md)
 - [Just Eat / Takeaway.com](takeaway.md)
-- Others? Please contact us (see above).
+- Autres? Contactez-nous (voir ci dessus).
 
-#### Logistics companies (e.g. DHL, FedEx, Posti etc.)
-
-- Please contact us (see above) and tell us which company you would like to target.
 
 #### Airlines
-
 - [easyJet](easyjet.md)
-- Others? Please contact us (see above).
+-  Autres? Contactez-nous (voir ci dessus).
 
-#### Travel booking companies
-
-- [Fairtiq](fairtiq.md)
-- [Transport Lausanneois](tl.md)
+#### Agences de voyages
 - [Booking](booking.md)
 - [Expedia](expedia.md)
 - [TripAdvisor](tripadvisor.md)
-- Others? Please contact us (see above).
+-  Autres? Contactez-nous (voir ci dessus).
+
+#### Autres
+- [Fairtiq](fairtiq.md)
+- [Transport Lausannois](tl.md)
 
 #### Tech companies / Location Tracking Companies
 
@@ -68,8 +67,8 @@ Please select as many of the following companies that you would like to access d
 - [Instagram](instagram.md)
 - [Strava](strava.md)
 - [Fitbit](fitbit.md)
-- Others? Please contact us (see above).
+-  Autres? Contactez-nous (voir ci dessus).
 
 ----
-If you have any questions, don't hesitate to contact us. You can e-mail **workshop@hestia.ai**.
+Si vous avez des questions, n'hésitez pas à nous contacter via email à **workshop@hestia.ai**.
 
