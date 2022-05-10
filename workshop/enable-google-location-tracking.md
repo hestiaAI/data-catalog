@@ -37,5 +37,11 @@ Once you have turned this setting on, go to https://myactivity.google.com/activi
 
 ---
 
-For further help with Location tracking on Android, see Google's official help pages at https://support.google.com/accounts/answer/3118687?hl=en&ref_topic=7189122 and https://support.google.com/accounts/answer/3467281?hl=en
+For further help with Location tracking on Android, see Google's official help pages:
+
+  - [Manage your Location History](https://support.google.com/accounts/answer/3118687?hl=en&ref_topic=7189122)
+  - [Manage your Android device’s location settings](https://support.google.com/accounts/answer/3467281?hl=en)
+  - [Manage your Location History for iPhone & iPad](https://support.google.com/accounts/answer/4388034?hl=en&ref_topic=7189122)
+
+Please contact us at workshop@hestia.ai if you need assistance.
 
