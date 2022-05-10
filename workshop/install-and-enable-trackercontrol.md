@@ -1,12 +1,24 @@
 # How to install and enable TrackerControl on Android
 
+## Table of Contents
+
+- [Why install TrackerControl?]
+- [Installing TrackerControl]
+- [Enabling Tracking - First Time Setup]
+- [Troubleshooting]
+
+## Why install TrackerControl?
+
 [TrackerControl](https://trackercontrol.org/) is an app for Android that allows you to monitor *where the apps that you use are connecting to*. It does this by installing a VPN (Virtual Private Network) connection on your phone, through which all apps' internet connections must travel. The purpose of running TrackerControl to monitor your apps for a period is to generate a CSV file of app activity that can be explored using [our TrackerControl data viewer](https://experiences.hestialabs.org/tracker-control) which digs deeper into the data than the TrackerControl app itself.
 
-## Steps to install and enable Tracker Control
+## Installing Tracker Control
 
 1. Install the app from the Play Store ([link](https://play.google.com/store/apps/details?id=net.kollnig.missioncontrol.play)).
-2. Load up the TC Slim app.
-3. Ensure the switch at the top right is pushed to the right, meaning tracking is ON.
+
+## Enabling Tracking - First Time Setup
+
+3. Load up the TC Slim app.
+4. Ensure the switch at the top right is pushed to the right, meaning tracking is ON.
 
 ![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg)
 
@@ -46,7 +58,7 @@
 
 12. You can now use your apps to monitor what contacts they make. To export Tracker Control data afterwards, see [this page](https://github.com/hestiaAI/data-catalog/blob/main/workshop/how-to-export-data-from-trackercontrol.md). 
 
---- 
+## Troubleshooting
 
 If you have any questions or problems you can contact workshop@hestia.ai.
 
