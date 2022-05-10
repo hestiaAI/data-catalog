@@ -22,6 +22,14 @@ Please follow the steps below to learn how to do these things in detail.
 
 This will vary depending on your phone model. The general process is to go to your Settings app (or settings pulldown), find the Location switch, and enable it.
 
+As a pulldown toggle, it might look something like this, where blue is ON:
+
+![c02dc5ae8e2187422b875cf9dc37166714534c402e69afcccfbe210bbd8001cc](https://user-images.githubusercontent.com/1473244/167620471-ca1e4134-cd8d-46fd-a694-520156d52066.jpg)
+
+As a Settings switch, it might look something like this, where right/blue is ON:
+
+![8cdd9495bfe5b7ac07d926c748916413c915f7322b1a44589fcd71a670139452](https://user-images.githubusercontent.com/1473244/167620547-79c9e5b9-65e6-4b86-b2b6-997170af7ed3.jpg)
+
 ## Step 3: Check that locations have been recorded
 
 1. Move around some different areas while carrying your phone (different buildings/streets not just different rooms).
