@@ -9,7 +9,7 @@
 
 ## Why install TrackerControl?
 
-[TrackerControl](https://trackercontrol.org/) is an app for Android that allows you to monitor *where the apps that you use are connecting to*. It does this by installing a VPN (Virtual Private Network) connection on your phone, through which all apps' internet connections must travel. The purpose of running TrackerControl to monitor your apps for a period is to generate a CSV file of app activity that can be explored using [our TrackerControl data viewer](https://experiences.hestialabs.org/tracker-control) which digs deeper into the data than the TrackerControl app itself.
+[TrackerControl](https://trackercontrol.org/) is an app for Android that allows you to monitor *where the apps that you use are connecting to*. It does this by installing a local VPN (Virtual Private Network) server on your phone, through which all apps' internet connections must travel. The purpose of running TrackerControl to monitor your apps for a period is to generate a CSV file of app activity that can be explored using [our TrackerControl data viewer](https://experiences.hestialabs.org/tracker-control) which digs deeper into the data than the TrackerControl app itself.
 
 ## Installing TrackerControl
 
