@@ -7,7 +7,7 @@
 1. Install the app from the Play Store ([link](https://play.google.com/store/apps/details?id=net.kollnig.missioncontrol.play)).
 2. Ensure the switch at the top right is pushed to the right, meaning tracking is ON.
 
-![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg
+![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg)
 
 2. Load up the app 'TC Slim' and say Yes to all permissions questions and when it asks you about creating a VPN.
 
