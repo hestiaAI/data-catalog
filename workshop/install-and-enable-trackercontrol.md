@@ -12,7 +12,7 @@
 
 2. Load up the app 'TC Slim' and say Yes to all permissions questions and when it asks you about creating a VPN.
 
-![Screenshot_20220510-152357_TC Slim](https://user-images.githubusercontent.com/1473244/167656519-dfd31f2f-1df4-46a2-a7bc-c137456dc4cb.jpg)
+![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg)
 
 ![Screenshot_20220510-152404](https://user-images.githubusercontent.com/1473244/167656551-505dbb33-e2bd-44aa-b4af-e5abe4681ac1.jpg)
 
