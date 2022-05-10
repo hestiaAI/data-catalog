@@ -37,6 +37,8 @@ Once you have turned this setting on, go to https://myactivity.google.com/activi
 
 ---
 
+## Need more help?
+
 For further help with Location tracking on Android, see Google's official help pages:
 
   - [Manage your Location History](https://support.google.com/accounts/answer/3118687?hl=en&ref_topic=7189122)
