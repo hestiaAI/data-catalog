@@ -9,65 +9,65 @@ To get data from Google you have two options. To use their download portal ("Goo
 3. We are now going to select a set of Google data which will be quick to download and avoid larger items such as Mail, Drive, Photos, YouTube Videos etc. Start by clicking "Deselect All" on the right hand side near the top of the Select Data to Include window
 4. Now click the tickbox next to the following rows to **add** them to your selection. Don't worry if some of these don't appear for you, it just means you don't use them so can ignore. You can also omit any that you don't wish to see the data for.
 
-  - Arts & Culture
-  - Chrome
-  - Crisis User Reports
-  - Data Shared for Research
-  - Fit
-  - Google Account
-  - Google Cloud Search
-  - Google Help Communities
-  - Google Pay
-  - Google Play Books (options on this need changing - see step 6 below)
-  - Google Play Games Services
-  - Google Play Movies & TV (options on this need changing - see step 6 below)
-  - Google Play Store
-  - Google Shopping
-  - Google Store
-  - Google Translator Toolkit
-  - Google Workplace Marketplace
-  - Google Hangouts
-  - Home App
-  - Keep
-  - Location History (options on this need changing - see step 6 below)
-  - Maps
-  - Maps (Your Places)
-  - My Activity (options on this need changing - see step 6 below)
-  - My Maps
-  - News
-  - Pinpoint
-  - Profile
-  - Purchases & Reservations
-  - Question Hub
-  - Reminders
-  - Saved
-  - Search Contributions
-  - Tasks
-  - YouTube (TWO options on this need changing - see step 6 & 7 below)
+    - Arts & Culture
+    - Chrome
+    - Crisis User Reports
+    - Data Shared for Research
+    - Fit
+    - Google Account
+    - Google Cloud Search
+    - Google Help Communities
+    - Google Pay
+    - Google Play Books (options on this need changing - see step 6 below)
+    - Google Play Games Services
+    - Google Play Movies & TV (options on this need changing - see step 6 below)
+    - Google Play Store
+    - Google Shopping
+    - Google Store
+    - Google Translator Toolkit
+    - Google Workplace Marketplace
+    - Google Hangouts
+    - Home App
+    - Keep
+    - Location History (options on this need changing - see step 6 below)
+    - Maps
+    - Maps (Your Places)
+    - My Activity (options on this need changing - see step 6 below)
+    - My Maps
+    - News
+    - Pinpoint
+    - Profile
+    - Purchases & Reservations
+    - Question Hub
+    - Reminders
+    - Saved
+    - Search Contributions
+    - Tasks
+    - YouTube (TWO options on this need changing - see step 6 & 7 below)
 
 5. You can add others that may appear for you that are not listed here if they are of interest, but take care **NOT** to select (as they may be large or cause delays):
 
-  - Access Log Activity (not to be confused with 'My Activity', which you *must* select)
-  - Blogger
-  - Classic Sites
-  - Drive
-  - Google Business Profile
-  - Google Groups
-  - Mail
-  - Photos
-  - Street View
-  - Voice
-  - The 'videos' checkbox within YouTube.
+    - Access Log Activity (not to be confused with 'My Activity', which you *must* select)
+    - Blogger
+    - Classic Sites
+    - Drive
+    - Google Business Profile
+    - Google Groups
+    - Mail
+    - Photos
+    - Street View
+    - Voice
+    - The 'videos' checkbox within YouTube.
 
 6. For the following entries, you need to change the download format to one that will be better structured for use in viewing tools like ours. This is done by clicking the leftmost button in the row (usually says "HTML format" or "Multiple Formats") and using dropdowns to change any options to JSON format:
 
-  - Google Play Books -> Change 'Play Books Metadata' HTML to JSON
-  - Google Play Games Services -> Change all 7 HTML dropdowns to JSON
-  - Google Movies and TV -> Change 'Movies & TV Data' from CSV to JSON
-  - Location History -> Change format from KML to JSON
-  - My Activity -> Change 'Activity Records' format from HTML to JSON <-- **IMPORTANT**
-  - Profile -> Change 'Inactive Account Manager settings' from HTML to JSON
-  - YouTube -> Change 'Viewing history' from HTML to JSON
+    - Google Play Books -> Change 'Play Books Metadata' HTML to JSON
+    - Google Play Games Services -> Change all 7 HTML dropdowns to JSON
+    - Google Movies and TV -> Change 'Movies & TV Data' from CSV to JSON
+    - Location History -> Change format from KML to JSON
+    - My Activity -> Change 'Activity Records' format from HTML to JSON <-- **IMPORTANT**
+    - Profile -> Change 'Inactive Account Manager settings' from HTML to JSON
+    - YouTube -> Change 'Viewing history' from HTML to JSON
 
 7. For YouTube, also click the right hand button in the row "All YouTube Data included" and UNCHECK the 'videos' checkbox. This is very important if you have ever uploaded a video to YouTube.
 8. Click the blue "Next Step" button.
