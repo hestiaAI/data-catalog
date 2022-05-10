@@ -58,5 +58,5 @@ These instructions are for Android, and were tested on a Samsung Galaxy. The exa
 
 ---
 
-For further help with Location tracking on Android, see Google's official help pages at https://support.google.com/accounts/answer/3467281?hl=en
+For further help with Location tracking on Android, see Google's official help pages at https://support.google.com/accounts/answer/3118687?hl=en&ref_topic=7189122 and https://support.google.com/accounts/answer/3467281?hl=en
 
