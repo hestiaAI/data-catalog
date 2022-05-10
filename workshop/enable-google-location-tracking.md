@@ -10,7 +10,7 @@ Please follow the steps below to learn how to do these things in detail.
 
 ## Step 1: Enable Location History in your Google Account
 
-1. Go to http://account.google.com then ensure that you are logged in with the correct google account that you will use with your phone (if not, then log out first and log into the right account).
+1. Go to https://account.google.com then ensure that you are logged in with the correct google account that you will use with your phone (if not, then log out first and log into the right account).
 2. Go to https://myactivity.google.com/activitycontrols and ensure Location History is turned on.
 
 ![Screenshot 2022-05-10 at 11 00 14](https://user-images.githubusercontent.com/1473244/167603345-caaf3fda-9ab3-42b6-b364-e28b8ec27a17.png)
