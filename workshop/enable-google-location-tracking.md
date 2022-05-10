@@ -20,7 +20,7 @@ Please follow the steps below to learn how to do these things in detail.
 
 ## Step 2: Enable Location reporting on your phone
 
-This will vary depending on your phone model. The general process is to go to your Settings app, find the Location setting, and enable it. Google services need to be given ongoing background access to access your phone's location. You should also enable "Precise Location" if you are given that option. Do not enable auto deletion. 
+This will vary depending on your phone model. The general process is to go to your Settings app (or settings pulldown), find the Location switch, and enable it.
 
 Once you have turned this setting on, go to https://myactivity.google.com/activitycontrols to check if it has been detected in your account (this might take a few minutes to detect). You should see your device name listed under Devices under Location History if you did not previously. Ensure it has a tick.
 
