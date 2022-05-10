@@ -45,3 +45,9 @@
 ![Screenshot_20220510-152614_TC Slim](https://user-images.githubusercontent.com/1473244/167657086-d995890a-addb-4324-a1cc-53b37b9dffdc.jpg)
 
 12. You can now use your apps to monitor what contacts they make. To export Tracker Control data afterwards, see [this page](https://github.com/hestiaAI/data-catalog/blob/main/workshop/how-to-export-data-from-trackercontrol.md). 
+
+--- 
+
+If you have any questions or problems you can contact workshop@hestia.ai.
+
+Official technical support information is available at https://trackercontrol.org/
