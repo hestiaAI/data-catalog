@@ -1,4 +1,4 @@
-# Demande d'accès aux données personnelles des TL
+# Demande d'accès aux données personnelles auprès des TL
 
 Contactez les TL via l'adresse mail suivante <a href="mailto:protectiondesdonnees@t-l.ch?subject=demande d'accès à mes données personnelles">protectiondesdonnees@t-l.ch</a>
 avec votre adresse mail pour laquelle vous avez créé votre compte TL et recopiez les texte ci dessous en n'oubliant pas de mettre votre prénom et nom à la fin du message.
