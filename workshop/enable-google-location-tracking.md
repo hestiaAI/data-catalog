@@ -28,7 +28,7 @@ Once you have turned this setting on, go to https://myactivity.google.com/activi
 
 1. Move around some different areas while carrying your phone (different buildings/streets not just different rooms).
 2. Come back to your computer and visit https://timeline.google.com/. 
-3. Ensure that it says "Location History is On" at the bottom.
+3. Ensure that it says "Location History is On" at the bottom. (this is also where you can easily turn off Location History later, after you are finished with the workshops).
 
 ![Screenshot 2022-05-10 at 11 15 50](https://user-images.githubusercontent.com/1473244/167606403-0e5946d5-a155-486b-86cb-3f831ead1817.png)
 
