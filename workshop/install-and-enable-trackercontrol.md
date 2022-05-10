@@ -4,7 +4,7 @@
 
 - [Why install TrackerControl?](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#why-install-trackercontrol)
 - [Installing TrackerControl](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#installing-trackercontrol)
-- [Enabling Tracking - First Time Setup](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#enabling-tracking-first-time-setup)
+- [Enabling Tracking - First Time Setup](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#enabling-tracking---first-time-setup)
 - [Troubleshooting](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#troubleshooting)
 
 ## Why install TrackerControl?
