@@ -56,5 +56,7 @@ These instructions are for Android, and were tested on a Samsung Galaxy. The exa
 4. You should see a log of your recent locations which can be explored geographically by panning & zooming the map, or by day, using the date selector on the top left.
 5. If you see no data, please revisit Step 1 and 2.
 
+---
 
+For further help with Location tracking on Android, see Google's official help pages at https://support.google.com/accounts/answer/3467281?hl=en
 
