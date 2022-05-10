@@ -1,12 +1,18 @@
-# Transports Lausannois / Hestia.ai Workshop
+# Transports Lausannois / TrustValley / Hestia.ai Workshop
 
 ##  Étapes importantes en vue de la préparation des ateliers
 
-Afin de préparer les ateliers du 17 mai et du 13 juin 2022, il y a un certain nombre de démarches à entreprendre. Toutes ces étapes doivent être accomplies *AVANT LE 13 MAI*. 
+### Demandes via portails: tous les participants
 
-Les demandes d'accès aux données personnelles doivent être effectuées un mois avant l'atelier du 13 juin, afin de donner aux entreprises cibles le délai légal de 30 jours pour répondre aux demandes d'accès aux données personnelles. Les demandes d'accès via un portail (Facebook, Google, Instagram, Twitter, LinkedIn, Easyjet, Tiktok, Uber, Fitbit, Strava, ...) doivent être complétées quelques jours avant l'atelier du 17 mai, car certaines entreprises mettent plus de quelques heures, parfois plusieurs jours, à répondre.
+Certaines entreprises mettent à disposition relativement facilement certaines données personnelles (Facebook, Google, Instagram, Twitter, LinkedIn, Easyjet, Tiktok, Uber, Fitbit, Strava, ...). 
 
-Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhaitez faire une demande d'accès. Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'adresse mail suivante  **workshop@hestia.ai** afin de demander des instructions supplémentaires pour des entreprises spécifiques. Nous vous encourageons à le faire, afin que nous puissions obtenir une représentation de toutes les catégories d'entreprises.
+Pour ces enterprises-là, tous les participants au workshop seront encouragés à récupérer leurs données et les instructions viendront via Serge par email, et les données seront explorées lors du workshop du 17 mai. 
+
+### Demandes via email: groupe de projet
+
+Pour le workshop du 13 juin, nous voudrons aussi explorer le processus qui permet à chacun de récupérer ses données lorsqu'un portail n'existe pas. Nous nous focaliserons là-dessus avec le "groupe de projet". **Toutes ces étapes doivent être accomplies *AVANT LE 13 MAI*** , afin de donner aux entreprises cibles le délai légal de 30 jours pour répondre aux demandes d'accès aux données personnelles. 
+
+Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'adresse mail suivante  **workshop@hestia.ai** afin de demander des instructions supplémentaires pour des entreprises spécifiques que vous utilisez. Nous vous encourageons à le faire, afin que nous puissions obtenir une représentativité d'un maximum de catégories d'entreprises.
 
 
 ### Types d'entreprises
@@ -19,7 +25,7 @@ Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhai
 
 #### Taxi
 
-- [Uber](uber.md)
+- Uber (a un portail)
 - Autres? Contactez-nous (voir ci dessus).
 
 #### Bus
@@ -32,7 +38,11 @@ Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhai
 - Autres? Contactez-nous (voir ci dessus).
 
 #### E-Scooter / Vélos en libre service
-
+- Lime
+- Bolt
+- Voi
+- Dott
+- Bird
 - Veuillez nous contacter (voir ci-dessus) et nous indiquer l'entreprise que vous souhaitez cibler.
 
 #### Livraison de repas
@@ -56,18 +66,6 @@ Veuillez sélectionner  2 entreprises parmi les suivantes auxquelles vous souhai
 #### Autres
 - [Fairtiq](fairtiq.md)
 - [Transport Lausannois](tl.md)
-
-#### Tech companies / Location Tracking Companies
-
-- [Google](google.md)
-- [Facebook](facebook.md)
-- [Twitter](twitter.md)
-- [LinkedIn](linkedin.md)
-- [TikTok](tiktok.md)
-- [Instagram](instagram.md)
-- [Strava](strava.md)
-- [Fitbit](fitbit.md)
--  Autres? Contactez-nous (voir ci dessus).
 
 ----
 Si vous avez des questions, n'hésitez pas à nous contacter via email à **workshop@hestia.ai**.
