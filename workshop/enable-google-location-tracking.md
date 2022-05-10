@@ -24,7 +24,14 @@ These instructions are for Android, and were tested on a Samsung Galaxy. The exa
 
 1. On your phone, open up the Settings app.
 2. Go the the 'Location' section.
+
+
+![1985d2124bea278f4559ea53c539700d571502953b4d491b3232c32af4f6006f](https://user-images.githubusercontent.com/1473244/167607845-559fda26-61f7-4cc8-b611-4dfb105494ef.jpg)
+
 3. Ensure the switch for Location is On.
+
+![3cda88bb4f55554f8c10ba5e7daffd4e14c85ba7997146b55e31ac5ca8ea0842-1](https://user-images.githubusercontent.com/1473244/167607909-0afd7dfd-ddd5-4460-96ed-b39e9ac2087d.jpg)
+
 4. Still within Location, go into App permissions.
 5. Find Google Maps in the list, and set it to Allow All the time. 
 
