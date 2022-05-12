@@ -1,12 +1,12 @@
-# Getting your data from Fairtiq
+# #Demande d'accès aux données personnelles auprès de  Fairtiq
 
 Contactez Fairtiq via l'adresse mail suivante
-<a href="mailto:app.privacy@fairtiq.com?subject=demande d'accès à mes données personnelle">app.privacy@fairtiq.com</a>
+<a href="mailto:app.privacy@fairtiq.com?subject=demande d'accès à mes données personnelles">app.privacy@fairtiq.com</a>
 ou via https://fairtiq.ch/fr/contact en indiquant avec votre adresse mail pour laquelle vous avez créé votre compte chez Fairtiq et votre numéro de téléphone et recopiez ce texte en n'oubliant pas de mettre votre prénom et nom à la fin du message
 
 ***********************************************************************************
-Demande d'accès aux données
-personnelles (art. 8 LPD) 
+```
+Demande d'accès aux données personnelles (art. 8 LPD) 
 
 Cher-e délégué-e à la protection des données de Fairtiq, 
 
@@ -37,7 +37,7 @@ rendre attentif à la teneur de l’article 34 LPD relatif aux conséquences pé
 En vous remerciant de votre diligence et en vous souhaitant bonne réception de la présente, je vous prie d’agréer, Cher-e délégué-e à la protection des données, mes salutations distinguées.
 
 
-
+```
 
 
 
