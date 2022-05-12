@@ -1,3 +1,5 @@
-# Getting your data from TikTok
+# Demande d'accès aux données personnelles auprès de TikTok
 
-Please contact us at workshop@hestia.ai and we will provide instructions.
+
+voir  https://digipower.hestialabs.org/tiktok#load-data pour faire votre demande.
+
