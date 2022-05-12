@@ -1,11 +1,11 @@
-# Demander vos données à la CGN
+# Demande d'accès aux données personnelles auprès de la CGN
 
 
 Contactez la CGN via l'adresse mail suivante
 
 <a href="mailto:privacy@cgn.ch?subject=demande d'accès à mes données personnelle">privacy@cgn.ch</a>
 
-avec votre adresse mail pour laquelle vous avez créé votre compte aen n'oubliant pas de mettre votre prénom et nom à la fin.
+avec votre adresse mail pour laquelle vous avez créé votre compte et recopiez le texte ci dessous en n'oubliant pas de mettre votre prénom et nom à la fin.
 
 ```
 cher-e responsable des données de  la CGN,
