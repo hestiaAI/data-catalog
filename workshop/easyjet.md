@@ -1,3 +1,3 @@
-# Demander vos données à easyJet
+# Demande d'accès aux données personnelles auprès de Easyjet
 
-voir https://experiences.hestialabs.org/easyjet#load-data
+voir https://experiences.hestialabs.org/easyjet#load-data pour faire votre demande.
