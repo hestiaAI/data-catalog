@@ -21,12 +21,12 @@ Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'a
 
 - [SBB/CFF](cff.md)
 - [DB](db.md)
-- Autres? Contactez-nous (voir ci dessus).
+- Autres? Contactez-nous.
 
 #### Taxi
 
-- Uber (a un portail)
-- Autres? Contactez-nous (voir ci dessus).
+- Uber (a un portail--> voir https://digipower.hestialabs.org/uber#load-data)
+- Autres? Contactez-nous.
 
 #### Bus
 
@@ -35,7 +35,7 @@ Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'a
 #### Bateaux
 
 - [CGN](cgn.md)
-- Autres? Contactez-nous (voir ci dessus).
+- Autres? Contactez-nous .
 
 #### E-Scooter / Vélos en libre service
 - Lime
@@ -54,7 +54,7 @@ Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'a
 
 
 #### Compagnies aériennes
-- [easyJet](easyjet.md)
+- [easyJet] (easyjet.md)
 -  Autres? Contactez-nous (voir ci dessus).
 
 #### Agences de voyages/réservation d'hôtels
