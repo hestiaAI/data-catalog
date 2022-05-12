@@ -49,7 +49,7 @@ Si nous n'avons pas encore fourni d'instructions, veuillez nous contacter à l'a
 
 - [Uber Eats](uber.md)
 - [Wolt](wolt.md)
-- [Just Eat / Takeaway.com](takeaway.md)
+- [Just Eat](takeaway.md)
 - Autres? Contactez-nous (voir ci dessus).
 
 
