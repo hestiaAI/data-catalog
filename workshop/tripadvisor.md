@@ -1,9 +1,7 @@
-# Demander vos données à TripAdvisor
+# Demande d'accès aux données personnelles auprès de TripAdvisor
 
 
 Contactez TripAdvisor via https://privacyportal-cdn.onetrust.com/dsarwebform/da774af3-e615-4e8c-8a28-3d13e98367c5/31a9cb36-8e8d-465a-977a-3fe628929deb.html
-
-
 avec votre adresse mail pour laquelle vous avez créé votre compte TripAdvisor et en remplissant le message suivant:
 
 
