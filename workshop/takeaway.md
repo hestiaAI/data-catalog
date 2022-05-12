@@ -1,4 +1,4 @@
-# Getting your data from Takeaway.com / Just Eat / Thuisbezorgd
+# Getting your data from Takeaway.com / Just Eat 
 
 1. Go to the webpage to fill the form https://privacyportal-de.onetrust.com/webform/5fffb107-8d8a-49e5-bdda-be5d78615bc7/5e662c3e-31ca-49fe-a8b1-bfef7431a149
 2. Mention that you are a customer  and your request type is a data access
