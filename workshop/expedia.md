@@ -1,3 +1,3 @@
-# Getting your data from Expedia
+# Demande d'accès aux données personnelles auprès de Expedia
 
-Please contact us at workshop@hestia.ai and we will provide instructions.
+Merci de contacter workshop@hestia.ai et nous vous ferons parvenir les instructions.
