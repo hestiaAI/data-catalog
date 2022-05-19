@@ -30,6 +30,15 @@ As a Settings switch, it might look something like this, where right/blue is ON:
 
 ![8cdd9495bfe5b7ac07d926c748916413c915f7322b1a44589fcd71a670139452](https://user-images.githubusercontent.com/1473244/167620547-79c9e5b9-65e6-4b86-b2b6-997170af7ed3.jpg)
 
+## Step 2.5: (sometimes) Allow Google Maps app to have Background Location Access
+
+On some phones, an additional step is needed. On first attempt, you can probably skip this step, but if you see no data after Step 3 then come back and try doing this step as well. The instructions below are for Android and will differ slightly on iOS.
+
+1. Go to 'Settings' > 'Apps'
+2. Find 'Maps'
+3. Click on 'Permissions'
+4. Change 'Location' to 'Allowed all the time' if it is not already set to that.
+
 ## Step 3: Check that locations have been recorded
 
 1. Move around some different areas while carrying your phone (different buildings/streets not just different rooms).
