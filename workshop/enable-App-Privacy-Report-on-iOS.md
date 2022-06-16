@@ -2,8 +2,7 @@
 
 ## Table of Contents
 
-- [Why install TrackerControl?](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#why-install-trackercontrol)
-- [Installing TrackerControl](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#installing-trackercontrol)
+- [Why install App Privacy Report?](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#why-install-trackercontrol)
 - [Enabling Tracking - First Time Setup](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#enabling-tracking---first-time-setup)
 - [Troubleshooting](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#troubleshooting)
 
@@ -13,22 +12,15 @@
 
 ## Enabling Tracking - First Time Setup
 
-
-
 https://user-images.githubusercontent.com/17878016/174087071-cd47d2f2-8380-4cf8-9a6e-cc5e704e4128.mp4
-
-
 
 1. Open your "Settings" app.
 
 2. Click on "Privacy".
 
-![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg)
-
 3. At the bottom, click on "App Privacy Report".
 
 4. Click on "Turn On App Privacy Report".
-![Screenshot_20220510-152357_TC Slim](https://user-images.githubusercontent.com/1473244/167657386-c2fd044a-b3fa-4705-8d9a-3e785bb07238.jpg)
 
 5.And you're done. You can now use your apps to monitor what contacts they make. To export App Privacy Report data afterwards, see [this page](https://github.com/hestiaAI/data-catalog/blob/main/workshop/how-to-export-data-from-trackercontrol.md). 
 
