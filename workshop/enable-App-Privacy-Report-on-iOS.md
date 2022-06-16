@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [Why install App Privacy Report?](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#why-install-trackercontrol)
-- [Enabling Tracking - First Time Setup](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#enabling-tracking---first-time-setup)
-- [Troubleshooting](https://github.com/hestiaAI/data-catalog/blob/main/workshop/install-and-enable-trackercontrol.md#troubleshooting)
+- [Why install App Privacy Report?](https://github.com/hestiaAI/data-catalog/blob/main/workshop/enable-App-Privacy-Report-on-iOS.md#why-install-app-privacy-report-on-ios)
+- [Enabling Tracking - First Time Setup](https://github.com/hestiaAI/data-catalog/blob/main/workshop/enable-App-Privacy-Report-on-iOS.md#enabling-tracking---first-time-setup)
+- [Troubleshooting](https://github.com/hestiaAI/data-catalog/blob/main/workshop/enable-App-Privacy-Report-on-iOS.md#troubleshooting)
 
 ## Why install App Privacy Report on iOS?
 
@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/17878016/174087071-cd47d2f2-8380-4cf8-
 
 4. Click on "Turn On App Privacy Report".
 
-5.And you're done. You can now use your apps to monitor what contacts they make. To export App Privacy Report data afterwards, see [this page](https://github.com/hestiaAI/data-catalog/blob/main/workshop/how-to-export-data-from-trackercontrol.md). 
+5. And you're done. You can now use your apps to monitor what contacts they make. To export App Privacy Report data afterwards, see [this page](https://github.com/hestiaAI/data-catalog/blob/main/workshop/how-to-export-data-from-trackercontrol.md). 
 
 ## Troubleshooting
 
