@@ -15,6 +15,10 @@
 
 
 
+https://user-images.githubusercontent.com/17878016/174087071-cd47d2f2-8380-4cf8-9a6e-cc5e704e4128.mp4
+
+
+
 1. Open your "Settings" app.
 
 2. Click on "Privacy".
