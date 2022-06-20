@@ -1,0 +1,3 @@
+-e git+ssh://git@github.com/hestiaAI/Argonodes.git
+jupyter
+notebook
