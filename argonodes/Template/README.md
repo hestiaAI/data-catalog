@@ -1,7 +1,7 @@
 # Template
 
 > For each data actor, you need to create a folder with the exact name of the actor (e.g., "Twitter" and not "twitter").
-
+> 
 > This README file should contain a description of the actor, a description of the scripts, and a description of the templates.
 
 ## General
