@@ -21,12 +21,16 @@
 > It is important to have somewhere available a written statement from the user who agrees to make their data available.
 > 
 > In the case of large datasets, it may be interesting to upload only subsets, so as not to overload the git.
+> 
+> Note: this folder is gitignored by default, you have to explicit what files should be pushed.
 
 ## Scripts
 
 > The `scripts` sub-folder contains the various scripts, notebooks, etc., used to create the templates.
 > 
-> Please edit the requirements.txt file as necessary to reuse your scripts.
+> Please edit the `requirements.txt` file as necessary to reuse your scripts.
+> 
+> Please edit the `.gitignore` file as necessary.
 
 * `blabla.py`: Bla bla.
 
