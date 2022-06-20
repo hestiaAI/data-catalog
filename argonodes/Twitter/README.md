@@ -40,8 +40,9 @@ See link for the procedure.
 
 ## Scripts
 
-* `blabla.py`: Bla bla.
+* `Twitter Demo.ipynb`: Notebook using Argonodes to add semantics to an Argonodes Model.
 
 ## Models
 
-* `blabla.md`: Bla bla bla.
+* `Twitter.json`: Argonodes Model.
+* `Twitter.md`: Human-readable description of the Twitter export.
