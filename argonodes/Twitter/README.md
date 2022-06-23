@@ -22,21 +22,18 @@
 
 Sources:
 * [Twitter: Twitter Privacy Policy](https://twitter.com/en/privacy)
-* [JustWhatsTheData: Twitter](https://justwhatsthedata.github.io/#twitter)
 
 ### How to get the data?
 
 See link for the procedure.
 
 * [HestiaLabs: Getting data from Twitter](https://github.com/hestiaAI/data-catalog/blob/argonodes/workshop/twitter.md)
-* [JustGetMyData: Twitter](https://justgetmydata.com/#twitter)
 
 ### How to delete my account?
 
 See link for the procedure.
 
 * [Twitter: Deactivate the account](https://twitter.com/settings/deactivate)
-* [JustDeleteMe: Twitter](https://justdeleteme.xyz/#twitter)
 
 ## Scripts
 
@@ -46,3 +43,4 @@ See link for the procedure.
 
 * `Twitter.json`: Argonodes Model.
 * `Twitter.md`: Human-readable description of the Twitter export.
+* `Twitter.txt`: High-level description, directly available in the Twitter export.
