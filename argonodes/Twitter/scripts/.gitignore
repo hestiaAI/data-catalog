@@ -118,4 +118,6 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+env/
+
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks,venv,pycharm+all
