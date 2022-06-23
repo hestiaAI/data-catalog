@@ -4,7 +4,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | NA | What IP was used to create that account. |
+| `$` | RootNode | N/A | What IP was used to create that account. |
 | `$[*]` | dict | None | None |
 | `$[*].accountCreationIp` | dict | None | None |
 | `$[*].accountCreationIp.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
@@ -14,13 +14,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/account-timezone.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | NA | NA |
+| `$` | RootNode | N/A | N/A |
 | `$[*]` | dict | None | None |
 | `$[*].accountTimezone` | dict | None | None |
 | `$[*].accountTimezone.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
@@ -30,21 +30,21 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | NA | NA |
+| `$` | RootNode | N/A | N/A |
 | `$[*]` | dict | None | None |
 | `$[*].account` | dict | None | None |
-| `$[*].account.email` | str | NA | Email linked to that account. |
-| `$[*].account.createdVia` | str | NA | Platform used to create that account. |
-| `$[*].account.username` | str | NA | Current username for that account. |
+| `$[*].account.email` | str | N/A | Email linked to that account. |
+| `$[*].account.createdVia` | str | N/A | Platform used to create that account. |
+| `$[*].account.username` | str | N/A | Current username for that account. |
 | `$[*].account.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
-| `$[*].account.createdAt` | str | NA | Timestamp for the creation of that account. |
-| `$[*].account.accountDisplayName` | str | NA | Current display name for that account. |
+| `$[*].account.createdAt` | str | N/A | Timestamp for the creation of that account. |
+| `$[*].account.accountDisplayName` | str | N/A | Current display name for that account. |
 
 ### `data/ad-engagements.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ad` | dict | None | None |
 | `$[*].ad.adsUserData` | dict | None | None |
@@ -84,7 +84,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ad` | dict | None | None |
 | `$[*].ad.adsUserData` | dict | None | None |
@@ -119,31 +119,31 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/ad-mobile-conversions-unattributed.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/ad-online-conversions-attributed.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/ad-online-conversions-unattributed.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/ageinfo.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ageMeta` | dict | None | None |
 | `$[*].ageMeta.ageInfo` | dict | None | None |
@@ -155,25 +155,25 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/birdwatch-note-rating.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/birdwatch-note.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/block.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].blocking` | dict | None | None |
 | `$[*].blocking.accountId` | str | None | None |
@@ -183,19 +183,19 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/community-tweet.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/connected-application.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].connectedApplication` | dict | None | None |
 | `$[*].connectedApplication.organization` | dict | None | None |
@@ -214,13 +214,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/device-token.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].deviceToken` | dict | None | None |
 | `$[*].deviceToken.clientApplicationId` | str | None | None |
@@ -233,7 +233,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
 | `$[*].dmConversation.conversationId` | str | None | None |
@@ -257,7 +257,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
 | `$[*].dmConversation.conversationId` | str | None | None |
@@ -278,13 +278,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/direct-messages-group.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
 | `$[*].dmConversation.conversationId` | str | None | None |
@@ -316,7 +316,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
 | `$[*].dmConversation.conversationId` | str | None | None |
@@ -354,7 +354,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].emailAddressChange` | dict | None | None |
 | `$[*].emailAddressChange.accountId` | str | None | None |
@@ -367,7 +367,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].follower` | dict | None | None |
 | `$[*].follower.accountId` | str | None | None |
@@ -377,7 +377,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].following` | dict | None | None |
 | `$[*].following.accountId` | str | None | None |
@@ -387,7 +387,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ipAudit` | dict | None | None |
 | `$[*].ipAudit.accountId` | str | None | None |
@@ -398,7 +398,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].like` | dict | None | None |
 | `$[*].like.tweetId` | str | None | None |
@@ -409,13 +409,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/lists-member.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].userListInfo` | dict | None | None |
 | `$[*].userListInfo.url` | str | None | None |
@@ -424,7 +424,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].userListInfo` | dict | None | None |
 | `$[*].userListInfo.url` | str | None | None |
@@ -433,7 +433,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$.userInfo` | dict | None | None |
 | `$.userInfo.accountId` | str | None | None |
 | `$.userInfo.userName` | str | None | None |
@@ -821,13 +821,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/mute.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].muting` | dict | None | None |
 | `$[*].muting.accountId` | str | None | None |
@@ -837,7 +837,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].niDeviceResponse` | dict | None | None |
 | `$[*].niDeviceResponse.pushDevice` | dict | None | None |
@@ -858,7 +858,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].periscopeAccountInformation` | dict | None | None |
 | `$[*].periscopeAccountInformation.displayName` | str | None | None |
@@ -874,7 +874,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].periscopeBanInformation` | dict | None | None |
 
@@ -882,31 +882,31 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/periscope-comments-made-by-user.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/periscope-expired-broadcasts.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/periscope-followers.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/periscope-profile-description.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].periscopeProfileDescription` | dict | None | None |
 | `$[*].periscopeProfileDescription.bio` | str | None | None |
@@ -915,7 +915,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].p13nData` | dict | None | None |
 | `$[*].p13nData.demographics` | dict | None | None |
@@ -949,7 +949,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].device` | dict | None | None |
 | `$[*].device.phoneNumber` | str | None | None |
@@ -958,13 +958,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/profile.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].profile` | dict | None | None |
 | `$[*].profile.description` | dict | None | None |
@@ -978,25 +978,25 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/reply-prompt.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/saved-search.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/screen-name-change.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].screenNameChange` | dict | None | None |
 | `$[*].screenNameChange.accountId` | str | None | None |
@@ -1009,25 +1009,25 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/spaces-metadata.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/sso.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/tweet.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].tweet` | dict | None | None |
 | `$[*].tweet.retweeted` | bool | None | None |
@@ -1157,13 +1157,13 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 
 ### `data/user-link-clicks.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].userInteractionsData` | dict | None | None |
 | `$[*].userInteractionsData.linkClick` | dict | None | None |
@@ -1175,7 +1175,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | Root | None | None |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].verified` | dict | None | None |
 | `$[*].verified.accountId` | str | None | None |
