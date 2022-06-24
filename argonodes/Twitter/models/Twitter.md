@@ -4,11 +4,11 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | N/A | What IP was used to create that account. |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].accountCreationIp` | dict | None | None |
-| `$[*].accountCreationIp.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
-| `$[*].accountCreationIp.userCreationIp` | str | https://github.com/hestiaAI/Argonodes/wiki/General:IPv4 | Unique account ID for that user. |
+| `$[*].accountCreationIp.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
+| `$[*].accountCreationIp.userCreationIp` | str | None | IP address at account creation. |
 
 ### `data/account-suspension.js`
 
@@ -20,25 +20,25 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | N/A | N/A |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].accountTimezone` | dict | None | None |
-| `$[*].accountTimezone.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
-| `$[*].accountTimezone.timeZone` | str | https://schema.org/scheduleTimezone | Timezone used when creating the account. |
+| `$[*].accountTimezone.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
+| `$[*].accountTimezone.timeZone` | str | None | Timezone currently associated with the account. |
 
 ### `data/account.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | N/A | N/A |
+| `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].account` | dict | None | None |
-| `$[*].account.email` | str | N/A | Email linked to that account. |
-| `$[*].account.createdVia` | str | N/A | Platform used to create that account. |
-| `$[*].account.username` | str | N/A | Current username for that account. |
-| `$[*].account.accountId` | str | https://schema.org/identifier | Unique account ID for that user. |
-| `$[*].account.createdAt` | str | N/A | Timestamp for the creation of that account. |
-| `$[*].account.accountDisplayName` | str | N/A | Current display name for that account. |
+| `$[*].account.email` | str | None | Email address currently associated with the account if an email address has been provided. |
+| `$[*].account.createdVia` | str | None | Client application used when the account was created. For example: “web” if the  account was created from a browser. |
+| `$[*].account.username` | str | None | The account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account. |
+| `$[*].account.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
+| `$[*].account.createdAt` | str | https://schema.org/DateTime | Date and time when the account was created. |
+| `$[*].account.accountDisplayName` | str | None | The account’s name as displayed on the profile. |
 
 ### `data/ad-engagements.js`
 
@@ -46,36 +46,36 @@
 |---|---|---|---|
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
-| `$[*].ad` | dict | None | None |
+| `$[*].ad` | dict | None | Promoted Tweets the account has engaged with and any associated metadata. |
 | `$[*].ad.adsUserData` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements` | list | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*]` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes` | dict | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo` | dict | None | Information about the device where the engagement occurred such as its ID and operating system. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.displayLocation` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.displayLocation` | str | None | Location where the ad was engaged with on Twitter. |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo` | dict | None | Information about the associated tweet such as unique identifier, text, URLs and media when applicable. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetId` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetText` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls` | list | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls[*]` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls` | list | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls[*]` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo` | dict | None | Advertiser name and screen name. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.advertiserName` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.screenName` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria` | list | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria` | list | None | Targeting criteria that were used to run the campaign. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*]` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingType` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingValue` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.impressionTime` | str | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.impressionTime` | str | None | Date and time when the ad was viewed. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description` | str | None | None |
-| `$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes` | list | None | None |
+| `$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes` | list | None | Type of engagement as well as date and time when it occurred. |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*]` | dict | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime` | str | None | None |
 | `$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType` | str | None | None |
@@ -86,24 +86,24 @@
 |---|---|---|---|
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
-| `$[*].ad` | dict | None | None |
+| `$[*].ad` | dict | None | Promoted Tweets the account has viewed and any associated metadata. |
 | `$[*].ad.adsUserData` | dict | None | None |
 | `$[*].ad.adsUserData.adImpressions` | dict | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions` | list | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*]` | dict | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo` | dict | None | Information about the device where the impression was viewed such as its ID and operating system. |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType` | str | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.deviceId` | str | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].displayLocation` | str | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].displayLocation` | str | None | Location where the ad was viewed on Twitter. |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo` | dict | None | Advertiser name and screen name. |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.advertiserName` | str | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.screenName` | str | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria` | list | None | None |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria` | list | None | Targeting criteria that were used to run the campaign. |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*]` | dict | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingType` | str | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingValue` | str | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].impressionTime` | str | None | None |
-| `$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo` | dict | None | None |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].impressionTime` | str | None | Date and time when the ad was viewed. |
+| `$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo` | dict | None | Information about the associated tweet such as unique identifier, text, URLs and media when applicable. |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetId` | str | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetText` | str | None | None |
 | `$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.urls` | list | None | None |
@@ -146,10 +146,10 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ageMeta` | dict | None | None |
-| `$[*].ageMeta.ageInfo` | dict | None | None |
+| `$[*].ageMeta.ageInfo` | dict | None | Date of birth provided to Twitter and corresponding current age. |
 | `$[*].ageMeta.ageInfo.age` | list | None | None |
 | `$[*].ageMeta.ageInfo.age[*]` | str | None | None |
-| `$[*].ageMeta.ageInfo.birthDate` | str | None | None |
+| `$[*].ageMeta.ageInfo.birthDate` | str | None | Date of birth provided to Twitter and corresponding current age |
 
 ### `data/app.js`
 
@@ -176,8 +176,8 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].blocking` | dict | None | None |
-| `$[*].blocking.accountId` | str | None | None |
-| `$[*].blocking.userLink` | str | None | None |
+| `$[*].blocking.accountId` | str | https://schema.org/identifier | Unique identifiers of accounts currently blocked by the account. |
+| `$[*].blocking.userLink` | str | None | Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated. |
 
 ### `data/branch-links.js`
 
@@ -189,7 +189,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
+| `$` | RootNode | None | All the Tweets posted in Communities and not deleted. |
 
 ### `data/connected-application.js`
 
@@ -203,12 +203,12 @@
 | `$[*].connectedApplication.organization.url` | str | None | None |
 | `$[*].connectedApplication.organization.privacyPolicyUrl` | str | None | None |
 | `$[*].connectedApplication.organization.termsAndConditionsUrl` | str | None | None |
-| `$[*].connectedApplication.name` | str | None | None |
-| `$[*].connectedApplication.description` | str | None | None |
-| `$[*].connectedApplication.permissions` | list | None | None |
+| `$[*].connectedApplication.name` | str | None | Name of the application. |
+| `$[*].connectedApplication.description` | str | None | Brief description of the application as provided by the organization. |
+| `$[*].connectedApplication.permissions` | list | None | List of permissions granted to the connected application by the Twitter account. For example: read or write. |
 | `$[*].connectedApplication.permissions[*]` | str | None | None |
-| `$[*].connectedApplication.approvedAt` | str | None | None |
-| `$[*].connectedApplication.id` | str | None | None |
+| `$[*].connectedApplication.approvedAt` | str | None | Date and time when the account authorized the application. |
+| `$[*].connectedApplication.id` | str | None | Unique identifier for the application. |
 
 ### `data/contact.js`
 
@@ -223,11 +223,11 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].deviceToken` | dict | None | None |
-| `$[*].deviceToken.clientApplicationId` | str | None | None |
-| `$[*].deviceToken.token` | str | None | None |
-| `$[*].deviceToken.createdAt` | str | None | None |
-| `$[*].deviceToken.lastSeenAt` | str | None | None |
-| `$[*].deviceToken.clientApplicationName` | str | None | None |
+| `$[*].deviceToken.clientApplicationId` | str | None | Unique identifier of the application associated with the token. Please note that there may be instances where older tokens do not have a unique identifier associated with them. |
+| `$[*].deviceToken.token` | str | None | Token associated with a mobile device or web browser that was used to sign up or log in to this account through twitter.com or one of the other Twitter owned or operated apps within the last 18 months. |
+| `$[*].deviceToken.createdAt` | str | https://schema.org/DateTime | Data and time of the creation of the token. |
+| `$[*].deviceToken.lastSeenAt` | str | https://schema.org/DateTime | Date and time of most recent use. Please note that there may be instances where older tokens do show this information. |
+| `$[*].deviceToken.clientApplicationName` | str | None | Name of the application associated with the token. Please note that there may be instances where older tokens do not have an application name associated with them. |
 
 ### `data/direct-message-group-headers.js`
 
@@ -236,22 +236,22 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
-| `$[*].dmConversation.conversationId` | str | None | None |
+| `$[*].dmConversation.conversationId` | str | None | Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list. |
 | `$[*].dmConversation.messages` | list | None | None |
 | `$[*].dmConversation.messages[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave` | dict | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave.userIds` | list | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave.userIds[*]` | str | None | None |
-| `$[*].dmConversation.messages[*].participantsLeave.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].participantsLeave.createdAt` | str | https://schema.org/DateTime | None |
 | `$[*].dmConversation.messages[*].messageCreate` | dict | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | None | None |
-| `$[*].dmConversation.messages[*].joinConversation` | dict | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | https://schema.org/DateTime | Date and time the Direct Message was sent. |
+| `$[*].dmConversation.messages[*].joinConversation` | dict | None | Metadata about when the account joined the conversation. |
 | `$[*].dmConversation.messages[*].joinConversation.initiatingUserId` | str | None | None |
 | `$[*].dmConversation.messages[*].joinConversation.participantsSnapshot` | list | None | None |
 | `$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*]` | str | None | None |
-| `$[*].dmConversation.messages[*].joinConversation.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].joinConversation.createdAt` | str | https://schema.org/DateTime | None |
 
 ### `data/direct-message-headers.js`
 
@@ -264,15 +264,15 @@
 | `$[*].dmConversation.messages` | list | None | None |
 | `$[*].dmConversation.messages[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].messageCreate` | dict | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.recipientId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.recipientId` | str | None | Unique identifier for the account who received the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | https://schema.org/DateTime | Date and time the Direct Message was sent. |
 | `$[*].dmConversation.messages[*].welcomeMessageCreate` | dict | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId` | str | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId` | str | None | Unique identifier for the account who received the Direct Message. |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt` | str | https://schema.org/DateTime | Date and time the Direct Message was sent. |
 
 ### `data/direct-message-mute.js`
 
@@ -287,30 +287,30 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].dmConversation` | dict | None | None |
-| `$[*].dmConversation.conversationId` | str | None | None |
+| `$[*].dmConversation.conversationId` | str | None | Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list. |
 | `$[*].dmConversation.messages` | list | None | None |
 | `$[*].dmConversation.messages[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave` | dict | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave.userIds` | list | None | None |
 | `$[*].dmConversation.messages[*].participantsLeave.userIds[*]` | str | None | None |
-| `$[*].dmConversation.messages[*].participantsLeave.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].participantsLeave.createdAt` | str | https://schema.org/DateTime | None |
 | `$[*].dmConversation.messages[*].messageCreate` | dict | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.reactions` | list | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.urls` | list | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.urls` | list | None | Link included in the Direct Message if applicable. |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].url` | str | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].expanded` | str | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].display` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.text` | str | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.text` | str | None | Text content of the Direct Message. |
 | `$[*].dmConversation.messages[*].messageCreate.mediaUrls` | list | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | None | None |
-| `$[*].dmConversation.messages[*].joinConversation` | dict | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | https://schema.org/DateTime | Day and time of when the Direct Message was sent. |
+| `$[*].dmConversation.messages[*].joinConversation` | dict | None | Metadata about when the account joined the conversation. This field might not be available due to deletions initiated by the account or other participants. |
 | `$[*].dmConversation.messages[*].joinConversation.initiatingUserId` | str | None | None |
 | `$[*].dmConversation.messages[*].joinConversation.participantsSnapshot` | list | None | None |
 | `$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*]` | str | None | None |
-| `$[*].dmConversation.messages[*].joinConversation.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].joinConversation.createdAt` | str | https://schema.org/DateTime | None |
 
 ### `data/direct-messages.js`
 
@@ -323,32 +323,32 @@
 | `$[*].dmConversation.messages` | list | None | None |
 | `$[*].dmConversation.messages[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].messageCreate` | dict | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.recipientId` | str | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.recipientId` | str | None | Unique identifier for the account who received the Direct Message. |
 | `$[*].dmConversation.messages[*].messageCreate.reactions` | list | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.reactions[*]` | dict | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.reactions[*].senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.reactions[*].reactionKey` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.reactions[*].eventId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.reactions[*].createdAt` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.urls` | list | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.reactions[*].senderId` | str | None | Unique identifier for the account that provided the reaction. |
+| `$[*].dmConversation.messages[*].messageCreate.reactions[*].reactionKey` | str | None | Reaction type (for example, laugh, wow, cry, heart, fire, thumbs up, thumbs down). |
+| `$[*].dmConversation.messages[*].messageCreate.reactions[*].eventId` | str | None | Unique identifier for the reaction event. |
+| `$[*].dmConversation.messages[*].messageCreate.reactions[*].createdAt` | str | https://schema.org/DateTime | Day and time of when the reaction was made. |
+| `$[*].dmConversation.messages[*].messageCreate.urls` | list | None | Details about a URL link included in the Direct Message, if applicable. |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*]` | dict | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].url` | str | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].expanded` | str | None | None |
 | `$[*].dmConversation.messages[*].messageCreate.urls[*].display` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.text` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.mediaUrls` | list | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.text` | str | None | Text content of the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.mediaUrls` | list | None | Link to media included in the Direct Message if applicable. |
 | `$[*].dmConversation.messages[*].messageCreate.mediaUrls[*]` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].messageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].messageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].messageCreate.createdAt` | str | https://schema.org/DateTime | Date and time the Direct Message was sent. |
 | `$[*].dmConversation.messages[*].welcomeMessageCreate` | dict | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId` | str | None | None |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId` | str | None | Unique identifier for the account who received the Direct Message. |
 | `$[*].dmConversation.messages[*].welcomeMessageCreate.urls` | list | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.text` | str | None | None |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.text` | str | None | Text content of the Direct Message. |
 | `$[*].dmConversation.messages[*].welcomeMessageCreate.mediaUrls` | list | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.senderId` | str | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.id` | str | None | None |
-| `$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt` | str | None | None |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.senderId` | str | None | Unique identifier for the account who sent the Direct Message. |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.id` | str | None | Unique identifier for a specific Direct Message within the conversation. |
+| `$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt` | str | https://schema.org/DateTime | Date and time the Direct Message was sent. |
 
 ### `data/email-address-change.js`
 
@@ -357,11 +357,11 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].emailAddressChange` | dict | None | None |
-| `$[*].emailAddressChange.accountId` | str | None | None |
+| `$[*].emailAddressChange.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
 | `$[*].emailAddressChange.emailChange` | dict | None | None |
-| `$[*].emailAddressChange.emailChange.changedAt` | str | None | None |
-| `$[*].emailAddressChange.emailChange.changedTo` | str | None | None |
-| `$[*].emailAddressChange.emailChange.changedFrom` | str | None | None |
+| `$[*].emailAddressChange.emailChange.changedAt` | str | None | Date and time the email address was changed. |
+| `$[*].emailAddressChange.emailChange.changedTo` | str | None | New email address associated with the account. |
+| `$[*].emailAddressChange.emailChange.changedFrom` | str | None | Email address associated with the account prior to the change. |
 
 ### `data/follower.js`
 
@@ -370,8 +370,8 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].follower` | dict | None | None |
-| `$[*].follower.accountId` | str | None | None |
-| `$[*].follower.userLink` | str | None | None |
+| `$[*].follower.accountId` | str | https://schema.org/identifier | Unique identifiers for the other accounts that follow this account. |
+| `$[*].follower.userLink` | str | None | Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated. |
 
 ### `data/following.js`
 
@@ -380,8 +380,8 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].following` | dict | None | None |
-| `$[*].following.accountId` | str | None | None |
-| `$[*].following.userLink` | str | None | None |
+| `$[*].following.accountId` | str | https://schema.org/identifier | Unique identifiers for the other accounts this account follows. |
+| `$[*].following.userLink` | str | None | Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated. |
 
 ### `data/ip-audit.js`
 
@@ -390,9 +390,9 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].ipAudit` | dict | None | None |
-| `$[*].ipAudit.accountId` | str | None | None |
-| `$[*].ipAudit.createdAt` | str | None | None |
-| `$[*].ipAudit.loginIp` | str | None | None |
+| `$[*].ipAudit.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
+| `$[*].ipAudit.createdAt` | str | https://schema.org/DateTime | Date and time of a login to the account. |
+| `$[*].ipAudit.loginIp` | str | None | IP address associated with the login. |
 
 ### `data/like.js`
 
@@ -401,21 +401,21 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].like` | dict | None | None |
-| `$[*].like.tweetId` | str | None | None |
-| `$[*].like.fullText` | str | None | None |
-| `$[*].like.expandedUrl` | str | None | None |
+| `$[*].like.tweetId` | str | None | Unique identifiers for the Tweets liked. |
+| `$[*].like.fullText` | str | None | Text as visible in the tweet if the account has access to it. |
+| `$[*].like.expandedUrl` | str | None | Link to the actual tweet on twitter.com if the account has access to it. |
 
 ### `data/lists-created.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
+| `$` | RootNode | None | URLs of Lists created by the account. |
 
 ### `data/lists-member.js`
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
+| `$` | RootNode | None | URLs of Lists the account has been added to and is eligible to access. |
 | `$[*]` | dict | None | None |
 | `$[*].userListInfo` | dict | None | None |
 | `$[*].userListInfo.url` | str | None | None |
@@ -424,7 +424,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
+| `$` | RootNode | None | URLs of Lists the account has subscribed to. |
 | `$[*]` | dict | None | None |
 | `$[*].userListInfo` | dict | None | None |
 | `$[*].userListInfo.url` | str | None | None |
@@ -830,8 +830,8 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].muting` | dict | None | None |
-| `$[*].muting.accountId` | str | None | None |
-| `$[*].muting.userLink` | str | None | None |
+| `$[*].muting.accountId` | str | https://schema.org/identifier | Unique identifiers for currently muted accounts. |
+| `$[*].muting.userLink` | str | None | Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated. |
 
 ### `data/ni-devices.js`
 
@@ -841,18 +841,18 @@
 | `$[*]` | dict | None | None |
 | `$[*].niDeviceResponse` | dict | None | None |
 | `$[*].niDeviceResponse.pushDevice` | dict | None | None |
-| `$[*].niDeviceResponse.pushDevice.deviceVersion` | str | None | None |
-| `$[*].niDeviceResponse.pushDevice.udid` | str | None | None |
-| `$[*].niDeviceResponse.pushDevice.deviceType` | str | None | None |
+| `$[*].niDeviceResponse.pushDevice.deviceVersion` | str | None | Operating system version associated with the device. |
+| `$[*].niDeviceResponse.pushDevice.udid` | str | None | Field indicating the application-generated device ID. This ID is unique to the device and persists through device updates, but not through device reinstallations. |
+| `$[*].niDeviceResponse.pushDevice.deviceType` | str | None | Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter. |
 | `$[*].niDeviceResponse.pushDevice.token` | str | None | None |
-| `$[*].niDeviceResponse.pushDevice.updatedDate` | str | None | None |
-| `$[*].niDeviceResponse.pushDevice.createdDate` | str | None | None |
+| `$[*].niDeviceResponse.pushDevice.updatedDate` | str | None | Field indicating the last time this association was updated. |
+| `$[*].niDeviceResponse.pushDevice.createdDate` | str | None | Field indicating when the association between the device and the Twitter account was made. |
 | `$[*].niDeviceResponse.messagingDevice` | dict | None | None |
-| `$[*].niDeviceResponse.messagingDevice.phoneNumber` | str | None | None |
-| `$[*].niDeviceResponse.messagingDevice.carrier` | str | None | None |
-| `$[*].niDeviceResponse.messagingDevice.deviceType` | str | None | None |
-| `$[*].niDeviceResponse.messagingDevice.updatedDate` | str | None | None |
-| `$[*].niDeviceResponse.messagingDevice.createdDate` | str | None | None |
+| `$[*].niDeviceResponse.messagingDevice.phoneNumber` | str | None | Phone number associated with the device. |
+| `$[*].niDeviceResponse.messagingDevice.carrier` | str | None | Optional field indicating the carrier associated with the device. |
+| `$[*].niDeviceResponse.messagingDevice.deviceType` | str | None | Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter. |
+| `$[*].niDeviceResponse.messagingDevice.updatedDate` | str | None | Field indicating the last time this association was updated. |
+| `$[*].niDeviceResponse.messagingDevice.createdDate` | str | None | Field indicating when the association between the device and the Twitter account was made. |
 
 ### `data/periscope-account-information.js`
 
@@ -861,14 +861,14 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].periscopeAccountInformation` | dict | None | None |
-| `$[*].periscopeAccountInformation.displayName` | str | None | None |
+| `$[*].periscopeAccountInformation.displayName` | str | None | Periscope account name ported over from the Twitter account when the shell account was created. |
 | `$[*].periscopeAccountInformation.digitsId` | str | None | None |
-| `$[*].periscopeAccountInformation.username` | str | None | None |
-| `$[*].periscopeAccountInformation.twitterId` | str | None | None |
-| `$[*].periscopeAccountInformation.id` | str | None | None |
-| `$[*].periscopeAccountInformation.twitterScreenName` | str | None | None |
-| `$[*].periscopeAccountInformation.isTwitterUser` | bool | None | None |
-| `$[*].periscopeAccountInformation.createdAt` | str | None | None |
+| `$[*].periscopeAccountInformation.username` | str | None | Periscope account @username ported over from the Twitter account when the shell account was created. |
+| `$[*].periscopeAccountInformation.twitterId` | str | None | Unique identifier for the Twitter account. |
+| `$[*].periscopeAccountInformation.id` | str | None | Periscope shell account unique identifier automatically created as soon as the user goes to the "Live" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live. |
+| `$[*].periscopeAccountInformation.twitterScreenName` | str | None | The Twitter account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account. |
+| `$[*].periscopeAccountInformation.isTwitterUser` | bool | https://schema.org/True | Indicates whether the Periscope account is also a Twitter user. This is always true. |
+| `$[*].periscopeAccountInformation.createdAt` | str | https://schema.org/DateTime | Date and time the "shell account" was created. |
 
 ### `data/periscope-ban-information.js`
 
@@ -900,7 +900,7 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
+| `$` | RootNode | None | Other accounts that follow this shell account. |
 
 ### `data/periscope-profile-description.js`
 
@@ -908,7 +908,7 @@
 |---|---|---|---|
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
-| `$[*].periscopeProfileDescription` | dict | None | None |
+| `$[*].periscopeProfileDescription` | dict | None | Periscope account description ported over from the Twitter account when the shell account was created. |
 | `$[*].periscopeProfileDescription.bio` | str | None | None |
 
 ### `data/personalization.js`
@@ -919,31 +919,31 @@
 | `$[*]` | dict | None | None |
 | `$[*].p13nData` | dict | None | None |
 | `$[*].p13nData.demographics` | dict | None | None |
-| `$[*].p13nData.demographics.languages` | list | None | None |
+| `$[*].p13nData.demographics.languages` | list | None | Languages associated with the account. Please note that this information may be inferred. |
 | `$[*].p13nData.demographics.languages[*]` | dict | None | None |
 | `$[*].p13nData.demographics.languages[*].language` | str | None | None |
 | `$[*].p13nData.demographics.languages[*].isDisabled` | bool | None | None |
-| `$[*].p13nData.demographics.genderInfo` | dict | None | None |
-| `$[*].p13nData.demographics.genderInfo.gender` | str | None | None |
+| `$[*].p13nData.demographics.genderInfo` | dict | None | Gender associated with the account. Please note that this information may be inferred. |
+| `$[*].p13nData.demographics.genderInfo.gender` | str | None | Gender associated with the account. Please note that this information may be inferred. |
 | `$[*].p13nData.interests` | dict | None | None |
-| `$[*].p13nData.interests.interests` | list | None | None |
+| `$[*].p13nData.interests.interests` | list | None | Interests associated with the account. Please note that this information may be inferred. |
 | `$[*].p13nData.interests.interests[*]` | dict | None | None |
 | `$[*].p13nData.interests.interests[*].name` | str | None | None |
 | `$[*].p13nData.interests.interests[*].isDisabled` | bool | None | None |
-| `$[*].p13nData.interests.partnerInterests` | list | None | None |
+| `$[*].p13nData.interests.partnerInterests` | list | None | Interests from partners that are associated with the account. |
 | `$[*].p13nData.interests.audienceAndAdvertisers` | dict | None | None |
-| `$[*].p13nData.interests.audienceAndAdvertisers.numAudiences` | str | None | None |
-| `$[*].p13nData.interests.audienceAndAdvertisers.advertisers` | list | None | None |
-| `$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers` | list | None | None |
+| `$[*].p13nData.interests.audienceAndAdvertisers.numAudiences` | str | None | Number of tailored audiences (audiences generated by advertisers) the account is a part of. |
+| `$[*].p13nData.interests.audienceAndAdvertisers.advertisers` | list | None | List of screennames for the advertisers that own the tailored audiences the account is a part of. |
+| `$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers` | list | None | List of screen names for the advertisers that own the look-alike audiences the account is a part of. |
 | `$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers[*]` | str | None | None |
-| `$[*].p13nData.interests.audienceAndAdvertisers.doNotReachAdvertisers` | list | None | None |
-| `$[*].p13nData.interests.shows` | list | None | None |
+| `$[*].p13nData.interests.audienceAndAdvertisers.doNotReachAdvertisers` | list | None | List of screen names for the advertisers that own Do Not Reach Lists the account is a part of |
+| `$[*].p13nData.interests.shows` | list | None | TV shows associated with the account. Please note that this information may be inferred. |
 | `$[*].p13nData.interests.shows[*]` | str | None | None |
-| `$[*].p13nData.locationHistory` | list | None | None |
-| `$[*].p13nData.inferredAgeInfo` | dict | None | None |
-| `$[*].p13nData.inferredAgeInfo.age` | list | None | None |
+| `$[*].p13nData.locationHistory` | list | None | Location history associated with the account based on activity from the last 60 days. |
+| `$[*].p13nData.inferredAgeInfo` | dict | None | Date of birth Twitter has inferred about the account and corresponding current age. |
+| `$[*].p13nData.inferredAgeInfo.age` | list | None | Corresponding current age. |
 | `$[*].p13nData.inferredAgeInfo.age[*]` | str | None | None |
-| `$[*].p13nData.inferredAgeInfo.birthDate` | str | None | None |
+| `$[*].p13nData.inferredAgeInfo.birthDate` | str | None | Date of birth Twitter has inferred about the account |
 
 ### `data/phone-number.js`
 
@@ -952,7 +952,7 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].device` | dict | None | None |
-| `$[*].device.phoneNumber` | str | None | None |
+| `$[*].device.phoneNumber` | str | None | Phone number currently associated with the account if a phone number has been provided. |
 
 ### `data/professional-data.js`
 
@@ -968,11 +968,11 @@
 | `$[*]` | dict | None | None |
 | `$[*].profile` | dict | None | None |
 | `$[*].profile.description` | dict | None | None |
-| `$[*].profile.description.bio` | str | None | None |
-| `$[*].profile.description.website` | str | None | None |
-| `$[*].profile.description.location` | str | None | None |
-| `$[*].profile.avatarMediaUrl` | str | None | None |
-| `$[*].profile.headerMediaUrl` | str | None | None |
+| `$[*].profile.description.bio` | str | None | Current account bio as displayed on the profile, if the user has provided one. |
+| `$[*].profile.description.website` | str | None | Current account website as displayed on the profile, if the user has provided one. |
+| `$[*].profile.description.location` | str | None | Current account location as displayed on the profile, if the user has provided one. |
+| `$[*].profile.avatarMediaUrl` | str | None | Link to the current profile avatar image, if the user has provided one. |
+| `$[*].profile.headerMediaUrl` | str | None | Link to the current profile header image, if the user has provided one. |
 
 ### `data/protected-history.js`
 
@@ -999,11 +999,11 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].screenNameChange` | dict | None | None |
-| `$[*].screenNameChange.accountId` | str | None | None |
+| `$[*].screenNameChange.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
 | `$[*].screenNameChange.screenNameChange` | dict | None | None |
-| `$[*].screenNameChange.screenNameChange.changedAt` | str | None | None |
-| `$[*].screenNameChange.screenNameChange.changedFrom` | str | None | None |
-| `$[*].screenNameChange.screenNameChange.changedTo` | str | None | None |
+| `$[*].screenNameChange.screenNameChange.changedAt` | str | None | Date and time the name was changed. |
+| `$[*].screenNameChange.screenNameChange.changedFrom` | str | None | Previous screen name associated with the account. |
+| `$[*].screenNameChange.screenNameChange.changedTo` | str | None | New screen name associated with the account. |
 
 ### `data/smartblock.js`
 
@@ -1027,8 +1027,8 @@
 
 | path | foundType | descriptiveType | description |
 |---|---|---|---|
-| `$` | RootNode | None | None |
-| `$[*]` | dict | None | None |
+| `$` | RootNode | None | All the Tweets posted and not deleted. |
+| `$[*]` | dict | https://github.com/hestiaAI/Argonodes/wiki/Twitter:tweet | A single tweet, |
 | `$[*].tweet` | dict | None | None |
 | `$[*].tweet.retweeted` | bool | None | None |
 | `$[*].tweet.source` | str | None | None |
@@ -1167,9 +1167,9 @@
 | `$[*]` | dict | None | None |
 | `$[*].userInteractionsData` | dict | None | None |
 | `$[*].userInteractionsData.linkClick` | dict | None | None |
-| `$[*].userInteractionsData.linkClick.tweetId` | str | None | None |
-| `$[*].userInteractionsData.linkClick.finalUrl` | str | None | None |
-| `$[*].userInteractionsData.linkClick.timeStampOfInteraction` | str | None | None |
+| `$[*].userInteractionsData.linkClick.tweetId` | str | None | Unique identifier for the Tweet the user clicked on when using Twitter on iOS or Android. |
+| `$[*].userInteractionsData.linkClick.finalUrl` | str | None | URL indicating where the Tweet linked to off Twitter. |
+| `$[*].userInteractionsData.linkClick.timeStampOfInteraction` | str | None | Date and time of when the click occured. This file includes 30 days of data from the time the archive was generated. |
 
 ### `data/verified.js`
 
@@ -1178,6 +1178,6 @@
 | `$` | RootNode | None | None |
 | `$[*]` | dict | None | None |
 | `$[*].verified` | dict | None | None |
-| `$[*].verified.accountId` | str | None | None |
-| `$[*].verified.verified` | bool | None | None |
+| `$[*].verified.accountId` | str | https://schema.org/identifier | Unique identifier for the account. |
+| `$[*].verified.verified` | bool | None | Indicates whether the account is verified. |
 
