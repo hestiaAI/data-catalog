@@ -17,8 +17,8 @@
 
 ## Enabling Tracking - First Time Setup
 
-3. Load up the TC Slim app.
-4. Ensure the switch at the top right is pushed to the right, meaning tracking is ON.
+2. Load up the TC Slim app.
+3. Ensure the switch at the top right is pushed to the right, meaning tracking is ON.
 
 ![Screenshot_20220510-152353_TC Slim](https://user-images.githubusercontent.com/1473244/167657241-e8de1700-fd13-4840-b338-b9c6182f4bf7.jpg)
 
