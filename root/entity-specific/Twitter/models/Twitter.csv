@@ -1,100 +1,101 @@
 path,foundType,descriptiveType,unique,default,description,choices,regex
-data/account-creation-ip.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/account-creation-ip.js:$[*],dict,None,true,None,None,None,None
-data/account-creation-ip.js:$[*].accountCreationIp,dict,None,true,None,None,None,None
-data/account-creation-ip.js:$[*].accountCreationIp.accountId,str,https://schema.org/identifier,true,None,Unique identifier for the account.,None,None
-data/account-creation-ip.js:$[*].accountCreationIp.userCreationIp,str,https://github.com/hestiaAI/Argonodes/wiki/Global:ipv4,true,None,IP address at account creation.,None,None
-data/account-suspension.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/account-timezone.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/account-timezone.js:$[*],dict,None,None,None,None,None,None
-data/account-timezone.js:$[*].accountTimezone,dict,None,None,None,None,None,None
-data/account-timezone.js:$[*].accountTimezone.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
-data/account-timezone.js:$[*].accountTimezone.timeZone,str,None,None,None,Timezone currently associated with the account.,None,None
-data/account.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/account.js:$[*],dict,None,None,None,None,None,None
-data/account.js:$[*].account,dict,None,None,None,None,None,None
-data/account.js:$[*].account.email,str,https://schema.org/email,None,None,Email address currently associated with the account if an email address has been provided.,None,None
-data/account.js:$[*].account.createdVia,str,None,None,None,Client application used when the account was created. For example: “web” if the  account was created from a browser.,None,None
-data/account.js:$[*].account.username,str,https://github.com/hestiaAI/Argonodes/wiki/Global:username,None,None,The account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
-data/account.js:$[*].account.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
-data/account.js:$[*].account.createdAt,str,https://schema.org/DateTime,None,None,Date and time when the account was created.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
-data/account.js:$[*].account.accountDisplayName,str,None,None,None,The account’s name as displayed on the profile.,None,None
-data/ad-engagements.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/ad-engagements.js:$[*],dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad,dict,None,None,None,Promoted Tweets the account has engaged with and any associated metadata.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData,dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements,dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements,list,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*],dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo,dict,None,None,None,Information about the device where the engagement occurred such as its ID and operating system.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.displayLocation,str,None,None,None,Location where the ad was engaged with on Twitter.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo,dict,None,None,None,"Information about the associated tweet such as unique identifier, text, URLs and media when applicable.",None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetId,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetText,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls,list,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls[*],str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls,list,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls[*],str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo,dict,None,None,None,Advertiser name and screen name.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.advertiserName,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.screenName,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria,list,None,None,None,Targeting criteria that were used to run the campaign.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*],dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingType,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingValue,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.impressionTime,str,None,None,None,Date and time when the ad was viewed.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo,dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,None,None,None,Type of engagement as well as date and time when it occurred.,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*],dict,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime,str,None,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType,str,None,None,None,None,None,None
-data/ad-impressions.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/ad-impressions.js:$[*],dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad,dict,None,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData,dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions,dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*],dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo,dict,None,None,None,Information about the device where the impression was viewed such as its ID and operating system.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.deviceId,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].displayLocation,str,None,None,None,Location where the ad was viewed on Twitter.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo,dict,None,None,None,Advertiser name and screen name.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.advertiserName,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.screenName,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria,list,None,None,None,Targeting criteria that were used to run the campaign.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*],dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingType,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingValue,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].impressionTime,str,None,None,None,Date and time when the ad was viewed.,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo,dict,None,None,None,"Information about the associated tweet such as unique identifier, text, URLs and media when applicable.",None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetId,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetText,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.urls,list,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.urls[*],str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.mediaUrls,list,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.mediaUrls[*],str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo,dict,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.trendId,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.name,str,None,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.description,str,None,None,None,None,None,None
-data/ad-mobile-conversions-attributed.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/ad-mobile-conversions-unattributed.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/ad-online-conversions-attributed.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
-data/ad-online-conversions-unattributed.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
+data/account-creation-ip.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/account-creation-ip.js:$[*],dict,N/A,None,None,None,None,None
+data/account-creation-ip.js:$[*].accountCreationIp,dict,N/A,None,None,None,None,None
+data/account-creation-ip.js:$[*].accountCreationIp.accountId,str,https://www.wikidata.org/wiki/Property:P6552,True,None,Unique numeric identifier for the account.,None,None
+data/account-creation-ip.js:$[*].accountCreationIp.userCreationIp,str,https://www.wikidata.org/wiki/Q11135,None,None,IP address at account creation.,None,None
+data/account-suspension.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/account-timezone.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/account-timezone.js:$[*],dict,N/A,None,None,None,None,None
+data/account-timezone.js:$[*].accountTimezone,dict,N/A,None,None,None,None,None
+data/account-timezone.js:$[*].accountTimezone.accountId,str,https://www.wikidata.org/wiki/Property:P6552,True,None,Unique numeric identifier for the account.,None,None
+data/account-timezone.js:$[*].accountTimezone.timeZone,str,https://www.wikidata.org/wiki/Q12143,None,None,Timezone currently associated with the account.,None,None
+data/account.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/account.js:$[*],dict,N/A,None,None,None,None,None
+data/account.js:$[*].account,dict,N/A,None,None,None,None,None
+data/account.js:$[*].account.email,str,https://www.wikidata.org/wiki/Q1273217,None,None,Email address currently associated with the account if an email address has been provided.,None,None
+data/account.js:$[*].account.createdVia,str,https://www.wikidata.org/wiki/Q166142,None,None,Client application used when the account was created. For example: ???web?? if the  account was created from a browser.,None,None
+data/account.js:$[*].account.username,str,https://www.wikidata.org/wiki/Q53311579,None,None,The account???s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
+data/account.js:$[*].account.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account.,None,None
+data/account.js:$[*].account.createdAt,str,https://schema.org/DateTime ,None,None,Date and time when the account was created.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
+data/account.js:$[*].account.accountDisplayName,str,https://www.wikidata.org/wiki/Q15901043,None,None,The account???s name as displayed on the profile.,None,None
+data/ad-engagements.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/ad-engagements.js:$[*],dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad,dict,N/A,None,None,Promoted Tweets the account has engaged with and any associated metadata.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements,dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements,list,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*],dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo,dict,N/A,None,None,Information about the device where the engagement occurred such as its ID and operating system.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,"Family of operating system (e.g. ?Android? for Android-based, ?Desktop? for computers, etc.)","""Android"", ""Desktop""",None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId,str,https://schema.org/identifier,True,None,Unique device identifier,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.displayLocation,str,https://schema.org/location,None,None,Location where the ad was engaged with on Twitter.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo,dict,N/A,None,None,"Information about the associated tweet such as unique identifier, text, URLs and media when applicable.",None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetId,str,https://www.wikidata.org/wiki/Property:P5933,True,None,identifier of a status on Twitter (tweet number),None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.tweetText,str,https://schema.org/Text,None,None,text content of the tweet,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls,list,N/A,None,None,list of URLs,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.urls[*],str,https://schema.org/url,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls,list,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTweetInfo.mediaUrls[*],str,https://schema.org/url,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo,dict,N/A,None,None,Advertiser name and screen name.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.advertiserName,str,https://schema.org/name,None,None,Official name of the advertiser,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.advertiserInfo.screenName,str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter handle of the advertiser (beginning with ?@?),None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria,list,N/A,None,None,List of targeting criteria that were used to run the campaign.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*],dict,N/A,None,None,"Targeting criteria that were used to run the campaign, consisting in a Type and a Value (see below)",None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingType,str,https://schema.org/text,None,None,Criteria used to segment the market among Twitter users,"""Age"", ""App Activity Combination"", ""App Activity"", ""Conversation topics"",  ""Conversation topics"", ""Events"", ""Follower look-alikes"", ""Gender"", ""Interests"", ""Keywords"", ""Languages"", ""List"", ""Locations"", ""Platforms"", ""Retargeting campaign engager"", ""Retargeting engagement type"",
+",None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.matchedTargetingCriteria[*].targetingValue,str,https://schema.org/text,None,None,Value of the critera above,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.impressionTime,str,https://schema.org/DateTime,None,None,Date and time when the ad was viewed.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo,dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId,str,https://schema.org/identifier,None,None,numerical identifier for the promoted trend,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name,str,https://www.wikidata.org/wiki/Q278485,None,None,Hashtag of the promoted trend,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description,str,https://schema.org/text,None,None,Promotional text,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,N/A,None,None,Type of engagement as well as date and time when it occurred.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*],dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime,str,https://schema.org/DateTime,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType,str,https://schema.org/identifier,None,None,typology of the engagement (see observed values),"""CardUrlClick"", ""CarouselSwipeNext"", CarouselSwipePrevious"", ""ChargeableImpression"",  ""CloseWebview"",  ""Detail"",  ""DwellLong"", ""DwellMedium"",  ""DwellShort"",  ""TrendView"",  ""VideoContent1secView"",  ""VideoContent6secView"",  ""VideoContentMrcView"" ""VideoContentPlayback25"", ""VideoContentPlayback50"",  ""VideoContentPlayback75"",  ""VideoContentPlayback95"",  ""VideoContentPlaybackComplete"",  ""VideoContentPlaybackStart"",  ""VideoContentShortFormComplete"",  ""VideoContentViewThreshold"", ""VideoContentViewV2"",  ""VideoSession"", ",None
+data/ad-impressions.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/ad-impressions.js:$[*],dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad,dict,N/A,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions,dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*],dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo,dict,N/A,None,None,Information about the device where the impression was viewed such as its ID and operating system.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.deviceId,str,https://schema.org/identifier,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].displayLocation,str,https://schema.org/location,None,None,Location where the ad was viewed on Twitter.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo,dict,N/A,None,None,Advertiser name and screen name.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.advertiserName,str,https://schema.org/name,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].advertiserInfo.screenName,str,https://www.wikidata.org/wiki/Q53311579,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria,list,N/A,None,None,Targeting criteria that were used to run the campaign.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*],dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingType,str,https://schema.org/identifier,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].matchedTargetingCriteria[*].targetingValue,str,https://schema.org/text,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].impressionTime,str,https://schema.org/DateTime,None,None,Date and time when the ad was viewed.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo,dict,N/A,None,None,"Information about the associated tweet such as unique identifier, text, URLs and media when applicable.",None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetId,str,https://www.wikidata.org/wiki/Property:P5933,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.tweetText,str,https://schema.org/text,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.urls,list,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.urls[*],str,https://schema.org/url,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.mediaUrls,list,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTweetInfo.mediaUrls[*],str,https://schema.org/url,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo,dict,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.trendId,str,https://schema.org/identifier,None,None,numerical identifier for the promoted trend,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.name,str,https://www.wikidata.org/wiki/Q278485,None,None,Hashtag of the promoted trend,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].promotedTrendInfo.description,str,https://schema.org/text,None,None,Promotional text,None,None
+data/ad-mobile-conversions-attributed.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/ad-mobile-conversions-unattributed.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/ad-online-conversions-attributed.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
+data/ad-online-conversions-unattributed.js:$,RootNode,N/A,N/A,N/A,None,N/A,N/A
 data/ageinfo.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/ageinfo.js:$[*],dict,None,None,None,None,None,None
 data/ageinfo.js:$[*].ageMeta,dict,None,None,None,None,None,None
 data/ageinfo.js:$[*].ageMeta.ageInfo,dict,None,None,None,Date of birth provided to Twitter and corresponding current age.,None,None
 data/ageinfo.js:$[*].ageMeta.ageInfo.age,list,None,None,None,None,None,None
 data/ageinfo.js:$[*].ageMeta.ageInfo.age[*],str,None,None,None,None,None,None
-data/ageinfo.js:$[*].ageMeta.ageInfo.birthDate,str,None,None,None,Date of birth provided to Twitter and corresponding current age,None,None
+data/ageinfo.js:$[*].ageMeta.ageInfo.birthDate,str,https://schema.org/birthDate,None,None,Date of birth provided to Twitter and corresponding current age,None,None
 data/app.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/birdwatch-note-rating.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/birdwatch-note.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
@@ -102,7 +103,7 @@ data/block.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/block.js:$[*],dict,None,None,None,None,None,None
 data/block.js:$[*].blocking,dict,None,None,None,None,None,None
 data/block.js:$[*].blocking.accountId,str,https://schema.org/identifier,None,None,Unique identifiers of accounts currently blocked by the account.,None,None
-data/block.js:$[*].blocking.userLink,str,None,None,None,"Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/block.js:$[*].blocking.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
 data/branch-links.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/community-tweet.js:$,RootNode,None,N/A,N/A,All the Tweets posted in Communities and not deleted.,N/A,N/A
 data/connected-application.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
@@ -230,24 +231,24 @@ data/email-address-change.js:$[*].emailAddressChange,dict,None,None,None,None,No
 data/email-address-change.js:$[*].emailAddressChange.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
 data/email-address-change.js:$[*].emailAddressChange.emailChange,dict,None,None,None,None,None,None
 data/email-address-change.js:$[*].emailAddressChange.emailChange.changedAt,str,None,None,None,Date and time the email address was changed.,None,None
-data/email-address-change.js:$[*].emailAddressChange.emailChange.changedTo,str,https://schema.org/email,None,None,New email address associated with the account.,None,None
-data/email-address-change.js:$[*].emailAddressChange.emailChange.changedFrom,str,https://schema.org/email,None,None,Email address associated with the account prior to the change.,None,None
+data/email-address-change.js:$[*].emailAddressChange.emailChange.changedTo,str,None,None,None,New email address associated with the account.,None,None
+data/email-address-change.js:$[*].emailAddressChange.emailChange.changedFrom,str,None,None,None,Email address associated with the account prior to the change.,None,None
 data/follower.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/follower.js:$[*],dict,None,None,None,None,None,None
 data/follower.js:$[*].follower,dict,None,None,None,None,None,None
 data/follower.js:$[*].follower.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for the other accounts that follow this account.,None,None
-data/follower.js:$[*].follower.userLink,str,None,None,None,"Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/follower.js:$[*].follower.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
 data/following.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/following.js:$[*],dict,None,None,None,None,None,None
 data/following.js:$[*].following,dict,None,None,None,None,None,None
 data/following.js:$[*].following.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for the other accounts this account follows.,None,None
-data/following.js:$[*].following.userLink,str,None,None,None,"Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/following.js:$[*].following.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
 data/ip-audit.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/ip-audit.js:$[*],dict,None,None,None,None,None,None
 data/ip-audit.js:$[*].ipAudit,dict,None,None,None,None,None,None
 data/ip-audit.js:$[*].ipAudit.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
 data/ip-audit.js:$[*].ipAudit.createdAt,str,https://schema.org/DateTime,None,None,Date and time of a login to the account.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
-data/ip-audit.js:$[*].ipAudit.loginIp,str,https://github.com/hestiaAI/Argonodes/wiki/Global:ipv4,None,None,IP address associated with the login.,None,None
+data/ip-audit.js:$[*].ipAudit.loginIp,str,None,None,None,IP address associated with the login.,None,None
 data/like.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/like.js:$[*],dict,None,None,None,None,None,None
 data/like.js:$[*].like,dict,None,None,None,None,None,None
@@ -266,7 +267,7 @@ data/lists-subscribed.js:$[*].userListInfo.url,str,None,None,None,None,None,None
 data/manifest.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/manifest.js:$.userInfo,dict,None,None,None,None,None,None
 data/manifest.js:$.userInfo.accountId,str,None,None,None,None,None,None
-data/manifest.js:$.userInfo.userName,str,https://github.com/hestiaAI/Argonodes/wiki/Global:username,None,None,None,None,None
+data/manifest.js:$.userInfo.userName,str,None,None,None,None,None,None
 data/manifest.js:$.userInfo.displayName,str,None,None,None,None,None,None
 data/manifest.js:$.archiveInfo,dict,None,None,None,None,None,None
 data/manifest.js:$.archiveInfo.sizeBytes,str,None,None,None,None,None,None
@@ -651,21 +652,21 @@ data/mute.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/mute.js:$[*],dict,None,None,None,None,None,None
 data/mute.js:$[*].muting,dict,None,None,None,None,None,None
 data/mute.js:$[*].muting.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for currently muted accounts.,None,None
-data/mute.js:$[*].muting.userLink,str,None,None,None,"Link to information about the blocked users’ profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/mute.js:$[*].muting.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
 data/ni-devices.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/ni-devices.js:$[*],dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse,dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice,dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceVersion,str,None,None,None,Operating system version associated with the device.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice.udid,str,None,None,None,"Field indicating the application-generated device ID. This ID is unique to the device and persists through device updates, but not through device reinstallations.",None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter.",None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as ???pushDevice??. For devices marked as ???messagingDevice??, the field will indicate ???Auth?? if the device is only used for two-factor authentication purposes, and ???Full?? if the device is set to receive notifications from Twitter.",None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice.token,str,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice.updatedDate,str,None,None,None,Field indicating the last time this association was updated.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice.createdDate,str,None,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice,dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.phoneNumber,str,None,None,None,Phone number associated with the device.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.carrier,str,None,None,None,Optional field indicating the carrier associated with the device.,None,None
-data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as “pushDevice”. For devices marked as “messagingDevice”, the field will indicate “Auth” if the device is only used for two-factor authentication purposes, and “Full” if the device is set to receive notifications from Twitter.",None,None
+data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as ???pushDevice??. For devices marked as ???messagingDevice??, the field will indicate ???Auth?? if the device is only used for two-factor authentication purposes, and ???Full?? if the device is set to receive notifications from Twitter.",None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.updatedDate,str,None,None,None,Field indicating the last time this association was updated.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.createdDate,str,None,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
 data/periscope-account-information.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
@@ -673,10 +674,10 @@ data/periscope-account-information.js:$[*],dict,None,None,None,None,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation,dict,None,None,None,None,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.displayName,str,None,None,None,Periscope account name ported over from the Twitter account when the shell account was created.,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.digitsId,str,None,None,None,None,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.username,str,https://github.com/hestiaAI/Argonodes/wiki/Global:username,None,None,Periscope account @username ported over from the Twitter account when the shell account was created.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.username,str,None,None,None,Periscope account @username ported over from the Twitter account when the shell account was created.,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterId,str,None,None,None,Unique identifier for the Twitter account.,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.id,str,None,None,None,"Periscope shell account unique identifier automatically created as soon as the user goes to the ""Live"" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.",None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterScreenName,str,None,None,None,The Twitter account’s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterScreenName,str,None,None,None,The Twitter account???s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.isTwitterUser,bool,https://schema.org/True,None,true,Indicates whether the Periscope account is also a Twitter user. This is always true.,true,true
 data/periscope-account-information.js:$[*].periscopeAccountInformation.createdAt,str,https://schema.org/DateTime,None,None,"Date and time the ""shell account"" was created.",None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/periscope-ban-information.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
