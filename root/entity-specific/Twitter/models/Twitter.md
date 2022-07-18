@@ -51,7 +51,7 @@
 | $[*].ad.adsUserData.adEngagements | dict | N/A | None |
 | $[*].ad.adsUserData.adEngagements.engagements | list | N/A | None |
 | $[*].ad.adsUserData.adEngagements.engagements[*] | dict | N/A | None |
-| $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes | dict | N/A | None |
+| $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes | dict | https://github.com/hestiaAI/Argonodes/wiki/Twitter:impressionAttributes | None |
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo | dict | N/A | Information about the device where the engagement occurred such as its ID and operating system. |
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType | str | https://schema.org/operatingSystem | Family of operating system (e.g. ?Android? for Android-based, ?Desktop? for computers, etc.) |
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId | str | https://schema.org/identifier | Unique device identifier |
@@ -75,7 +75,7 @@
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId | str | https://schema.org/identifier | numerical identifier for the promoted trend |
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name | str | https://www.wikidata.org/wiki/Q278485 | Hashtag of the promoted trend |
 | $[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description | str | https://schema.org/text | Promotional text |
-| $[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes | list | N/A | Type of engagement as well as date and time when it occurred. |
+| $[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes | list | https://github.com/hestiaAI/Argonodes/wiki/Twitter:engagementAttributes | Type of engagement as well as date and time when it occurred. |
 | $[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*] | dict | N/A | None |
 | $[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime | str | https://schema.org/DateTime | None |
 | $[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType | str | https://schema.org/identifier | typology of the engagement (see observed values) |
@@ -89,7 +89,7 @@
 | $[*].ad | dict | N/A | Promoted Tweets the account has viewed and any associated metadata. |
 | $[*].ad.adsUserData | dict | N/A | None |
 | $[*].ad.adsUserData.adImpressions | dict | N/A | None |
-| $[*].ad.adsUserData.adImpressions.impressions | list | N/A | None |
+| $[*].ad.adsUserData.adImpressions.impressions | list | https://github.com/hestiaAI/Argonodes/wiki/Twitter:impression | Promoted Tweets the account has viewed and any associated metadata. |
 | $[*].ad.adsUserData.adImpressions.impressions[*] | dict | N/A | None |
 | $[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo | dict | N/A | Information about the device where the impression was viewed such as its ID and operating system. |
 | $[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType | str | https://schema.org/operatingSystem | None |

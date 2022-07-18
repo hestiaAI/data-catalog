@@ -26,7 +26,7 @@ data/ad-engagements.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements,dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements,list,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*],dict,N/A,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,N/A,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,https://github.com/hestiaAI/Argonodes/wiki/Twitter:impressionAttributes,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo,dict,N/A,None,None,Information about the device where the engagement occurred such as its ID and operating system.,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,"Family of operating system (e.g. ?Android? for Android-based, ?Desktop? for computers, etc.)","""Android"", ""Desktop""",None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId,str,https://schema.org/identifier,True,None,Unique device identifier,None,None
@@ -51,7 +51,7 @@ data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressi
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId,str,https://schema.org/identifier,None,None,numerical identifier for the promoted trend,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name,str,https://www.wikidata.org/wiki/Q278485,None,None,Hashtag of the promoted trend,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description,str,https://schema.org/text,None,None,Promotional text,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,N/A,None,None,Type of engagement as well as date and time when it occurred.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,https://github.com/hestiaAI/Argonodes/wiki/Twitter:engagementAttributes,None,None,Type of engagement as well as date and time when it occurred.,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*],dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime,str,https://schema.org/DateTime,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType,str,https://schema.org/identifier,None,None,typology of the engagement (see observed values),"""CardUrlClick"", ""CarouselSwipeNext"", CarouselSwipePrevious"", ""ChargeableImpression"",  ""CloseWebview"",  ""Detail"",  ""DwellLong"", ""DwellMedium"",  ""DwellShort"",  ""TrendView"",  ""VideoContent1secView"",  ""VideoContent6secView"",  ""VideoContentMrcView"" ""VideoContentPlayback25"", ""VideoContentPlayback50"",  ""VideoContentPlayback75"",  ""VideoContentPlayback95"",  ""VideoContentPlaybackComplete"",  ""VideoContentPlaybackStart"",  ""VideoContentShortFormComplete"",  ""VideoContentViewThreshold"", ""VideoContentViewV2"",  ""VideoSession"", ",None
@@ -60,7 +60,7 @@ data/ad-impressions.js:$[*],dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad,dict,N/A,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
 data/ad-impressions.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions,dict,N/A,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,N/A,None,None,None,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,https://github.com/hestiaAI/Argonodes/wiki/Twitter:impression,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*],dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo,dict,N/A,None,None,Information about the device where the impression was viewed such as its ID and operating system.,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,None,None,None
