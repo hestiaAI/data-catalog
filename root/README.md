@@ -19,20 +19,23 @@ There are two main folders, the `data-specific`, and the `entity-specific`.
 An entity is defined as a data-holding organisation, to which a [Subject Access Requests](https://wiki.personaldata.io/wiki/Subject_Access_Request) can be made. This directory thus contains information about the formats of files received through Subject Access Requests, along with models and example data.
 
 Entities are classified under different categories:
-* Gaming: Description.
-* Business: Description.
-* Educational: Description.
-* Lifestyle: Description.
-* Entertainment: Description.
-* Utility: Description.
-* Travel: Description.
-* Communication: Description.
-* Medical: Description.
-* Social: Description.
-* Misc: Description.
+* **Gaming**: Description.
+* **Business**: Description.
+* **Educational**: Description.
+* **Lifestyle**: Description.
+* **Entertainment**: Description.
+* **Utility**: Description.
+* **Travel**: Description.
+* **Communication**: Description.
+* **Medical**: Description.
+* **Social**: Description.
+* **Dating**: Description.
+* **Misc**: Description.
+
+Of course, new categories can be created at the discretion of the contributors.
 
 Each entity will have each own folder, containing:
-* A README file that should contain a description of the entity, a description of the scripts, and a description of the templates.
+* A `README.md` file that should contain a description of the entity, a description of the scripts, and a description of the templates.
 * A `inputs` sub-folder that should contain synthetic data sources, mirroring an export from the entity.
 * A `scripts` sub-folder which should contain the various scripts, notebooks, etc., used to create the templates.
 * A `models` sub-folder which sould contain the various templates created, with a corresponding extension name.
