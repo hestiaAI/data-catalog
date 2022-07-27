@@ -1,6 +1,6 @@
 # Template
 
-> For each data actor, you need to create a folder with the exact name of the actor (e.g., "Twitter" and not "twitter").
+> For each data actor, you need to create a folder with the exact name of the actor (e.g., "Twitter" and not "twitter"). You can refer to [this document](https://github.com/OpenTermsArchive/contrib-declarations/blob/main/CONTRIBUTING.md#service-name) for more guidance.
 > 
 > This README file should contain a description of the actor, a description of the scripts, and a description of the templates.
 
