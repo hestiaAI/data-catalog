@@ -12,6 +12,11 @@
 
 ### How to get the data?
 
+* Open the application and go to Settings > Account > Request info from my account.
+* Select "Request report".
+* The report will be ready in approximately 3 days. When it is available, you will have a few weeks to download it.
+* If you delete your account or modify the phone, the request will be canceled.
+
 ### How to delete my account?
 
 ---
