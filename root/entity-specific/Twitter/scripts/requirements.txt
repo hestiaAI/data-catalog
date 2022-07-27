@@ -1,4 +1,0 @@
--e git+ssh://git@github.com/hestiaAI/Argonodes.git#egg=argonodes
-tdda
-jupyter
-notebook
