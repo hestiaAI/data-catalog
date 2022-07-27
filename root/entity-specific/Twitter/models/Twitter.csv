@@ -26,7 +26,7 @@ data/ad-engagements.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements,dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements,list,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*],dict,N/A,None,None,None,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,https://github.com/hestiaAI/Argonodes/wiki/Twitter:impressionAttributes,None,None,None,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes,dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo,dict,N/A,None,None,Information about the device where the engagement occurred such as its ID and operating system.,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,"Family of operating system (e.g. ?Android? for Android-based, ?Desktop? for computers, etc.)","""Android"", ""Desktop""",None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.deviceInfo.deviceId,str,https://schema.org/identifier,True,None,Unique device identifier,None,None
@@ -51,7 +51,7 @@ data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressi
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.trendId,str,https://schema.org/identifier,None,None,numerical identifier for the promoted trend,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.name,str,https://www.wikidata.org/wiki/Q278485,None,None,Hashtag of the promoted trend,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].impressionAttributes.promotedTrendInfo.description,str,https://schema.org/text,None,None,Promotional text,None,None
-data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,https://github.com/hestiaAI/Argonodes/wiki/Twitter:engagementAttributes,None,None,Type of engagement as well as date and time when it occurred.,None,None
+data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes,list,N/A,None,None,Type of engagement as well as date and time when it occurred.,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*],dict,N/A,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementTime,str,https://schema.org/DateTime,None,None,None,None,None
 data/ad-engagements.js:$[*].ad.adsUserData.adEngagements.engagements[*].engagementAttributes[*].engagementType,str,https://schema.org/identifier,None,None,typology of the engagement (see observed values),"""CardUrlClick"", ""CarouselSwipeNext"", CarouselSwipePrevious"", ""ChargeableImpression"",  ""CloseWebview"",  ""Detail"",  ""DwellLong"", ""DwellMedium"",  ""DwellShort"",  ""TrendView"",  ""VideoContent1secView"",  ""VideoContent6secView"",  ""VideoContentMrcView"" ""VideoContentPlayback25"", ""VideoContentPlayback50"",  ""VideoContentPlayback75"",  ""VideoContentPlayback95"",  ""VideoContentPlaybackComplete"",  ""VideoContentPlaybackStart"",  ""VideoContentShortFormComplete"",  ""VideoContentViewThreshold"", ""VideoContentViewV2"",  ""VideoSession"", ",None
@@ -60,7 +60,7 @@ data/ad-impressions.js:$[*],dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad,dict,N/A,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
 data/ad-impressions.js:$[*].ad.adsUserData,dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions,dict,N/A,None,None,None,None,None
-data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,https://github.com/hestiaAI/Argonodes/wiki/Twitter:impression,None,None,Promoted Tweets the account has viewed and any associated metadata.,None,None
+data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions,list,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*],dict,N/A,None,None,None,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo,dict,N/A,None,None,Information about the device where the impression was viewed such as its ID and operating system.,None,None
 data/ad-impressions.js:$[*].ad.adsUserData.adImpressions.impressions[*].deviceInfo.osType,str,https://schema.org/operatingSystem,None,None,None,None,None
@@ -110,87 +110,93 @@ data/connected-application.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/connected-application.js:$[*],dict,None,None,None,None,None,None
 data/connected-application.js:$[*].connectedApplication,dict,None,None,None,None,None,None
 data/connected-application.js:$[*].connectedApplication.organization,dict,None,None,None,None,None,None
-data/connected-application.js:$[*].connectedApplication.organization.name,str,None,None,None,None,None,None
+data/connected-application.js:$[*].connectedApplication.organization.name,str,https://schema.org/name,None,None,None,None,None
 data/connected-application.js:$[*].connectedApplication.organization.url,str,None,None,None,None,None,None
 data/connected-application.js:$[*].connectedApplication.organization.privacyPolicyUrl,str,None,None,None,None,None,None
 data/connected-application.js:$[*].connectedApplication.organization.termsAndConditionsUrl,str,None,None,None,None,None,None
-data/connected-application.js:$[*].connectedApplication.name,str,None,None,None,Name of the application.,None,None
+data/connected-application.js:$[*].connectedApplication.name,str,https://schema.org/name,None,None,Name of the application.,«Twitter for Android»,None
 data/connected-application.js:$[*].connectedApplication.description,str,None,None,None,Brief description of the application as provided by the organization.,None,None
 data/connected-application.js:$[*].connectedApplication.permissions,list,None,None,None,List of permissions granted to the connected application by the Twitter account. For example: read or write.,None,None
 data/connected-application.js:$[*].connectedApplication.permissions[*],str,None,None,None,None,None,None
-data/connected-application.js:$[*].connectedApplication.approvedAt,str,None,None,None,Date and time when the account authorized the application.,None,None
-data/connected-application.js:$[*].connectedApplication.id,str,None,None,None,Unique identifier for the application.,None,None
+data/connected-application.js:$[*].connectedApplication.approvedAt,str,https://schema.org/DateTime,None,None,Date and time when the account authorized the application.,None,None
+data/connected-application.js:$[*].connectedApplication.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique numeric identifier for the application.,None,None
 data/contact.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/device-token.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/device-token.js:$[*],dict,None,None,None,None,None,None
 data/device-token.js:$[*].deviceToken,dict,None,None,None,None,None,None
 data/device-token.js:$[*].deviceToken.clientApplicationId,str,None,None,None,Unique identifier of the application associated with the token. Please note that there may be instances where older tokens do not have a unique identifier associated with them.,None,None
-data/device-token.js:$[*].deviceToken.token,str,None,None,None,Token associated with a mobile device or web browser that was used to sign up or log in to this account through twitter.com or one of the other Twitter owned or operated apps within the last 18 months.,None,None
+data/device-token.js:$[*].deviceToken.token,str,https://www.wikidata.org/wiki/Q744575,None,None,Token associated with a mobile device or web browser that was used to sign up or log in to this account through twitter.com or one of the other Twitter owned or operated apps within the last 18 months.,None,None
 data/device-token.js:$[*].deviceToken.createdAt,str,https://schema.org/DateTime,None,None,Data and time of the creation of the token.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/device-token.js:$[*].deviceToken.lastSeenAt,str,https://schema.org/DateTime,None,None,Date and time of most recent use. Please note that there may be instances where older tokens do show this information.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
-data/device-token.js:$[*].deviceToken.clientApplicationName,str,None,None,None,Name of the application associated with the token. Please note that there may be instances where older tokens do not have an application name associated with them.,None,None
+data/device-token.js:$[*].deviceToken.clientApplicationName,str,https://schema.org/name,None,None,Name of the application associated with the token. Please note that there may be instances where older tokens do not have an application name associated with them.,None,None
 data/direct-message-group-headers.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/direct-message-group-headers.js:$[*],dict,None,None,None,None,None,None
 data/direct-message-group-headers.js:$[*].dmConversation,dict,None,None,None,None,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.conversationId,str,None,None,None,"Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.",None,None
+data/direct-message-group-headers.js:$[*].dmConversation.conversationId,str,https://www.wikidata.org/wiki/Q93868746,None,None,"Unique numeric identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.",None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages,list,None,None,None,None,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*],dict,None,None,None,None,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].participantsLeave,dict,None,None,None,None,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].participantsLeave.userIds,list,None,None,None,None,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.messages[*].participantsLeave.userIds[*],str,None,None,None,None,None,None
+data/direct-message-group-headers.js:$[*].dmConversation.messages[*].participantsLeave.userIds[*],str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique numeric user identifier,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].participantsLeave.createdAt,str,https://schema.org/DateTime,None,None,None,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate,dict,None,None,None,None,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].messageCreate.createdAt,str,https://schema.org/DateTime,None,None,Date and time the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation,dict,None,None,None,Metadata about when the account joined the conversation.,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.initiatingUserId,str,None,None,None,None,None,None
+data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.initiatingUserId,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique numeric user identifier,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot,list,None,None,None,None,None,None
-data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*],str,None,None,None,None,None,None
+data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*],str,https://www.wikidata.org/wiki/Q93868746,None,None,numeric idendifiers,None,None
 data/direct-message-group-headers.js:$[*].dmConversation.messages[*].joinConversation.createdAt,str,https://schema.org/DateTime,None,None,None,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-message-headers.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/direct-message-headers.js:$[*],dict,None,None,None,None,None,None
 data/direct-message-headers.js:$[*].dmConversation,dict,None,None,None,None,None,None
-data/direct-message-headers.js:$[*].dmConversation.conversationId,str,None,None,None,None,None,None
+data/direct-message-headers.js:$[*].dmConversation.conversationId,str,https://www.wikidata.org/wiki/Q93868746,None,None,unique numeric identifier for the conversation,None,None
 data/direct-message-headers.js:$[*].dmConversation.messages,list,None,None,None,None,None,None
 data/direct-message-headers.js:$[*].dmConversation.messages[*],dict,None,None,None,None,None,None
 data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate,dict,None,None,None,None,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.recipientId,str,None,None,None,Unique identifier for the account who received the Direct Message.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.recipientId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who received the Direct Message.,None,None
 data/direct-message-headers.js:$[*].dmConversation.messages[*].messageCreate.createdAt,str,https://schema.org/DateTime,None,None,Date and time the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate,dict,None,None,None,None,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
-data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId,str,None,None,None,Unique identifier for the account who received the Direct Message.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who received the Direct Message.,None,None
 data/direct-message-headers.js:$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt,str,https://schema.org/DateTime,None,None,Date and time the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-message-mute.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/direct-messages-group.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/direct-messages-group.js:$[*],dict,None,None,None,None,None,None
 data/direct-messages-group.js:$[*].dmConversation,dict,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.conversationId,str,None,None,None,"Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.",None,None
+data/direct-messages-group.js:$[*].dmConversation.conversationId,str,https://www.wikidata.org/wiki/Q93868746,None,None,"Unique identifier for the Direct Message group conversation. Each conversation has a unique randomly generated conversation ID. Within a conversation, the Direct Messages are ordered in reverse chronological order, meaning that the latest Direct Message will be at the top of the list.",None,None
 data/direct-messages-group.js:$[*].dmConversation.messages,list,None,None,None,None,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*],dict,None,None,None,None,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].participantsLeave,dict,None,None,None,None,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].participantsLeave.userIds,list,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].participantsLeave.userIds[*],str,None,None,None,None,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].participantsLeave.userIds[*],str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].participantsLeave.createdAt,str,https://schema.org/DateTime,None,None,None,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate,dict,None,None,None,None,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions,list,None,None,None,None,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions[*],dict,None,None,None,None,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,None,None,
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].reactionKey,str,https://schema.org/text,None,None,None,None,
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].eventId,str,https://www.wikidata.org/wiki/Q93868746,None,None,None,None,
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].createdAt,str,https://schema.org/DateTime,None,None,None,None,
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls,list,None,None,None,Link included in the Direct Message if applicable.,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*],dict,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].url,str,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].expanded,str,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].display,str,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.text,str,None,None,None,Text content of the Direct Message.,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].url,str,https://schema.org/url,None,None,Tiny URL,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].expanded,str,https://schema.org/url,None,None,full URL,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.urls[*].display,str,https://schema.org/url,None,None,"URL of media, without https:// prefix",None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.text,str,https://schema.org/Text,None,None,Text content of the Direct Message.,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.mediaUrls,list,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.mediaUrls[*],str,https://schema.org/url,None,None,URL of media,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].messageCreate.createdAt,str,https://schema.org/DateTime,None,None,Day and time of when the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation,dict,None,None,None,Metadata about when the account joined the conversation. This field might not be available due to deletions initiated by the account or other participants.,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.initiatingUserId,str,None,None,None,None,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.initiatingUserId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot,list,None,None,None,None,None,None
-data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*],str,None,None,None,None,None,None
+data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.participantsSnapshot[*],str,https://www.wikidata.org/wiki/Q93868746,None,None,Numeric identifer for the snapshot ,None,None
 data/direct-messages-group.js:$[*].dmConversation.messages[*].joinConversation.createdAt,str,https://schema.org/DateTime,None,None,None,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-messages.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/direct-messages.js:$[*],dict,None,None,None,None,None,None
@@ -199,76 +205,76 @@ data/direct-messages.js:$[*].dmConversation.conversationId,str,None,None,None,No
 data/direct-messages.js:$[*].dmConversation.messages,list,None,None,None,None,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*],dict,None,None,None,None,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate,dict,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.recipientId,str,None,None,None,Unique identifier for the account who received the Direct Message.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.recipientId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who received the Direct Message.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions,list,None,None,None,None,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*],dict,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].senderId,str,None,None,None,Unique identifier for the account that provided the reaction.,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].reactionKey,str,None,None,None,"Reaction type (for example, laugh, wow, cry, heart, fire, thumbs up, thumbs down).",None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].eventId,str,None,None,None,Unique identifier for the reaction event.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account that provided the reaction.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].reactionKey,str,https://schema.org/Text,None,None,"Reaction type (for example, laugh, wow, cry, heart, fire, thumbs up, thumbs down).",None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].eventId,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for the reaction event.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.reactions[*].createdAt,str,https://schema.org/DateTime,None,None,Day and time of when the reaction was made.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls,list,None,None,None,"Details about a URL link included in the Direct Message, if applicable.",None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*],dict,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].url,str,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].expanded,str,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].display,str,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.text,str,None,None,None,Text content of the Direct Message.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].url,str,https://schema.org/url,None,None,Tiny URL,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].expanded,str,https://schema.org/url,None,None,full URL,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.urls[*].display,str,https://schema.org/Text,None,None,truncated URL for display,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.text,str,https://schema.org/Text,None,None,Text content of the Direct Message.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.mediaUrls,list,None,None,None,Link to media included in the Direct Message if applicable.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.mediaUrls[*],str,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].messageCreate.createdAt,str,https://schema.org/DateTime,None,None,Date and time the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate,dict,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId,str,None,None,None,Unique identifier for the account who received the Direct Message.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.recipientId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who received the Direct Message.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.urls,list,None,None,None,None,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.text,str,None,None,None,Text content of the Direct Message.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.mediaUrls,list,None,None,None,None,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.senderId,str,None,None,None,Unique identifier for the account who sent the Direct Message.,None,None
-data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.id,str,None,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.senderId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account who sent the Direct Message.,None,None
+data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.id,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for a specific Direct Message within the conversation.,None,None
 data/direct-messages.js:$[*].dmConversation.messages[*].welcomeMessageCreate.createdAt,str,https://schema.org/DateTime,None,None,Date and time the Direct Message was sent.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/email-address-change.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/email-address-change.js:$[*],dict,None,None,None,None,None,None
 data/email-address-change.js:$[*].emailAddressChange,dict,None,None,None,None,None,None
-data/email-address-change.js:$[*].emailAddressChange.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
+data/email-address-change.js:$[*].emailAddressChange.accountId,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifier for the account.,None,None
 data/email-address-change.js:$[*].emailAddressChange.emailChange,dict,None,None,None,None,None,None
-data/email-address-change.js:$[*].emailAddressChange.emailChange.changedAt,str,None,None,None,Date and time the email address was changed.,None,None
-data/email-address-change.js:$[*].emailAddressChange.emailChange.changedTo,str,None,None,None,New email address associated with the account.,None,None
-data/email-address-change.js:$[*].emailAddressChange.emailChange.changedFrom,str,None,None,None,Email address associated with the account prior to the change.,None,None
+data/email-address-change.js:$[*].emailAddressChange.emailChange.changedAt,str,https://schema.org/DateTime,None,None,Date and time the email address was changed.,None,None
+data/email-address-change.js:$[*].emailAddressChange.emailChange.changedTo,str,https://www.wikidata.org/wiki/Q1273217,None,None,New email address associated with the account.,None,"(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|""(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*"")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+data/email-address-change.js:$[*].emailAddressChange.emailChange.changedFrom,str,https://www.wikidata.org/wiki/Q1273217,None,None,Email address associated with the account prior to the change.,None,"(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|""(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*"")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
 data/follower.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/follower.js:$[*],dict,None,None,None,None,None,None
 data/follower.js:$[*].follower,dict,None,None,None,None,None,None
-data/follower.js:$[*].follower.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for the other accounts that follow this account.,None,None
-data/follower.js:$[*].follower.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/follower.js:$[*].follower.accountId,str,https://www.wikidata.org/wiki/Q93868746,None,None,Unique identifiers for the other accounts that follow this account.,None,None
+data/follower.js:$[*].follower.userLink,str,https://www.wikidata.org/wiki/Q42253,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,(https:\/\/twitter.com\/(?![a-zA-Z0-9_]+\/)([a-zA-Z0-9_]+))
 data/following.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/following.js:$[*],dict,None,None,None,None,None,None
 data/following.js:$[*].following,dict,None,None,None,None,None,None
-data/following.js:$[*].following.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for the other accounts this account follows.,None,None
-data/following.js:$[*].following.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/following.js:$[*].following.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifiers for the other accounts this account follows.,None,None
+data/following.js:$[*].following.userLink,str,https://www.wikidata.org/wiki/Q42253,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,(https:\/\/twitter.com\/(?![a-zA-Z0-9_]+\/)([a-zA-Z0-9_]+))
 data/ip-audit.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/ip-audit.js:$[*],dict,None,None,None,None,None,None
 data/ip-audit.js:$[*].ipAudit,dict,None,None,None,None,None,None
-data/ip-audit.js:$[*].ipAudit.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
+data/ip-audit.js:$[*].ipAudit.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account.,None,None
 data/ip-audit.js:$[*].ipAudit.createdAt,str,https://schema.org/DateTime,None,None,Date and time of a login to the account.,None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
-data/ip-audit.js:$[*].ipAudit.loginIp,str,None,None,None,IP address associated with the login.,None,None
+data/ip-audit.js:$[*].ipAudit.loginIp,str,https://www.wikidata.org/wiki/Q11135,None,None,IP address associated with the login.,None,None
 data/like.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/like.js:$[*],dict,None,None,None,None,None,None
 data/like.js:$[*].like,dict,None,None,None,None,None,None
-data/like.js:$[*].like.tweetId,str,None,None,None,Unique identifiers for the Tweets liked.,None,None
-data/like.js:$[*].like.fullText,str,None,None,None,Text as visible in the tweet if the account has access to it.,None,None
-data/like.js:$[*].like.expandedUrl,str,None,None,None,Link to the actual tweet on twitter.com if the account has access to it.,None,None
+data/like.js:$[*].like.tweetId,str,https://www.wikidata.org/wiki/Property:P5933,None,None,Unique identifiers for the Tweets liked.,None,None
+data/like.js:$[*].like.fullText,str,https://schema.org/Text,None,None,Text as visible in the tweet if the account has access to it.,None,None
+data/like.js:$[*].like.expandedUrl,str,https://www.wikidata.org/wiki/Q42253,None,None,Link to the actual tweet on twitter.com if the account has access to it.,None,None
 data/lists-created.js:$,RootNode,None,N/A,N/A,URLs of Lists created by the account.,N/A,N/A
 data/lists-member.js:$,RootNode,None,N/A,N/A,URLs of Lists the account has been added to and is eligible to access.,N/A,N/A
 data/lists-member.js:$[*],dict,None,None,None,None,None,None
 data/lists-member.js:$[*].userListInfo,dict,None,None,None,None,None,None
-data/lists-member.js:$[*].userListInfo.url,str,None,None,None,None,None,None
+data/lists-member.js:$[*].userListInfo.url,str,https://www.wikidata.org/wiki/Q42253,None,None,URL of the lists of which the account has been make a member,None,None
 data/lists-subscribed.js:$,RootNode,None,N/A,N/A,URLs of Lists the account has subscribed to.,N/A,N/A
 data/lists-subscribed.js:$[*],dict,None,None,None,None,None,None
 data/lists-subscribed.js:$[*].userListInfo,dict,None,None,None,None,None,None
-data/lists-subscribed.js:$[*].userListInfo.url,str,None,None,None,None,None,None
+data/lists-subscribed.js:$[*].userListInfo.url,str,https://www.wikidata.org/wiki/Q42253,None,None,URLs of Lists the account has subscribed to.,None,None
 data/manifest.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/manifest.js:$.userInfo,dict,None,None,None,None,None,None
-data/manifest.js:$.userInfo.accountId,str,None,None,None,None,None,None
-data/manifest.js:$.userInfo.userName,str,None,None,None,None,None,None
-data/manifest.js:$.userInfo.displayName,str,None,None,None,None,None,None
+data/manifest.js:$.userInfo.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account.,None,None
+data/manifest.js:$.userInfo.userName,str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter username (begins with an @),None,None
+data/manifest.js:$.userInfo.displayName,str,https://www.wikidata.org/wiki/Q15901043,None,None,Twitter screen name (freeform),None,None
 data/manifest.js:$.archiveInfo,dict,None,None,None,None,None,None
 data/manifest.js:$.archiveInfo.sizeBytes,str,None,None,None,None,None,None
 data/manifest.js:$.archiveInfo.generationDate,str,None,None,None,None,None,None
