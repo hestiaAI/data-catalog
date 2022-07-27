@@ -1,2 +1,4 @@
 *.*
 !.gitignore
+!README.txt
+!twitter-repackaged.zip
