@@ -14,6 +14,8 @@
 
 ### How to delete my account?
 
+---
+
 ## Inputs
 
 > The `inputs` sub-folder contains raw data sources, which users have explicitly agreed to share publicly, and make available to the public.
@@ -24,6 +26,8 @@
 > 
 > Note: this folder is gitignored by default, you have to explicit what files should be pushed.
 
+---
+
 ## Scripts
 
 > The `scripts` sub-folder contains the various scripts, notebooks, etc., used to create the templates.
@@ -33,6 +37,8 @@
 > Please edit the `.gitignore` file as necessary.
 
 * `blabla.py`: Bla bla.
+
+---
 
 ## Models
 
