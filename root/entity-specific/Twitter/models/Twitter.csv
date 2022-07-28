@@ -276,415 +276,415 @@ data/manifest.js:$.userInfo.accountId,str,https://www.wikidata.org/wiki/Property
 data/manifest.js:$.userInfo.userName,str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter username (begins with an @),None,None
 data/manifest.js:$.userInfo.displayName,str,https://www.wikidata.org/wiki/Q15901043,None,None,Twitter screen name (freeform),None,None
 data/manifest.js:$.archiveInfo,dict,None,None,None,None,None,None
-data/manifest.js:$.archiveInfo.sizeBytes,str,None,None,None,None,None,None
-data/manifest.js:$.archiveInfo.generationDate,str,None,None,None,None,None,None
-data/manifest.js:$.archiveInfo.isPartialArchive,bool,None,None,None,None,None,None
-data/manifest.js:$.archiveInfo.maxPartSizeBytes,str,None,None,None,None,None,None
+data/manifest.js:$.archiveInfo.sizeBytes,str,https://www.wikidata.org/wiki/Property:P3575,None,None,Data size,None,None
+data/manifest.js:$.archiveInfo.generationDate,str,https://schema.org/DateTime,None,None,date and time of creation,None,None
+data/manifest.js:$.archiveInfo.isPartialArchive,bool,https://schema.org/Boolean,None,None,None,None,None
+data/manifest.js:$.archiveInfo.maxPartSizeBytes,str,https://www.wikidata.org/wiki/Property:P3575,None,None,None,None,None
 data/manifest.js:$.readmeInfo,dict,None,None,None,None,None,None
-data/manifest.js:$.readmeInfo.fileName,str,None,None,None,None,None,None
-data/manifest.js:$.readmeInfo.directory,str,None,None,None,None,None,None
-data/manifest.js:$.readmeInfo.name,str,None,None,None,None,None,None
+data/manifest.js:$.readmeInfo.fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,Complete file path,None,None
+data/manifest.js:$.readmeInfo.directory,str,https://www.wikidata.org/wiki/Q817765,None,None,path directory,None,None
+data/manifest.js:$.readmeInfo.name,str,https://www.wikidata.org/wiki/Q1144928,None,None,file name,None,None
 data/manifest.js:$.dataTypes,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.account,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.account.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.account.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.account.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.account.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.account.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.account.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,file name including directory,None,None
+data/manifest.js:$.dataTypes.account.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,some sort of path for use within Twitter.,None,None
+data/manifest.js:$.dataTypes.account.files[*].count,str,https://schema.org/Integer,None,None,count of instances.,None,None
 data/manifest.js:$.dataTypes.accountCreationIp,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountCreationIp.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountCreationIp.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountCreationIp.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountCreationIp.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountCreationIp.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountCreationIp.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountCreationIp.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountCreationIp.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountSuspension,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountSuspension.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountSuspension.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountSuspension.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountSuspension.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountSuspension.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountSuspension.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountSuspension.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountSuspension.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountTimezone,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountTimezone.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.accountTimezone.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountTimezone.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountTimezone.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.accountTimezone.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountTimezone.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountTimezone.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.accountTimezone.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adEngagements,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adEngagements.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adEngagements.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adEngagements.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adEngagements.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adEngagements.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adEngagements.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adEngagements.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adEngagements.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adImpressions,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adImpressions.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adImpressions.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adImpressions.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adImpressions.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adImpressions.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adImpressions.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adImpressions.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adImpressions.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsAttributed,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsAttributed.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsUnattributed,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adMobileConversionsUnattributed.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsAttributed,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsAttributed.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.adOnlineConversionsUnattributed.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.ageinfo,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.ageinfo.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.ageinfo.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ageinfo.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ageinfo.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ageinfo.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.ageinfo.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.ageinfo.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.ageinfo.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.app,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.app.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.app.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.app.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.app.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.app.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.app.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.app.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.app.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNote,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNote.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNote.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNote.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNote.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNote.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNote.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNote.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNote.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNoteRating,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNoteRating.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.birdwatchNoteRating.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.block,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.block.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.block.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.block.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.block.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.block.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.block.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.block.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.block.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.branchLinks,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.branchLinks.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.branchLinks.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.branchLinks.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.branchLinks.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.branchLinks.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.branchLinks.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.branchLinks.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.branchLinks.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.communityTweet,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.communityTweet.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.communityTweet.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.communityTweet.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.communityTweet.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.communityTweet.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.communityTweet.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.communityTweet.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.communityTweet.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.communityTweet.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.communityTweet.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.communityTweetMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.communityTweetMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.communityTweetMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.connectedApplication,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.connectedApplication.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.connectedApplication.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.connectedApplication.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.connectedApplication.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.connectedApplication.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.connectedApplication.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.connectedApplication.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.connectedApplication.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.contact,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.contact.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.contact.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.contact.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.contact.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.contact.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.contact.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.contact.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.contact.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.deviceToken,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.deviceToken.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.deviceToken.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.deviceToken.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.deviceToken.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.deviceToken.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.deviceToken.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.deviceToken.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.deviceToken.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageGroupHeaders,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageGroupHeaders.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageGroupHeaders.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageHeaders,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageHeaders.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageHeaders.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageHeaders.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageHeaders.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageHeaders.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageHeaders.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageHeaders.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageHeaders.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageMute,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageMute.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessageMute.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageMute.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageMute.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessageMute.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageMute.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageMute.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessageMute.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessages,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessages.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessages.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessages.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessages.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessages.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessages.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessages.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessages.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessages.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessages.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroup,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroup.mediaDirectory,str,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroup.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroup.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessagesGroup.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessagesGroup.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessagesGroup.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessagesGroup.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessagesGroup.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessagesGroup.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroupMedia,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesGroupMedia.mediaDirectory,str,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.directMessagesMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.directMessagesMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.directMessagesMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.emailAddressChange,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.emailAddressChange.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.emailAddressChange.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.emailAddressChange.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.emailAddressChange.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.emailAddressChange.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.emailAddressChange.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.emailAddressChange.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.emailAddressChange.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.follower,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.follower.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.follower.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.follower.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.follower.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.follower.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.follower.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.follower.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.follower.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.following,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.following.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.following.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.following.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.following.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.following.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.following.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.following.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.following.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.ipAudit,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.ipAudit.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.ipAudit.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ipAudit.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ipAudit.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.ipAudit.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.ipAudit.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.ipAudit.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.ipAudit.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.like,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.like.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.like.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.like.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.like.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.like.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.like.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.like.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.like.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsCreated,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsCreated.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsCreated.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsCreated.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsCreated.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsCreated.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsCreated.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsCreated.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsCreated.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsMember,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsMember.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsMember.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsMember.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsMember.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsMember.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsMember.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsMember.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsMember.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsSubscribed,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsSubscribed.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.listsSubscribed.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsSubscribed.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsSubscribed.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.listsSubscribed.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsSubscribed.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsSubscribed.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.listsSubscribed.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.moment,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.moment.mediaDirectory,str,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.moment.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.moment.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.moment.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.moment.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.moment.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.moment.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.moment.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.moment.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.momentsMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.momentsMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.momentsMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.momentsTweetsMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.momentsTweetsMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.momentsTweetsMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.mute,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.mute.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.mute.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.mute.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.mute.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.mute.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.mute.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.mute.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.mute.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.niDevices,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.niDevices.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.niDevices.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.niDevices.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.niDevices.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.niDevices.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.niDevices.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.niDevices.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.niDevices.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeAccountInformation,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeAccountInformation.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeAccountInformation.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBanInformation,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBanInformation.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBanInformation.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBanInformation.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBroadcastMetadata,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeBroadcastMetadata.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeCommentsMadeByUser.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeExpiredBroadcasts.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeFollowers,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeFollowers.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeFollowers.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeFollowers.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeFollowers.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeFollowers.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeFollowers.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeFollowers.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeFollowers.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeProfileDescription,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeProfileDescription.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.periscopeProfileDescription.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.personalization,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.personalization.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.personalization.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.personalization.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.personalization.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.personalization.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.personalization.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.personalization.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.personalization.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.phoneNumber,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.phoneNumber.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.phoneNumber.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.phoneNumber.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.phoneNumber.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.phoneNumber.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.phoneNumber.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.phoneNumber.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.phoneNumber.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.professionalData,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.professionalData.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.professionalData.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.professionalData.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.professionalData.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.professionalData.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.professionalData.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.professionalData.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.professionalData.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.profile,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.profile.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.profile.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.profile.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.profile.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.profile.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.profile.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.profile.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.profile.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.profile.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.profile.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.profileMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.profileMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.profileMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.protectedHistory,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.protectedHistory.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.protectedHistory.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.protectedHistory.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.protectedHistory.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.protectedHistory.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.protectedHistory.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.protectedHistory.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.protectedHistory.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.replyPrompt,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.replyPrompt.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.replyPrompt.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.replyPrompt.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.replyPrompt.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.replyPrompt.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.replyPrompt.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.replyPrompt.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.replyPrompt.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.savedSearch,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.savedSearch.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.savedSearch.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.savedSearch.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.savedSearch.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.savedSearch.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.savedSearch.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.savedSearch.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.savedSearch.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.screenNameChange,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.screenNameChange.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.screenNameChange.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.screenNameChange.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.screenNameChange.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.screenNameChange.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.screenNameChange.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.screenNameChange.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.screenNameChange.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.smartblock,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.smartblock.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.smartblock.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.smartblock.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.smartblock.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.smartblock.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.smartblock.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.smartblock.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.smartblock.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.spacesMetadata,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.spacesMetadata.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.spacesMetadata.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.spacesMetadata.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.spacesMetadata.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.spacesMetadata.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.spacesMetadata.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.spacesMetadata.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.spacesMetadata.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.sso,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.sso.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.sso.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.sso.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.sso.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.sso.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.sso.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.sso.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.sso.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweet,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweet.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweet.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweet.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweet.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweet.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweet.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweet.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweet.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweet.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweet.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweetMedia,dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweetMedia.mediaDirectory,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweetMedia.mediaDirectory,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweetdeck,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweetdeck.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.tweetdeck.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweetdeck.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweetdeck.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.tweetdeck.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweetdeck.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweetdeck.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.tweetdeck.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.userLinkClicks,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.userLinkClicks.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.userLinkClicks.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.userLinkClicks.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.userLinkClicks.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.userLinkClicks.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.userLinkClicks.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.userLinkClicks.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.userLinkClicks.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/manifest.js:$.dataTypes.verified,dict,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.verified.files,list,None,None,None,None,None,None
 data/manifest.js:$.dataTypes.verified.files[*],dict,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.verified.files[*].fileName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.verified.files[*].globalName,str,None,None,None,None,None,None
-data/manifest.js:$.dataTypes.verified.files[*].count,str,None,None,None,None,None,None
+data/manifest.js:$.dataTypes.verified.files[*].fileName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.verified.files[*].globalName,str,https://www.wikidata.org/wiki/Q817765,None,None,None,None,None
+data/manifest.js:$.dataTypes.verified.files[*].count,str,https://schema.org/Integer,None,None,None,None,None
 data/moment.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/mute.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/mute.js:$[*],dict,None,None,None,None,None,None
 data/mute.js:$[*].muting,dict,None,None,None,None,None,None
-data/mute.js:$[*].muting.accountId,str,https://schema.org/identifier,None,None,Unique identifiers for currently muted accounts.,None,None
-data/mute.js:$[*].muting.userLink,str,None,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
+data/mute.js:$[*].muting.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifiers for currently muted accounts.,None,None
+data/mute.js:$[*].muting.userLink,str,https://schema.org/url,None,None,"Link to information about the blocked users??? profiles if accessible to the account. For example, this information might not be accessible if blocked profiles are protected or deactivated.",None,None
 data/ni-devices.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/ni-devices.js:$[*],dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse,dict,None,None,None,None,None,None
 data/ni-devices.js:$[*].niDeviceResponse.pushDevice,dict,None,None,None,None,None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceVersion,str,None,None,None,Operating system version associated with the device.,None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.udid,str,None,None,None,"Field indicating the application-generated device ID. This ID is unique to the device and persists through device updates, but not through device reinstallations.",None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as ???pushDevice??. For devices marked as ???messagingDevice??, the field will indicate ???Auth?? if the device is only used for two-factor authentication purposes, and ???Full?? if the device is set to receive notifications from Twitter.",None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.token,str,None,None,None,None,None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.updatedDate,str,None,None,None,Field indicating the last time this association was updated.,None,None
-data/ni-devices.js:$[*].niDeviceResponse.pushDevice.createdDate,str,None,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceVersion,str,https://www.wikidata.org/wiki/Q20826013,None,None,Operating system version associated with the device.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.udid,str,https://www.wikidata.org/wiki/Q22097167,None,None,"Field indicating the application-generated device ID. This ID is unique to the device and persists through device updates, but not through device reinstallations.",None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.deviceType,str,https://www.wikidata.org/wiki/Q17155032,None,None,"Manufacturer for devices that are marked as ???pushDevice??. For devices marked as ???messagingDevice??, the field will indicate ???Auth?? if the device is only used for two-factor authentication purposes, and ???Full?? if the device is set to receive notifications from Twitter.",None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.token,str,https://www.wikidata.org/wiki/Q744575,None,None,None,None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.updatedDate,str,https://schema.org/DateTime,None,None,Field indicating the last time this association was updated.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.pushDevice.createdDate,str,https://schema.org/DateTime,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice,dict,None,None,None,None,None,None
-data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.phoneNumber,str,None,None,None,Phone number associated with the device.,None,None
-data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.carrier,str,None,None,None,Optional field indicating the carrier associated with the device.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.phoneNumber,str,https://schema.org/telephone,None,None,Phone number associated with the device.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.carrier,str,https://www.wikidata.org/wiki/Q11371,None,None,Optional field indicating the carrier associated with the device.,None,None
 data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.deviceType,str,None,None,None,"Manufacturer for devices that are marked as ???pushDevice??. For devices marked as ???messagingDevice??, the field will indicate ???Auth?? if the device is only used for two-factor authentication purposes, and ???Full?? if the device is set to receive notifications from Twitter.",None,None
-data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.updatedDate,str,None,None,None,Field indicating the last time this association was updated.,None,None
-data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.createdDate,str,None,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.updatedDate,str,https://schema.org/Date,None,None,Field indicating the last time this association was updated.,None,None
+data/ni-devices.js:$[*].niDeviceResponse.messagingDevice.createdDate,str,https://schema.org/Date,None,None,Field indicating when the association between the device and the Twitter account was made.,None,None
 data/periscope-account-information.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/periscope-account-information.js:$[*],dict,None,None,None,None,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation,dict,None,None,None,None,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.displayName,str,None,None,None,Periscope account name ported over from the Twitter account when the shell account was created.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.displayName,str,https://www.wikidata.org/wiki/Q15901043,None,None,Periscope account name ported over from the Twitter account when the shell account was created.,None,None
 data/periscope-account-information.js:$[*].periscopeAccountInformation.digitsId,str,None,None,None,None,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.username,str,None,None,None,Periscope account @username ported over from the Twitter account when the shell account was created.,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterId,str,None,None,None,Unique identifier for the Twitter account.,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.id,str,None,None,None,"Periscope shell account unique identifier automatically created as soon as the user goes to the ""Live"" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.",None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterScreenName,str,None,None,None,The Twitter account???s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
-data/periscope-account-information.js:$[*].periscopeAccountInformation.isTwitterUser,bool,https://schema.org/True,None,true,Indicates whether the Periscope account is also a Twitter user. This is always true.,true,true
+data/periscope-account-information.js:$[*].periscopeAccountInformation.username,str,https://www.wikidata.org/wiki/Property:P2002,None,None,Periscope account @username ported over from the Twitter account when the shell account was created.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the Twitter account.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.id,str,https://www.wikidata.org/wiki/Property:P6654,None,None,"Periscope shell account unique identifier automatically created as soon as the user goes to the ""Live"" section of the News Camera. A Periscope shell account will be created for the Twitter user before the user goes live.",None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.twitterScreenName,str,https://www.wikidata.org/wiki/Property:P2002,None,None,The Twitter account???s current @username. Note that the @username may change but the account ID will remain the same for the lifetime of the account.,None,None
+data/periscope-account-information.js:$[*].periscopeAccountInformation.isTwitterUser,bool,https://schema.org/Boolean,None,true,Indicates whether the Periscope account is also a Twitter user. This is always true.,true,true
 data/periscope-account-information.js:$[*].periscopeAccountInformation.createdAt,str,https://schema.org/DateTime,None,None,"Date and time the ""shell account"" was created.",None,"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{1,3})?Z "
 data/periscope-ban-information.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/periscope-ban-information.js:$[*],dict,None,None,None,None,None,None
@@ -696,199 +696,204 @@ data/periscope-followers.js:$,RootNode,None,N/A,N/A,Other accounts that follow t
 data/periscope-profile-description.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/periscope-profile-description.js:$[*],dict,None,None,None,None,None,None
 data/periscope-profile-description.js:$[*].periscopeProfileDescription,dict,None,None,None,Periscope account description ported over from the Twitter account when the shell account was created.,None,None
-data/periscope-profile-description.js:$[*].periscopeProfileDescription.bio,str,None,None,None,None,None,None
+data/periscope-profile-description.js:$[*].periscopeProfileDescription.bio,str,https://schema.org/text,None,None,None,None,None
 data/personalization.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/personalization.js:$[*],dict,None,None,None,None,None,None
 data/personalization.js:$[*].p13nData,dict,None,None,None,None,None,None
 data/personalization.js:$[*].p13nData.demographics,dict,None,None,None,None,None,None
 data/personalization.js:$[*].p13nData.demographics.languages,list,None,None,None,Languages associated with the account. Please note that this information may be inferred.,None,None
 data/personalization.js:$[*].p13nData.demographics.languages[*],dict,None,None,None,None,None,None
-data/personalization.js:$[*].p13nData.demographics.languages[*].language,str,None,None,None,None,None,None
-data/personalization.js:$[*].p13nData.demographics.languages[*].isDisabled,bool,None,None,None,None,None,None
+data/personalization.js:$[*].p13nData.demographics.languages[*].language,str,https://www.wikidata.org/wiki/Q107247802,None,None,langage name,None,None
+data/personalization.js:$[*].p13nData.demographics.languages[*].isDisabled,bool,https://schema.org/boolean,None,None,None,None,None
 data/personalization.js:$[*].p13nData.demographics.genderInfo,dict,None,None,None,Gender associated with the account. Please note that this information may be inferred.,None,None
-data/personalization.js:$[*].p13nData.demographics.genderInfo.gender,str,None,None,None,Gender associated with the account. Please note that this information may be inferred.,None,None
+data/personalization.js:$[*].p13nData.demographics.genderInfo.gender,str,https://www.wikidata.org/wiki/Q48277,None,None,Gender associated with the account. Please note that this information may be inferred.,None,None
 data/personalization.js:$[*].p13nData.interests,dict,None,None,None,None,None,None
 data/personalization.js:$[*].p13nData.interests.interests,list,None,None,None,Interests associated with the account. Please note that this information may be inferred.,None,None
 data/personalization.js:$[*].p13nData.interests.interests[*],dict,None,None,None,None,None,None
-data/personalization.js:$[*].p13nData.interests.interests[*].name,str,None,None,None,None,None,None
-data/personalization.js:$[*].p13nData.interests.interests[*].isDisabled,bool,None,None,None,None,None,None
+data/personalization.js:$[*].p13nData.interests.interests[*].name,str,https://www.wikidata.org/wiki/Property:P2650,None,None,"Interested in, subject of interest",None,None
+data/personalization.js:$[*].p13nData.interests.interests[*].isDisabled,bool,https://schema.org/boolean,None,None,None,None,None
 data/personalization.js:$[*].p13nData.interests.partnerInterests,list,None,None,None,Interests from partners that are associated with the account.,None,None
 data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers,dict,None,None,None,None,None,None
 data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.numAudiences,str,None,None,None,Number of tailored audiences (audiences generated by advertisers) the account is a part of.,None,None
 data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.advertisers,list,None,None,None,List of screennames for the advertisers that own the tailored audiences the account is a part of.,None,None
 data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers,list,None,None,None,List of screen names for the advertisers that own the look-alike audiences the account is a part of.,None,None
-data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers[*],str,None,None,None,None,None,None
+data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.lookalikeAdvertisers[*],str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter @ name for the advertiser,None,None
 data/personalization.js:$[*].p13nData.interests.audienceAndAdvertisers.doNotReachAdvertisers,list,None,None,None,List of screen names for the advertisers that own Do Not Reach Lists the account is a part of,None,None
 data/personalization.js:$[*].p13nData.interests.shows,list,None,None,None,TV shows associated with the account. Please note that this information may be inferred.,None,None
-data/personalization.js:$[*].p13nData.interests.shows[*],str,None,None,None,None,None,None
+data/personalization.js:$[*].p13nData.interests.shows[*],str,https://www.wikidata.org/wiki/Q5398426,None,None,television series,None,None
 data/personalization.js:$[*].p13nData.locationHistory,list,None,None,None,Location history associated with the account based on activity from the last 60 days.,None,None
 data/personalization.js:$[*].p13nData.inferredAgeInfo,dict,None,None,None,Date of birth Twitter has inferred about the account and corresponding current age.,None,None
 data/personalization.js:$[*].p13nData.inferredAgeInfo.age,list,None,None,None,Corresponding current age.,None,None
-data/personalization.js:$[*].p13nData.inferredAgeInfo.age[*],str,None,None,None,None,None,None
-data/personalization.js:$[*].p13nData.inferredAgeInfo.birthDate,str,None,None,None,Date of birth Twitter has inferred about the account,None,None
+data/personalization.js:$[*].p13nData.inferredAgeInfo.age[*],str,https://www.wikidata.org/wiki/Q1901234,None,None,age bracket as market segment,None,None
+data/personalization.js:$[*].p13nData.inferredAgeInfo.birthDate,str,https://schema.org/birthDate,None,None,Date of birth Twitter has inferred about the account,None,None
 data/phone-number.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/phone-number.js:$[*],dict,None,None,None,None,None,None
 data/phone-number.js:$[*].device,dict,None,None,None,None,None,None
-data/phone-number.js:$[*].device.phoneNumber,str,None,None,None,Phone number currently associated with the account if a phone number has been provided.,None,None
+data/phone-number.js:$[*].device.phoneNumber,str,https://schema.org/telephone,None,None,Phone number currently associated with the account if a phone number has been provided.,None,None
 data/professional-data.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/profile.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/profile.js:$[*],dict,None,None,None,None,None,None
 data/profile.js:$[*].profile,dict,None,None,None,None,None,None
 data/profile.js:$[*].profile.description,dict,None,None,None,None,None,None
-data/profile.js:$[*].profile.description.bio,str,None,None,None,"Current account bio as displayed on the profile, if the user has provided one.",None,None
-data/profile.js:$[*].profile.description.website,str,None,None,None,"Current account website as displayed on the profile, if the user has provided one.",None,None
-data/profile.js:$[*].profile.description.location,str,None,None,None,"Current account location as displayed on the profile, if the user has provided one.",None,None
-data/profile.js:$[*].profile.avatarMediaUrl,str,None,None,None,"Link to the current profile avatar image, if the user has provided one.",None,None
-data/profile.js:$[*].profile.headerMediaUrl,str,None,None,None,"Link to the current profile header image, if the user has provided one.",None,None
+data/profile.js:$[*].profile.description.bio,str,https://schema.org/text,None,None,"Current account bio as displayed on the profile, if the user has provided one.",None,None
+data/profile.js:$[*].profile.description.website,str,https://schema.org/url,None,None,"Current account website as displayed on the profile, if the user has provided one.",None,None
+data/profile.js:$[*].profile.description.location,str,https://schema.org/location,None,None,"Current account location as displayed on the profile, if the user has provided one.",None,None
+data/profile.js:$[*].profile.avatarMediaUrl,str,https://schema.org/url,None,None,"Link to the current profile avatar image, if the user has provided one.",None,None
+data/profile.js:$[*].profile.headerMediaUrl,str,https://schema.org/url,None,None,"Link to the current profile header image, if the user has provided one.",None,None
 data/protected-history.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/reply-prompt.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/saved-search.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/screen-name-change.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/screen-name-change.js:$[*],dict,None,None,None,None,None,None
 data/screen-name-change.js:$[*].screenNameChange,dict,None,None,None,None,None,None
-data/screen-name-change.js:$[*].screenNameChange.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
+data/screen-name-change.js:$[*].screenNameChange.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account.,None,None
 data/screen-name-change.js:$[*].screenNameChange.screenNameChange,dict,None,None,None,None,None,None
-data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedAt,str,None,None,None,Date and time the name was changed.,None,None
-data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedFrom,str,None,None,None,Previous screen name associated with the account.,None,None
-data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedTo,str,None,None,None,New screen name associated with the account.,None,None
+data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedAt,str,https://schema.org/DateTime,None,None,Date and time the name was changed.,None,None
+data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedFrom,str,https://www.wikidata.org/wiki/Q53311579,None,None,Previous screen name associated with the account.,None,None
+data/screen-name-change.js:$[*].screenNameChange.screenNameChange.changedTo,str,https://www.wikidata.org/wiki/Q53311579,None,None,New screen name associated with the account.,None,None
 data/smartblock.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/spaces-metadata.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/sso.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/tweet.js:$,RootNode,None,N/A,N/A,All the Tweets posted and not deleted.,N/A,N/A
 data/tweet.js:$[*],dict,https://github.com/hestiaAI/Argonodes/wiki/Twitter:tweet,None,None,"A single tweet,",None,None
 data/tweet.js:$[*].tweet,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.retweeted,bool,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.source,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.retweeted,bool,https://schema.org/boolean,None,None,None,None,None
+data/tweet.js:$[*].tweet.source,str,https://schema.org/text,None,None,HTML code with a link to the Twitter client used,None,None
 data/tweet.js:$[*].tweet.entities,dict,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.hashtags,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.hashtags[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.hashtags[*].text,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.hashtags[*].text,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.hashtags[*].indices,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.hashtags[*].indices[*],str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.hashtags[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.symbols,list,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.symbols,list,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.symbols[*],dict,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.symbols[*].text,str,https://schema.org/text,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.symbols[*].indices,list,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.symbols[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.user_mentions,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.user_mentions[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.user_mentions[*].name,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.user_mentions[*].screen_name,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.user_mentions[*].name,str,https://www.wikidata.org/wiki/Q15901043,None,None,Twitter display name,None,None
+data/tweet.js:$[*].tweet.entities.user_mentions[*].screen_name,str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter @ name for the user,None,None
 data/tweet.js:$[*].tweet.entities.user_mentions[*].indices,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.user_mentions[*].indices[*],str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.user_mentions[*].id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.user_mentions[*].id,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.user_mentions[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.user_mentions[*].id_str,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
+data/tweet.js:$[*].tweet.entities.user_mentions[*].id,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
 data/tweet.js:$[*].tweet.entities.urls,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.urls[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.urls[*].url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.urls[*].expanded_url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.urls[*].display_url,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.urls[*].url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.urls[*].expanded_url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.urls[*].display_url,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.urls[*].indices,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.urls[*].indices[*],str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.urls[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].expanded_url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].source_status_id,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].expanded_url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].source_status_id,str,https://schema.org/identifier,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].indices,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].indices[*],str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].media_url,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].media_url,str,https://schema.org/url,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].source_user_id,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].source_user_id,str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].id,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].media_url_https,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].source_user_id_str,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].media_url_https,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].source_user_id_str,str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].sizes,dict,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.thumb.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].sizes.medium,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.medium.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].sizes.small,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.small.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.small.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.small.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.small.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.small.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.small.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].sizes.large,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.large.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.large.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].sizes.large.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.large.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.large.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].sizes.large.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.entities.media[*].type,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].source_status_id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.entities.media[*].display_url,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].source_status_id_str,str,https://schema.org/identifier,None,None,None,None,None
+data/tweet.js:$[*].tweet.entities.media[*].display_url,str,https://schema.org/url,None,None,None,None,None
 data/tweet.js:$[*].tweet.display_text_range,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.display_text_range[*],str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.favorite_count,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.in_reply_to_status_id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.in_reply_to_user_id,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.truncated,bool,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.retweet_count,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.id,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.in_reply_to_status_id,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.created_at,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.favorited,bool,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.full_text,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.lang,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.in_reply_to_screen_name,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.in_reply_to_user_id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.possibly_sensitive,bool,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.display_text_range[*],str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.favorite_count,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.in_reply_to_status_id_str,str,https://www.wikidata.org/wiki/Property:P5933,None,None,tweet ID,None,None
+data/tweet.js:$[*].tweet.id_str,str,https://www.wikidata.org/wiki/Property:P5933,None,None,tweet ID,None,None
+data/tweet.js:$[*].tweet.in_reply_to_user_id,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
+data/tweet.js:$[*].tweet.truncated,bool,https://schema.org/boolean,None,None,None,None,None
+data/tweet.js:$[*].tweet.retweet_count,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.id,str,https://www.wikidata.org/wiki/Property:P5933,None,None,None,None,None
+data/tweet.js:$[*].tweet.in_reply_to_status_id,str,https://www.wikidata.org/wiki/Property:P5933,None,None,None,None,None
+data/tweet.js:$[*].tweet.created_at,str,https://schema.org/DateTime,None,None,None,None,None
+data/tweet.js:$[*].tweet.favorited,bool,https://schema.org/boolean,None,None,None,None,None
+data/tweet.js:$[*].tweet.full_text,str,https://schema.org/text,None,None,None,None,None
+data/tweet.js:$[*].tweet.lang,str,https://www.wikidata.org/wiki/Property:P218,None,None,ISO 639-1 code for a langage,None,None
+data/tweet.js:$[*].tweet.in_reply_to_screen_name,str,https://www.wikidata.org/wiki/Q53311579,None,None,Twitter @ name for the user,None,None
+data/tweet.js:$[*].tweet.in_reply_to_user_id_str,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
+data/tweet.js:$[*].tweet.possibly_sensitive,bool,https://schema.org/boolean,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities,dict,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].expanded_url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].source_status_id,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].expanded_url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].source_status_id,str,https://www.wikidata.org/wiki/Property:P5933,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].indices,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].indices[*],str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].media_url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].id_str,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].indices[*],str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].media_url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].id_str,str,https://www.wikidata.org/wiki/Property:P5933,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].video_info,dict,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.aspect_ratio,list,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.aspect_ratio[*],str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.duration_millis,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.aspect_ratio[*],str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.duration_millis,str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants,list,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*],dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*].bitrate,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*].bitrate,str,https://schema.org/integer,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*].content_type,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*].url,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].source_user_id,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].video_info.variants[*].url,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].source_user_id,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.monetizable,bool,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.title,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.description,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.embeddable,bool,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].id,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].media_url_https,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].source_user_id_str,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.monetizable,bool,https://schema.org/boolean,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.title,str,https://schema.org/text,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.description,str,https://schema.org/text,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].additional_media_info.embeddable,bool,https://schema.org/boolean,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].id,str,https://schema.org/identifier,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].media_url_https,str,https://schema.org/url,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].source_user_id_str,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Twitter user numeric ID,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].sizes,dict,None,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.thumb.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.medium.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.resize,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.small.resize,str,https://schema.org/text,None,None,None,None,None
 data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large,dict,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.w,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.h,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.resize,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].type,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].source_status_id_str,str,None,None,None,None,None,None
-data/tweet.js:$[*].tweet.extended_entities.media[*].display_url,str,None,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.w,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.h,str,https://schema.org/integer,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].sizes.large.resize,str,https://schema.org/text,None,None,None,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].type,str,https://schema.org/text,None,None,e.g. «video»,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].source_status_id_str,str,https://www.wikidata.org/wiki/Property:P5933,None,None,tweet ID,None,None
+data/tweet.js:$[*].tweet.extended_entities.media[*].display_url,str,https://schema.org/url,None,None,None,None,None
 data/tweetdeck.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/user-link-clicks.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/user-link-clicks.js:$[*],dict,None,None,None,None,None,None
 data/user-link-clicks.js:$[*].userInteractionsData,dict,None,None,None,None,None,None
 data/user-link-clicks.js:$[*].userInteractionsData.linkClick,dict,None,None,None,None,None,None
-data/user-link-clicks.js:$[*].userInteractionsData.linkClick.tweetId,str,None,None,None,Unique identifier for the Tweet the user clicked on when using Twitter on iOS or Android.,None,None
-data/user-link-clicks.js:$[*].userInteractionsData.linkClick.finalUrl,str,None,None,None,URL indicating where the Tweet linked to off Twitter.,None,None
-data/user-link-clicks.js:$[*].userInteractionsData.linkClick.timeStampOfInteraction,str,None,None,None,Date and time of when the click occured. This file includes 30 days of data from the time the archive was generated.,None,None
+data/user-link-clicks.js:$[*].userInteractionsData.linkClick.tweetId,str,https://schema.org/url,None,None,Unique identifier for the Tweet the user clicked on when using Twitter on iOS or Android.,None,None
+data/user-link-clicks.js:$[*].userInteractionsData.linkClick.finalUrl,str,https://schema.org/url,None,None,URL indicating where the Tweet linked to off Twitter.,None,None
+data/user-link-clicks.js:$[*].userInteractionsData.linkClick.timeStampOfInteraction,str,https://schema.org/datetime,None,None,Date and time of when the click occured. This file includes 30 days of data from the time the archive was generated.,None,None
 data/verified.js:$,RootNode,None,N/A,N/A,None,N/A,N/A
 data/verified.js:$[*],dict,None,None,None,None,None,None
 data/verified.js:$[*].verified,dict,None,None,None,None,None,None
-data/verified.js:$[*].verified.accountId,str,https://schema.org/identifier,None,None,Unique identifier for the account.,None,None
-data/verified.js:$[*].verified.verified,bool,None,None,None,Indicates whether the account is verified.,None,None
+data/verified.js:$[*].verified.accountId,str,https://www.wikidata.org/wiki/Property:P6552,None,None,Unique identifier for the account.,None,None
+data/verified.js:$[*].verified.verified,bool,https://schema.org/boolean,None,None,Indicates whether the account is verified.,None,None
