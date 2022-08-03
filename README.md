@@ -103,4 +103,4 @@ We are looking for collaborations in the academic and education areas, or even m
 
 ## Credits
 
-Initial contributors are the [DatingPrivacy](https://dating-privacy.hestialabs.org/en/) and [other projects](https://hestialabs.org/en/projects/) supported by [HestiaLabs](https://hestialabs.org).
+Initial contributors are the [DatingPrivacy](https://dating-privacy.hestialabs.org/en/) , [The Eyeballs](https://eyeballs.hestialabs.org/en/) and [other projects](https://hestialabs.org/en/projects/) supported by [HestiaLabs](https://hestialabs.org).
