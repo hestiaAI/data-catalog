@@ -1,0 +1,310 @@
+{
+  "Activity": {
+    "Favorite Effects": {},
+    "Favorite Hashtags": {
+      "FavoriteHashtagList": null
+    },
+    "Favorite Sounds": {
+      "FavoriteSoundList": null
+    },
+    "Favorite Videos": {
+      "FavoriteVideoList": null
+    },
+    "Follower List": {
+      "FansList": [
+        {
+          "Date": "2022-01-01 00:00:01",
+          "UserName": "fan username 1"
+        },
+        {
+          "Date": "2022-01-01 00:00:02",
+          "UserName": "fan username 2"
+        },
+        {
+          "Date": "2022-01-01 00:00:03",
+          "UserName": "fan username 3"
+        },
+        {
+          "Date": "2022-01-01 00:00:04",
+          "UserName": "fan username 4"
+        }
+      ]
+    },
+    "Following List": {
+      "Following": [
+        {
+          "Date": "2022-01-02 00:00:01",
+          "UserName": "following username 1"
+        },
+        {
+          "Date": "2022-01-02 00:00:02",
+          "UserName": "following username 2"
+        },
+        {
+          "Date": "2022-01-02 00:00:03",
+          "UserName": "following username 3"
+        },
+        {
+          "Date": "2022-01-02 00:00:04",
+          "UserName": "following username 4"
+        }
+      ]
+    },
+    "Hashtag": {},
+    "Like List": {
+      "ItemFavoriteList": [
+        {
+          "Date": "2022-01-03 00:00:01",
+          "VideoLink": "https://www.tiktokv.com/share/video/0000000000000000000/"
+        },
+        {
+          "Date": "2022-01-03 00:00:02",
+          "VideoLink": "video link 2 (URL)"
+        }
+      ]
+    },
+    "Login History": {
+      "LoginHistoryList": [
+        {
+          "Date": "2022-01-03 00:00:01",
+          "IP": "IPv4 address 1",
+          "DeviceModel": "device model name 1",
+          "DeviceSystem": "device system 1",
+          "NetworkType": "Wi-Fi",
+          "Carrier": "carrier 1"
+        }
+      ]
+    },
+    "Purchase History": {},
+    "Search History": {
+      "SearchList": [
+        {
+          "Date": "2022-01-04 00:00:01",
+          "SearchTerm": "search term 1"
+        },
+        {
+          "Date": "2022-01-04 00:00:02",
+          "SearchTerm": "search term 2"
+        },
+        {
+          "Date": "2022-01-04 00:00:03",
+          "SearchTerm": "search term 3"
+        },
+        {
+          "Date": "2022-01-04 00:00:04",
+          "SearchTerm": "search term 4"
+        }        
+      ]
+    },
+    "Share History": {
+      "ShareHistoryList": [
+        {
+          "Date": "2022-01-05 00:00:01",
+          "SharedContent": "video",
+          "Link": "URL 1",
+          "Method": "chat_head"
+        },
+        {
+          "Date": "2022-01-05 00:00:02",
+          "SharedContent": "video",
+          "Link": "URL 2",
+          "Method": "copy"
+        },
+        {
+          "Date": "2022-01-05 00:00:03",
+          "SharedContent": "video",
+          "Link": "URL 3",
+          "Method": "chat_head"
+        },
+        {
+          "Date": "2022-01-05 00:00:04",
+          "SharedContent": "video",
+          "Link": "URL 4",
+          "Method": "chat_head"
+        }
+      ]
+    },
+    "Status": {
+      "Status List": [
+        {
+          "Resolution": "resolution in pixels 1",
+          "App Version": "App version 1",
+          "IDFA": "",
+          "GAID": "GAID 1",
+          "Android ID": "android ID 1",
+          "IDFV": "",
+          "Web ID": "N/A"
+        }
+      ]
+    },
+    "Video Browsing History": {
+      "VideoList": [
+        {
+          "Date": "2022-01-05 00:00:01",
+          "VideoLink": "video URL 1"
+        },
+        {
+          "Date": "2022-01-05 00:00:02",
+          "VideoLink": "video URL 2"
+        },
+        {
+          "Date": "2022-01-05 00:00:03",
+          "VideoLink": "video URL 3"
+        },
+        {
+          "Date": "2022-01-05 00:00:04",
+          "VideoLink": "video URL 4"
+        }
+      ]
+    }
+  },
+  "Ads and data": {
+    "Ad Interests": {
+      "AdInterestCategories": ""
+    },
+    "Ads Based On Data Received From Partners": {
+      "DataPartnerList": "",
+      "AdvertiserList": ""
+    },
+    "Usage Data From Third-Party Apps And Websites": {}
+  },
+  "App Settings": {
+    "Block": {
+      "BlockList": [
+        {
+          "Date": "2022-01-06 00:00:01",
+          "UserName": "blocked username 1"
+        }
+      ]
+    },
+    "Settings": {
+      "SettingsMap": {
+        "Ads Based on Data Received from Partners": "Off",
+        "Allow DownLoad": "Default",
+        "Allow Others to Find Me": "Disabled",
+        "App Language": "Français",
+        "Content Preferences": {
+          "Keyword filters for videos in Following feed": null,
+          "Keyword filters for videos in For You feed": null,
+          "Video Languages Preferences": null
+        },
+        "Filter Comments": "Enabled",
+        "Interests": "",
+        "Personalized Ads": "Disabled",
+        "Private Account": "Enabled",
+        "Push Notification": {
+          "Desktop notification": "Default",
+          "New Comments on My Video": "Default",
+          "New Fans": "Default",
+          "New Likes on My Video": "Default"
+        },
+        "Web Language": "N/A",
+        "Who Can Duet With Me": "Off",
+        "Who Can Post Comments": "Everyone",
+        "Who Can Send Me Message": "Default",
+        "Who Can Stitch with your videos": "Off",
+        "Who Can View Videos I Liked": "Myself"
+      }
+    }
+  },
+  "Comment": {
+    "Comments": {
+      "CommentsList": [
+        {
+          "Date": "2022-01-07 00:00:01",
+          "Comment": "comment 1"
+        }
+      ]
+    }
+  },
+  "Direct Messages": {
+    "Chat History": {
+      "ChatHistory": {
+        "Chat History with chat_username_1:": [
+          {
+          "Date": "2022-01-08 00:00:01",
+            "From": "chat_username_1",
+            "Content": "message content 1"
+          },
+          {
+          "Date": "2022-01-08 00:00:02",
+            "From": "account_username",
+            "Content": "message content 2"
+          },
+          {
+          "Date": "2022-01-08 00:00:03",
+            "From": "chat_username_1",
+            "Content": "message content 3"
+          },
+          {
+          "Date": "2022-01-08 00:00:04",
+            "From": "account_username",
+            "Content": "message content 4"
+          }          
+        ],
+        "Chat History with chat_username_2:": [
+          {
+          "Date": "2022-01-08 00:00:05",
+            "From": "chat_username_2",
+            "Content": "message content 5"
+          },
+          {
+          "Date": "2022-01-08 00:00:06",
+            "From": "account_username",
+            "Content": "message content 6"
+          },
+          {
+          "Date": "2022-01-08 00:00:07",
+            "From": "chat_username_2",
+            "Content": "message content 7"
+          },
+          {
+          "Date": "2022-01-08 00:00:08",
+            "From": "account_username",
+            "Content": "message content 8"
+          }   
+        ]
+      }
+    }
+  },
+  "Profile": {
+    "Profile Information": {
+      "ProfileMap": {
+        "PlatformInfo": [],
+        "bioDescription": "ui",
+        "birthDate": "birthday",
+        "emailAddress": "mail address",
+        "likesReceived": "None",
+        "profilePhoto": "URL",
+        "profileVideo": "None",
+        "telephoneNumber": "None",
+        "userName": "account_username"
+      }
+    }
+  },
+  "Tiktok Shopping": {
+    "Communication History": {},
+    "Current Payment Information": {
+      "PayCard": null
+    },
+    "Customer Support History": {},
+    "Order Dispute History": {},
+    "Order History": {},
+    "Product Browsing History": {},
+    "Product Review History": {},
+    "Return and Refund History": {},
+    "Saved Address Information": {
+      "SavedAddress": null
+    },
+    "Shopping Cart List": {
+      "ShoppingCart": null
+    },
+    "Vouchers": {
+      "Vouchers": null
+    }
+  },
+  "Video": {
+    "Videos": {}
+  }
+}
+
