@@ -1,0 +1,150 @@
+path,foundType,descriptiveType,unique,default,description,choices,regex
+$,RootNode,None,N/A,N/A,None,N/A,N/A
+$.Activity,dict,None,None,None,None,None,None
+$.Activity.Favorite Effects,dict,None,None,None,None,None,None
+$.Activity.Favorite Hashtags,dict,None,None,None,None,None,None
+$.Activity.Favorite Hashtags.FavoriteHashtagList,NoneType,None,None,None,None,None,None
+$.Activity.Favorite Sounds,dict,None,None,None,None,None,None
+$.Activity.Favorite Sounds.FavoriteSoundList,NoneType,None,None,None,None,None,None
+$.Activity.Favorite Videos,dict,None,None,None,None,None,None
+$.Activity.Favorite Videos.FavoriteVideoList,NoneType,None,None,None,None,None,None
+$.Activity.Follower List,dict,None,None,None,None,None,None
+$.Activity.Follower List.FansList,list,None,None,None,None,None,None
+$.Activity.Follower List.FansList[*],dict,None,None,None,None,None,None
+$.Activity.Follower List.FansList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Follower List.FansList[*].UserName,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.Activity.Following List,dict,None,None,None,None,None,None
+$.Activity.Following List.Following,list,None,None,None,None,None,None
+$.Activity.Following List.Following[*],dict,None,None,None,None,None,None
+$.Activity.Following List.Following[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Following List.Following[*].UserName,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.Activity.Hashtag,dict,None,None,None,None,None,None
+$.Activity.Like List,dict,None,None,None,None,None,None
+$.Activity.Like List.ItemFavoriteList,list,None,None,None,None,None,None
+$.Activity.Like List.ItemFavoriteList[*],dict,None,None,None,None,None,None
+$.Activity.Like List.ItemFavoriteList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Like List.ItemFavoriteList[*].VideoLink,str,https://schema.org/url,None,None,None,None,None
+$.Activity.Login History,dict,None,None,None,None,None,None
+$.Activity.Login History.LoginHistoryList,list,None,None,None,None,None,None
+$.Activity.Login History.LoginHistoryList[*],dict,None,None,None,None,None,None
+$.Activity.Login History.LoginHistoryList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Login History.LoginHistoryList[*].IP,str,https://www.wikidata.org/wiki/Q11135,None,None,IP address (Ipv4 observed),None,None
+$.Activity.Login History.LoginHistoryList[*].DeviceModel,str,https://www.wikidata.org/wiki/Q62008942,None,None,electronic device model,None,None
+$.Activity.Login History.LoginHistoryList[*].DeviceSystem,str,https://www.wikidata.org/wiki/Q20826013,None,None,Version of the Operating System,None,None
+$.Activity.Login History.LoginHistoryList[*].NetworkType,str,https://www.wikidata.org/wiki/Q1301371,None,None,Computer network,"""Wi-Fi"", """", ""mobile""",None
+$.Activity.Login History.LoginHistoryList[*].Carrier,str,https://www.wikidata.org/wiki/Q11371,None,None,Internet Service Provider or Telecom operator,None,None
+$.Activity.Purchase History,dict,None,None,None,None,None,None
+$.Activity.Search History,dict,None,None,None,None,None,None
+$.Activity.Search History.SearchList,list,None,None,None,None,None,None
+$.Activity.Search History.SearchList[*],dict,None,None,None,None,None,None
+$.Activity.Search History.SearchList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Search History.SearchList[*].SearchTerm,str,https://schema.org/query,None,None,None,None,None
+$.Activity.Share History,dict,None,None,None,None,None,None
+$.Activity.Share History.ShareHistoryList,list,None,None,None,None,None,None
+$.Activity.Share History.ShareHistoryList[*],dict,None,None,None,None,None,None
+$.Activity.Share History.ShareHistoryList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Share History.ShareHistoryList[*].SharedContent,str,TODO,None,None,"""video""",None,None
+$.Activity.Share History.ShareHistoryList[*].Link,str,https://schema.org/url,None,None,None,None,None
+$.Activity.Share History.ShareHistoryList[*].Method,str,TODO,None,None,Way of sharing material,"""chat_head"", ""copy"", ""more""",None
+$.Activity.Status,dict,None,None,None,None,None,None
+$.Activity.Status.Status List,list,None,None,None,None,None,None
+$.Activity.Status.Status List[*],dict,None,None,None,None,None,None
+$.Activity.Status.Status List[*].Resolution,str,https://www.wikidata.org/wiki/Q210521,None,None,image resolution,None,None
+$.Activity.Status.Status List[*].App Version,str,https://www.wikidata.org/wiki/Q20826013,None,None,software version,None,None
+$.Activity.Status.Status List[*].IDFA,str,https://www.wikidata.org/wiki/Q102046346,None,None,Identifier for Advertisers,None,None
+$.Activity.Status.Status List[*].GAID,str,https://www.wikidata.org/wiki/Q113438412,None,None,Google Ads ID,None,None
+$.Activity.Status.Status List[*].Android ID,str,https://www.wikidata.org/wiki/Q48791487,None,None,Andoid ID,None,None
+$.Activity.Status.Status List[*].IDFV,str,https://www.wikidata.org/wiki/Q113438557,None,None,Identifier for Vendors,None,None
+$.Activity.Status.Status List[*].Web ID,str,https://schema.org/identifier,None,None,None,None,None
+$.Activity.Video Browsing History,dict,None,None,None,None,None,None
+$.Activity.Video Browsing History.VideoList,list,None,None,None,None,None,None
+$.Activity.Video Browsing History.VideoList[*],dict,None,None,None,None,None,None
+$.Activity.Video Browsing History.VideoList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Activity.Video Browsing History.VideoList[*].VideoLink,str,https://schema.org/url,None,None,None,None,None
+$.Ads and data,dict,None,None,None,None,None,None
+$.Ads and data.Ad Interests,dict,None,None,None,None,None,None
+$.Ads and data.Ad Interests.AdInterestCategories,str,None,None,None,None,None,None
+$.Ads and data.Ads Based On Data Received From Partners,dict,None,None,None,None,None,None
+$.Ads and data.Ads Based On Data Received From Partners.DataPartnerList,str,None,None,None,no observable data available yet,None,None
+$.Ads and data.Ads Based On Data Received From Partners.AdvertiserList,str,None,None,None,no observable data available yet,None,None
+$.Ads and data.Usage Data From Third-Party Apps And Websites,dict,None,None,None,None,None,None
+$.App Settings,dict,None,None,None,None,None,None
+$.App Settings.Block,dict,None,None,None,None,None,None
+$.App Settings.Block.BlockList,list,None,None,None,None,None,None
+$.App Settings.Block.BlockList[*],dict,None,None,None,None,None,None
+$.App Settings.Block.BlockList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.App Settings.Block.BlockList[*].UserName,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.App Settings.Settings,dict,None,None,None,None,None,None
+$.App Settings.Settings.SettingsMap,dict,None,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Ads Based on Data Received from Partners,str,https://schema.org/Boolean,None,None,None,"Off, On",None
+$.App Settings.Settings.SettingsMap.Allow DownLoad,str,https://schema.org/Boolean,None,None,None,Default,None
+$.App Settings.Settings.SettingsMap.Allow Others to Find Me,str,https://schema.org/Boolean,None,None,None,"Enabled, Disabled",None
+$.App Settings.Settings.SettingsMap.App Language,str,https://schema.org/Language,None,None,None,Fran?ais,None
+$.App Settings.Settings.SettingsMap.Content Preferences,dict,None,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Content Preferences.Keyword filters for videos in Following feed,NoneType,None,None,None,no observable data available yet,None,None
+$.App Settings.Settings.SettingsMap.Content Preferences.Keyword filters for videos in For You feed,NoneType,None,None,None,no observable data available yet,None,None
+$.App Settings.Settings.SettingsMap.Content Preferences.Video Languages Preferences,NoneType,None,None,None,no observable data available yet,None,None
+$.App Settings.Settings.SettingsMap.Filter Comments,str,https://schema.org/Boolean,None,None,None,"Enabled, Disabled",None
+$.App Settings.Settings.SettingsMap.Interests,str,None,None,None,no observable data available yet,None,None
+$.App Settings.Settings.SettingsMap.Personalized Ads,str,https://schema.org/Boolean,None,None,None,"Enabled, Disabled",None
+$.App Settings.Settings.SettingsMap.Private Account,str,https://schema.org/Boolean,None,None,None,"Enabled, Disabled",None
+$.App Settings.Settings.SettingsMap.Push Notification,dict,None,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Push Notification.Desktop notification,str,https://schema.org/Boolean,None,None,None,Default,None
+$.App Settings.Settings.SettingsMap.Push Notification.New Comments on My Video,str,https://schema.org/Boolean,None,None,None,Default,None
+$.App Settings.Settings.SettingsMap.Push Notification.New Fans,str,https://schema.org/Boolean,None,None,None,Default,None
+$.App Settings.Settings.SettingsMap.Push Notification.New Likes on My Video,str,https://schema.org/Boolean,None,None,None,Default,None
+$.App Settings.Settings.SettingsMap.Web Language,str,https://schema.org/text,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Who Can Duet With Me,str,https://schema.org/text,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Who Can Post Comments,str,https://schema.org/text,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Who Can Send Me Message,str,https://schema.org/text,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Who Can Stitch with your videos,str,https://schema.org/text,None,None,None,None,None
+$.App Settings.Settings.SettingsMap.Who Can View Videos I Liked,str,https://schema.org/text,None,None,None,None,None
+$.Comment,dict,None,None,None,None,None,None
+$.Comment.Comments,dict,None,None,None,None,None,None
+$.Comment.Comments.CommentsList,list,None,None,None,None,None,None
+$.Comment.Comments.CommentsList[*],dict,None,None,None,None,None,None
+$.Comment.Comments.CommentsList[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Comment.Comments.CommentsList[*].Comment,str,https://schema.org/text,None,None,None,None,None
+$.Direct Messages,dict,None,None,None,None,None,None
+$.Direct Messages.Chat History,dict,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory,dict,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_001:,list,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_001:[*],dict,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_001:[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_001:[*].From,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_001:[*].Content,str,https://schema.org/text,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_002:,list,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_002:[*],dict,None,None,None,None,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_002:[*].Date,str,https://schema.org/DateTime,None,None,Datetime in ?YYYY-MM-DD hh:mm:ss? format  ,None,[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_002:[*].From,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.Direct Messages.Chat History.ChatHistory.Chat History with USER_002:[*].Content,str,https://schema.org/text,None,None,None,None,None
+$.Profile,dict,None,None,None,None,None,None
+$.Profile.Profile Information,dict,None,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap,dict,None,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.PlatformInfo,list,None,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.bioDescription,str,https://schema.org/text,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.birthDate,str,https://schema.org/DateTime,None,None,date is ?01-Jan-1970? format,None,[0-9]{2}-[a-Z]{3}-[0-9]{4}
+$.Profile.Profile Information.ProfileMap.emailAddress,str,https://schema.org/email,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.likesReceived,str,https://schema.org/text,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.profilePhoto,str,https://schema.org/url,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.profileVideo,str,https://schema.org/text,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.telephoneNumber,str,https://schema.org/text,None,None,None,None,None
+$.Profile.Profile Information.ProfileMap.userName,str,https://www.wikidata.org/wiki/Property:P7085,None,None,Tiktok usename without ?@?,None,None
+$.Tiktok Shopping,dict,None,None,None,None,None,None
+$.Tiktok Shopping.Communication History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Current Payment Information,dict,None,None,None,None,None,None
+$.Tiktok Shopping.Current Payment Information.PayCard,NoneType,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Customer Support History,dict,None,None,None,None,None,None
+$.Tiktok Shopping.Order Dispute History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Order History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Product Browsing History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Product Review History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Return and Refund History,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Saved Address Information,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Saved Address Information.SavedAddress,NoneType,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Shopping Cart List,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Shopping Cart List.ShoppingCart,NoneType,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Vouchers,dict,None,None,None,no observable data available yet,None,None
+$.Tiktok Shopping.Vouchers.Vouchers,NoneType,None,None,None,no observable data available yet,None,None
+$.Video,dict,None,None,None,no observable data available yet,None,None
+$.Video.Videos,dict,None,None,None,no observable data available yet,None,None
