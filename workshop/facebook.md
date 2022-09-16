@@ -6,16 +6,17 @@ For more complex or bespoke requests, use the Subject Access Requests process fu
 ## Download Portal Instructions
 
 1. Go to [this page](https://www.facebook.com/dyi/?referrer=yfi_settings)
-2. Select Format > JSON, Media Quality > Low, Date Range > 3 months
-3. Deselect all
+2. Select Format > JSON, Media Quality > Low, Date Range > Last 3 months
+3. In the "Select information to download" area, click on *Deselect all*
 4. Reselect
-   - Your Activity > Other Activity,
-   - Personal Information > Other Personal Information,
-   - Logged Information > Your Topics, Location, Other Logged Information
-   - Apps and Websites Off Facebook > Apps and Websites Off Facebook
-   - Ads Information
-5. Click "Request a Download"
+   - In "Your Activity across Facebook" > *Other Activity*,
+   - In "Personal Information" > *Other Personal Information*,
+   - In "Logged Information" > *Your Topics* + *Location* + *Other Logged Information*
+   - In "Apps and Websites Off Facebook" > *Apps and websites off Facebook*
+   - In "Ads Information" > *Ads Information*
+5. Click *Request a Download*
 6. You will be notified when your zip file is ready to download.
+7. Once you receive it, save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it.
 
 For further help, see Facebook's official instructions [here](https://www.facebook.com/help/212802592074644).
 
