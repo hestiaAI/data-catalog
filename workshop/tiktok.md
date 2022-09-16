@@ -18,7 +18,7 @@ To get data from TikTok, please follow the following instructions.
 ![Capture d’écran 2022-09-16 à 21 04 09](https://user-images.githubusercontent.com/81250365/190712794-44fed8bf-0700-458a-ab6a-42e5ffe75e1c.png)
 
 5. Click on *Request data*
-6. Save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
+6. Once you receive it, Save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
 
 
 
