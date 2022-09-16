@@ -24,7 +24,7 @@
 
 ![Capture d’écran 2022-09-16 à 21 34 31](https://user-images.githubusercontent.com/81250365/190716998-44fd8bd8-6b95-4d2b-8f5e-3cdab10bfbfa.png)
 
-9. Once you receive it, Save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
+9. Once you receive it, save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
 
 ## To send a Subject Access Request to Instagram, please follow these instructions:
 
