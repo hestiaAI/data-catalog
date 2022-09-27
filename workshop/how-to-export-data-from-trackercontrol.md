@@ -22,7 +22,9 @@ Before you can export data with TrackerControl you need to have enabled tracking
 
 ![Screenshot_20220510-152723_TC Slim](https://user-images.githubusercontent.com/1473244/167659472-bd5de113-5fbf-4089-a8ce-4558d27cd367.jpg)
 
-6. You can now transfer this CSV file from phone storage to your desktop/laptop machine you will use in the workshops, using whatever means is easiest for you (USB transfer, email attachment, Signal message to self, etc). CSV files from TrackerControl can be loaded into [our viewer here](https://digipower.academy/bubble/th-participant/experience/tracker-control#load-data).
+6. You can now transfer this CSV file from phone storage to your desktop/laptop machine you will use in the workshops, using whatever means is easiest for you (USB transfer, email attachment, Signal message to self, etc). CSV files from TrackerControl can be loaded into our viewer.
+- For Thomas Huchon's students, [please upload it here](https://digipower.academy/bubble/th-participant/experience/tracker-control#load-data),
+- For people attending the workshop at Brown IFL, [please upload it here](https://digipower.academy/bubble/brown-participant/experience/tracker-control#load-data)
 
 --- 
 
