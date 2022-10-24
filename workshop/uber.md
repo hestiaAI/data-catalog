@@ -1,3 +1,16 @@
+(instructions in 🇬🇧 below)
+
+# Obtenir vos données d'Uber ou d'Uber Eats
+
+1. Rendez-vous sur [cette page Uber](https://myprivacy.uber.com/privacy/exploreyourdata/download)
+2. Connectez-vous à votre compte Uber
+3. Effectuez la vérification en deux étapes (par exemple en entrant le code du SMS qui vous est demandé)
+4. Cliquez sur le bouton "Demander vos données"
+5. Pour les chauffeur·se·s Uber, il existe une option permettant de préciser que vous êtes intéressé par les données des chauffeurs plutôt que celles des passagers.
+6. Dans la boîte "Pourquoi demandez-vous vos données", veuillez choisir "Pour en savoir plus sur les données dont dispose Uber", puis soumettez le formulaire.
+
+Surveillez votre boite email pour être informé·e que vos données sont prêtes. Lorsqu'elles seront disponibles, vous devrez les télécharger. Conservez ce fichier .zip précieusement puis analysez le grâce à [Digipower.academy](https://digipower.academy/experience/uber-driver). Besoin d'aide? [Contactez-nous!](https://hestia.ai/en/#contact)
+
 # Getting data from Uber or Uber Eats
 
 To get data from Uber you have two options. To use their download portal to access standard data, use the Download Portal instructions below. For more complex or bespoke requests, use the Subject Access Requests process further down this page.
