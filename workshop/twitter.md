@@ -6,7 +6,7 @@ To get data from Twitter, please follow the following instructions. Check [this 
 2. Go to the web interface at [twitter.com](https://twitter.com/).
 3. Click More (...) to the left of your timeline.
     
-    <img width="200" alt="image" src="https://user-images.githubusercontent.com/81250365/187199485-d606397f-fd93-4639-bf89-1d4ef3bd9c83.png">
+    <img width="200" alt="image" src="![image](https://user-images.githubusercontent.com/81250365/199701216-9eb55ec0-73e0-403b-ba69-5f06ec87d433.png)">
 4. Select Settings and Support > Settings and privacy.
 5. Select "Your account"
 6. Click Download an archive of your data in the right column.
