@@ -1,3 +1,5 @@
+(🇫🇷version française plus bas👇)
+
 # How to enable Google's location tracking
 (Pour le protocole en Français, voir plus bas)
 
