@@ -1,30 +1,18 @@
 # Getting your data from Instagram
 
 ## Download Portal Instructions:
-1. Open these instructions on a big screen (your laptop, desktop or tablet will be fine, but phone is not recommended)
-2. In your web browser, go to instagram.com and log in
-3. Click on your profile picture
-4. Click on *Settings*
+1. In your web browser, go to instagram.com and log in
+2. Click on More>Your activity at the bottom left of your screen
 
-![Capture d’écran 2022-09-16 à 21 24 37](https://user-images.githubusercontent.com/81250365/190715578-57a4311b-10b3-4ff1-9020-fcc4813dca6e.png)
+![image](https://github.com/hestiaAI/data-catalog/assets/81250365/0b7ac195-b8f3-4b26-8c77-0531f6aa4c8b)
 
-5. Click on *Privacy and security*
+3. Click on Download your information and **select the JSON format**
 
-![Capture d’écran 2022-09-16 à 21 28 20](https://user-images.githubusercontent.com/81250365/190716448-230e18d9-514a-4930-b1e6-c5f6629d56ae.png)
+![image](https://github.com/hestiaAI/data-catalog/assets/81250365/be02ca96-a1dd-4ff1-8068-186ee0b86c42)
 
-6. Scroll to Data download and click on *Request download*.
+4. Enter your password again, and you can request your archive
 
-![Capture d’écran 2022-09-16 à 21 30 08](https://user-images.githubusercontent.com/81250365/190716460-22637a25-ca42-4855-a210-7ce2bcb734c2.png)
-
-7. **⚠️ Choose JSON as the information format** and click on *Next*
-
-![Capture d’écran 2022-09-16 à 21 32 39](https://user-images.githubusercontent.com/81250365/190716794-caf31001-d15c-4727-9fab-82f6d0d6585d.png)
-
-8. Enter your password and click on *Request download*
-
-![Capture d’écran 2022-09-16 à 21 34 31](https://user-images.githubusercontent.com/81250365/190716998-44fd8bd8-6b95-4d2b-8f5e-3cdab10bfbfa.png)
-
-9. Once you receive it, save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
+5. Once you receive it, save your zip file on your computer and use [Digipower.academy](https://digipower.academy) to understand and analyze it
 
 ## To send a Subject Access Request to Instagram, please follow these instructions:
 
